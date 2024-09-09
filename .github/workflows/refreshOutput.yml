@@ -23,7 +23,7 @@ jobs:
         run: |
           npm start
       - name: 🚀 Create Pull Request
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           title: Update XML Outputs
           body: |
