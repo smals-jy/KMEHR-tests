@@ -1,0 +1,58 @@
+---
+description: How to create a new medication scheme configuration ?
+title: 📝💊 Creation of MS configurations
+---
+
+## Why ?
+
+To be ready for : 
+- New scenarios or changes in [MS Cookbook](https://www.ehealth.fgov.be/standards/kmehr/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/057e64396c1ea312a0b01607b0f94e4adcf456e8/20210331-safe_cookbook_medicatieschema_v5.8_en.pdf)
+- Derivative test scenarios from existing ones
+- Focus on what matter, e.g. descriptions instead of manipulate XML by hand
+- Reduce overhead with KMEHR / XML formats
+
+## Prerequisites
+
+- Clone the Github project, e.g. `git clone https://github.com/smals-jy/KMEHR-tests`
+- Node.JS LTS
+- Install Github project dependancies, e.g. `npm install`
+
+## Steps
+
+1. Create a new `ts` / `json` file in [`configurations/ms`](https://github.com/smals-jy/KMEHR-tests/tree/main/configurations/ms) folder. Existing files illustrates several scenarios. Here is a sample to start your own configurations :
+
+```ts
+import type { Configuration } from "../../src/config";
+
+export default function (): Configuration {
+    return {
+        transactions: [
+            {
+// First transaction is reserved for MS metadata so start afterwards
+                id: 2,
+                drug: {
+                    drugType: "compoundprescription",
+                    compoundprescriptionText: "magistrale bereiding",
+                    temporality: "chronic",
+                    periodicity: "D",
+                    beginmoment: "2023-01-01",
+                    regimen: [
+                        {
+                            quantity: 1,
+                            timeOfDay: {
+                                dayPeriod: "duringlunch"
+                            }
+                        }
+                    ]
+                },
+            },
+        ],
+    };
+}
+```
+
+2. To generate the resulting XML file(s) in [`output/ms`](https://github.com/smals-jy/KMEHR-tests/tree/main/output/ms) folder :
+
+```bash
+npm start
+```

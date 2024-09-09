@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smc:single-message xmlns:code="http://www.apb.be/standards/smoa/schema/code/v1" xmlns:id="http://www.apb.be/standards/smoa/schema/id/v1" xmlns:model="http://www.apb.be/standards/smoa/schema/model/v1" xmlns:smc="http://www.apb.be/standards/smoa/schema/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.apb.be/standards/smoa/schema/v1 xsd/smc-v1/single-message/maindoc/single-message-oa-1.0.xsd">
+  <smc:unsigned>
+    <smc:header>
+      <smc:version>1.0</smc:version>
+      <smc:messageCreateDate>2024-02-01T14:30:09</smc:messageCreateDate>
+      <smc:messageID>39f64230-2166-4d1f-b02c-7815d978b246</smc:messageID>
+      <smc:sender>
+        <model:refPharmacy>
+          <model:pharmacyId xsi:type="id:NihiiIdType">
+            <id:nihiiPharmacyNumber>80000551</id:nihiiPharmacyNumber>
+          </model:pharmacyId>
+        </model:refPharmacy>
+      </smc:sender>
+    </smc:header>
+    <smc:eventFolder>
+      <smc:events>
+        <smc:event xsi:type="smc:PharmaceuticalCareEventType">
+          <smc:sessionDateTime>2024-02-01T14:30:09</smc:sessionDateTime>
+          <smc:pharmacyId>
+            <id:nihiiPharmacyNumber>80000551</id:nihiiPharmacyNumber>
+          </smc:pharmacyId>
+          <model:max-Patient>
+            <model:identification>
+              <model:personId xsi:type="id:InssIdType">
+                <id:id>12345678901</id:id>
+              </model:personId>
+              <model:name>John</model:name>
+              <model:familyName>Doe</model:familyName>
+            </model:identification>
+          </model:max-Patient>
+          <smc:dispensedWithoutPrescription>
+            <smc:product>
+              <model:description>
+                <model:productCode xsi:type="id:CnkIdType">
+                  <id:cnk>1727395</id:cnk>
+                </model:productCode>
+              </model:description>
+              <model:dispensation>
+                <model:numberOfUnits>2</model:numberOfUnits>
+                <model:administrationInstructions>
+                  <model:posology>
+                    <model:text>Posology free text</model:text>
+                  </model:posology>
+                  <model:instructionforpatient>productCode</model:instructionforpatient>
+                </model:administrationInstructions>
+              </model:dispensation>
+              <model:dispensationGUID>47bfc420-7963-4485-9d5c-1a84f6e79208</model:dispensationGUID>
+            </smc:product>
+          </smc:dispensedWithoutPrescription>
+        </smc:event>
+      </smc:events>
+    </smc:eventFolder>
+  </smc:unsigned>
+</smc:single-message>

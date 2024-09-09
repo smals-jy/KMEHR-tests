@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmehrmessage xmlns="http://www.ehealth.fgov.be/standards/kmehr/schema/v1" xmlns:ns2="http://www.w3.org/2001/04/xmlenc#" xmlns:ns3="http://www.w3.org/2000/09/xmldsig#">
+  <header>
+    <standard>
+      <cd S="CD-STANDARD" SV="1.4">20161201</cd>
+    </standard>
+    <id S="ID-KMEHR" SV="1.0">1990001916.2018041091404668030</id>
+    <date>2018-04-19</date>
+    <time>14:30:09</time>
+    <sender>
+      <hcparty>
+        <id S="ID-HCPARTY" SV="1.0">1990001916</id>
+        <cd S="CD-HCPARTY" SV="1.7">hub</cd>
+        <name>VITALINK</name>
+      </hcparty>
+    </sender>
+    <recipient>
+      <hcparty>
+        <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+        <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+        <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+        <firstname>Donald</firstname>
+        <familyname>Duck</familyname>
+      </hcparty>
+    </recipient>
+  </header>
+  <folder>
+    <id S="ID-KMEHR" SV="1.0">1</id>
+    <patient>
+      <id S="ID-PATIENT" SV="1.0">XXXXXXXXXXX</id>
+      <firstname>Tasmanian</firstname>
+      <familyname>Devil</familyname>
+      <birthdate>
+        <date>1992-06-19</date>
+      </birthdate>
+      <sex>
+        <cd S="CD-SEX" SV="1.0">male</cd>
+      </sex>
+    </patient>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">1</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme</id>
+      <cd S="CD-TRANSACTION" SV="1.0">medicationscheme</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <version>42</version>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">2</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/2/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <medicinalproduct>
+            <intendedcd S="CD-DRUG-CNK" SV="1.0">2732808</intendedcd>
+            <intendedname>Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56</intendedname>
+          </medicinalproduct>
+        </content>
+        <beginmoment>
+          <date>2099-01-01</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <regimen>
+          <daytime>
+            <dayperiod>
+              <cd S="CD-DAYPERIOD" SV="1.0">morning</cd>
+            </dayperiod>
+          </daytime>
+          <quantity>
+            <decimal>1</decimal>
+            <unit>
+              <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00001</cd>
+            </unit>
+          </quantity>
+        </regimen>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">3</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/3/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <medicinalproduct>
+            <intendedcd S="CD-DRUG-CNK" SV="1.0">2933901</intendedcd>
+            <intendedname>Dafalgan 500 mg compr. efferv.</intendedname>
+          </medicinalproduct>
+        </content>
+        <beginmoment>
+          <date>2099-01-01</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">Free text</text>
+        </posology>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">3</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">endcondition</cd>
+        </content>
+        <content>
+          <text L="nl">2099-12-30</text>
+        </content>
+      </item>
+    </transaction>
+  </folder>
+</kmehrmessage>

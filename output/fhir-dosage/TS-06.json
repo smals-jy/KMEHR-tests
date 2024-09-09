@@ -1,0 +1,23 @@
+{
+	"resourceType": "MedicationStatement",
+	"status": "unknown",
+	"subject": {
+		"display": "Bruce Wayne (aka Batman)"
+	},
+	"dosage": [
+		{
+			"text": "Free text posology",
+			"timing": {
+				"event": [
+					"2021-03-22"
+				]
+			}
+		}
+	],
+	"extension": [
+		{
+			"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/medicationInUse",
+			"valueString": "Free text without periodicity / temporality but with endDate - only displayed the 22nd maart 2021"
+		}
+	]
+}

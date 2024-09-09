@@ -1,0 +1,34 @@
+{
+	"resourceType": "MedicationStatement",
+	"status": "unknown",
+	"subject": {
+		"display": "Bruce Wayne (aka Batman)"
+	},
+	"dosage": [
+		{
+			"doseAndRate": [
+				{
+					"doseQuantity": {
+						"value": 2
+					}
+				}
+			],
+			"timing": {
+				"repeat": {
+					"when": [
+						"PCD"
+					]
+				},
+				"event": [
+					"2021-03-22"
+				]
+			}
+		}
+	],
+	"extension": [
+		{
+			"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/medicationInUse",
+			"valueString": "Regimen posology without frequency (2 in the afterlunch) - only displayed the 22nd maart 2021"
+		}
+	]
+}

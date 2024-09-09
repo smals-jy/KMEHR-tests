@@ -1,0 +1,71 @@
+---
+description: CD-DRUG-ROUTE
+title: 💉 TS-05 - Routes of administration
+---
+
+## Description
+
+See if software in test can handle all the authorized [CD-DRUG-ROUTE](https://www.ehealth.fgov.be/standards/kmehr/en/tables/drug-administration-route) by [MS Cookbook](https://www.ehealth.fgov.be/standards/kmehr/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/057e64396c1ea312a0b01607b0f94e4adcf456e8/20210331-safe_cookbook_medicatieschema_v5.8_en.pdf) :
+
+```xml title="Example"
+...
+<transaction>
+    ...
+    <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.11">medication</cd>
+        ...
+        <route>
+            <!-- The focus on the test -->
+            <cd S="CD-DRUG-ROUTE" SV="2.0">00002</cd>
+        </route>
+    </item>
+    ...
+</transaction>
+...
+```
+
+## Test cases
+
+In other words, only a subset of [CD-DRUG-ROUTE](https://www.ehealth.fgov.be/standards/kmehr/en/tables/drug-administration-route) is authorized by [MS Cookbook](https://www.ehealth.fgov.be/standards/kmehr/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/057e64396c1ea312a0b01607b0f94e4adcf456e8/20210331-safe_cookbook_medicatieschema_v5.8_en.pdf) & my experiences :
+    - "00001"
+    - "00002"
+    - "00005"
+    - "00008"
+    - "00009"
+    - "00010"
+    - "00011"
+    - "00012"
+    - "00013"
+    - "00033"
+    - "00034"
+    - "00035"
+    - "00045"
+    - "00046"
+    - "00049"
+    - "00051"
+    - "00052"
+    - "00053"
+    - "00054"
+    - "00055"
+    - "00056"
+    - "00060"
+    - "00064"
+    - "00066"
+    - "00067"
+    - "00068"
+    - "00070"
+    - "00071"
+    - "00072"
+    - "00073"
+
+## Files
+
+- [XML file](https://github.com/smals-jy/KMEHR-tests/blob/main/output/ms/TS-05-CD-DRUG-ROUTE.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/ms/TS-05-CD-DRUG-ROUTE.ts)
+
+## Expected results 
+
+When looking to the patient medication scheme, for each value authorized :
+    - The medication must be present (for easiness, they all have daily periodicity)
+    - The administration route translation to humans should respect [CD-DRUG-ROUTE](https://www.ehealth.fgov.be/standards/kmehr/en/tables/drug-administration-route) table

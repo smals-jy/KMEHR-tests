@@ -1,0 +1,36 @@
+{
+	"resourceType": "MedicationStatement",
+	"status": "unknown",
+	"subject": {
+		"display": "Bruce Wayne (aka Batman)"
+	},
+	"dosage": [
+		{
+			"doseAndRate": [
+				{
+					"doseQuantity": {
+						"value": 2,
+						"code": "5.mL",
+						"system": "http://unitsofmeasure.org"
+					}
+				}
+			],
+			"timing": {
+				"repeat": {
+					"when": [
+						"ACM"
+					]
+				},
+				"event": [
+					"2023-02-01"
+				]
+			}
+		}
+	],
+	"extension": [
+		{
+			"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/medicationInUse",
+			"valueString": "Regimen posology without frequency (2 teaspoon (5 ml) ) - only displayed the 1st februari 2023"
+		}
+	]
+}

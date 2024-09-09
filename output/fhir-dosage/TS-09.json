@@ -1,0 +1,34 @@
+{
+	"resourceType": "MedicationStatement",
+	"status": "unknown",
+	"subject": {
+		"display": "Bruce Wayne (aka Batman)"
+	},
+	"dosage": [
+		{
+			"doseAndRate": [
+				{
+					"doseQuantity": {
+						"value": 2
+					}
+				}
+			],
+			"timing": {
+				"repeat": {
+					"when": [
+						"ACM"
+					],
+					"dayOfWeek": [
+						"fri"
+					]
+				}
+			}
+		}
+	],
+	"extension": [
+		{
+			"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/medicationInUse",
+			"valueString": "Regimen posology without frequency (2 teaspoon (5 ml) ) - only displayed the 26nd maart 2021 (Friday)"
+		}
+	]
+}

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smc:single-message xmlns:code="http://www.apb.be/standards/smoa/schema/code/v1" xmlns:id="http://www.apb.be/standards/smoa/schema/id/v1" xmlns:model="http://www.apb.be/standards/smoa/schema/model/v1" xmlns:smc="http://www.apb.be/standards/smoa/schema/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.apb.be/standards/smoa/schema/v1 xsd/smc-v1/single-message/maindoc/single-message-oa-1.0.xsd">
+  <smc:unsigned>
+    <smc:header>
+      <smc:version>1.0</smc:version>
+      <smc:messageCreateDate>2024-02-06T14:30:09</smc:messageCreateDate>
+      <smc:messageID>7d58ec0d-29fb-4338-ae1e-0b2c29ce24b9</smc:messageID>
+      <smc:sender>
+        <model:refPharmacy>
+          <model:pharmacyId xsi:type="id:NihiiIdType">
+            <id:nihiiPharmacyNumber>80000551</id:nihiiPharmacyNumber>
+          </model:pharmacyId>
+        </model:refPharmacy>
+      </smc:sender>
+    </smc:header>
+    <smc:eventFolder>
+      <smc:events>
+        <smc:event xsi:type="smc:PharmaceuticalCareEventType">
+          <smc:sessionDateTime>2024-02-06T14:30:09</smc:sessionDateTime>
+          <smc:pharmacyId>
+            <id:nihiiPharmacyNumber>80000551</id:nihiiPharmacyNumber>
+          </smc:pharmacyId>
+          <model:max-Patient>
+            <model:identification>
+              <model:personId xsi:type="id:InssIdType">
+                <id:id>12345678901</id:id>
+              </model:personId>
+              <model:name>John</model:name>
+              <model:familyName>Doe</model:familyName>
+            </model:identification>
+          </model:max-Patient>
+          <smc:dispensedForSamePrescription>
+            <model:hcparty>
+              <model:type>persphysician</model:type>
+              <model:address xsi:type="model:EuropeanAddressType" usage="HOME">
+                <model:country>BE</model:country>
+                <model:zip>3000</model:zip>
+                <model:city>Leuven</model:city>
+                <model:street>Langestraat</model:street>
+                <model:housenumber>5</model:housenumber>
+              </model:address>
+              <model:telecom xsi:type="model:GenericTelecomType">
+                <model:kind>
+                  <code:type>PHONE</code:type>
+                  <code:usage>HOME</code:usage>
+                </model:kind>
+                <model:value>123456789</model:value>
+              </model:telecom>
+            </model:hcparty>
+            <smc:product onSubstanceName="true">
+              <model:description>
+                <model:unregisteredProduct>administrationInstructions - beginmoment</model:unregisteredProduct>
+              </model:description>
+              <model:dispensation>
+                <model:numberOfUnits>1</model:numberOfUnits>
+                <model:administrationInstructions>
+                  <model:beginmoment>
+                    <smc:date>2023-09-16</smc:date>
+                  </model:beginmoment>
+                  <model:posology>
+                    <model:text>Posology free text</model:text>
+                  </model:posology>
+                  <model:instructionforpatient>beginmoment case</model:instructionforpatient>
+                </model:administrationInstructions>
+              </model:dispensation>
+              <model:dispensationGUID>74d21b31-1f9d-482d-8acb-5678d703b0ba</model:dispensationGUID>
+            </smc:product>
+            <smc:product onSubstanceName="true">
+              <model:description>
+                <model:unregisteredProduct>administrationInstructions - endmoment</model:unregisteredProduct>
+              </model:description>
+              <model:dispensation>
+                <model:numberOfUnits>1</model:numberOfUnits>
+                <model:administrationInstructions>
+                  <model:endmoment>
+                    <smc:date>2024-12-25</smc:date>
+                  </model:endmoment>
+                  <model:posology>
+                    <model:text>Posology free text</model:text>
+                  </model:posology>
+                  <model:instructionforpatient>endmoment case</model:instructionforpatient>
+                </model:administrationInstructions>
+              </model:dispensation>
+              <model:dispensationGUID>49534177-e9f4-4a85-a124-40c04bf805f8</model:dispensationGUID>
+            </smc:product>
+            <smc:product onSubstanceName="true">
+              <model:description>
+                <model:unregisteredProduct>administrationInstructions - beginmoment &amp; endmoment</model:unregisteredProduct>
+              </model:description>
+              <model:dispensation>
+                <model:numberOfUnits>1</model:numberOfUnits>
+                <model:administrationInstructions>
+                  <model:beginmoment>
+                    <smc:date>2023-09-16</smc:date>
+                  </model:beginmoment>
+                  <model:endmoment>
+                    <smc:date>2024-12-25</smc:date>
+                  </model:endmoment>
+                  <model:posology>
+                    <model:text>Posology free text</model:text>
+                  </model:posology>
+                  <model:instructionforpatient>beginmoment &amp; endmoment case</model:instructionforpatient>
+                </model:administrationInstructions>
+              </model:dispensation>
+              <model:dispensationGUID>593b5e16-430c-4a99-8ca8-1a32bdc7e578</model:dispensationGUID>
+            </smc:product>
+            <smc:product onSubstanceName="true">
+              <model:description>
+                <model:unregisteredProduct>administrationInstructions - duration</model:unregisteredProduct>
+              </model:description>
+              <model:dispensation>
+                <model:numberOfUnits>1</model:numberOfUnits>
+                <model:administrationInstructions>
+                  <model:duration>
+                    <smc:decimal>5</smc:decimal>
+                    <smc:unit>wk</smc:unit>
+                  </model:duration>
+                  <model:posology>
+                    <model:text>Posology free text</model:text>
+                  </model:posology>
+                  <model:instructionforpatient>duration case</model:instructionforpatient>
+                </model:administrationInstructions>
+              </model:dispensation>
+              <model:dispensationGUID>4c81ae72-7285-4965-933a-c2336a311655</model:dispensationGUID>
+            </smc:product>
+            <smc:product onSubstanceName="true">
+              <model:description>
+                <model:unregisteredProduct>administrationInstructions - route</model:unregisteredProduct>
+              </model:description>
+              <model:dispensation>
+                <model:numberOfUnits>1</model:numberOfUnits>
+                <model:administrationInstructions>
+                  <model:posology>
+                    <model:text>Posology free text</model:text>
+                  </model:posology>
+                  <model:route>00001</model:route>
+                  <model:instructionforpatient>route case</model:instructionforpatient>
+                </model:administrationInstructions>
+              </model:dispensation>
+              <model:dispensationGUID>11967cff-13e4-44ab-b63a-2974373f1591</model:dispensationGUID>
+            </smc:product>
+          </smc:dispensedForSamePrescription>
+        </smc:event>
+      </smc:events>
+    </smc:eventFolder>
+  </smc:unsigned>
+</smc:single-message>

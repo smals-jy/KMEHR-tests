@@ -1,0 +1,24 @@
+{
+  "xml.downloadExternalResources.enabled": true,
+  "json.schemas": [
+    {
+      "fileMatch": ["configurations/ms/*.json", "configurations/ms/*/*.json"],
+      "url": "./src/transactionsMSSchema.json"
+    },
+    {
+      "fileMatch": [
+        "configurations/pcdh/*.json",
+        "configurations/pcdh/*/*.json"
+      ],
+      "url": "./src/transactionPCDHSchema.json"
+    },
+    {
+      "fileMatch": [
+        "configurations/fhir-dosage/*.json",
+        "configurations/fhir-dosage/*/*.json"
+      ],
+      "url": "./src/transactionFHIRDosage.json"
+    }
+  ],
+  "xml.catalogs": ["catalog.xml"]
+}

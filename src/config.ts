@@ -1,0 +1,102 @@
+import type {
+  TransactionConfig,
+  TransactionPCDHConfig,
+  RegimenPosology,
+  TreatmentDuration,
+  DayPeriodList,
+  PeriodicityList,
+} from "./generateTransaction";
+import type { AuthorConfig } from "./generateHealthcareActor";
+
+// Config for external file
+export type Configuration = {
+  /**
+   * The drugs / therapeutic suspensions contained in that medication scheme
+   */
+  transactions: TransactionConfig[];
+  /**
+   * Who is the author of the last modification of this MS ?
+   */
+  author?: AuthorConfig;
+  /**
+   * Version of the medication scheme
+   */
+  version?: number;
+  /**
+   * Date when was the MS updated ? (YYYY-MM-DD)
+   * @format date
+   * @example: "2022-08-07"
+   */
+  date?: string;
+  /**
+   * Time when was the MS update (HH:MM:SS)
+   * @example "08:17:42"
+   * @pattern ^(0\d|1\d|2[0-3]):[0-5]\d:[0-5]\d(\.\d{1,3})?((\+|-)(0\d|1[0-2]):[0-5]\d|Z)?$
+   */
+  time?: string;
+};
+
+// Config for external PCDH file
+export type PCDHConfiguration = {
+  /**
+   * Dguid
+   * USEFUL ONLY FOR DATA REMOVAL operation
+   */
+  id?: string;
+  /**
+   * Who is the author ?
+   */
+  author?: AuthorConfig;
+  /**
+   * Who is the patient
+   */
+  patient?: AuthorConfig;
+  /**
+   * Date when was the operation ? (YYYY-MM-DD)
+   * @format date
+   * @example: "2022-08-07"
+   */
+  date?: string;
+  /**
+   * Time when was the operation (HH:MM:SS)
+   * @example "08:17:42"
+   * @pattern ^(0\d|1\d|2[0-3]):[0-5]\d:[0-5]\d(\.\d{1,3})?((\+|-)(0\d|1[0-2]):[0-5]\d|Z)?$
+   */
+  time?: string;
+  /**
+   * Deliveries
+   */
+  deliveries: TransactionPCDHConfig[];
+};
+
+// Re-export the TransactionPCDHConfig
+export type { TransactionPCDHConfig };
+
+// Re-export the RegimenPosology
+export type { RegimenPosology };
+
+// Re-export the transaction type in case of specific needs
+export type { TransactionConfig };
+
+// Re-export the author type in case of specific needs
+export type { AuthorConfig };
+
+// Re-export the TreatmentDuration in case of specific needs
+export type { TreatmentDuration };
+
+// Re-export the dayperiod full list in case of specific needs
+export type { DayPeriodList };
+
+// Re-export the periodicity full list in case of specific needs
+export type { PeriodicityList };
+
+// types
+export type {
+  Periodicity,
+  AdministrationRoute,
+  AdministrationUnit,
+  DayPeriod,
+  Weekday,
+  DrugRoute,
+  MedicationEntry,
+} from "./generateTransaction";

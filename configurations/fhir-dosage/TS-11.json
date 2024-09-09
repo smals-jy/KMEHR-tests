@@ -1,0 +1,34 @@
+{
+  "drugType": "compoundprescription",
+  "compoundprescriptionText": "Drug n°11",
+  "beginmoment": "2021-03-22",
+  "periodicity": "D",
+  "temporality": "chronic",
+  "regimen": [
+    {
+      "quantity": 1,
+      "timeOfDay": {
+        "dayPeriod": "afterbreakfast"
+      }
+    },
+    {
+      "quantity": 1,
+      "timeOfDay": {
+        "dayPeriod": "betweenlunchanddinner"
+      }
+    },
+    {
+      "quantity": 1,
+      "timeOfDay": {
+        "dayPeriod": "afterdinner"
+      }
+    },
+    {
+      "quantity": 1,
+      "timeOfDay": {
+        "dayPeriod": "thehourofsleep"
+      }
+    }
+  ],
+  "medicationuse": "Regimen posology with frequency (2) - daily periods - morning / noon / afterlunch / sleep"
+}

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smc:single-message xmlns:code="http://www.apb.be/standards/smoa/schema/code/v1" xmlns:id="http://www.apb.be/standards/smoa/schema/id/v1" xmlns:model="http://www.apb.be/standards/smoa/schema/model/v1" xmlns:smc="http://www.apb.be/standards/smoa/schema/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.apb.be/standards/smoa/schema/v1 xsd/smc-v1/single-message/maindoc/single-message-oa-1.0.xsd">
+  <smc:unsigned>
+    <smc:header>
+      <smc:version>1.0</smc:version>
+      <smc:messageCreateDate>2024-02-06T14:30:09</smc:messageCreateDate>
+      <smc:messageID>3e6852f4-0aea-4f0a-8d15-5f220d956697</smc:messageID>
+      <smc:sender>
+        <model:refPharmacy>
+          <model:pharmacyId xsi:type="id:NihiiIdType">
+            <id:nihiiPharmacyNumber>80000551</id:nihiiPharmacyNumber>
+          </model:pharmacyId>
+        </model:refPharmacy>
+      </smc:sender>
+    </smc:header>
+    <smc:eventFolder>
+      <smc:events>
+        <smc:event xsi:type="smc:PharmaceuticalCareEventType">
+          <smc:sessionDateTime>2024-02-06T14:30:09</smc:sessionDateTime>
+          <smc:pharmacyId>
+            <id:nihiiPharmacyNumber>80000551</id:nihiiPharmacyNumber>
+          </smc:pharmacyId>
+          <model:max-Patient>
+            <model:identification>
+              <model:personId xsi:type="id:InssIdType">
+                <id:id>12345678901</id:id>
+              </model:personId>
+              <model:name>John</model:name>
+              <model:familyName>Doe</model:familyName>
+            </model:identification>
+          </model:max-Patient>
+          <smc:dispensedForSamePrescription>
+            <model:hcparty>
+              <model:type>persphysician</model:type>
+              <model:address xsi:type="model:EuropeanAddressType" usage="HOME">
+                <model:country>BE</model:country>
+                <model:zip>3000</model:zip>
+                <model:city>Leuven</model:city>
+                <model:street>Langestraat</model:street>
+                <model:housenumber>5</model:housenumber>
+              </model:address>
+              <model:telecom xsi:type="model:GenericTelecomType">
+                <model:kind>
+                  <code:type>PHONE</code:type>
+                  <code:usage>HOME</code:usage>
+                </model:kind>
+                <model:value>123456789</model:value>
+              </model:telecom>
+            </model:hcparty>
+            <smc:product onSubstanceName="true">
+              <model:description>
+                <model:productCode xsi:type="id:CnkIdType">
+                  <id:cnk>1727395</id:cnk>
+                </model:productCode>
+              </model:description>
+              <model:dispensation>
+                <model:numberOfUnits>1</model:numberOfUnits>
+                <model:administrationInstructions>
+                  <model:posology>
+                    <model:text>Posology free text</model:text>
+                  </model:posology>
+                  <model:instructionforpatient>productCode</model:instructionforpatient>
+                </model:administrationInstructions>
+              </model:dispensation>
+              <model:dispensationGUID>45df1629-5fe7-46da-8e4a-c00558d642a0</model:dispensationGUID>
+            </smc:product>
+            <smc:product onSubstanceName="true">
+              <model:description>
+                <model:magistralPreparation>
+                  <model:magistralText>Free text drug</model:magistralText>
+                </model:magistralPreparation>
+              </model:description>
+              <model:dispensation>
+                <model:numberOfUnits>1</model:numberOfUnits>
+                <model:administrationInstructions>
+                  <model:posology>
+                    <model:text>Posology free text</model:text>
+                  </model:posology>
+                  <model:instructionforpatient>magistralPreparation - magistralText</model:instructionforpatient>
+                </model:administrationInstructions>
+              </model:dispensation>
+              <model:dispensationGUID>5a66ce93-2723-4a11-9881-c37d69f1f21d</model:dispensationGUID>
+            </smc:product>
+            <smc:product onSubstanceName="true">
+              <model:description>
+                <model:magistralPreparation>
+                  <model:formularyReference>
+                    <model:formulaCode>0589028</model:formulaCode>
+                    <model:formulaName>ERYTHROMYCINE SOL. HYDRO-ALC. 4% FTM2</model:formulaName>
+                  </model:formularyReference>
+                </model:magistralPreparation>
+              </model:description>
+              <model:dispensation>
+                <model:numberOfUnits>1</model:numberOfUnits>
+                <model:administrationInstructions>
+                  <model:posology>
+                    <model:text>Posology free text</model:text>
+                  </model:posology>
+                  <model:instructionforpatient>magistralPreparation - formularyReference</model:instructionforpatient>
+                </model:administrationInstructions>
+              </model:dispensation>
+              <model:dispensationGUID>bfe1cef8-ccb0-47ae-936c-112a7bf8c1bf</model:dispensationGUID>
+            </smc:product>
+            <smc:product onSubstanceName="true">
+              <model:description>
+                <model:magistralPreparation>
+                  <model:compound>
+                    <model:order>1</model:order>
+                    <model:medicinalproduct>
+                      <model:intendedProduct>1543305</model:intendedProduct>
+                      <model:intendedname>ATROVENT MONODOSE 0,25MG/2ML VIALS 20</model:intendedname>
+                    </model:medicinalproduct>
+                    <model:quantityprefix>ad</model:quantityprefix>
+                    <model:quantity>
+                      <smc:decimal>10</smc:decimal>
+                      <smc:unit>ml</smc:unit>
+                    </model:quantity>
+                  </model:compound>
+                  <model:compound>
+                    <model:order>2</model:order>
+                    <model:medicinalproduct>
+                      <model:intendedProduct>1543305</model:intendedProduct>
+                      <model:deliveredProduct>1484229</model:deliveredProduct>
+                      <model:intendedname>ATROVENT MONODOSE 0,25MG/2ML VIALS 20</model:intendedname>
+                      <model:deliveredname>Panadol 1 g comp. 50</model:deliveredname>
+                    </model:medicinalproduct>
+                  </model:compound>
+                  <model:compound>
+                    <model:order>3</model:order>
+                    <model:substance>
+                      <model:substancecode>0525337</model:substancecode>
+                      <model:substancename>GLYCEROL</model:substancename>
+                    </model:substance>
+                    <model:quantity>
+                      <smc:decimal>0.2</smc:decimal>
+                      <smc:unit>gm</smc:unit>
+                    </model:quantity>
+                  </model:compound>
+                </model:magistralPreparation>
+              </model:description>
+              <model:dispensation>
+                <model:numberOfUnits>1</model:numberOfUnits>
+                <model:administrationInstructions>
+                  <model:posology>
+                    <model:text>Posology free text</model:text>
+                  </model:posology>
+                  <model:instructionforpatient>magistralPreparation - compound (all cases)</model:instructionforpatient>
+                </model:administrationInstructions>
+              </model:dispensation>
+              <model:dispensationGUID>f0f0e0f5-6745-47a6-a88a-447996340b52</model:dispensationGUID>
+            </smc:product>
+            <smc:product onSubstanceName="true">
+              <model:description>
+                <model:unregisteredProduct>unregisteredProduct</model:unregisteredProduct>
+              </model:description>
+              <model:dispensation>
+                <model:numberOfUnits>1</model:numberOfUnits>
+                <model:administrationInstructions>
+                  <model:posology>
+                    <model:text>Posology free text</model:text>
+                  </model:posology>
+                  <model:instructionforpatient>unregisteredProduct</model:instructionforpatient>
+                </model:administrationInstructions>
+              </model:dispensation>
+              <model:dispensationGUID>eadcfe41-d2ed-499e-8e1a-0d250a154f46</model:dispensationGUID>
+            </smc:product>
+          </smc:dispensedForSamePrescription>
+        </smc:event>
+      </smc:events>
+    </smc:eventFolder>
+  </smc:unsigned>
+</smc:single-message>

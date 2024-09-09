@@ -1,0 +1,1590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmehrmessage xmlns="http://www.ehealth.fgov.be/standards/kmehr/schema/v1" xmlns:ns2="http://www.w3.org/2001/04/xmlenc#" xmlns:ns3="http://www.w3.org/2000/09/xmldsig#">
+  <header>
+    <standard>
+      <cd S="CD-STANDARD" SV="1.4">20161201</cd>
+    </standard>
+    <id S="ID-KMEHR" SV="1.0">1990001916.2018041091404668030</id>
+    <date>2018-04-19</date>
+    <time>14:30:09</time>
+    <sender>
+      <hcparty>
+        <id S="ID-HCPARTY" SV="1.0">1990001916</id>
+        <cd S="CD-HCPARTY" SV="1.7">hub</cd>
+        <name>VITALINK</name>
+      </hcparty>
+    </sender>
+    <recipient>
+      <hcparty>
+        <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+        <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+        <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+        <firstname>Donald</firstname>
+        <familyname>Duck</familyname>
+      </hcparty>
+    </recipient>
+  </header>
+  <folder>
+    <id S="ID-KMEHR" SV="1.0">1</id>
+    <patient>
+      <id S="ID-PATIENT" SV="1.0">XXXXXXXXXXX</id>
+      <firstname>Tasmanian</firstname>
+      <familyname>Devil</familyname>
+      <birthdate>
+        <date>1992-06-19</date>
+      </birthdate>
+      <sex>
+        <cd S="CD-SEX" SV="1.0">male</cd>
+      </sex>
+    </patient>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">1</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme</id>
+      <cd S="CD-TRANSACTION" SV="1.0">medicationscheme</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <version>42</version>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">2</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/2/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00001</compoundprescription>
+        </content>
+        <text L="nl">00001</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00001</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">3</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/3/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00002</compoundprescription>
+        </content>
+        <text L="nl">00002</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00002</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">4</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/4/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00005</compoundprescription>
+        </content>
+        <text L="nl">00005</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00005</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">5</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/5/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00008</compoundprescription>
+        </content>
+        <text L="nl">00008</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00008</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">6</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/6/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00009</compoundprescription>
+        </content>
+        <text L="nl">00009</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00009</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">7</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/7/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00010</compoundprescription>
+        </content>
+        <text L="nl">00010</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00010</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">8</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/8/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00011</compoundprescription>
+        </content>
+        <text L="nl">00011</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00011</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">9</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/9/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00012</compoundprescription>
+        </content>
+        <text L="nl">00012</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00012</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">10</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/10/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00013</compoundprescription>
+        </content>
+        <text L="nl">00013</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00013</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">11</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/11/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00033</compoundprescription>
+        </content>
+        <text L="nl">00033</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00033</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">12</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/12/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00034</compoundprescription>
+        </content>
+        <text L="nl">00034</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00034</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">13</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/13/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00035</compoundprescription>
+        </content>
+        <text L="nl">00035</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00035</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">14</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/14/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00045</compoundprescription>
+        </content>
+        <text L="nl">00045</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00045</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">15</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/15/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00046</compoundprescription>
+        </content>
+        <text L="nl">00046</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00046</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">16</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/16/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00049</compoundprescription>
+        </content>
+        <text L="nl">00049</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00049</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">17</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/17/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00051</compoundprescription>
+        </content>
+        <text L="nl">00051</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00051</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">18</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/18/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00052</compoundprescription>
+        </content>
+        <text L="nl">00052</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00052</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">19</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/19/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00053</compoundprescription>
+        </content>
+        <text L="nl">00053</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00053</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">20</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/20/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00054</compoundprescription>
+        </content>
+        <text L="nl">00054</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00054</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">21</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/21/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00055</compoundprescription>
+        </content>
+        <text L="nl">00055</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00055</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">22</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/22/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00056</compoundprescription>
+        </content>
+        <text L="nl">00056</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00056</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">23</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/23/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00060</compoundprescription>
+        </content>
+        <text L="nl">00060</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00060</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">24</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/24/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00064</compoundprescription>
+        </content>
+        <text L="nl">00064</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00064</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">25</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/25/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00066</compoundprescription>
+        </content>
+        <text L="nl">00066</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00066</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">26</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/26/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00067</compoundprescription>
+        </content>
+        <text L="nl">00067</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00067</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">27</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/27/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00068</compoundprescription>
+        </content>
+        <text L="nl">00068</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00068</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">28</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/28/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00070</compoundprescription>
+        </content>
+        <text L="nl">00070</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00070</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">29</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/29/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00071</compoundprescription>
+        </content>
+        <text L="nl">00071</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00071</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">30</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/30/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00072</compoundprescription>
+        </content>
+        <text L="nl">00072</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00072</cd>
+        </route>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">31</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/31/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2018-04-19</date>
+      <time>14:30:09</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
+          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
+        </content>
+      </item>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <compoundprescription L="nl">00073</compoundprescription>
+        </content>
+        <text L="nl">00073</text>
+        <beginmoment>
+          <date>2018-04-19</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <posology>
+          <text L="nl">...</text>
+        </posology>
+        <route>
+          <cd S="CD-DRUG-ROUTE" SV="2.0">00073</cd>
+        </route>
+      </item>
+    </transaction>
+  </folder>
+</kmehrmessage>

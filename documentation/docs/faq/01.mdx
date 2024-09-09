@@ -1,0 +1,150 @@
+---
+description: How to inject / update / export a medication scheme in ACCptance ?
+title: 💉 EVS
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## What is EVS ?
+
+EVS (External Validation Service) is a Java-based software tool which is used as a Kmehr message CLI tool to vaults (Vitalink, RSW, RSB).
+
+More info about it on https://github.com/smals-jy/evs & https://github.com/smals-jy/evs/wiki 
+
+## Prerequisites
+
+- Java 8, as constraint of the [eHealth connector](https://www.ehealth.fgov.be/ehealthplatform/fr/service-ehealth-platform-services-connectors) it uses
+- eHealth profiles (physician, dentists, ...) in ACCptance . If none, ask that to integration-support@ehealth.fgov.be 
+- eHealth personnal certificate. If not, get one through [eHealth Certificate Manager (French)](http://wwwacc.ehealth.fgov.be/JWS/ETEE/etee-requestor_fr.jnlp) / [eHealth Certificate Manager (Dutch)](http://wwwacc.ehealth.fgov.be/JWS/ETEE/etee-requestor_nl.jnlp)
+
+## Steps
+
+1. Download EVS latest version on https://github.com/smals-jy/evs/releases
+2. Unzip it
+3. Set up your configuration as explained on https://github.com/smals-jy/evs/wiki/3.0-Configuration 
+    - Your patient(s)
+    - Your eHealth profile(s)
+    - ⚠️ Do not forget to update `kmehr.hubservicev3.software.id.local.value.1` to your software vendor identifier
+
+    ```xml title="config/actors/d_template.xml (Before)"
+        <entry>kmehr.hubservicev3.software.id.local.value.1=[YOUR_VITALINK_APPLICATION_IDENTIFICATION_CODE]</entry>
+    ```
+
+    ```xml title="config/actors/d_template.xml (After)"
+        <entry>kmehr.hubservicev3.software.id.local.value.1=nihdi-vidis-caregiver</entry>
+    ```
+
+4. Open a terminal and navigate to the "exe" folder of your EVS
+5. Run following command according to the safe 
+
+<Tabs>
+    <TabItem value="Vitalink" label="Vitalink" default>
+        <Tabs>
+            <TabItem value="Windows" label="Windows" default>
+                ```bash
+                    "start EVS.cmd"
+                ```  
+            </TabItem>
+            <TabItem value="Other" label="Linux / Mac OSX">
+                ```bash
+                # Ensure that the "start EVS.sh" script has this parameter : -hub=VITALINK
+                # Ensure that the "start EVS.sh" script has executable permissions
+                chmod +x "start EVS.sh"
+                # Run it
+                "start EVS.sh"
+                ```               
+            </TabItem>
+        </Tabs>
+    </TabItem>
+    <TabItem value="RSW" label="Réseau Santé Wallon (RSW)" default>
+        <Tabs>
+            <TabItem value="Windows" label="Windows" default>
+                ```bash
+                    "start EVS RSW.cmd"
+                ```  
+            </TabItem>
+            <TabItem value="Other" label="Linux / Mac OSX">
+                ```bash
+                # Ensure that the "start EVS.sh" script has this parameter : -hub=RSW
+                # Ensure that the "start EVS.sh" script has executable permissions
+                chmod +x "start EVS.sh"
+                # Run it
+                "start EVS.sh"
+                ```               
+            </TabItem>
+        </Tabs>
+    </TabItem>
+    <TabItem value="RSB" label="Abrumet (RSB)" default>
+        <Tabs>
+            <TabItem value="Windows" label="Windows" default>
+                ```bash
+                    "start EVS RSB.cmd"
+                ```  
+            </TabItem>
+            <TabItem value="Other" label="Linux / Mac OSX">
+                ```bash
+                # Ensure that the "start EVS.sh" script has this parameter : -hub=RSB
+                # Ensure that the "start EVS.sh" script has executable permissions
+                chmod +x "start EVS.sh"
+                # Run it
+                "start EVS.sh"
+                ```               
+            </TabItem>
+        </Tabs>
+    </TabItem>
+</Tabs>
+
+6. Wait until the tool is initialized. You should see this line when it is : 
+
+```bash
+INFO  [main] scanner.Scanner (Scanner.java:71) - Starting to watch directory:
+```
+
+![Wait](/img/faq/scanner.png)
+
+7. Do any of the following actions :
+
+<Tabs>
+    <TabItem value="add" label="Inject data" default>
+        :::info
+            This action is **only possible** on a patient that doesn't have a medication scheme yet.  
+            Refer to the "Replace data" tab if your patient has one.
+        :::
+
+        Drop your XML file in your patient folder, like this : 
+        ![Add](/img/faq/add.png)
+    </TabItem>
+    <TabItem value="replace" label="Replace data">
+        :::info
+            If you want to 'empty' the medicationscheme in the vault. Drop an empty textfile OR a valid XML without any MSE
+        :::
+
+        :::warning
+            This action works fine for Vitalink, not for RSW/RSB (due to the way vaults works).  
+            To delete your data, go to your softwares or the vault portals : 
+                - [RSW](https://accapp.reseausantewallon.be/EspacePriveProfessionnel/) 
+                - [RSB](https://accapp.abrumet.be/EspacePriveProfessionnel/Accueil.aspx)
+        :::
+
+        Drop your XML file in your patient folder, like this :
+        ![Replace](/img/faq/replace.png)
+    </TabItem>
+    <TabItem value="export" label="Export data">
+        Create a empty text file in your patient folder, like this : 
+        ![Export](/img/faq/export.png)
+    </TabItem>
+</Tabs>
+
+8. Wait until you got the "success" message
+
+![Success](/img/faq/success.png)
+
+:::tip
+    Common reasons if you don't have it :
+        - Your VPN might block calls to Vitalink / RSW / RSB
+        - Your eHealth certificate is expired
+        - Mistake(s) in your patient / actor config files
+        - Adding data for patient that have some already
+        - XML files that doesn't respect [MS Cookbook](https://www.ehealth.fgov.be/standards/kmehr/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/057e64396c1ea312a0b01607b0f94e4adcf456e8/20210331-safe_cookbook_medicatieschema_v5.8_en.pdf)
+        - ... 
+:::

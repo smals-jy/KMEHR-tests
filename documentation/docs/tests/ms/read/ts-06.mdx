@@ -1,0 +1,690 @@
+---
+description: CD-PERIODICITY
+title: ⏰ TS-06 - Frequencies
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## Description
+
+See if software in test can handle all the authorized [CD-PERIODICITY](https://www.ehealth.fgov.be/standards/kmehr/en/tables/periodicity) by [MS Cookbook](https://www.ehealth.fgov.be/standards/kmehr/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/057e64396c1ea312a0b01607b0f94e4adcf456e8/20210331-safe_cookbook_medicatieschema_v5.8_en.pdf) :
+
+```xml title="Example"
+...
+<transaction>
+    ...
+    <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.11">medication</cd>
+        ...
+        <frequency>
+            <periodicity>
+                <!-- The focus on the test -->
+                <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+            </periodicity>
+        </frequency>
+    </item>
+    ...
+</transaction>
+...
+```
+
+## Test cases
+
+In other words, all values of [CD-PERIODICITY](https://www.ehealth.fgov.be/standards/kmehr/en/tables/periodicity) except these ones prohibited by [MS Cookbook](https://www.ehealth.fgov.be/standards/kmehr/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/057e64396c1ea312a0b01607b0f94e4adcf456e8/20210331-safe_cookbook_medicatieschema_v5.8_en.pdf) :
+    - ondemand
+    - UE
+    - UN
+    - UQ
+    - US
+    - UX
+
+## Files
+
+- [XML file](https://github.com/smals-jy/KMEHR-tests/blob/main/output/ms/TS-06-CD-PERIODICITY.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/ms/TS-06-CD-PERIODICITY.ts)
+
+## Expected results 
+
+When looking to the patient medication scheme, for each value authorized :
+    - The medication must be present at the expected times (for easiness, medication shares the same name as periodicity), as stated in the following table :
+
+<Tabs>
+
+    <TabItem value="picture" label="Timeline" default>
+        <div style={{overflowX: 'auto'}}>
+        <div style={{width: '700%'}}>
+
+        ```mermaid
+        timeline
+            title CD-PERIODICITY events (YYYY-MM-DD)
+
+            section Days
+            D (Daily) 
+                : 2015-09-16 
+                : 2015-09-17
+                : ...
+            O1 (Every 2 Days) 
+                : 2015-09-16
+                : 2015-09-18
+                : 2015-09-20
+                : 2015-09-22
+                : ...
+            DT (Every 2 Days) 
+                : 2015-09-16
+                : 2015-09-18
+                : 2015-09-20
+                : 2015-09-22
+                : ...
+            DD (Every 3 Days) 
+                : 2015-09-16
+                : 2015-09-19
+                : 2015-09-22
+                : 2015-09-25
+                : ...
+            DV (Every 4 Days) 
+                : 2015-09-16
+                : 2015-09-20
+                : 2015-09-24
+                : 2015-09-28
+                : ...
+            DQ (Every 5 Days) 
+                : 2015-09-16
+                : 2015-09-21
+                : 2015-09-26
+                : 2015-10-01
+                : ...
+            DZ (Every 6 Days) 
+                : 2015-09-16
+                : 2015-09-22
+                : 2015-09-28
+                : 2015-10-04
+                : ...
+            DA (Per 8 Days) 
+                : 2015-09-16
+                : 2015-09-24
+                : 2015-10-02
+                : 2015-10-10
+                : ...
+            DN (Per 9 Days) 
+                : 2015-09-16
+                : 2015-09-25
+                : 2015-10-04
+                : 2015-10-13
+                : ...
+            DX (Per 10 Days) 
+                : 2015-09-16
+                : 2015-09-26
+                : 2015-10-06
+                : 2015-10-16
+                : ...
+            DE (Per 11 Days) 
+                : 2015-09-16
+                : 2015-09-27
+                : 2015-10-08
+                : 2015-10-19
+                : ...
+            DW (Per 12 Days) 
+                : 2015-09-16
+                : 2015-09-28
+                : 2015-10-10
+                : 2015-10-22
+                : ...
+
+            section Weeks
+            W (Per 7 Days) 
+                : 2015-09-16
+                : 2015-09-23
+                : 2015-09-30
+                : ...
+            WT (Per 2 Weeks) 
+                : 2015-09-16
+                : 2015-09-30
+                : 2015-10-14
+                : ...
+            WD (Per 3 Weeks) 
+                : 2015-09-16
+                : 2015-10-07
+                : 2015-10-28
+                : ...
+            WV (Per 4 Weeks) 
+                : 2015-09-16
+                : 2015-10-14
+                : 2015-11-11
+                : ...
+            WQ (Per 5 Weeks) 
+                : 2015-09-16
+                : 2015-10-21
+                : 2015-11-25
+                : ...
+            WZ (Per 6 Weeks) 
+                : 2015-09-16
+                : 2015-10-28
+                : 2015-12-09
+                : ...
+            WS (Per 7 Weeks) 
+                : 2015-09-16
+                : 2015-11-04
+                : 2015-12-16
+                : ...
+            WA (Per 8 Weeks) 
+                : 2015-09-16
+                : 2015-11-11
+                : 2016-01-06
+                : ...
+            WN (Per 9 Weeks) 
+                : 2015-09-16
+                : 2015-11-18
+                : 2016-02-10
+                : ...
+            WX (Per 10 Weeks) 
+                : 2015-09-16
+                : 2015-11-25
+                : 2016-02-17
+                : ...
+            WE (Per 11 Weeks) 
+                : 2015-09-16
+                : 2015-12-02
+                : 2016-02-24
+                : ...
+            WW (Per 12 Weeks) 
+                : 2015-09-16
+                : 2015-12-09
+                : 2016-03-02
+                : ...
+            WP (Per 24 Weeks) 
+                : 2015-09-16
+                : 2016-03-09
+                : 2016-08-31
+                : ...
+
+            section Months
+            M (Per Month) 
+                : 2015-09-16
+                : 2015-10-16
+                : 2015-11-16
+                : ...
+            MT (Per 2 Months) 
+                : 2015-09-16
+                : 2015-11-16
+                : 2016-01-16
+                : ...
+            MD (Per 3 Months) 
+                : 2015-09-16
+                : 2015-12-16
+                : 2016-03-16
+                : ...
+            MV (Per 4 Months) 
+                : 2015-09-16
+                : 2016-01-16
+                : 2016-05-16
+                : ...
+            MQ (Per 5 Months) 
+                : 2015-09-16
+                : 2016-02-16
+                : 2016-07-16
+                : ...
+            MZ2 (Per 6 Months) 
+                : 2015-09-16
+                : 2016-03-16
+                : 2016-09-16
+                : ...
+            MS (Per 7 Months) 
+                : 2015-09-16
+                : 2016-04-16
+                : 2016-11-16
+                : ...
+            MA (Per 8 Months) 
+                : 2015-09-16
+                : 2016-05-16
+                : 2017-01-16
+                : ...
+            MN (Per 9 Months) 
+                : 2015-09-16
+                : 2016-06-16
+                : 2017-03-16
+                : ...
+            MX (Per 10 Months) 
+                : 2015-09-16
+                : 2016-07-16
+                : 2017-05-16
+                : ...
+            ME (Per 11 Months) 
+                : 2015-09-16
+                : 2016-08-16
+                : 2017-07-16
+                : ...
+            MC (Per 18 Months) 
+                : 2015-09-16
+                : 2017-03-16
+                : 2018-09-16
+                : ...
+
+            section Years
+            JH2 (Per Half Year) 
+                : 2015-09-16
+                : 2016-03-16
+                : 2016-09-16
+                : 2017-03-16
+                : ...
+            J (Per Year) 
+                : 2015-09-16
+                : 2016-09-16
+                : 2017-09-16
+                : 2018-09-16
+                : ...
+            JT (Per 2 Years) 
+                : 2015-09-16
+                : 2017-09-16
+                : 2019-09-16
+                : ...
+            JD (Per 3 Years) 
+                : 2015-09-16
+                : 2018-09-16
+                : 2021-09-16
+                : ...
+            JV (Per 4 Years) 
+                : 2015-09-16
+                : 2019-09-16
+                : 2023-09-16
+                : ...
+            JQ (Per 5 Years) 
+                : 2015-09-16
+                : 2020-09-16
+                : 2025-09-16
+                : ...
+            JZ (Per 6 Years) 
+                : 2015-09-16
+                : 2021-09-16
+                : ...
+
+            section Hours
+            UH (Per Half Hour)
+                : 2015-09-16
+                : "2015-09-16T00#58;30"
+                : "2015-09-16T01#58;00"
+                : ...
+            U (Per Hour) 
+                : 2015-09-16
+                : "2015-09-16T01#58;00"
+                : "2015-09-16T02#58;00"
+                : ...
+            UT (Per 2 Hours)
+                : 2015-09-16
+                : "2015-09-16T02#58;00"
+                : "2015-09-16T04#58;00"
+                : ...
+            UD (Per 3 Hours)
+                : 2015-09-16
+                : "2015-09-16T03#58;00"
+                : "2015-09-16T06#58;00"
+                : ...
+            UV (Per 4 Hours)
+                : 2015-09-16
+                : "2015-09-16T04#58;00"
+                : "2015-09-16T08#58;00"
+                : ...
+            UQ (Per 5 Hours)
+                : 2015-09-16
+                : "2015-09-16T05#58;00"
+                : "2015-09-16T10#58;00"
+                : ...
+            UZ (Per 6 Hours)
+                : 2015-09-16
+                : "2015-09-16T06#58;00"
+                : "2015-09-16T12#58;00"
+                : ...
+            US (Per 7 Hours)
+                : 2015-09-16
+                : "2015-09-16T07#58;00"
+                : "2015-09-16T14#58;00"
+                : ...
+            UA (Per 8 Hours)
+                : 2015-09-16
+                : "2015-09-16T08#58;00"
+                : "2015-09-16T16#58;00"
+                : ...
+            UN (Per 9 Hours)
+                : 2015-09-16
+                : "2015-09-16T09#58;00"
+                : "2015-09-16T18#58;00"
+                : ...
+            UX (Per 10 Hours)
+                : 2015-09-16
+                : "2015-09-16T10#58;00"
+                : "2015-09-16T20#58;00"
+                : ...
+            UE (Per 11 Hours)
+                : 2015-09-16
+                : "2015-09-16T11#58;00"
+                : "2015-09-16T22#58;00"
+                : ...
+            UW (Per 12 Hours)
+                : 2015-09-16
+                : "2015-09-16T12#58;00"
+                : 2015-09-17
+                : ...
+        ```
+
+        </div>
+        </div>
+    </TabItem>
+
+    <TabItem value="mermaid" label="Mermaid code">
+        ```markup
+        timeline
+            title CD-PERIODICITY events (YYYY-MM-DD)
+
+            section Days
+            D (Daily) 
+                : 2015-09-16 
+                : 2015-09-17
+                : ...
+            O1 (Every 2 Days) 
+                : 2015-09-16
+                : 2015-09-18
+                : 2015-09-20
+                : 2015-09-22
+                : ...
+            DT (Every 2 Days) 
+                : 2015-09-16
+                : 2015-09-18
+                : 2015-09-20
+                : 2015-09-22
+                : ...
+            DD (Every 3 Days) 
+                : 2015-09-16
+                : 2015-09-19
+                : 2015-09-22
+                : 2015-09-25
+                : ...
+            DV (Every 4 Days) 
+                : 2015-09-16
+                : 2015-09-20
+                : 2015-09-24
+                : 2015-09-28
+                : ...
+            DQ (Every 5 Days) 
+                : 2015-09-16
+                : 2015-09-21
+                : 2015-09-26
+                : 2015-10-01
+                : ...
+            DZ (Every 6 Days) 
+                : 2015-09-16
+                : 2015-09-22
+                : 2015-09-28
+                : 2015-10-04
+                : ...
+            DA (Per 8 Days) 
+                : 2015-09-16
+                : 2015-09-24
+                : 2015-10-02
+                : 2015-10-10
+                : ...
+            DN (Per 9 Days) 
+                : 2015-09-16
+                : 2015-09-25
+                : 2015-10-04
+                : 2015-10-13
+                : ...
+            DX (Per 10 Days) 
+                : 2015-09-16
+                : 2015-09-26
+                : 2015-10-06
+                : 2015-10-16
+                : ...
+            DE (Per 11 Days) 
+                : 2015-09-16
+                : 2015-09-27
+                : 2015-10-08
+                : 2015-10-19
+                : ...
+            DW (Per 12 Days) 
+                : 2015-09-16
+                : 2015-09-28
+                : 2015-10-10
+                : 2015-10-22
+                : ...
+
+            section Weeks
+            W (Per 7 Days) 
+                : 2015-09-16
+                : 2015-09-23
+                : 2015-09-30
+                : ...
+            WT (Per 2 Weeks) 
+                : 2015-09-16
+                : 2015-09-30
+                : 2015-10-14
+                : ...
+            WD (Per 3 Weeks) 
+                : 2015-09-16
+                : 2015-10-07
+                : 2015-10-28
+                : ...
+            WV (Per 4 Weeks) 
+                : 2015-09-16
+                : 2015-10-14
+                : 2015-11-11
+                : ...
+            WQ (Per 5 Weeks) 
+                : 2015-09-16
+                : 2015-10-21
+                : 2015-11-25
+                : ...
+            WZ (Per 6 Weeks) 
+                : 2015-09-16
+                : 2015-10-28
+                : 2015-12-09
+                : ...
+            WS (Per 7 Weeks) 
+                : 2015-09-16
+                : 2015-11-04
+                : 2015-12-16
+                : ...
+            WA (Per 8 Weeks) 
+                : 2015-09-16
+                : 2015-11-11
+                : 2016-01-06
+                : ...
+            WN (Per 9 Weeks) 
+                : 2015-09-16
+                : 2015-11-18
+                : 2016-02-10
+                : ...
+            WX (Per 10 Weeks) 
+                : 2015-09-16
+                : 2015-11-25
+                : 2016-02-17
+                : ...
+            WE (Per 11 Weeks) 
+                : 2015-09-16
+                : 2015-12-02
+                : 2016-02-24
+                : ...
+            WW (Per 12 Weeks) 
+                : 2015-09-16
+                : 2015-12-09
+                : 2016-03-02
+                : ...
+            WP (Per 24 Weeks) 
+                : 2015-09-16
+                : 2016-03-09
+                : 2016-08-31
+                : ...
+
+            section Months
+            M (Per Month) 
+                : 2015-09-16
+                : 2015-10-16
+                : 2015-11-16
+                : ...
+            MT (Per 2 Months) 
+                : 2015-09-16
+                : 2015-11-16
+                : 2016-01-16
+                : ...
+            MD (Per 3 Months) 
+                : 2015-09-16
+                : 2015-12-16
+                : 2016-03-16
+                : ...
+            MV (Per 4 Months) 
+                : 2015-09-16
+                : 2016-01-16
+                : 2016-05-16
+                : ...
+            MQ (Per 5 Months) 
+                : 2015-09-16
+                : 2016-02-16
+                : 2016-07-16
+                : ...
+            MZ2 (Per 6 Months) 
+                : 2015-09-16
+                : 2016-03-16
+                : 2016-09-16
+                : ...
+            MS (Per 7 Months) 
+                : 2015-09-16
+                : 2016-04-16
+                : 2016-11-16
+                : ...
+            MA (Per 8 Months) 
+                : 2015-09-16
+                : 2016-05-16
+                : 2017-01-16
+                : ...
+            MN (Per 9 Months) 
+                : 2015-09-16
+                : 2016-06-16
+                : 2017-03-16
+                : ...
+            MX (Per 10 Months) 
+                : 2015-09-16
+                : 2016-07-16
+                : 2017-05-16
+                : ...
+            ME (Per 11 Months) 
+                : 2015-09-16
+                : 2016-08-16
+                : 2017-07-16
+                : ...
+            MC (Per 18 Months) 
+                : 2015-09-16
+                : 2017-03-16
+                : 2018-09-16
+                : ...
+
+            section Years
+            JH2 (Per Half Year) 
+                : 2015-09-16
+                : 2016-03-16
+                : 2016-09-16
+                : 2017-03-16
+                : ...
+            J (Per Year) 
+                : 2015-09-16
+                : 2016-09-16
+                : 2017-09-16
+                : 2018-09-16
+                : ...
+            JT (Per 2 Years) 
+                : 2015-09-16
+                : 2017-09-16
+                : 2019-09-16
+                : ...
+            JD (Per 3 Years) 
+                : 2015-09-16
+                : 2018-09-16
+                : 2021-09-16
+                : ...
+            JV (Per 4 Years) 
+                : 2015-09-16
+                : 2019-09-16
+                : 2023-09-16
+                : ...
+            JQ (Per 5 Years) 
+                : 2015-09-16
+                : 2020-09-16
+                : 2025-09-16
+                : ...
+            JZ (Per 6 Years) 
+                : 2015-09-16
+                : 2021-09-16
+                : ...
+
+            section Hours
+            UH (Per Half Hour)
+                : 2015-09-16
+                : "2015-09-16T00#58;30"
+                : "2015-09-16T01#58;00"
+                : ...
+            U (Per Hour) 
+                : 2015-09-16
+                : "2015-09-16T01#58;00"
+                : "2015-09-16T02#58;00"
+                : ...
+            UT (Per 2 Hours)
+                : 2015-09-16
+                : "2015-09-16T02#58;00"
+                : "2015-09-16T04#58;00"
+                : ...
+            UD (Per 3 Hours)
+                : 2015-09-16
+                : "2015-09-16T03#58;00"
+                : "2015-09-16T06#58;00"
+                : ...
+            UV (Per 4 Hours)
+                : 2015-09-16
+                : "2015-09-16T04#58;00"
+                : "2015-09-16T08#58;00"
+                : ...
+            UQ (Per 5 Hours)
+                : 2015-09-16
+                : "2015-09-16T05#58;00"
+                : "2015-09-16T10#58;00"
+                : ...
+            UZ (Per 6 Hours)
+                : 2015-09-16
+                : "2015-09-16T06#58;00"
+                : "2015-09-16T12#58;00"
+                : ...
+            US (Per 7 Hours)
+                : 2015-09-16
+                : "2015-09-16T07#58;00"
+                : "2015-09-16T14#58;00"
+                : ...
+            UA (Per 8 Hours)
+                : 2015-09-16
+                : "2015-09-16T08#58;00"
+                : "2015-09-16T16#58;00"
+                : ...
+            UN (Per 9 Hours)
+                : 2015-09-16
+                : "2015-09-16T09#58;00"
+                : "2015-09-16T18#58;00"
+                : ...
+            UX (Per 10 Hours)
+                : 2015-09-16
+                : "2015-09-16T10#58;00"
+                : "2015-09-16T20#58;00"
+                : ...
+            UE (Per 11 Hours)
+                : 2015-09-16
+                : "2015-09-16T11#58;00"
+                : "2015-09-16T22#58;00"
+                : ...
+            UW (Per 12 Hours)
+                : 2015-09-16
+                : "2015-09-16T12#58;00"
+                : 2015-09-17
+                : ...
+        ```
+    </TabItem>
+
+</Tabs>
+
+Explanations about the table, with an example : 
+- D is the name of the medication (in parenthesis, you can find its meaning : "daily")
+- For each, you can find in ISO 8601 format when these medications must be present (16th September 2015, 17th September 2026, ...)

@@ -1,0 +1,81 @@
+---
+description: begincondition / endcondition / endmoments
+title: 🚦 TS-07 - begincondition / endcondition / endmoments
+---
+
+export const TrueText = () => <span style={{ color: 'green' }}>true</span>;
+export const FalseText = () => <span style={{ color: 'red' }}>false</span>;
+
+## Description
+
+See if software in test can handle `begincondition` / `endcondition` / `endmoment` elements and their usages, as stated in [MS Cookbook](https://www.ehealth.fgov.be/standards/kmehr/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/057e64396c1ea312a0b01607b0f94e4adcf456e8/20210331-safe_cookbook_medicatieschema_v5.8_en.pdf) : 
+
+```xml title="Example"
+...
+<transaction>
+    ...
+    <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.11">medication</cd>
+        ...
+        <!-- endmoment -->
+        <endmoment>
+            <!-- The focus on the test -->
+            <date>2022-05-10</date>
+        </endmoment>
+    </item>
+    <!-- begincondition -->
+    <item>
+        <id S="ID-KMEHR" SV="1.0">3</id>
+        <cd S="CD-ITEM" SV="1.11">healthcareelement</cd>
+        <content>
+            <cd S="CD-ITEM-MS" SV="1.0">begincondition</cd>
+        </content>
+        <content>
+            <!-- The focus on the test -->
+            <text L="nl">Begin condition instructions</text>
+        </content>
+    </item>
+    <!-- endcondition -->
+    <item>
+        <id S="ID-KMEHR" SV="1.0">3</id>
+        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
+        <content>
+            <cd S="CD-ITEM-MS" SV="1.0">endcondition</cd>
+        </content>
+        <content>
+            <!-- The focus on the test -->
+            <text L="nl">End condition instructions</text>
+        </content>
+      </item>
+
+    ...
+</transaction>
+...
+```
+
+## Test cases
+
+|            | Begin Condition | End Condition | End Moment   |
+|------------|-----------------|---------------|--------------|
+| **Drug 001** | <FalseText />   | <FalseText /> | <FalseText /> |
+| **Drug 002** | <TrueText />    | <FalseText /> | <FalseText /> |
+| **Drug 003** | <FalseText />   | <TrueText />  | <FalseText /> |
+| **Drug 004** | <TrueText />    | <TrueText />  | <FalseText /> |
+| **Drug 005** | <FalseText />   | <FalseText /> | <TrueText />  |
+| **Drug 006** | <TrueText />    | <FalseText /> | <TrueText />  |
+| **Drug 007** | <FalseText />   | <TrueText />  | <TrueText />  |
+| **Drug 008** | <TrueText />    | <TrueText />  | <TrueText />  |
+
+## Files
+
+- [XML file](https://github.com/smals-jy/KMEHR-tests/blob/main/output/ms/TS-07-BEGIN_END_CONDITIONS.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/ms/TS-07-BEGIN_END_CONDITIONS.ts)
+
+## Expected results 
+
+For each medication of the test cases :
+    - Medication must be present the May 5th, 2022
+    - If **End Date** is specified, display it (e.g. "May 10, 2022")
+    - If **Begin Condition** is specified, display it (e.g. "Begin condition 002")
+    - If **End Condition** is specified, display it (e.g. "End condition 003")

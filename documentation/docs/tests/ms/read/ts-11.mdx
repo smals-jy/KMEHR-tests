@@ -1,0 +1,114 @@
+---
+description: Unexpected situations that can still occur with KMEHR
+title: 🚨 TS-11 - Unexpected scenarios
+---
+
+## Description
+
+See if software in test can handle scenarios that passed validations whereas they should not.  
+Inspired by IMEC own set of test : https://wiki.ivlab.ilabt.imec.be/display/VLMS/EVS_Scenarios_S11_Validation_Fails
+
+## Test cases
+
+<table>
+  <tr>
+    <th>EVSREF</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>Weekday is used when frequency is a multiple of days.</td>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>Daynumber is bigger than the frequency.</td>
+  </tr>
+  <tr>
+    <td>102</td>
+    <td>Date is used when frequency is a multiple of weeks.</td>
+  </tr>
+  <tr>
+    <td>103</td>
+    <td>Regimen with both weekdays and nothing (startdate will be used).</td>
+  </tr>
+  <tr>
+    <td>104</td>
+    <td>No frequency is specified and weekday is used.</td>
+  </tr>
+  <tr>
+    <td>105</td>
+    <td>Daynumber is used when frequency is a multiple of months.</td>
+  </tr>
+  <tr>
+    <td>106</td>
+    <td>The 'day' part in the date field of the regimen is higher than 28 when frequency is a multiple of months.</td>
+  </tr>
+  <tr>
+    <td>107</td>
+    <td>Weekday is used when frequency is a multiple of years.</td>
+  </tr>
+  <tr>
+    <td>108</td>
+    <td>The 'day' part in the date field of the regimen is higher than 28 when frequency is a multiple of years.</td>
+  </tr>
+  <tr>
+    <td>109</td>
+    <td>Daynumber in the regimen is higher than the multiple of weeks frequency.</td>
+  </tr>
+  <tr>
+    <td>110</td>
+    <td>Medication is suspended without an endmoment.</td>
+  </tr>
+  <tr>
+    <td>111</td>
+    <td>Temporality is missing.</td>
+  </tr>
+  <tr>
+    <td>112</td>
+    <td>Length of the instructionforpatient field is longer than 340 characters.</td>
+  </tr>
+  <tr>
+    <td>113</td>
+    <td>Medication in the treatment suspension differs from the corresponding medicationscheme element.</td>
+  </tr>
+  <tr>
+    <td>114</td>
+    <td>Quantity contains a value that is bigger than 4 digits.</td>
+  </tr>
+  <tr>
+    <td>115</td>
+    <td>More than five treatment suspensions.</td>
+  </tr>
+  <tr>
+    <td>117</td>
+    <td>Endmoment and duration are used together.</td>
+  </tr>
+  <tr>
+    <td>119</td>
+    <td>Duration contains the value 0.</td>
+  </tr>
+  <tr>
+    <td>120</td>
+    <td>Quantity is less than or equal to 0.</td>
+  </tr>
+  <tr>
+    <td>121</td>
+    <td>Quantity contains a value with trailing zeros.</td>
+  </tr>
+  <tr>
+    <td>126</td>
+    <td>Invalid CNK / INNCLUSTER code.</td>
+  </tr>
+</table>
+
+## Files
+
+- [XML file](https://github.com/smals-jy/KMEHR-tests/blob/main/output/ms/TS-11-Unexpected_Scenarios.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/ms/TS-11-Unexpected_Scenarios.ts)
+
+## Expected results
+
+When looking to the patient medication scheme, all these criterias must be fulfilled :
+    - The software should not crash for any medication following these unexpected scenarios
+    - The software should follow a "best effort" strategy. In other words, display what the software can.
+    - The software could warn professional users, so they can fix medication lines later (Invalid CNK, ...)

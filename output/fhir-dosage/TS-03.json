@@ -1,0 +1,29 @@
+{
+	"resourceType": "MedicationStatement",
+	"status": "unknown",
+	"subject": {
+		"display": "Bruce Wayne (aka Batman)"
+	},
+	"dosage": [
+		{
+			"text": "Take it when needed",
+			"asNeededBoolean": true,
+			"timing": {
+				"repeat": {
+					"frequency": 1,
+					"period": 6,
+					"periodUnit": "h"
+				},
+				"event": [
+					"2021-03-22"
+				]
+			}
+		}
+	],
+	"extension": [
+		{
+			"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/medicationInUse",
+			"valueString": "Drug to take if needed"
+		}
+	]
+}

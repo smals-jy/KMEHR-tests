@@ -1,0 +1,27 @@
+{
+  "drugType": "compoundprescription",
+  "compoundprescriptionText": "Drug n°14",
+  "beginmoment": "2021-03-21",
+  "periodicity": "W",
+  "regimen": [
+    {
+      "quantity": 2.5,
+      "timeOfDay": {
+        "dayPeriod": "beforebreakfast"
+      },
+      "dayIngestion": {
+        "weekday": "tuesday"
+      }
+    },
+    {
+      "quantity": 2,
+      "timeOfDay": {
+        "dayPeriod": "beforebreakfast"
+      },
+      "dayIngestion": {
+        "weekday": "friday"
+      }
+    }
+  ],
+  "medicationuse": "Regimen posology with frequency (2 teaspoon (5 ml) ) - only displayed the tuesday / friday"
+}

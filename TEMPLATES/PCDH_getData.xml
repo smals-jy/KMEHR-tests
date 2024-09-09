@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<single-message xmlns="http://www.apb.be/standards/smoa/schema/v1" xmlns:ns2="http://www.apb.be/standards/smoa/schema/model/v1" xmlns:ns4="http://www.apb.be/standards/smoa/schema/code/v1" xmlns:ns3="http://www.apb.be/standards/smoa/schema/id/v1">
+    <unsigned>
+        <header>
+            <version>TIP</version>
+            <messageCreateDate>2024-02-21T11:50:54.685+01:00</messageCreateDate>
+            <messageID>8b21e923-35cc-ed7f-29c4-57fa6b944236</messageID>
+            <sender>
+                <ns2:refCareService>
+                    <ns2:careServiceId xsi:type="ns3:CbeIdType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <ns3:cbe>0406753266</ns3:cbe>
+                    </ns2:careServiceId>
+                </ns2:refCareService>
+            </sender>
+        </header>
+        <eventFolder>
+            <events>
+                <event xsi:type="MedicationHistoryEvent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <ns2:medicationHistoryEntity>
+                        <ns2:entityId xsi:type="ns3:EntityIdType">
+                            <ns3:id>e8ff7388-5780-4126-df18-f523416d5ddb</ns3:id>
+                            <ns3:version>1</ns3:version>
+                        </ns2:entityId>
+                        <ns2:sessionID>e5e1b0a5-a5f0-80d5-a3d5-b47de73fec3d</ns2:sessionID>
+                        <ns2:deliveryDate>2023-11-10T16:33:24</ns2:deliveryDate>
+                        <ns2:min-Patient>
+                            <ns2:personId xsi:type="ns3:InssIdType">
+                                <ns3:id>83051839468</ns3:id>
+                            </ns2:personId>
+                            <ns2:name></ns2:name>
+                            <ns2:familyName></ns2:familyName>
+                        </ns2:min-Patient>
+                        <ns2:product prescribed="true" onSubstanceName="false">
+                            <ns2:description>
+                                <ns2:productCode xsi:type="ns3:CnkIdType">
+                                    <ns3:cnk>5521950</ns3:cnk>
+                                </ns2:productCode>
+                            </ns2:description>
+                            <ns2:dispensation>
+                                <ns2:numberOfUnits>1</ns2:numberOfUnits>
+                            </ns2:dispensation>
+                        </ns2:product>
+                        <ns2:tipQualityIndicator>50</ns2:tipQualityIndicator>
+                    </ns2:medicationHistoryEntity>
+                    <ns2:medicationHistoryEntity>
+                        <ns2:entityId xsi:type="ns3:EntityIdType">
+                            <ns3:id>ce171f70-2c20-1360-9862-c70a3255d2f1</ns3:id>
+                            <ns3:version>1</ns3:version>
+                        </ns2:entityId>
+                        <ns2:sessionID>aaff7621-cc07-9f20-e116-7f8b6f8f1a2b</ns2:sessionID>
+                        <ns2:deliveryDate>2024-01-01T17:13:09</ns2:deliveryDate>
+                        <ns2:min-Patient>
+                            <ns2:personId xsi:type="ns3:InssIdType">
+                                <ns3:id>83051839468</ns3:id>
+                            </ns2:personId>
+                            <ns2:name></ns2:name>
+                            <ns2:familyName></ns2:familyName>
+                        </ns2:min-Patient>
+                        <ns2:product prescribed="true" onSubstanceName="true">
+                            <ns2:description>
+                                <ns2:unregisteredProduct>administrationInstructions - route</ns2:unregisteredProduct>
+                            </ns2:description>
+                            <ns2:dispensation>
+                                <ns2:numberOfUnits>1</ns2:numberOfUnits>
+                                <ns2:administrationInstructions>
+                                    <ns2:posology>
+                                        <ns2:text>Posology free text</ns2:text>
+                                    </ns2:posology>
+                                    <ns2:route>00001</ns2:route>
+                                    <ns2:instructionforpatient>route case</ns2:instructionforpatient>
+                                </ns2:administrationInstructions>
+                            </ns2:dispensation>
+                        </ns2:product>
+                        <ns2:tipQualityIndicator>50</ns2:tipQualityIndicator>
+                    </ns2:medicationHistoryEntity>
+                    <ns2:medicationHistoryEntity>
+                        <ns2:entityId xsi:type="ns3:EntityIdType">
+                            <ns3:id>c2c05026-8243-83fd-58a5-cd095089ce97</ns3:id>
+                            <ns3:version>1</ns3:version>
+                        </ns2:entityId>
+                        <ns2:sessionID>f547ecb9-86df-f27d-bde1-01e2ebb02c19</ns2:sessionID>
+                        <ns2:deliveryDate>2024-02-01T14:30:09</ns2:deliveryDate>
+                        <ns2:min-Patient>
+                            <ns2:personId xsi:type="ns3:InssIdType">
+                                <ns3:id>83051839468</ns3:id>
+                            </ns2:personId>
+                            <ns2:name></ns2:name>
+                            <ns2:familyName></ns2:familyName>
+                        </ns2:min-Patient>
+                        <ns2:product prescribed="false">
+                            <ns2:description>
+                                <ns2:productCode xsi:type="ns3:CnkIdType">
+                                    <ns3:cnk>1727395</ns3:cnk>
+                                </ns2:productCode>
+                            </ns2:description>
+                            <ns2:dispensation>
+                                <ns2:numberOfUnits>2</ns2:numberOfUnits>
+                                <ns2:administrationInstructions>
+                                    <ns2:posology>
+                                        <ns2:text>Posology free text</ns2:text>
+                                    </ns2:posology>
+                                    <ns2:instructionforpatient>productCode</ns2:instructionforpatient>
+                                </ns2:administrationInstructions>
+                            </ns2:dispensation>
+                        </ns2:product>
+                        <ns2:tipQualityIndicator>50</ns2:tipQualityIndicator>
+                    </ns2:medicationHistoryEntity>
+                    <ns2:medicationHistoryEntity>
+                        <ns2:entityId xsi:type="ns3:EntityIdType">
+                            <ns3:id>e14df4f9-f7bd-617c-9d46-5bfd109f406b</ns3:id>
+                            <ns3:version>1</ns3:version>
+                        </ns2:entityId>
+                        <ns2:sessionID>71767665-c6f2-61d2-1e55-f16ff046ab3b</ns2:sessionID>
+                        <ns2:deliveryDate>2024-02-06T14:30:09</ns2:deliveryDate>
+                        <ns2:min-Patient>
+                            <ns2:personId xsi:type="ns3:InssIdType">
+                                <ns3:id>83051839468</ns3:id>
+                            </ns2:personId>
+                            <ns2:name></ns2:name>
+                            <ns2:familyName></ns2:familyName>
+                        </ns2:min-Patient>
+                        <ns2:product prescribed="false">
+                            <ns2:description>
+                                <ns2:productCode xsi:type="ns3:CnkIdType">
+                                    <ns3:cnk>6666666</ns3:cnk>
+                                </ns2:productCode>
+                            </ns2:description>
+                            <ns2:dispensation>
+                                <ns2:numberOfUnits>1</ns2:numberOfUnits>
+                                <ns2:administrationInstructions>
+                                    <ns2:beginmoment>
+                                        <yearmonth>2012-10</yearmonth>
+                                    </ns2:beginmoment>
+                                    <ns2:regimen>
+                                        <ns2:daynumber>1</ns2:daynumber>
+                                        <ns2:daytime>
+                                            <ns2:dayperiod xsi:type="ns4:DayPeriodCodeType">
+                                                <ns4:cd>BETWEENBREAKFASTANDLUNCH</ns4:cd>
+                                            </ns2:dayperiod>
+                                        </ns2:daytime>
+                                        <ns2:quantity>
+                                            <ns2:decimal>5.0</ns2:decimal>
+                                            <ns2:unit xsi:type="ns4:AdministrationUnitValuesCodeType">
+                                                <ns4:cd>ml</ns4:cd>
+                                            </ns2:unit>
+                                        </ns2:quantity>
+                                    </ns2:regimen>
+                                    <ns2:route>test</ns2:route>
+                                    <ns2:issubstitutionallowed>false</ns2:issubstitutionallowed>
+                                </ns2:administrationInstructions>
+                            </ns2:dispensation>
+                        </ns2:product>
+                        <ns2:tipQualityIndicator>5</ns2:tipQualityIndicator>
+                    </ns2:medicationHistoryEntity>
+                    <ns2:medicationHistoryEntity>
+                        <ns2:entityId xsi:type="ns3:EntityIdType">
+                            <ns3:id>e3a3c5bd-bb0c-a3c4-5fba-e48f8718c225</ns3:id>
+                            <ns3:version>1</ns3:version>
+                        </ns2:entityId>
+                        <ns2:sessionID>71767665-c6f2-61d2-1e55-f16ff046ab3b</ns2:sessionID>
+                        <ns2:deliveryDate>2024-02-06T14:30:09</ns2:deliveryDate>
+                        <ns2:min-Patient>
+                            <ns2:personId xsi:type="ns3:InssIdType">
+                                <ns3:id>83051839468</ns3:id>
+                            </ns2:personId>
+                            <ns2:name></ns2:name>
+                            <ns2:familyName></ns2:familyName>
+                        </ns2:min-Patient>
+                        <ns2:product prescribed="true" onSubstanceName="true">
+                            <ns2:description>
+                                <ns2:magistralPreparation>
+                                    <ns2:magistralText>Free text drug</ns2:magistralText>
+                                </ns2:magistralPreparation>
+                            </ns2:description>
+                            <ns2:dispensation>
+                                <ns2:numberOfUnits>1</ns2:numberOfUnits>
+                                <ns2:administrationInstructions>
+                                    <ns2:posology>
+                                        <ns2:text>Posology free text</ns2:text>
+                                    </ns2:posology>
+                                    <ns2:instructionforpatient>magistralPreparation - magistralText</ns2:instructionforpatient>
+                                </ns2:administrationInstructions>
+                            </ns2:dispensation>
+                        </ns2:product>
+                        <ns2:tipQualityIndicator>50</ns2:tipQualityIndicator>
+                    </ns2:medicationHistoryEntity>
+                    <ns2:medicationHistoryEntity>
+                        <ns2:entityId xsi:type="ns3:EntityIdType">
+                            <ns3:id>0ce8e39c-f223-2d1b-b835-56c1d9915797</ns3:id>
+                            <ns3:version>1</ns3:version>
+                        </ns2:entityId>
+                        <ns2:sessionID>71767665-c6f2-61d2-1e55-f16ff046ab3b</ns2:sessionID>
+                        <ns2:deliveryDate>2024-02-06T14:30:09</ns2:deliveryDate>
+                        <ns2:min-Patient>
+                            <ns2:personId xsi:type="ns3:InssIdType">
+                                <ns3:id>83051839468</ns3:id>
+                            </ns2:personId>
+                            <ns2:name></ns2:name>
+                            <ns2:familyName></ns2:familyName>
+                        </ns2:min-Patient>
+                        <ns2:product prescribed="true" onSubstanceName="true">
+                            <ns2:description>
+                                <ns2:magistralPreparation>
+                                    <ns2:formularyReference>
+                                        <ns2:formulaCode>0589028</ns2:formulaCode>
+                                        <ns2:formulaName>ERYTHROMYCINE SOL. HYDRO-ALC. 4% FTM2</ns2:formulaName>
+                                    </ns2:formularyReference>
+                                </ns2:magistralPreparation>
+                            </ns2:description>
+                            <ns2:dispensation>
+                                <ns2:numberOfUnits>1</ns2:numberOfUnits>
+                                <ns2:administrationInstructions>
+                                    <ns2:posology>
+                                        <ns2:text>Posology free text</ns2:text>
+                                    </ns2:posology>
+                                    <ns2:instructionforpatient>magistralPreparation - formularyReference</ns2:instructionforpatient>
+                                </ns2:administrationInstructions>
+                            </ns2:dispensation>
+                        </ns2:product>
+                        <ns2:tipQualityIndicator>50</ns2:tipQualityIndicator>
+                    </ns2:medicationHistoryEntity>
+                    <ns2:medicationHistoryEntity>
+                        <ns2:entityId xsi:type="ns3:EntityIdType">
+                            <ns3:id>373d7874-637f-418f-ca8a-c2c83b5d1d9b</ns3:id>
+                            <ns3:version>1</ns3:version>
+                        </ns2:entityId>
+                        <ns2:sessionID>71767665-c6f2-61d2-1e55-f16ff046ab3b</ns2:sessionID>
+                        <ns2:deliveryDate>2024-02-06T14:30:09</ns2:deliveryDate>
+                        <ns2:min-Patient>
+                            <ns2:personId xsi:type="ns3:InssIdType">
+                                <ns3:id>83051839468</ns3:id>
+                            </ns2:personId>
+                            <ns2:name></ns2:name>
+                            <ns2:familyName></ns2:familyName>
+                        </ns2:min-Patient>
+                        <ns2:product prescribed="true" onSubstanceName="true">
+                            <ns2:description>
+                                <ns2:magistralPreparation>
+                                    <ns2:compound>
+                                        <ns2:order>1</ns2:order>
+                                        <ns2:medicinalproduct>
+                                            <ns2:intendedProduct>1543305</ns2:intendedProduct>
+                                            <ns2:intendedname>ATROVENT MONODOSE 0,25MG/2ML VIALS 20</ns2:intendedname>
+                                        </ns2:medicinalproduct>
+                                        <ns2:quantityprefix>ad</ns2:quantityprefix>
+                                        <ns2:quantity>
+                                            <decimal>10</decimal>
+                                            <unit>ml</unit>
+                                        </ns2:quantity>
+                                    </ns2:compound>
+                                    <ns2:compound>
+                                        <ns2:order>2</ns2:order>
+                                        <ns2:medicinalproduct>
+                                            <ns2:intendedProduct>1543305</ns2:intendedProduct>
+                                            <ns2:deliveredProduct>1484229</ns2:deliveredProduct>
+                                            <ns2:intendedname>ATROVENT MONODOSE 0,25MG/2ML VIALS 20</ns2:intendedname>
+                                            <ns2:deliveredname>Panadol 1 g comp. 50</ns2:deliveredname>
+                                        </ns2:medicinalproduct>
+                                    </ns2:compound>
+                                    <ns2:compound>
+                                        <ns2:order>3</ns2:order>
+                                        <ns2:substance>
+                                            <ns2:substancecode>0525337</ns2:substancecode>
+                                            <ns2:substancename>GLYCEROL</ns2:substancename>
+                                        </ns2:substance>
+                                        <ns2:quantity>
+                                            <decimal>0.2</decimal>
+                                            <unit>gm</unit>
+                                        </ns2:quantity>
+                                    </ns2:compound>
+                                </ns2:magistralPreparation>
+                            </ns2:description>
+                            <ns2:dispensation>
+                                <ns2:numberOfUnits>1</ns2:numberOfUnits>
+                                <ns2:administrationInstructions>
+                                    <ns2:posology>
+                                        <ns2:text>Posology free text</ns2:text>
+                                    </ns2:posology>
+                                    <ns2:instructionforpatient>magistralPreparation - compound (all cases)</ns2:instructionforpatient>
+                                </ns2:administrationInstructions>
+                            </ns2:dispensation>
+                        </ns2:product>
+                        <ns2:tipQualityIndicator>50</ns2:tipQualityIndicator>
+                    </ns2:medicationHistoryEntity>
+                    <ns2:medicationHistoryEntity>
+                        <ns2:entityId xsi:type="ns3:EntityIdType">
+                            <ns3:id>1a66cf65-1e02-29fa-a51e-321fc01a6ede</ns3:id>
+                            <ns3:version>1</ns3:version>
+                        </ns2:entityId>
+                        <ns2:sessionID>e12ba605-89ed-d204-d7c1-cc7e18104d3f</ns2:sessionID>
+                        <ns2:deliveryDate>2024-02-10T08:30:29</ns2:deliveryDate>
+                        <ns2:min-Patient>
+                            <ns2:personId xsi:type="ns3:InssIdType">
+                                <ns3:id>83051839468</ns3:id>
+                            </ns2:personId>
+                            <ns2:name></ns2:name>
+                            <ns2:familyName></ns2:familyName>
+                        </ns2:min-Patient>
+                        <ns2:product prescribed="true" onSubstanceName="true">
+                            <ns2:description>
+                                <ns2:unregisteredProduct>administrationInstructions - duration</ns2:unregisteredProduct>
+                            </ns2:description>
+                            <ns2:dispensation>
+                                <ns2:numberOfUnits>1</ns2:numberOfUnits>
+                                <ns2:administrationInstructions>
+                                    <ns2:duration>
+                                        <decimal>5</decimal>
+                                        <unit>wk</unit>
+                                    </ns2:duration>
+                                    <ns2:posology>
+                                        <ns2:text>Posology free text</ns2:text>
+                                    </ns2:posology>
+                                    <ns2:instructionforpatient>duration case</ns2:instructionforpatient>
+                                </ns2:administrationInstructions>
+                            </ns2:dispensation>
+                        </ns2:product>
+                        <ns2:tipQualityIndicator>50</ns2:tipQualityIndicator>
+                    </ns2:medicationHistoryEntity>
+                    <ns2:medicationHistoryEntity>
+                        <ns2:entityId xsi:type="ns3:EntityIdType">
+                            <ns3:id>6ab038c1-43aa-47ee-5310-03042a1ea16a</ns3:id>
+                            <ns3:version>1</ns3:version>
+                        </ns2:entityId>
+                        <ns2:sessionID>e12ba605-89ed-d204-d7c1-cc7e18104d3f</ns2:sessionID>
+                        <ns2:deliveryDate>2024-02-10T08:30:29</ns2:deliveryDate>
+                        <ns2:min-Patient>
+                            <ns2:personId xsi:type="ns3:InssIdType">
+                                <ns3:id>83051839468</ns3:id>
+                            </ns2:personId>
+                            <ns2:name></ns2:name>
+                            <ns2:familyName></ns2:familyName>
+                        </ns2:min-Patient>
+                        <ns2:product prescribed="true" onSubstanceName="true">
+                            <ns2:description>
+                                <ns2:unregisteredProduct>administrationInstructions - beginmoment &amp; endmoment</ns2:unregisteredProduct>
+                            </ns2:description>
+                            <ns2:dispensation>
+                                <ns2:numberOfUnits>1</ns2:numberOfUnits>
+                                <ns2:administrationInstructions>
+                                    <ns2:beginmoment>
+                                        <date>2023-09-16</date>
+                                    </ns2:beginmoment>
+                                    <ns2:endmoment>
+                                        <date>2024-12-25</date>
+                                    </ns2:endmoment>
+                                    <ns2:posology>
+                                        <ns2:text>Posology free text</ns2:text>
+                                    </ns2:posology>
+                                    <ns2:instructionforpatient>beginmoment &amp; endmoment case</ns2:instructionforpatient>
+                                </ns2:administrationInstructions>
+                            </ns2:dispensation>
+                        </ns2:product>
+                        <ns2:tipQualityIndicator>50</ns2:tipQualityIndicator>
+                    </ns2:medicationHistoryEntity>
+                    <ns2:medicationHistoryEntity>
+                        <ns2:entityId xsi:type="ns3:EntityIdType">
+                            <ns3:id>a80c9fe8-f4cb-38ab-c712-077d9f4ffa52</ns3:id>
+                            <ns3:version>1</ns3:version>
+                        </ns2:entityId>
+                        <ns2:sessionID>e12ba605-89ed-d204-d7c1-cc7e18104d3f</ns2:sessionID>
+                        <ns2:deliveryDate>2024-02-10T08:30:29</ns2:deliveryDate>
+                        <ns2:min-Patient>
+                            <ns2:personId xsi:type="ns3:InssIdType">
+                                <ns3:id>83051839468</ns3:id>
+                            </ns2:personId>
+                            <ns2:name></ns2:name>
+                            <ns2:familyName></ns2:familyName>
+                        </ns2:min-Patient>
+                        <ns2:product prescribed="true" onSubstanceName="true">
+                            <ns2:description>
+                                <ns2:unregisteredProduct>administrationInstructions - beginmoment</ns2:unregisteredProduct>
+                            </ns2:description>
+                            <ns2:dispensation>
+                                <ns2:numberOfUnits>1</ns2:numberOfUnits>
+                                <ns2:administrationInstructions>
+                                    <ns2:beginmoment>
+                                        <date>2023-09-16</date>
+                                    </ns2:beginmoment>
+                                    <ns2:posology>
+                                        <ns2:text>Posology free text</ns2:text>
+                                    </ns2:posology>
+                                    <ns2:instructionforpatient>beginmoment case</ns2:instructionforpatient>
+                                </ns2:administrationInstructions>
+                            </ns2:dispensation>
+                        </ns2:product>
+                        <ns2:tipQualityIndicator>50</ns2:tipQualityIndicator>
+                    </ns2:medicationHistoryEntity>
+                    <ns2:medicationHistoryEntity>
+                        <ns2:entityId xsi:type="ns3:EntityIdType">
+                            <ns3:id>41af6812-2dd5-7f4a-70da-d0d2a07924ac</ns3:id>
+                            <ns3:version>1</ns3:version>
+                        </ns2:entityId>
+                        <ns2:sessionID>e12ba605-89ed-d204-d7c1-cc7e18104d3f</ns2:sessionID>
+                        <ns2:deliveryDate>2024-02-10T08:30:29</ns2:deliveryDate>
+                        <ns2:min-Patient>
+                            <ns2:personId xsi:type="ns3:InssIdType">
+                                <ns3:id>83051839468</ns3:id>
+                            </ns2:personId>
+                            <ns2:name></ns2:name>
+                            <ns2:familyName></ns2:familyName>
+                        </ns2:min-Patient>
+                        <ns2:product prescribed="true" onSubstanceName="true">
+                            <ns2:description>
+                                <ns2:unregisteredProduct>administrationInstructions - endmoment</ns2:unregisteredProduct>
+                            </ns2:description>
+                            <ns2:dispensation>
+                                <ns2:numberOfUnits>1</ns2:numberOfUnits>
+                                <ns2:administrationInstructions>
+                                    <ns2:endmoment>
+                                        <date>2024-12-25</date>
+                                    </ns2:endmoment>
+                                    <ns2:posology>
+                                        <ns2:text>Posology free text</ns2:text>
+                                    </ns2:posology>
+                                    <ns2:instructionforpatient>endmoment case</ns2:instructionforpatient>
+                                </ns2:administrationInstructions>
+                            </ns2:dispensation>
+                        </ns2:product>
+                        <ns2:tipQualityIndicator>50</ns2:tipQualityIndicator>
+                    </ns2:medicationHistoryEntity>
+                </event>
+            </events>
+            <entitySpace>
+                <entity xsi:type="ns2:DataLocationType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <ns2:min-Patient>
+                        <ns2:personId xsi:type="ns3:InssIdType">
+                            <ns3:id>83051839468</ns3:id>
+                        </ns2:personId>
+                        <ns2:name></ns2:name>
+                        <ns2:familyName></ns2:familyName>
+                    </ns2:min-Patient>
+                    <ns2:location>
+                        <ns2:system>PCDH</ns2:system>
+                        <ns2:careDataType>medicationhistory</ns2:careDataType>
+                    </ns2:location>
+                </entity>
+            </entitySpace>
+        </eventFolder>
+    </unsigned>
+</single-message>

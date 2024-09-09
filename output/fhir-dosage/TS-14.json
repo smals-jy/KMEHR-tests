@@ -1,0 +1,59 @@
+{
+	"resourceType": "MedicationStatement",
+	"status": "unknown",
+	"subject": {
+		"display": "Bruce Wayne (aka Batman)"
+	},
+	"dosage": [
+		{
+			"doseAndRate": [
+				{
+					"doseQuantity": {
+						"value": 2.5
+					}
+				}
+			],
+			"timing": {
+				"repeat": {
+					"when": [
+						"ACM"
+					],
+					"dayOfWeek": [
+						"tue"
+					],
+					"frequency": 1,
+					"period": 1,
+					"periodUnit": "wk"
+				}
+			}
+		},
+		{
+			"doseAndRate": [
+				{
+					"doseQuantity": {
+						"value": 2
+					}
+				}
+			],
+			"timing": {
+				"repeat": {
+					"when": [
+						"ACM"
+					],
+					"dayOfWeek": [
+						"fri"
+					],
+					"frequency": 1,
+					"period": 1,
+					"periodUnit": "wk"
+				}
+			}
+		}
+	],
+	"extension": [
+		{
+			"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/medicationInUse",
+			"valueString": "Regimen posology with frequency (2 teaspoon (5 ml) ) - only displayed the tuesday / friday"
+		}
+	]
+}

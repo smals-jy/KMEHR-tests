@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smc:single-message xmlns:code="http://www.apb.be/standards/smoa/schema/code/v1" xmlns:id="http://www.apb.be/standards/smoa/schema/id/v1" xmlns:model="http://www.apb.be/standards/smoa/schema/model/v1" xmlns:smc="http://www.apb.be/standards/smoa/schema/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.apb.be/standards/smoa/schema/v1 xsd/smc-v1/single-message/maindoc/single-message-oa-1.0.xsd">
+  <smc:unsigned>
+    <smc:header>
+      <smc:version>1.0</smc:version>
+      <smc:messageCreateDate>2024-02-20T14:30:09</smc:messageCreateDate>
+      <smc:messageID>4a4528d9-181b-4af4-9364-4b611d29b140</smc:messageID>
+      <smc:sender>
+        <model:refPharmacy>
+          <model:pharmacyId xsi:type="id:NihiiIdType">
+            <id:nihiiPharmacyNumber>80000551</id:nihiiPharmacyNumber>
+          </model:pharmacyId>
+        </model:refPharmacy>
+      </smc:sender>
+    </smc:header>
+    <smc:eventFolder>
+      <smc:events>
+        <smc:event xsi:type="smc:PharmaceuticalCareEventType">
+          <smc:sessionDateTime>2024-02-20T14:30:09</smc:sessionDateTime>
+          <smc:pharmacyId>
+            <id:nihiiPharmacyNumber>80000551</id:nihiiPharmacyNumber>
+          </smc:pharmacyId>
+          <model:max-Patient>
+            <model:identification>
+              <model:personId xsi:type="id:InssIdType">
+                <id:id>12345678901</id:id>
+              </model:personId>
+              <model:name>John</model:name>
+              <model:familyName>Doe</model:familyName>
+            </model:identification>
+          </model:max-Patient>
+          <smc:dispensedWithoutPrescription>
+            <smc:product>
+              <model:description>
+                <model:unregisteredProduct>Posology - TC 1</model:unregisteredProduct>
+              </model:description>
+              <model:dispensation>
+                <model:numberOfUnits>1</model:numberOfUnits>
+                <model:administrationInstructions>
+                  <model:posology>
+                    <model:text>administrationInstructions - posology (free-text)</model:text>
+                  </model:posology>
+                  <model:instructionforpatient>administrationInstructions - posology (free-text)</model:instructionforpatient>
+                </model:administrationInstructions>
+              </model:dispensation>
+              <model:dispensationGUID>71ffec2d-09a7-4b8b-9304-b7b93903c643</model:dispensationGUID>
+            </smc:product>
+            <smc:product>
+              <model:description>
+                <model:unregisteredProduct>Posology - TC 2</model:unregisteredProduct>
+              </model:description>
+              <model:dispensation>
+                <model:numberOfUnits>1</model:numberOfUnits>
+              </model:dispensation>
+              <model:dispensationGUID>1661372c-8072-412c-80f1-83fde74f432b</model:dispensationGUID>
+            </smc:product>
+            <smc:product>
+              <model:description>
+                <model:unregisteredProduct>Posology - TC 3</model:unregisteredProduct>
+              </model:description>
+              <model:dispensation>
+                <model:numberOfUnits>1</model:numberOfUnits>
+                <model:administrationInstructions>
+                  <model:regimen>
+                    <model:daytime>
+                      <model:dayperiod xsi:type="code:DayPeriodCodeType">
+                        <code:cd>BETWEENBREAKFASTANDLUNCH</code:cd>
+                      </model:dayperiod>
+                    </model:daytime>
+                    <model:quantity>
+                      <model:decimal>42</model:decimal>
+                      <model:unit xsi:type="code:AdministrationUnitValuesCodeType">
+                        <code:cd>00001</code:cd>
+                      </model:unit>
+                    </model:quantity>
+                  </model:regimen>
+                  <model:instructionforpatient>Posology - regimen (one line)</model:instructionforpatient>
+                </model:administrationInstructions>
+              </model:dispensation>
+              <model:dispensationGUID>1c4fa8ef-1f1a-44c8-aeac-72bc4d886cba</model:dispensationGUID>
+            </smc:product>
+            <smc:product>
+              <model:description>
+                <model:unregisteredProduct>Posology - TC 4</model:unregisteredProduct>
+              </model:description>
+              <model:dispensation>
+                <model:numberOfUnits>1</model:numberOfUnits>
+                <model:administrationInstructions>
+                  <model:regimen>
+                    <model:daytime>
+                      <model:dayperiod xsi:type="code:DayPeriodCodeType">
+                        <code:cd>BETWEENBREAKFASTANDLUNCH</code:cd>
+                      </model:dayperiod>
+                    </model:daytime>
+                    <model:quantity>
+                      <model:decimal>42</model:decimal>
+                      <model:unit xsi:type="code:AdministrationUnitValuesCodeType">
+                        <code:cd>00001</code:cd>
+                      </model:unit>
+                    </model:quantity>
+                    <model:daytime>
+                      <model:dayperiod xsi:type="code:DayPeriodCodeType">
+                        <code:cd>AFTERDINNER</code:cd>
+                      </model:dayperiod>
+                    </model:daytime>
+                    <model:quantity>
+                      <model:decimal>25</model:decimal>
+                      <model:unit xsi:type="code:AdministrationUnitValuesCodeType">
+                        <code:cd>00001</code:cd>
+                      </model:unit>
+                    </model:quantity>
+                  </model:regimen>
+                  <model:instructionforpatient>Posology - regimen (multiple lines)</model:instructionforpatient>
+                </model:administrationInstructions>
+              </model:dispensation>
+              <model:dispensationGUID>23a85303-0786-4300-aca7-9fc725de6888</model:dispensationGUID>
+            </smc:product>
+          </smc:dispensedWithoutPrescription>
+        </smc:event>
+      </smc:events>
+    </smc:eventFolder>
+  </smc:unsigned>
+</smc:single-message>

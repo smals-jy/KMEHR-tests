@@ -1,0 +1,49 @@
+---
+description: Formats of medication in KMEHR
+title: 💊 TS-01 - Kind of drugs
+---
+
+## Description
+
+See if software in test can handle the formats of medication possible in KMEHR :
+
+```xml title="Example"
+...
+<transaction>
+    ...
+    <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.11">medication</cd>
+        <content>
+            <!-- The focus on the test -->
+        </content>
+    </item>
+    ...
+</transaction>
+...
+```
+
+## Test cases
+
+- "compoundprescription" (free text drug)
+- "medicinalproduct" (only defined with intendedcd / intendedname)
+- "medicinalproduct" (defined with intendedcd / intendedname / deliveredcd / deliveredname)
+- "substanceproduct" as a VMPGROUP
+- "substanceproduct" (only defined with intendedcd / intendedname)
+- "substanceproduct" (defined with intendedcd / intendedname / deliveredcd / deliveredname)
+
+## Files
+
+- [XML file](https://github.com/smals-jy/KMEHR-tests/blob/main/output/ms/TS-01-identifiers.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/ms/TS-01-identifiers.json)
+
+## Expected results 
+
+When looking to the patient medication scheme : 
+
+- Medication with name "Free text drug" is present only once
+- Medication with name ["Rhina natur activ pulmo sirop 133ml"](https://samviewer.digile.be/nl/sam/non_medicinal_products/3356102) is present only once
+- Medication with name ["Orgitan care comp 90" (French) / "Orgitan care tabl 90" (Dutch)](https://samviewer.digile.be/nl/sam/non_medicinal_products/3319522) is present only once
+- Medication with name ["acéclofénac oral 100 mg" (French) / "aceclofenac oraal 100 mg" (Dutch)](https://samviewer.digile.be/nl/sam/vmp_groups/174)
+- Medication with name ["simvastatine 40 mg comprimé (or.) (French)" / "simvastatine 40 mg tablet (or.) (Dutch)"](https://samviewer.digile.be/fr/sam/vmps/30957)
+- Medication with name ["busulfan 2 mg comprimé (or.) (French) / busulfan 2 mg tablet (or.) (Dutch)"](https://samviewer.digile.be/nl/sam/vmps/5058)

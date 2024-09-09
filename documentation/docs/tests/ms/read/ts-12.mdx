@@ -1,0 +1,72 @@
+---
+description: Parsing of KMEHR HCparty blocks
+title: ✍️ TS-12 - Author
+---
+
+## Description
+
+See if software in test can properly handle author [HCparty](https://www.ehealth.fgov.be/standards/kmehr/en/page/hcparty) elements according KMEHR specifications :
+
+```xml title="Example"
+...
+<transaction>
+    ...
+    <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.11">medication</cd>
+        ...
+        <!-- Focus of the test -->
+        <author>
+            <!-- Informations about the software (Optional) -->
+            <hcparty>
+                <id S="LOCAL" SL="endusersoftwareinfo" SV="1.0">helena.care-prescribers</id>
+                <cd S="CD-HCPARTY" SV="1.0">software</cd>
+            </hcparty>
+            <!-- Informations about the hub (Optional) -->
+            <hcparty>
+                <id S="ID-HCPARTY" SV="1.0">1990000728</id>
+                <cd S="CD-HCPARTY" SV="1.0">hub</cd>
+                <name>RSB</name>
+            </hcparty>
+            <!-- Informations about the organization (Optional) -->
+            <hcparty>
+                <id S="ID-HCPARTY" SV="1.0">80000551</id>
+                <cd S="CD-HCPARTY" SV="1.0">orghospital</cd>
+                <name>U.Z. Brussel</name>
+            </hcparty>
+            <!-- Informations about the professional user that wrote this (Mandatory) -->
+            <hcparty>
+                <id S="ID-HCPARTY" SV="1.0">11186375004</id>
+                <id S="INSS" SV="1.0">75041414469</id>
+                <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+                <firstname>Mickey</firstname>
+                <familyname>Mouse</familyname>
+                <!-- Beware that author name could express as <name> or <firstname> / <familyname> element as well -->
+                <!--  <name>Dr. Mickey Mouse</name> -->
+            </hcparty>
+        </author>
+        ...
+    </item>
+    ...
+</transaction>
+...
+```
+
+## Test cases
+
+- No software information present 
+- Basic software information present
+- Full software informations present
+- All information (software, hub, organization, professional user) present
+
+
+## Files
+
+- [XML file](https://github.com/smals-jy/KMEHR-tests/blob/main/output/ms/TS-12-Software-Info.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/ms/TS-12-Software-Info.ts)
+
+## Expected results
+
+When looking to the patient medication scheme, all these criterias must be fulfilled :
+    - The software should not crash for any medication
+    - The software must display the professional user name (e.g "Dr. Mickey Mouse") for any medication

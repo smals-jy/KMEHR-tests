@@ -1,0 +1,219 @@
+---
+description: Formats of posology in KMEHR
+title: 🕑 TS-02 - Posologies
+---
+
+## Description
+
+See if software in test can handle the formats of posologies possible in KMEHR, authorized by [MS Cookbook](https://www.ehealth.fgov.be/standards/kmehr/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/057e64396c1ea312a0b01607b0f94e4adcf456e8/20210331-safe_cookbook_medicatieschema_v5.8_en.pdf) :
+
+```xml title="Example"
+...
+<transaction>
+    ...
+    <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.11">medication</cd>
+        ...
+        <!-- The focus on the test -->
+        <posology>
+            <!-- Either free-text posology -->
+        </posology>
+        <regimen>
+            <!-- Either codified posology -->
+        </regimen>
+    </item>
+    ...
+</transaction>
+...
+```
+
+## Test cases
+
+- [free text posology (without periodicity / temporality) - displayed only in a single date](#drug-n1)
+- [free text posology (with periodicity but without temporality) - displayed daily](#drug-n2)
+- [one shot posology - displayed only in a single date & with ifNeeded tag](#drug-n3)
+- [regimen posology without frequency (day period) - displayed only in a single date in a given day period](#drug-n4)
+- [regimen posology without frequency (hour) - displayed only in a single date for a given hour](#drug-n5)
+- [Free text without periodicity / temporality but with endDate - displayed only in a single date](#drug-n6)
+- [regimen posology without frequency (given day injection date) - displayed only in a single date](#drug-n7)
+- [regimen posology without frequency (given day numbers) - displayed only at provided day number](#drug-n8)
+- [regimen posology without frequency (given weekday) - only displayed in a single date](#drug-n9)
+- [regimen posology with frequency (given hours) - displayed in given hours](#drug-n10)
+- [regimen posology with frequency (given dayperiods) - displayed in given dayperiods](#drug-n11)
+- [regimen posology with frequency (given day injection date)](#drug-n12)
+- [regimen posology with frequency (given day numbers)](#drug-n13)
+- [regimen posology with frequency (given weekday)](#drug-n14)
+
+
+## Files
+
+- [XML file](https://github.com/smals-jy/KMEHR-tests/blob/main/output/ms/TS-02-posologies.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/ms/TS-02-posologies.json)
+
+## Expected results 
+
+When looking to the patient medication scheme : 
+
+### Drug n°1 
+
+Cover scenario : **free text posology (without periodicity / temporality) - displayed only in a single date**
+- **March 22, 2021**: Displayed with "Free text posology" as posology
+- **March 23, 2021**: Should not be displayed.
+
+### Drug n°2 
+Cover scenario : **free text posology (with periodicity but without temporality) - displayed daily**
+- **March 22, 2021**: Displayed with "Free text posology" as posology
+- **March 23, 2021**: Should still be displayed.
+
+### Drug n°3
+Cover scenario : **one shot posology - displayed only in a single date & with ifNeeded tag**
+- **March 22, 2021**: Displayed with the posology "Take it when needed" (with an "if needed" warning)
+- **March 23, 2021**: Should still be displayed.
+
+### Drug n°4
+Cover scenario : **regimen posology without frequency (day period) - displayed only in a single date in a given day period**
+- **March 22, 2021**: Displayed with following specifications :
+    - Correct posology 
+        - "2 cuillères à café (5 ml)" as French posology 
+        - "2 theelepels (5 ml)" as Dutch posology
+    - At the expected day period :
+        - "Après le repas du midi" (French)
+        - "Na het middageten" (Dutch)
+- **March 23, 2021**: Should not be displayed.
+
+### Drug n°5
+Cover scenario : **regimen posology without frequency (hour) - displayed only in a single date for a given hour**
+- **March 22, 2021**: Displayed with following specifications :
+    - Correct posology
+        - "2 cuillères à café (5 ml)" as French posology 
+        - "2 theelepels (5 ml)" as Dutch posology
+    - Correct time : **7:59**
+- **March 23, 2021**: Should not be displayed.
+
+### Drug n°6
+Cover scenario : **Free text without periodicity / temporality but with endDate - displayed only in a single date**
+- **March 22, 2021**: Displayed with following specifications :
+    - Correct posology
+        - "2 cuillères à café (5 ml)" as French posology 
+        - "2 theelepels (5 ml)" as Dutch posology
+- **March 23, 2021**: Should not be displayed.
+
+### Drug n°7
+Cover scenario : **regimen posology without frequency (given day injection date) - displayed only in a single date**
+- **February 1, 2023**: Displayed with following specifications : 
+    - Correct posology
+        - "2 cuillères à café (5 ml)" as French posology 
+        - "2 theelepels (5 ml)" as Dutch posology
+    - At the expected day period :
+        - "Avant le petit-déjeuner" (French)
+        - "Voor het ontbijt" (Dutch)
+- **February 1, 2024**: Should not be displayed.
+
+### Drug n°8
+Cover scenario : **regimen posology without frequency (given day numbers) - displayed only at provided day number**
+- **March 22, 2021**: Displayed with following specifications :
+    - Correct posology
+        - "2 cuillères à café (5 ml)" as French posology 
+        - "2 theelepels (5 ml)" as Dutch posology
+    - At the expected day period :
+        - "Avant le petit-déjeuner" (French)
+        - "Voor het ontbijt" (Dutch)
+- **March 23, 2021**: Displayed with following specifications : 
+    - Correct posology
+        - "2 cuillères à café (5 ml)" as French posology 
+        - "2 theelepels (5 ml)" as Dutch posology
+    - At the expected day period :
+        - "Avant le petit-déjeuner" (French)
+        - "Voor het ontbijt" (Dutch)
+- **March 24, 2021**: Should not be displayed
+
+### Drug n°9
+Cover scenario : **regimen posology without frequency (given weekday) - only displayed in a single date**
+- **March 26, 2021**: Displayed with following specifications :
+    - Correct posology
+        - "2 cuillères à café (5 ml)" as French posology 
+        - "2 theelepels (5 ml)" as Dutch posology
+    - At the expected day period
+        - "Avant le petit-déjeuner" (French)
+        - "Voor het ontbijt" (Dutch)
+- **April 2, 2021**: Should not be displayed
+
+### Drug n°10
+Cover scenario : **regimen posology with frequency (given hours) - displayed in given hours**
+- **March 22, 2021**: Displayed with following specifications :
+    - at these specific times : 
+        - 05:59
+        - 07:30
+        - 13:30
+        - 19:30
+        - 22:30
+    - with correct posology
+        - "1 cuillère à café (5 ml)" as French posology 
+        - "1 theelepeel (5 ml)" as Dutch posology
+- **March 23, 2021**: Should be displayed at the same times as March 22, 2021
+
+### Drug n°11
+Cover scenario : **regimen posology with frequency (given dayperiods) - displayed in given dayperiods**
+- **March 22, 2021**: Displayed with following specifications :
+    - Correct posology : 
+        - "1 cuillère à café (5 ml)" as French posology 
+        - "1 theelepeel (5 ml)" as Dutch posology
+    - At the expected 4 day periods :
+        - Morning
+            - "Après le petit-déjeuner" (French)
+            - "Na het ontbijt" (Dutch)
+        - Afternoon
+            - "Entre le repas du midi et le repas du soir" (French)
+            - "tussen het middagmaal en het avondmaal" (Dutch)
+        - Evening
+            - "Après le repas du soir" (French)
+            - "Na het avondmaal" (Dutch)
+        - Bedtime
+            - "Heure du coucher" (French)
+            - "Voor het slapen gaan" (Dutch)
+- **March 23, 2021**: Should still be displayed in the same way as March 22, 2021.
+
+### Drug n°12
+Cover scenario : **regimen posology with frequency (given day injection date)**
+- **July 22, 2021**: Displayed with following specifications :
+    - Correct posology : 
+        - "1 cuillère à café (5 ml)" as French posology
+        - "1 theelepeel (5 ml)" as Dutch posology
+    - At the expected day period
+        - "Matin" (French)
+        - "'s ochtends" (Dutch)
+- **July 22, 2022**: Should be displayed in the same way as July 22, 2021.
+
+### Drug n°13
+Cover scenario : **regimen posology with frequency (given day numbers)**
+- **July 15, 2021**: Should not be displayed
+- **July 29, 2021**: Displayed with following specifications :
+    - Correct posology :
+        - "1 cuillère à café (5 ml)" as French posology
+        - "1 theelepeel (5 ml)" as Dutch posology
+    - At the expected day period
+        - "Après le repas du soir" (French)
+        - "After dinner" (Dutch)
+- **August 29, 2021**: Should be displayed in the same way as July 29, 2021.
+
+### Drug n°14
+Cover scenario : **regimen posology with frequency (given weekday)**
+- **March 23, 2021**: Displayed with following specifications :
+    - Correct posology
+        - "2 + ½ cuillères à café (5 ml)" as French posology 
+        - "2 + ½ theelepels (5 ml)" as Dutch posology
+    - At the expected day period
+        - "Avant le petit-déjeuner" (French)
+        - "Voor het ontbijt" (Dutch)
+- **March 24, 2021**: Should not be displayed.
+- **March 26, 2021**: Displayed with following specifications :
+    - Correct posology
+        - "2 cuillères à café (5 ml)" as French posology 
+        - "2 theelepels (5 ml)" as Dutch posology
+    - At the expected day period
+        - "Avant le petit-déjeuner" (French)
+        - "Voor het ontbijt" (Dutch)
+- **March 27, 2021**: Should not be displayed.
+- **March 30, 2021**: Should be displayed in the same way as March 23, 2021.
+- **April 2, 2021**: Should be displayed in the same way as March 27, 2021.

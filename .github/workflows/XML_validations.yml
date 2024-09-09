@@ -1,0 +1,85 @@
+name: XML Validation Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  checkForMSXMLFiles:
+    runs-on: ubuntu-latest
+    outputs:
+      has_ms_files: ${{ steps.check.outputs.has_ms_files }}
+    steps:
+      - name: 🛎️ Checkout code
+        uses: actions/checkout@v4.1.7
+      - name: 📁 Check for MS XML files
+        id: check
+        run: |
+          if ls output/ms/*.xml 1> /dev/null 2>&1; then
+            echo "has_ms_files=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_ms_files=false" >> $GITHUB_OUTPUT
+            echo "No MS XML files found."
+          fi
+
+  wellformedXMLS_MSbasic:
+    runs-on: ubuntu-latest
+    needs: checkForMSXMLFiles
+    if: needs.checkForMSXMLFiles.outputs.has_ms_files == 'true'
+    steps:
+      - name: 🛎️ Checkout code
+        uses: actions/checkout@v4.1.7
+      - name: ☕ Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+      - name: 🤖 Validate MS XML files
+        run: xmllint --catalogs --noout --schema ./xsd-kmehr/ehealth-kmehr/XSD/kmehr_elements-1_37.xsd ./output/ms/*.xml
+
+  wellformedXMLS_PCDHbasic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛎️ Checkout code
+        uses: actions/checkout@v4.1.7
+      - name: ☕ Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+      - name: 🤖 Validate PCDH XML files
+        run: |
+          if [ "$(ls -A output/pcdh/*.xml)" ]; then
+            xmllint --catalogs --noout --schema ./soa-farmaflux/maindoc/single-message-oa-1.0.xsd ./output/pcdh/*.xml
+          else
+            echo "No XML files found in output/pcdh directory. Skipping validation."
+          fi
+
+  compliantTOPCDHRemovalRules:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛎️ Checkout code
+        uses: actions/checkout@v4.1.7
+      - name: ☕ Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+      - name: 🤖 Validate PCDH Removal XML files
+        run: |
+          if [ "$(ls -A output/pcdh-removal/*.xml)" ]; then
+            xmllint --catalogs --noout --schema ./soa-farmaflux/maindoc/single-message-oa-1.0.xsd ./output/pcdh-removal/*.xml
+          else
+            echo "No XML files found in output/pcdh-removal directory. Skipping validation."
+          fi
+
+  compliantToMSRules_MSadvancedValidation:
+    runs-on: ubuntu-latest
+    needs: [wellformedXMLS_MSbasic]
+    steps:
+      - name: 🛎️ Checkout code
+        uses: actions/checkout@v4.1.7
+      - uses: actions/setup-node@v4.0.3
+        name: 📦 Setup Node.js environment
+      - name: ☕ Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xmlstarlet
+          npm install
+          chmod u+x compliantToMSRules.sh
+      - name: 🤖 Validate
+        run: |
+          ./compliantToMSRules.sh

@@ -1,0 +1,81 @@
+---
+description: How to combine multiple medication scheme configurations ?
+title: 🧬💊 Merge of MS configurations
+---
+
+## Why ?
+
+- Inject only once multiple test scenarios, instead of swapping several times the data of a patient
+- Combine multiple small tests into a big one
+- ...
+
+## Prerequisites
+
+- Clone the Github project, e.g. `git clone https://github.com/smals-jy/KMEHR-tests`
+- Node.JS LTS
+- Install Github project dependancies, e.g. `npm install`
+
+## Steps
+
+1. Create a new `ts` file in [`configurations/ms`](https://github.com/smals-jy/KMEHR-tests/tree/main/configurations/ms) folder, that requires the others.  
+Here is an example. Adapt it to fit your needs : 
+
+```ts
+import type { Configuration, TransactionConfig } from "../../src/config";
+import TS04CDDAYPERIOD from "./TS-04-CD-DAYPERIOD";
+import TS06CDPERIODICITY from "./TS-06-CD-PERIODICITY";
+import TS07BEGIN_END_CONDITIONS from "./TS-07-BEGIN_END_CONDITIONS";
+import TS08THERAPEUTIC_SUSPENSIONS from "./TS-08-THERAPEUTIC_SUSPENSIONS";
+
+// If you want JSON files, don't forget
+// "resolveJsonModule": true in your tsconfig file
+//import TS01 from "./TS-01-identifiers.json"
+//import TS02 from "./TS-02-posologies.json";
+
+// Payload
+export default function (): Configuration {
+    
+    let updatedTransactions = [
+        //(TS01 as Configuration).transactions,
+        //(TS02 as Configuration).transactions,
+        TS04CDDAYPERIOD().transactions,
+        TS06CDPERIODICITY().transactions,
+        TS07BEGIN_END_CONDITIONS().transactions,
+        TS08THERAPEUTIC_SUSPENSIONS().transactions
+    ].reduce( (acc, currentTransactions) => {
+
+        // Starting index
+        // At first iteration, it will be : 2
+        // At second iteration, it will be : 2 + length of previous array
+        let startingIdx = 2 + acc.length
+
+        // Update current transactions
+        let newTransactions = currentTransactions.map( (transaction, idx) => {
+
+            // Update ID according to that new position in array
+            transaction.id = startingIdx + idx;
+
+            // Update suspension reference, if present
+            if (transaction.suspensionReference) {
+                // Why minus 2 ? because index starts at 2 in all configuration
+                transaction.suspensionReference = startingIdx + transaction.suspensionReference - 2;
+            }
+
+            // Return modified object
+            return transaction;
+        });
+
+        return [...acc, ...newTransactions]
+    }, [] as TransactionConfig[])
+
+    return {
+        transactions: updatedTransactions
+    }
+}
+```
+
+2. To generate the resulting XML file(s) in [`output/ms`](https://github.com/smals-jy/KMEHR-tests/tree/main/output/ms) folder :
+
+```bash
+npm start
+```

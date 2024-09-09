@@ -1,0 +1,82 @@
+{
+  "transactions": [
+    {
+      "id": 2,
+      "drug": {
+        "drugType": "compoundprescription",
+        "compoundprescriptionText": "Free text drug",
+        "posologyFreeText": "Free text drug",
+        "beginmoment": "2021-03-22",
+        "periodicity": "D",
+        "medicationuse": "Free-text drug"
+      }
+    },
+    {
+      "id": 3,
+      "drug": {
+        "drugType": "medicinalproduct",
+        "intendedcd": "3356102",
+        "intendedname": "Rhinathiol Naturactiv Pulmo 133Ml",
+        "posologyFreeText": "Free text drug",
+        "beginmoment": "2021-03-22",
+        "periodicity": "D",
+        "medicationuse": "Medicinal product with ONLY intended drug"
+      }
+    },
+    {
+      "id": 4,
+      "drug": {
+        "drugType": "medicinalproduct",
+        "intendedcd": "3356102",
+        "intendedname": "Rhinathiol Naturactiv Pulmo 133Ml",
+        "deliveredcd": "3319522",
+        "deliveredname": "Orgitan Care B+Pharma 90 Tabl",
+        "posologyFreeText": "Free text drug",
+        "beginmoment": "2021-03-22",
+        "periodicity": "D",
+        "medicationuse": "Medicinal product with intended drug AND delivered drug"
+      }
+    },
+    {
+      "id": 5,
+      "drug": {
+        "drugType": "substanceproduct",
+        "identifierType": "CD-VMPGROUP",
+        "intendedcd": "0000174",
+        "intendedname": "aceclofenac oraal 100 mg, 20 tabletten",
+        "posologyFreeText": "Free text drug",
+        "beginmoment": "2021-03-22",
+        "periodicity": "D",
+        "medicationuse": "VMPGROUP drug"
+      }
+    },
+    {
+      "id": 6,
+      "drug": {
+        "drugType": "substanceproduct",
+        "identifierType": "CD-INNCLUSTER",
+        "intendedcd": "30957",
+        "intendedname": "simvastatine 40 mg tablet (or.)",
+        "posologyFreeText": "Free text drug",
+        "beginmoment": "2021-03-22",
+        "periodicity": "D",
+        "medicationuse": "Substance product with ONLY intended drug"
+      }
+    },
+    {
+      "id": 7,
+      "drug": {
+        "drugType": "substanceproduct",
+        "identifierType": "CD-INNCLUSTER",
+        "intendedcd": "30957",
+        "intendedname": "simvastatine 40 mg tablet (or.)",
+        "deliveredcd": "5058",
+        "deliveredname": "busulfan 2 mg comprimé (or.)",
+        "posologyFreeText": "Free text drug",
+        "beginmoment": "2021-03-22",
+        "periodicity": "D",
+        "medicationuse": "Substance product with intended drug AND delivered drug"
+      }
+    }
+  ]
+}

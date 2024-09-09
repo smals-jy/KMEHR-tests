@@ -1,0 +1,51 @@
+---
+description: Medications in future (e.g. 2099)
+title: 🚀 TS-10 - Future medications
+---
+
+## Description
+
+See if software in test can handle medications that are in future (e.g 2099) according [MS Cookbook](https://www.ehealth.fgov.be/standards/kmehr/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/057e64396c1ea312a0b01607b0f94e4adcf456e8/20210331-safe_cookbook_medicatieschema_v5.8_en.pdf) :
+
+```xml title="Example"
+...
+<transaction>
+    ...
+    <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.11">medication</cd>
+        ...
+        <!-- Start date in the future -->
+        <beginmoment>
+            <date>2099-01-01</date>
+        </beginmoment>
+        <!-- End date in the future -->
+        <endmoment>
+            <date>2099-12-30</date>
+        </endmoment>
+        ...
+    </item>
+    ...
+</transaction>
+...
+```
+
+## Test cases
+
+- Medication that starts in future
+- Medication that starts and ends in future
+
+## Files
+
+- [XML file](https://github.com/smals-jy/KMEHR-tests/blob/main/output/ms/TS-10-future-drugs.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/ms/TS-10-future-drugs.ts)
+
+## Expected results
+
+When looking to the patient medication scheme, all these criterias must be fulfilled :
+    - `Medication that starts in future` case is handled properly 
+        - Available on January 1, 2099
+        - Still available on January 1, 2100
+    - `Medication that starts and ends in future` case is handled properly 
+        - Available on January 1, 2099
+        - Not available after December 30, 2099

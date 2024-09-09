@@ -1,0 +1,40 @@
+{
+	"resourceType": "MedicationStatement",
+	"status": "unknown",
+	"subject": {
+		"display": "Bruce Wayne (aka Batman)"
+	},
+	"dosage": [
+		{
+			"doseAndRate": [
+				{
+					"doseQuantity": {
+						"value": 1
+					}
+				}
+			],
+			"timing": {
+				"repeat": {
+					"when": [
+						"PCV"
+					],
+					"frequency": 1,
+					"period": 1,
+					"periodUnit": "mo"
+				},
+				"extension": [
+					{
+						"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+						"valueInteger": 15
+					}
+				]
+			}
+		}
+	],
+	"extension": [
+		{
+			"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/medicationInUse",
+			"valueString": "Regimen posology with frequency - per given day of the month"
+		}
+	]
+}

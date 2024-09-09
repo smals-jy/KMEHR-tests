@@ -1,0 +1,110 @@
+{
+	"resourceType": "MedicationStatement",
+	"status": "unknown",
+	"subject": {
+		"display": "Bruce Wayne (aka Batman)"
+	},
+	"dosage": [
+		{
+			"doseAndRate": [
+				{
+					"doseQuantity": {
+						"value": 1
+					}
+				}
+			],
+			"timing": {
+				"repeat": {
+					"timeOfDay": [
+						"05:59:00"
+					],
+					"frequency": 1,
+					"period": 1,
+					"periodUnit": "d"
+				}
+			}
+		},
+		{
+			"doseAndRate": [
+				{
+					"doseQuantity": {
+						"value": 1
+					}
+				}
+			],
+			"timing": {
+				"repeat": {
+					"timeOfDay": [
+						"07:30:00"
+					],
+					"frequency": 1,
+					"period": 1,
+					"periodUnit": "d"
+				}
+			}
+		},
+		{
+			"doseAndRate": [
+				{
+					"doseQuantity": {
+						"value": 1
+					}
+				}
+			],
+			"timing": {
+				"repeat": {
+					"timeOfDay": [
+						"13:30:00"
+					],
+					"frequency": 1,
+					"period": 1,
+					"periodUnit": "d"
+				}
+			}
+		},
+		{
+			"doseAndRate": [
+				{
+					"doseQuantity": {
+						"value": 1
+					}
+				}
+			],
+			"timing": {
+				"repeat": {
+					"timeOfDay": [
+						"19:30:00"
+					],
+					"frequency": 1,
+					"period": 1,
+					"periodUnit": "d"
+				}
+			}
+		},
+		{
+			"doseAndRate": [
+				{
+					"doseQuantity": {
+						"value": 1
+					}
+				}
+			],
+			"timing": {
+				"repeat": {
+					"timeOfDay": [
+						"22:30:00"
+					],
+					"frequency": 1,
+					"period": 1,
+					"periodUnit": "d"
+				}
+			}
+		}
+	],
+	"extension": [
+		{
+			"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/medicationInUse",
+			"valueString": "Regimen posology with frequency (2) - daily hours - morning / noon / afterlunch / sleep"
+		}
+	]
+}

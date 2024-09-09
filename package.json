@@ -1,0 +1,32 @@
+{
+  "name": "kmehr-tests",
+  "version": "1.0.0",
+  "description": "Comprehensive Testing Suite for Belgian KMEHR Standards",
+  "scripts": {
+    "start": "npx tsx main.ts",
+    "generate-revoke-data": "npx tsx revokeDataGenerator.ts",
+    "generate-schemas": "node json-schema.mjs",
+    "prettier": "npx prettier --write **/*.{js,jsx,ts,tsx,json,mts}",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "npx tsc --init",
+    "checkRules": "npx xslt3 \"-s:output/TS-01-identifiers.xml\" \"-xsl:medicationscheme-validation-v2.xslt\" "
+  },
+  "author": "jy95",
+  "license": "MIT",
+  "dependencies": {
+    "@types/fhir": "^0.0.41",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^22.5.4",
+    "fast-xml-parser": "^4.5.0",
+    "lodash": "^4.17.21",
+    "prettier": "^3.0.2",
+    "ts-json-schema-generator": "^2.1.0",
+    "typescript": "^5.4.5",
+    "uuid": "^10.0.0",
+    "xslt3": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.7.1"
+  }
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:kmehrmessage xmlns="http://www.ehealth.fgov.be/hubservices/core/v3" xmlns:ns2="http://www.ehealth.fgov.be/standards/kmehr/schema/v1" xmlns:ns3="http://www.ehealth.fgov.be/hubservices/protocol/v3" xmlns:ns4="urn:be:fgov:ehealth:metahub:core:v2">
+    <ns2:header>
+        <ns2:standard>
+            <ns2:cd S="CD-STANDARD" SV="1.4">20161201</ns2:cd>
+        </ns2:standard>
+        <ns2:id S="ID-KMEHR" SV="1.0">1990001916.2018041091404668030</ns2:id>
+        <ns2:date>2018-04-19</ns2:date>
+        <ns2:time>14:30:09</ns2:time>
+        <ns2:sender>
+            <ns2:hcparty>
+                <ns2:id S="ID-HCPARTY" SV="1.0">1990001916</ns2:id>
+                <ns2:cd S="CD-HCPARTY" SV="1.7">hub</ns2:cd>
+                <ns2:name>VITALINK</ns2:name>
+            </ns2:hcparty>
+        </ns2:sender>
+        <ns2:recipient>
+            <ns2:hcparty>
+                <ns2:id S="ID-HCPARTY" SV="1.0">17892144001</ns2:id>
+                <ns2:id S="INSS" SV="1.0">XXXXXXXXXXX</ns2:id>
+                <ns2:id S="ID-ENCRYPTION-ACTOR" SV="1.0">17892144</ns2:id>
+                <ns2:cd S="CD-HCPARTY" SV="1.1">persphysician</ns2:cd>
+                <ns2:cd S="CD-ENCRYPTION-ACTOR" SV="1.0">NIHII</ns2:cd>
+                <ns2:firstname>Tasmanian</ns2:firstname>
+                <ns2:familyname>Devil</ns2:familyname>
+            </ns2:hcparty>
+            <ns2:hcparty>
+                <ns2:id S="LOCAL" SL="endusersoftwareinfo" SV="1.0">ACC_2264d708-0d49-4aca-96f0-f7acb32cf5c2</ns2:id>
+                <ns2:cd S="CD-HCPARTY" SV="1.1">APPLICATION</ns2:cd>
+            </ns2:hcparty>
+        </ns2:recipient>
+    </ns2:header>
+    <ns2:folder>
+        <ns2:id S="ID-KMEHR" SV="1.0">1</ns2:id>
+        <ns2:patient>
+            <ns2:id S="ID-PATIENT" SV="1.0">XXXXXXXXXXX</ns2:id>
+            <ns2:firstname>Donald</ns2:firstname>
+            <ns2:familyname>Duck</ns2:familyname>
+            <ns2:sex>
+                <ns2:cd S="CD-SEX" SV="1.0">male</ns2:cd>
+            </ns2:sex>
+            <ns2:usuallanguage>nl-BE</ns2:usuallanguage>
+        </ns2:patient>
+        <ns2:transaction>
+            <ns2:id S="ID-KMEHR" SV="1.0">1</ns2:id>
+            <ns2:id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme</ns2:id>
+            <ns2:cd S="CD-TRANSACTION" SV="1.0">medicationscheme</ns2:cd>
+            <ns2:date>2018-04-19</ns2:date>
+            <ns2:time>14:30:07</ns2:time>
+            <ns2:author>
+                <ns2:hcparty>
+                    <ns2:id S="ID-HCPARTY" SV="1.0">1990001916</ns2:id>
+                    <ns2:cd S="CD-HCPARTY" SV="1.7">hub</ns2:cd>
+                    <ns2:name>VITALINK</ns2:name>
+                </ns2:hcparty>
+                <ns2:hcparty>
+                    <ns2:id S="ID-HCPARTY" SV="1.0">17892144001</ns2:id>
+                    <ns2:id S="INSS" SV="1.0">XXXXXXXXXXX</ns2:id>
+                    <ns2:cd S="CD-HCPARTY" SV="1.0">persphysician</ns2:cd>
+                    <ns2:firstname>Tasmanian</ns2:firstname>
+                    <ns2:familyname>Devil</ns2:familyname>
+                </ns2:hcparty>
+            </ns2:author>
+            <ns2:iscomplete>true</ns2:iscomplete>
+            <ns2:isvalidated>true</ns2:isvalidated>
+            <ns2:version>68</ns2:version>
+        </ns2:transaction>
+    </ns2:folder>
+</ns2:kmehrmessage>

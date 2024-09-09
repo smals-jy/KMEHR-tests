@@ -1,0 +1,159 @@
+---
+description: Increasing & Decreasing quantities / long text / ...
+title: 🌀 TS-09 - Corner cases
+---
+
+## Description
+
+See if software in test can handle very specific cases authorized by [MS Cookbook](https://www.ehealth.fgov.be/standards/kmehr/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/057e64396c1ea312a0b01607b0f94e4adcf456e8/20210331-safe_cookbook_medicatieschema_v5.8_en.pdf) :
+
+- New way to stop medication (VIDIS WG 3&4 - November 2022)
+- Long text in free-text fields (as medication name, posology, ...)
+- Increasing / Decreasing quantities
+- Leaflet of medication
+- Multiple authors within the medication scheme
+
+```xml title="Example"
+...
+<transaction>
+    ...
+    <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.11">medication</cd>
+        ...
+        <content>
+            <!-- Medication with Leaflet , e.g "Sinutab Forte 500 mg" -->
+            <!-- Long free-text medication name (more than 100 characters) -->
+        </content>
+        ...
+        <beginmoment>
+            <date>2020-05-10</date>
+        </beginmoment>
+        <!-- New way to stop medication (VIDIS WG 3&4 - November 2022) -->
+        <endmoment>
+            <date>2024-05-10</date>
+        </endmoment>
+        ...
+        <!-- Increasing / Decreasing quantities -->
+        <regimen>
+
+          <daynumber>1</daynumber>
+          <daytime>
+            <dayperiod>
+              <cd S="CD-DAYPERIOD" SV="1.0">duringbreakfast</cd>
+            </dayperiod>
+          </daytime>
+          <quantity>
+            <decimal>1</decimal>
+            <unit>
+              <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00001</cd>
+            </unit>
+          </quantity>
+
+          <daynumber>2</daynumber>
+          <daytime>
+            <dayperiod>
+              <cd S="CD-DAYPERIOD" SV="1.0">duringbreakfast</cd>
+            </dayperiod>
+          </daytime>
+          <quantity>
+            <decimal>2</decimal>
+            <unit>
+              <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00001</cd>
+            </unit>
+          </quantity>
+
+          <daynumber>3</daynumber>
+          <daytime>
+            <dayperiod>
+              <cd S="CD-DAYPERIOD" SV="1.0">duringbreakfast</cd>
+            </dayperiod>
+          </daytime>
+          <quantity>
+            <decimal>1</decimal>
+            <unit>
+              <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00001</cd>
+            </unit>
+          </quantity>
+        </regimen>
+        ...
+    </item>
+    ...
+</transaction>
+...
+```
+
+## Test cases
+
+- New way to stop medication (VIDIS WG 3&4 - November 2022)
+- Long text in free-text fields (as medication name, posology, ...)
+- Increasing / Decreasing quantities
+- Leaflet of medication
+- Multiple authors within the medication scheme
+
+## Files
+
+- [XML file](https://github.com/smals-jy/KMEHR-tests/blob/main/output/ms/TS-09-corner_cases.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/ms/TS-09-corner_cases.ts)
+
+## Expected results
+
+When looking to the patient medication scheme, all these criterias must be fulfilled :
+    - `New way to stop medication` case is handled properly 
+        - Correct medication name 
+            - "Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56" (Dutch)
+            - "Pantomed 40 mg (PI Pharma) compr. gastro-résist. 56" (French)
+        - Correct author
+            - name : Mickey Mouse
+            - role : `persphysician` [in user language according official translations](https://www.ehealth.fgov.be/standards/kmehr/en/tables/healthcare-party-type)
+        - Correct medication period
+            - Start date : August 18, 2021
+            - End date : September 1, 2021
+    - `Long text in free-text fields (as medication name, posology, ...)` case is handled properly 
+        - `Dit is een tekst van ongeveer 300 characters. Dit is dicht bij de maximale lengte van een tekst veld. Hierbij kijken we na of de applicatie dit accepteert. This is a text of approximately 300 characters. This is close to the maximum length of a text field. With this we check if the application accepts this.` is present in : 
+            - Medication name
+            - Posology free-text
+            - Instructions for patient
+    - `Increasing / Decreasing quantities` case is handled properly 
+        - Correct medication name : "DifferentQuantities"
+        - Correct author
+            - name : Piggy Muppets
+            - role : `persnurse` [in user language according official translations](https://www.ehealth.fgov.be/standards/kmehr/en/tables/healthcare-party-type)
+        - Correct posology
+            - On January 1, 2021
+                - "1 cuillère à café (5 ml)" as French posology
+                - "1 theelepeel (5 ml)" as Dutch posology
+            - On January 2, 2021
+                - "2 cuillères à café (5 ml)" as French posology
+                - "2 theelepels (5 ml)" as Dutch posology
+            - On January 3, 2021
+                - "3 cuillères à café (5 ml)" as French posology
+                - "3 theelepels (5 ml)" as Dutch posology
+            - On January 4, 2021
+                - "4 cuillères à café (5 ml)" as French posology
+                - "4 theelepels (5 ml)" as Dutch posology
+            - On January 5, 2021
+                - "5 cuillères à café (5 ml)" as French posology
+                - "5 theelepels (5 ml)" as Dutch posology
+            - On January 6, 2021
+                - "4 cuillères à café (5 ml)" as French posology
+                - "4 theelepels (5 ml)" as Dutch posology
+            - On January 7, 2021
+                - "3 cuillères à café (5 ml)" as French posology
+                - "3 theelepels (5 ml)" as Dutch posology
+            - On January 8, 2021
+                - "2 cuillères à café (5 ml)" as French posology
+                - "2 theelepels (5 ml)" as Dutch posology
+            - On January 9, 2021
+                - "1 cuillère à café (5 ml)" as French posology
+                - "1 theelepeel (5 ml)" as Dutch posology
+    - `Leaflet of medication` case is handled properly 
+        - Correct medication name 
+            - "Dafalgan 500 mg bruistabl. 20" (Dutch)
+            - "Dafalgan 500 mg compr. efferv. 20" (French)
+        - Correct author
+            - name : Balthazar Picsou
+            - role : `persdentist` [in user language according official translations](https://www.ehealth.fgov.be/standards/kmehr/en/tables/healthcare-party-type)
+        - Has leaflet
+            - In French ("Notice patient") : https://samviewer.digile.be/fr/sam/ampps/137742-01
+            - In Dutch ("Patiëntenbijsluiter") : https://samviewer.digile.be/fr/sam/ampps/137742-01

@@ -1,0 +1,61 @@
+---
+description: CD-ADMINISTRATIONUNIT
+title: 🍶 TS-03 - Administration units
+---
+
+## Description
+
+See if software in test can handle all the authorized [CD-ADMINISTRATIONUNIT](https://www.ehealth.fgov.be/standards/kmehr/en/tables/drug-administration-unit) by [MS Cookbook](https://www.ehealth.fgov.be/standards/kmehr/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/057e64396c1ea312a0b01607b0f94e4adcf456e8/20210331-safe_cookbook_medicatieschema_v5.8_en.pdf) :
+
+```xml title="Example"
+...
+<transaction>
+    ...
+    <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.11">medication</cd>
+        ...
+        <regimen>
+            ...
+            <quantity>
+                ...
+                <unit>
+                    <!-- The focus on the test -->
+                    <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00001</cd>
+                </unit>
+            </quantity>
+        </regimen>
+    </item>
+    ...
+</transaction>
+...
+```
+
+## Test cases
+
+In other words, all values of [CD-ADMINISTRATIONUNIT](https://www.ehealth.fgov.be/standards/kmehr/en/tables/drug-administration-unit) except these ones prohibited by [MS Cookbook](https://www.ehealth.fgov.be/standards/kmehr/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/057e64396c1ea312a0b01607b0f94e4adcf456e8/20210331-safe_cookbook_medicatieschema_v5.8_en.pdf) :
+    - ampoule
+    - bandage
+    - bottle
+    - box
+    - effervescent-tablet
+    - iu
+    - liter
+    - meq
+    - micrograms
+    - miu
+    - mmol
+    - piece
+    - syringe
+    - syringe-ampoule
+
+## Files
+
+- [XML file](https://github.com/smals-jy/KMEHR-tests/blob/main/output/ms/TS-03-CD-ADMINISTRATIONUNIT.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/ms/TS-03-CD-ADMINISTRATIONUNIT.ts)
+
+## Expected results 
+
+When looking to the patient medication scheme, for each value authorized :
+    - The medication must be present (for easiness, they all have daily periodicity)
+    - The administration unit translation to humans should respect [CD-ADMINISTRATIONUNIT](https://www.ehealth.fgov.be/standards/kmehr/en/tables/drug-administration-unit) table
