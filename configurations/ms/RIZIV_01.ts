@@ -26,10 +26,9 @@ export default function (): Configuration {
 
   return {
     author: {
-      familyname: "KATRIEN VAN",
-      firstname: "GUCHT",
+      familyname: "Tasmanian",
+      firstname: "Devil",
       type: "persphysician",
-      ssin: "83051839468",
       nihdi: "11425214001",
     },
     date: BEGIN_MOMENT,
