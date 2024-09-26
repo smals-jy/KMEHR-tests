@@ -1,0 +1,30 @@
+---
+description: Vitalink Acceptatie Testdata
+title: 🩺 Vitalink Acceptatie Testdata
+---
+
+## Description
+
+See if software in test can handle a reproduction of Vitalink Test data as described on [their website](https://www.vitalink.be/sites/default/files/2023-10/Vitalink_Acceptatie_Testdata_v1.0.pdf) ,as some elements have changed due to updates in KMEHR rules for the medication scheme
+
+## Test cases
+
+| **Dataentries** | **Version** | **Author**         | **Medication**         | **Dosage Pattern**                         | **Additional Information**                    |
+|-----------------|-------------|--------------------|------------------------|--------------------------------------------|-----------------------------------------------|
+| A1              | 2           | DR_MICKEY_MOUSE    | 0039347                | Mon/Wed/Fri: 1 during breakfast            | drug route: 00064                            |
+| B1              | 2           | PHARMACIST_DINGO   | 0119065                | according to blood analysis                | instruction for patient: according to blood analysis |
+| C1              | 2           | PHARMACY_200       | 2257095                | daily                                     | start: 2022-06-10, end: 2022-06-20, medication use: To treat bacterial infections |
+| D1              | 4           | DR_MICKEY_MOUSE    | 0066746                | once                                       | start: 2022-07-02, stop: 2022-07-20, acute temporality, comment: Stopping of drug |
+| E1              | 2           | DR_MICKEY_MOUSE    | 1557396                | day/night: 1, 2, 3: 1, 4: 0.5, 5-7: 0.25  | start: 2023-01-01, chronic temporality        |
+| F1              | 2           | DR_MICKEY_MOUSE    | 2915353                | daily: before breakfast                    | -                                             |
+| G1              | 2           | NURSE_PIGGY        | 2744753                | Day 1: 0.5 in the morning, Day 2: 0.5 in the morning, evening: 0.5 | instruction: alternating: 1/2 per day, and 2x 1/2 per day |
+| H1              | 2           | PHARMACIST_DINGO   | 0062521                | adhoc                                      | oneshot temporality, posology: adhoc          |
+| I1              | 3           | DR_MICKEY_MOUSE    | 3301                   | breakfast: 0.25, dinner: 0.25              | chronic temporality                          |
+| J1              | 2           | NURSE_PIGGY        | 0041020                | daily: during breakfast                    | chronic temporality, end condition: when not needed |
+| K1              | 2           | PHARMACIST_DINGO   | compound prescription  | adhoc                                      | posology: when needed                        |
+| L3              | 4           | DR_MICKEY_MOUSE    | 2120046                | Saturday: 1 during lunch                   | start: 2022-01-01, chronic temporality        |
+
+## Files
+
+- [XML file](https://github.com/smals-jy/KMEHR-tests/blob/main/output/ms/Vitalink_Acceptatie_Testdata.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/ms/Vitalink_Acceptatie_Testdata.ts)
