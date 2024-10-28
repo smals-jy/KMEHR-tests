@@ -1,0 +1,39 @@
+---
+description: Medication without prescription in PCDH
+title: 🔓 TS-02 - Without prescription
+---
+
+## Description
+
+See if software in test can handle the case when at least one delivered medication isn't related to a prescription in PCDH : 
+
+```xml title="Example"
+...
+<smc:events>
+    ...
+    <smc:event xsi:type="smc:PharmaceuticalCareEventType">
+        <smc:dispensedWithoutPrescription>
+            <!-- The focus on the test -->
+        </smc:dispensedWithoutPrescription>
+    </smc:event>
+    ...
+</smc:events>
+...
+```
+
+## Test cases
+
+- "productCode" (CNK) without prescription
+
+## Files
+
+- [XML file](https://github.com/smals-jy/KMEHR-tests/blob/main/output/pcdh/TS-02-withoutPrescription.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/pcdh/TS-02-withoutPrescription.ts)
+
+## Expected results 
+
+When looking to the patient delivered medication history : 
+
+- "productCode" (CNK) is present : ["Sinutab Forte 500 mg - 60 mg comp."](https://samviewer.digile.be/nl/sam/ampps/240186-01)
+  - It has 2 box
+  - It has the "is prescribed" flag to false
