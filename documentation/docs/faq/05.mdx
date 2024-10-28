@@ -1,0 +1,65 @@
+---
+description: How to create a new delivered medications configuration ?
+title: 💊‍⚕️ Creation of PCDH configurations
+---
+
+## Why ?
+
+To be ready for : 
+- New scenarios or changes in Farmaflux
+- Derivative test scenarios from existing ones
+- Focus on what matter, e.g. descriptions instead of manipulate XML by hand
+- Reduce overhead with KMEHR / XML formats
+
+## Prerequisites
+
+- Clone the Github project, e.g. `git clone https://github.com/smals-jy/KMEHR-tests`
+- Node.JS LTS
+- Install Github project dependancies, e.g. `npm install`
+
+## Steps
+
+1. Create a new `ts` / `json` file in [`configurations/pcdh`](https://github.com/smals-jy/KMEHR-tests/tree/main/configurations/pcdh) folder. Existing files illustrates several scenarios. Here is a sample to start your own configurations :
+
+```ts
+import type { PCDHConfiguration } from "../../src/config";
+
+export default function (): PCDHConfiguration {
+  return {
+    author: {
+      org: {
+        type: "orgpharmacy",
+        name: "Pharmacie - code 200",
+        nihdi: "80000551",
+      },
+    },
+    patient: {
+      familyname: "Doe",
+      firstname: "John",
+      ssin: "12345678901",
+    },
+    date: "2024-02-01",
+    deliveries: [
+      {
+        deliveredAmount: 2,
+        deliveredMode: "dispensedWithoutPrescription",
+        drugs: [
+          // "productCode" CNK
+          {
+            drugType: "medicinalproduct",
+            intendedcd: "1727395",
+            intendedname: "Sinutab Forte 500 mg - 60 mg comp.",
+            instructionForPatient: "productCode",
+          },
+        ],
+      },
+    ],
+  };
+}
+```
+
+2. To generate the resulting XML file(s) in [`output/pcdh`](https://github.com/smals-jy/KMEHR-tests/tree/main/output/pcdh) folder :
+
+```bash
+npm start
+```
