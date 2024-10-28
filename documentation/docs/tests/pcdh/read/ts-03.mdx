@@ -1,0 +1,41 @@
+---
+description: Optional fields of administrationInstructions in PCDH
+title: ❓ TS-03 - Optional information
+---
+
+## Description
+
+See if software in test can handle optional fields in `<administrationInstructions>` section of PCDH : 
+
+```xml title="Example"
+...
+<model:dispensation>
+    ...
+    <model:administrationInstructions>
+        <!-- The focus on the test -->
+    </model:administrationInstructions>
+    ...
+</model:dispensation>
+...
+```
+
+## Test cases
+
+Cases we could find in administrationInstructions :
+  - "beginmoment"
+  - "endmoment"
+  - "beginmoment" / "endmoment"
+  - "duration"
+  - "route"
+
+## Files
+
+- [XML file](https://github.com/smals-jy/KMEHR-tests/blob/main/output/pcdh/TS-03-optional-information.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/pcdh/TS-03-optional-information.ts)
+
+## Expected results 
+
+When looking to the patient delivered medication history : 
+
+- When present, optional informations are displayed
+- When not present, optional information aren't displayed
