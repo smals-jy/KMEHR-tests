@@ -1,0 +1,51 @@
+---
+description: Formats of medication in PCDH
+title: 💊 TS-01 - Kind of drugs
+---
+
+## Description
+
+See if software in test can handle the formats of medication possible in PCDH : 
+
+```xml title="Example"
+...
+<smc:events>
+    ...
+    <smc:event xsi:type="smc:PharmaceuticalCareEventType">
+        <smc:dispensedForSamePrescriptio>
+            <!-- The focus on the test -->
+        </smc:dispensedForSamePrescriptio>
+    </smc:event>
+    ...
+</smc:events>
+...
+```
+
+## Test cases
+
+- "productCode" (CNK)
+- "magistralPreparation" (magistralText)
+- "magistralPreparation" (formularyReference)
+- "magistralPreparation" (compound)
+    - "medicinalproduct" (intended)
+    - "medicinalproduct" (intended + delivered)
+    - "substance" (substancecode & substancename)
+- "unregisteredProduct"
+
+## Files
+
+- [XML file](https://github.com/smals-jy/KMEHR-tests/blob/main/output/pcdh/TS-01-drugs-formats.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/pcdh/TS-01-drugs-formats.ts)
+
+## Expected results 
+
+When looking to the patient medication scheme : 
+
+- "productCode" (CNK) is present : ["Sinutab Forte 500 mg - 60 mg comp."](https://samviewer.digile.be/nl/sam/ampps/240186-01)
+- "magistralPreparation" (magistralText) is present : "Free text drug"
+- "magistralPreparation" (formularyReference) is present : ["ERYTHROMYCINE SOL. HYDRO-ALC. 4% FTM2"](https://samviewer.digile.be/nl/sam/compounding_formulas/0589028:CNK)
+- "magistralPreparation" (compound) is present with : 
+  - ["ATROVENT MONODOSE 0,25MG/2ML VIALS 20"](https://samviewer.digile.be/nl/sam/ampps/165776-01)
+  - ["Panadol 1 g comp. 50"](https://samviewer.digile.be/nl/sam/ampps/207794-02)
+  - ["GLYCEROL"](https://samviewer.digile.be/nl/sam/compounding_ingredients/0525337:CNK)
+- "unregisteredProduct" is present : "unregisteredProduct"
