@@ -1,0 +1,128 @@
+---
+description: How to inject / clean PCDH data in ACCptance ?
+title: 💉 GfddppGui
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## What is GfddppGui ?
+
+It is a tool developped by Farmaflux to register / update data for a given patient delivered medication history.
+More info about it on https://www.farmaflux.be/
+
+## Prerequisites
+
+- eHealth Pharmacy profile in ACCptance . If none, ask that to integration-support@ehealth.fgov.be 
+- eHealth personnal certificate. If not, get one through [eHealth Certificate Manager (French)](http://wwwacc.ehealth.fgov.be/JWS/ETEE/etee-requestor_fr.jnlp) / [eHealth Certificate Manager (Dutch)](http://wwwacc.ehealth.fgov.be/JWS/ETEE/etee-requestor_nl.jnlp)
+- eHealth Pharmacy certificate. If not, get one through [eHealth Certificate Manager (French)](http://wwwacc.ehealth.fgov.be/JWS/ETEE/etee-requestor_fr.jnlp) / [eHealth Certificate Manager (Dutch)](http://wwwacc.ehealth.fgov.be/JWS/ETEE/etee-requestor_nl.jnlp)
+
+- ## Steps
+
+### Setup
+
+1. Go to https://ftp.apb.be/ and login (username: anonymous, no password)
+2. Go inside the `SDK` folder 
+3. Go inside the folder of a recent version of the SDK (Recommended : `MBC-4.1`)
+4. Download the zip file you find in the folder, such as `Executor MBC-4.1.zip`
+5. Copy your two certificats from eHealth folder (e.g `C:/Users/jy/ehealth/keystore`) to `SDK/conf/p12/acc` folder :
+  - The certificat of a pharmacy you are known as holder (e.g. `NIHII-PHARMACY=80000551 20240208-103514.acc-p12`)  
+  - Your personal certificat (e.g. `SSIN=12345678901 20240208-101310.acc-p12`)  
+6. Update or create following properties of `SDK/conf/connector-client.properties` file :
+
+```properties
+# STS HAS CHANGED in november 2023
+endpoint.sts=https://services-acpt.ehealth.fgov.be/IAM/SecurityTokenService/v1
+service.sts.class=be.ehealth.technicalconnector.service.sts.impl.STSServiceWsTrustImpl
+default.rsa.digest.method.algorithm=http://www.w3.org/2001/04/xmlenc#sha256
+default.rsa.signature.method.algorithm=http://www.w3.org/2001/04/xmldsig-more#rsa-sha256
+
+# password of your keystores, prefer to have the same password for easiness ...
+# Pharmacy keystore password
+KEYSTORE_PASSWORD=YOUR_PASSWORD_HERE
+# Personnal keystore password
+user.password=YOUR_PASSWORD_HERE
+
+# Information about user, pharmacy-holder and pharmacy (SSIN and NIHII-numbers) used in the SAML attributes
+user.firstname=John
+user.lastname=Doe
+user.inss=12345678901
+
+# The nihii number of your pharmacist profile
+# Go to https://webapps-v.riziv-inami.fgov.be/ to see it
+user.nihii=YOUR_PHARMACIST_NIHII_HERE
+
+# Information about your pharmacy
+# For the pharmacy holder, usually in ACC, it is the same person, which makes it simple
+pharmacy.name=YOUR_PHARMACY_NAME_HERE
+pharmacy.nihii=YOUR_PHARMACY_NIHII_HERE
+pharmacy-holder.nihii=YOUR_PHARMACIST_HOLDER_NIHII_HERE
+pharmacy-holder.ssin=12345678901
+pharmacy-holder.firstname=John
+pharmacy-holder.lastname=Doe
+
+# The keystores file names
+sessionmanager.holderofkey.keystore=NIHII-PHARMACY=80000551 20240208-103514.acc-p12
+sessionmanager.encryption.keystore=NIHII-PHARMACY=80000551 20240208-103514.acc-p12
+sessionmanager.identification.keystore=SSIN=12345678901 20240208-101310.acc-p12
+```
+
+7. Run `SDK/examples/gui/setupGfddp.bat` so that gui is set up
+
+### Usage
+
+- Run `SDK/examples/gui/startGfddppGui.bat` to start the gui
+- Create a session
+  - In `General` tab, click on `Create Fallback session`
+  - Click on `Login` (leave fields blank as normally already setup thanks to connector-client.properties file)
+  - Wait until you get an answer (SOAP calls takes time ...)
+  - If it is successful, you will have something in `SAML token` textarea
+- Do any of the following actions :
+
+<Tabs>
+
+  <TabItem value="registerPatient" label="Register patient in PCDH" default>
+
+       1. Ask patient to enable consent & have a therapeutic relation with your pharmacy
+         - Enable consent, if not already done on https://wwwacc.mijngezondheid.belgie.be/my/care-and-support/consent
+         - Create a therapeutic relation with the pharmacy on https://wwwacc.mijngezondheid.belgie.be/my/care-and-support/relationships
+
+       2. Enable `contractering` link between your patient and the pharmacy
+        - In `GFDDPP` tab, click on `Questionnaire` section (use arrows on the right to see it)
+        - Update patient request `ssin` / `names` / `familyName` / `birthDate` fields with the data of your own patient such as : 
+
+       ```json
+          {
+          	"ssin": "12345678901",
+          	"names": [
+          		"John"
+          	],
+          	"familyName": "Done",
+          	"birthDate": "1972-08-10",
+          	"gender": "MALE",
+          	"mobileNumber":"0498988877",
+          	"address": {
+          		"streetAndNumber": "Streuvelstraat (Stijn) 4",
+          		"zip": "1800",
+          		"municipality": "Vilvoorde"
+          	},
+          	"requireSignature": null,
+          	"requireConsent": null,
+          	"requireTherapeuticLink": null
+          }
+       ```
+
+       3. Click on `btnGetAvailableAdminTypeQuestionn` and wait for answer
+       4. Input `contracting` (instead of `covid19test`) in `QuestionnaireType` field
+       5. Click on `btnGetLaunchUrl` and wait for answer
+       6. Copy the `launchurl` property you get from JSON response (e.g. https://acc-tip.gfd-dpp.be/be-apb-gfddpp-services-Pharm-app/launch.html?iss=https://acc-tip.gfd-dpp.be/be-apb-gfddpp-services-TIPFHIR/fhir&launch=ea14fe04-d9b1-4387-a420-1475004f7556&sublaunch=contracting&ehr=https://acc-tip.gfd-dpp.be/be-apb-gfddpp-services-EHR/ehr&nocache=1 )
+       7. Open this link in your browser
+       8. Enable or extend the validity of two specific things you will see on this website :
+         - `Verwerkersovereenkomst`
+         - `Gedeeld Farmaceutisch Dossier (GFD)`
+       9. If both operation are successful, you are ready to manipulate data in FarmaFlux
+       
+  </TabItem>
+
+</Tabs>
+
