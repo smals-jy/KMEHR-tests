@@ -1,0 +1,50 @@
+---
+description: Formats of posology in PCDH
+title: 🕑 TS-04 - Posologies
+---
+
+## Description
+
+See if software in test can handle the formats of posologies possible in PCDH : 
+
+```xml title="Example"
+...
+<model:dispensation>
+    ...
+    <model:administrationInstructions>
+        <!-- Free text posology -->
+        <model:posology>
+            <!-- The focus on the test -->
+        </model:posology>
+        <!-- Codified posology -->
+        <model:regimen>
+            <!-- The focus on the test -->
+        </model:regimen>
+    </model:administrationInstructions>
+    ...
+</model:dispensation>
+...
+```
+
+## Test cases
+
+- posology (free-text)
+- No administrationInstructions
+- Regimen (one line)
+- Regimen (multiple lines)
+
+## Files
+
+- [XML file](https://github.com/smals-jy/KMEHR-tests/blob/main/output/pcdh/TS-04-posology-formats.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/pcdh/TS-04-posology-formats.ts)
+
+## Expected results 
+
+When looking to the patient delivered medication history : 
+- Medication with name "Posology - TC 1" has this as posology : "administrationInstructions - posology (free-text)"
+- Medication with name "Posology - TC 2" has no posology
+- Medication with name "Posology - TC 3" has a single line posology
+  - "Take 42 * 5 ml	between breakfast and lunch", translated in user language (as it is codified)
+- Medication with name "Posology - TC 4" has a two lines posology
+  - "Take 42 * 5 ml	 between breakfast and lunch", translated in user language (as it is codified)
+  - "Take 25 * 5 ml between breakfast and lunch", translated in user language (as it is codified)
