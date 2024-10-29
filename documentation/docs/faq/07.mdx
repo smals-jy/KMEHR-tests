@@ -124,7 +124,7 @@ sessionmanager.identification.keystore=SSIN=12345678901 20240208-101310.acc-p12
        
   </TabItem>
 
-  <TabItem value="registerData" label="Insert data patient in PCDH" default>
+  <TabItem value="registerData" label="Insert data patient in PCDH">
 
       :::warning
           Don't forget to register your patient in PCDH first, otherwise this won't work
@@ -158,6 +158,114 @@ sessionmanager.identification.keystore=SSIN=12345678901 20240208-101310.acc-p12
 
   </TabItem>
 
+  <TabItem value="registerData" label="Insert data patient in PCDH">
+
+      1. In `GFDDPP` tab, click on `Get data` section (use arrows on the left to see it)
+      2. Change `XXXXXXXXXXX` (in section `Patient id`) with information of your own patient ssin
+      3. In the first textarea, copy this example where you applied the following modifications :
+          - You replace information of `[YOUR_PATIENT_SSIN]` with information of your own patient ssin
+
+      ```xml
+      <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+      <single-message xmlns:ns2="http://www.apb.be/standards/smoa/schema/model/v1" xmlns="http://www.apb.be/standards/smoa/schema/v1" xmlns:ns4="http://www.apb.be/standards/smoa/schema/code/v1" xmlns:ns3="http://www.apb.be/standards/smoa/schema/id/v1" xmlns:ns5="http://www.ehealth.fgov.be/standards/kmehr/schema/v1" xmlns:ns6="test" xmlns:ns7="http://www.w3.org/2000/09/xmldsig#" xmlns:ns8="http://www.w3.org/2001/04/xmlenc#">
+          <unsigned>
+              <eventFolder>
+                  <events>
+                      <event xsi:type="MedicationHistoryEvent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                          <ns2:medicationHistoryEntity>
+                              <ns2:entityId xsi:type="ns3:EntityIdType">
+                                  <ns3:id>e14df4f9-f7bd-617c-9d46-5bfd109f406b</ns3:id>
+                                  <ns3:version>1</ns3:version>
+                              </ns2:entityId>
+                              <ns2:sessionID>71767665-c6f2-61d2-1e55-f16ff046ab3b</ns2:sessionID>
+                              <ns2:deliveryDate>2024-02-06T14:30:09</ns2:deliveryDate>
+                              <ns2:min-Patient>
+                                  <ns2:personId xsi:type="ns3:InssIdType">
+                                      <ns3:id>[YOUR_PATIENT_SSIN]</ns3:id>
+                                  </ns2:personId>
+                                  <ns2:name></ns2:name>
+                                  <ns2:familyName></ns2:familyName>
+                              </ns2:min-Patient>
+                              <ns2:product prescribed="false">
+                                  <ns2:description>
+                                      <ns2:productCode xsi:type="ns3:CnkIdType">
+                                          <ns3:cnk>6666666</ns3:cnk>
+                                      </ns2:productCode>
+                                  </ns2:description>
+                                  <ns2:dispensation>
+                                      <ns2:numberOfUnits>1</ns2:numberOfUnits>
+                                      <ns2:administrationInstructions>
+                                          <ns2:beginmoment>
+                                              <yearmonth>2012-10</yearmonth>
+                                          </ns2:beginmoment>
+                                          <ns2:regimen>
+                                              <ns2:daynumber>1</ns2:daynumber>
+                                              <ns2:daytime>
+                                                  <ns2:dayperiod xsi:type="ns4:DayPeriodCodeType">
+                                                      <ns4:cd>BETWEENBREAKFASTANDLUNCH</ns4:cd>
+                                                  </ns2:dayperiod>
+                                              </ns2:daytime>
+                                              <ns2:quantity>
+                                                  <ns2:decimal>5.0</ns2:decimal>
+                                                  <ns2:unit xsi:type="ns4:AdministrationUnitValuesCodeType">
+                                                      <ns4:cd>ml</ns4:cd>
+                                                  </ns2:unit>
+                                              </ns2:quantity>
+                                          </ns2:regimen>
+                                          <ns2:route>test</ns2:route>
+                                          <ns2:issubstitutionallowed>false</ns2:issubstitutionallowed>
+                                      </ns2:administrationInstructions>
+                                  </ns2:dispensation>
+                              </ns2:product>
+                              <ns2:tipQualityIndicator>5</ns2:tipQualityIndicator>
+                          </ns2:medicationHistoryEntity>
+                      </event>
+                  </events>
+                  <entitySpace>
+                      <entity xsi:type="ns2:DataLocationType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                          <ns2:min-Patient>
+                              <ns2:personId xsi:type="ns3:InssIdType">
+                                  <ns3:id>[YOUR_PATIENT_SSIN]</ns3:id>
+                              </ns2:personId>
+                              <ns2:name></ns2:name>
+                              <ns2:familyName></ns2:familyName>
+                          </ns2:min-Patient>
+                          <ns2:location>
+                              <ns2:system>PCDH</ns2:system>
+                              <ns2:careDataType>medicationhistory</ns2:careDataType>
+                          </ns2:location>
+                      </entity>
+                  </entitySpace>
+              </eventFolder>
+          </unsigned>
+      </single-message>
+      ```
+
+      4. Click on `Get` button
+      5. Copy answer & replace contents of this repository [`TEMPLATES/PCDH_getData.xml`](https://github.com/smals-jy/KMEHR-tests/blob/main/TEMPLATES/PCDH_getData.xml) file with it
+      6. Delete all xml files in [`output/pcdh-removal`](https://github.com/smals-jy/KMEHR-tests/tree/main/output/pcdh-removal) folder
+      7. Run this command `npm run generate-revoke-data`
+      8. If everything runs as expected, you have now the xml message(s) for next steps in `output/pcdh-removal`
+      9. In `GFDDPP` tab, click on `Revoke data` section (use arrows on the left to see it)
+     10. For each message in `output/pcdh-removal`, do this :
+            - In the first textarea, copy each message where you applied the following modifications :
+                - You replace information of `id:nihiiPharmacyNumber` with information of your own pharmacy
+                - You removed the `<smc:header>` element (will be generated by tool)
+            - Click on `Revoke` button
+            - If it is successful, you will have a popup with message "Data has been revoked" otherwise another message
+
+  </TabItem>
+
 </Tabs>
+
+:::tip
+    Common reasons if you have issues :
+        - Your VPN might block calls to PCDH
+        - At least one of your eHealth certificates is expired
+        - Mistake(s) in your `SDK/conf/connector-client.properties` file
+        - XML files that doesn't respect PCDH rules
+        - If SDK auto-retry feature doesn't work (after 5 minutes), close tool, delete everything in `SDK/conf/msg_queue` folder and resend all your messages
+        - ...
+:::
 
 [PCDH_OUTPUT]: https://github.com/smals-jy/KMEHR-tests/tree/main/output/pcdh
