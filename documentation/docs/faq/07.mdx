@@ -89,7 +89,7 @@ sessionmanager.identification.keystore=SSIN=12345678901 20240208-101310.acc-p12
 
        2. Enable `contractering` link between your patient and the pharmacy
         - In `GFDDPP` tab, click on `Questionnaire` section (use arrows on the right to see it)
-        - Update patient request `ssin` / `names` / `familyName` / `birthDate` fields with the data of your own patient such as : 
+        - Update patient request `ssin` / `names` / `familyName` / `birthDate` / `gender` fields with the data of your own patient such as : 
 
        ```json
           {
@@ -158,7 +158,7 @@ sessionmanager.identification.keystore=SSIN=12345678901 20240208-101310.acc-p12
 
   </TabItem>
 
-  <TabItem value="registerData" label="Insert data patient in PCDH">
+  <TabItem value="cleanData" label="Remove data patient in PCDH">
 
       1. In `GFDDPP` tab, click on `Get data` section (use arrows on the left to see it)
       2. Change `XXXXXXXXXXX` (in section `Patient id`) with information of your own patient ssin
