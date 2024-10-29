@@ -1,0 +1,58 @@
+---
+description: How to validate a PCDH XML file ?
+title: 👮 Validation of PCDH files
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## Why ?
+
+- Check if XML files are valid PCDH messages ?
+
+:::info
+    This project does it on each git change : ![XML Validations](https://github.com/smals-jy/KMEHR-tests/actions/workflows/XML_validations.yml/badge.svg)
+    ( [Source code](https://github.com/smals-jy/KMEHR-tests/blob/main/.github/workflows/XML_validations.yml) )
+:::
+
+## Prerequisites
+
+- [Local XSDs of the soa-farmaflux you would like to use](https://github.com/smals-jy/KMEHR-tests/tree/main/soa-farmaflux) (e.g `2.0.2`)
+- XMLLint, which is an [Open Source](https://gitlab.gnome.org/GNOME/libxml2) tool you can download on your platform :
+
+<Tabs>
+    <TabItem value="Debian" label="Debian based Linux" default>
+        ```bash
+        sudo apt-get update -qq
+        sudo apt-get install -y libxml2-utils
+        ```
+    </TabItem>
+    <TabItem value="RHEL" label="RHEL based Linux (such as CentOS)">
+        ```bash
+        sudo yum update -qq
+        sudo yum install -y xmlstarlet
+        ```
+    </TabItem>
+    <TabItem value="OSX" label="MacOS">
+        ```bash
+        # Should be built in to MacOS, but in case of : 
+        brew install libxml2
+        ```
+    </TabItem>
+    <TabItem value="Windows" label="Windows">
+        ```bash
+        # Use "Chocolatey" package manager (https://community.chocolatey.org/)
+        choco install xsltproc
+        ```
+    </TabItem>
+</Tabs>
+
+## Steps
+
+1. Unzip your KMEHR XSD file
+2. Check if XML file is valid KMEHR file, by running a command similar to this one :
+
+```bash
+xmllint --catalogs --noout --schema ./soa-farmaflux/maindoc/single-message-oa-1.0.xsd ./path/to/your/file/test-PCDH.xml
+```
+
+3. If it is valid, you will receive a status 0 of this command. Otherwise, you have an error somewhere ...
