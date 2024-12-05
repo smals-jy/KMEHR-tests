@@ -338,6 +338,10 @@ export default function (): Configuration {
           route: "00002"
         },
       },
+      // It doesn't seem a intended mistake to have two rows with id "5"
+      // Looks like IMEC was testing a scenario where this row is the oldest
+      // whereas the "2024-09-01" row reflects an update that isn't properly done
+      // As it should get its own id in theory (to simulate conflict)
       {
         id: 5,
         transactionDate: "2024-02-01",
