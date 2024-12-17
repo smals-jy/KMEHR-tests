@@ -526,6 +526,11 @@ export type MedicationEntry = {
    */
   eanIdentifier?: string;
   /**
+   * ATC identifier
+   * @example C10AA07
+   */
+  atcIdentifier?: string;
+  /**
    * text of the component prescription
    * @example "Free text drug"
    */
@@ -1088,6 +1093,28 @@ function generateSuspension(
   ];
 }
 
+// Generate a valid atc
+function generateAtc(config: TransactionConfig): Virtual_XML[] {
+
+  let commonPrefix = PREDEFINED_FIELDS.COMMON_PREFIX;
+  let drugData = config.drug;
+
+  return [
+    {
+      [addPrefix(commonPrefix, "cd")]: [
+        {
+          // Why the 666 ? Because I want a code that will not be valid 
+          "#text": drugData.atcIdentifier || `666`,
+        }
+      ],
+      ":@": {
+        "@_S": "CD-ATC",
+        "@_SV": "1.0",
+      },
+    }
+  ]
+}
+
 // Generate a valid drug
 function generateDrug(config: TransactionConfig, idx: number): Virtual_XML[] {
   let commonPrefix = PREDEFINED_FIELDS.COMMON_PREFIX;
@@ -1187,6 +1214,7 @@ function generateMedication(
   let drugData = config.drug;
   let hasDrug =
     drugData.drugType !== undefined || drugData.identifierType === "CD-EAN";
+  let hasAtc = drugData.atcIdentifier !== undefined;
   let textNeeded =
     drugData.comment !== undefined ||
     drugData.identifierType === "CD-EAN" ||
@@ -1217,7 +1245,11 @@ function generateMedication(
         "@_SV": "1.4",
       },
     },
-    // Content
+    // Content [1]
+    hasAtc && {
+      [addPrefix(commonPrefix, "content")]: generateAtc(config),
+    },
+    // Content [2]
     hasDrug && {
       [addPrefix(commonPrefix, "content")]: generateDrug(config, idx),
     },

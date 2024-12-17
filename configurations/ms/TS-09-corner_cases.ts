@@ -210,6 +210,20 @@ export default function (): Configuration {
           medicationuse: "Leaflet case",
         },
       },
+      {
+        id: 7,
+        drug: {
+          drugType: "medicinalproduct",
+          atcIdentifier: "C10AA07",
+          identifierType: "CD-DRUG-CNK",
+          periodicity: "D",
+          temporality: "chronic",
+          intendedcd: "2055200",
+          intendedname: "Crestor 10 mg compr. pellic. 98",
+          posologyFreeText: "1 compr. - 3 fois chaque 4 jours",
+          medicationuse: "ATC case",
+        }
+      }
     ],
   };
 }
