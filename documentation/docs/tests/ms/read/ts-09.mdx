@@ -12,6 +12,7 @@ See if software in test can handle very specific cases authorized by [MS Cookboo
 - Increasing / Decreasing quantities
 - Leaflet of medication
 - Multiple authors within the medication scheme
+- Drug with ATC code
 
 ```xml title="Example"
 ...
@@ -21,6 +22,9 @@ See if software in test can handle very specific cases authorized by [MS Cookboo
         <id S="ID-KMEHR" SV="1.0">2</id>
         <cd S="CD-ITEM" SV="1.11">medication</cd>
         ...
+        <content>
+            <!-- Medication with ATC like "C10AA07" , e.g "Crestor 10 mg compr. pellic. 98" -->
+        </content>
         <content>
             <!-- Medication with Leaflet , e.g "Sinutab Forte 500 mg" -->
             <!-- Long free-text medication name (more than 100 characters) -->
@@ -90,6 +94,7 @@ See if software in test can handle very specific cases authorized by [MS Cookboo
 - Increasing / Decreasing quantities
 - Leaflet of medication
 - Multiple authors within the medication scheme
+- Drug with ATC code
 
 ## Files
 
@@ -157,3 +162,7 @@ When looking to the patient medication scheme, all these criterias must be fulfi
         - Has leaflet
             - In French ("Notice patient") : https://samviewer.digile.be/fr/sam/ampps/137742-01
             - In Dutch ("Patiëntenbijsluiter") : https://samviewer.digile.be/fr/sam/ampps/137742-01
+    - `Drug with ATC code` case is handled properly
+        - Correct medication name 
+            - "Crestor 10 mg filmomh. tabl. 98" (Dutch)
+            - "Crestor 10 mg compr. pellic. 98" (French)
