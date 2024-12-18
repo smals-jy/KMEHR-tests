@@ -63,7 +63,7 @@ export function overwritePARTIAL_MS(
 
         // Override patient
         case LOOKUP_KEYS.PATIENT:
-          result[addPrefix(commonPrefix, "patient")] = generatePatient();
+          result[addPrefix(commonPrefix, "patient")] = generatePatient(commonPrefix);
           break;
 
         // Override id
