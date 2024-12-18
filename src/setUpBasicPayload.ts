@@ -94,7 +94,7 @@ export function setUpBasicPayload(
         overwritePARTIAL_MS(
           config,
           kmehrmessage,
-          prefixConfig.COMMON_PREFIX,
+          prefixConfig,
         ),
       ":@": newAttributes,
     },
