@@ -69,6 +69,32 @@ export type PCDHConfiguration = {
   deliveries: TransactionPCDHConfig[];
 };
 
+// Config to customize namespace of the output file
+export type PrefixConfig = {
+  // Used only for generating namespaces stuff
+  ROOT_PREFIX: string,
+  COMMON_PREFIX: string,
+  // In case your templates MS has namespaces, just edit these variables
+  LOOKUP_KEYS: {
+    // "ns6:id"
+    ID: string,
+    PATIENT: string,
+    AUTHOR: string,
+    RECIPIENT: string,
+    TIME: string,
+    DATE: string,
+    VERSION: string,
+  }
+}
+
+// General options for all generators
+export type OptionsConfig = {
+  // Where to read the configurations files for this generator
+  CONFIGURATIONS_PATH: string,
+  // Where to put the generated files
+  OUTPUT_PATH: string,
+}
+
 // Re-export the TransactionPCDHConfig
 export type { TransactionPCDHConfig };
 

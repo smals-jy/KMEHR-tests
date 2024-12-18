@@ -1,9 +1,14 @@
-import { generateOutput } from "./src/generateOutput";
-import { generateOutput as generatePCDHOutput } from "./src/generateDeliveredMedication";
-import { generateOutput as generateFHIRDosage } from "./src/generateFHIRDosage";
+import {
+  generateMSOutput,
+  generateFHIRDosage,
+  generatePCDHOutput
+} from "./src/index"
 
 console.log("MS STARTED");
-generateOutput()
+generateMSOutput({
+  CONFIGURATIONS_PATH: "./configurations/ms",
+  OUTPUT_PATH: "./output/ms",
+})
   .then(() => {
     console.log("MS FINISHED");
   })
