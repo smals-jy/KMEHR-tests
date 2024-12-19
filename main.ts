@@ -17,7 +17,10 @@ generateMSOutput({
   });
 
 console.log("PCDH STARTED");
-generatePCDHOutput()
+generatePCDHOutput({
+  CONFIGURATIONS_PATH: "./configurations/pcdh",
+  OUTPUT_PATH: "./output/pcdh",
+})
   .then(() => {
     console.log("PCDH FINISHED");
   })
@@ -26,7 +29,10 @@ generatePCDHOutput()
   });
 
 console.log("FHIR DOSAGE STARTED");
-generateFHIRDosage()
+generateFHIRDosage({
+  CONFIGURATIONS_PATH: "./configurations/fhir-dosage",
+  OUTPUT_PATH: "./output/fhir-dosage",
+})
   .then(() => {
     console.log("FHIR DOSAGE FINISHED");
   })

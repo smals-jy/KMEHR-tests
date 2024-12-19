@@ -18,18 +18,21 @@ import type {
   TimingRepeat,
 } from "fhir/r4";
 
-// Constants for file handling
-const CONFIGURATIONS_PATH = `${__dirname}/../configurations/fhir-dosage`;
-const OUTPUT_PATH = `${__dirname}/../output/fhir-dosage`;
+import type { OptionsConfig } from "./config";
 
-export async function generateOutput() {
+export async function generateOutput(filesConfig: OptionsConfig) {
+
+  // Constants for file handling
+  const CONFIGURATIONS_PATH = filesConfig.CONFIGURATIONS_PATH;
+  const OUTPUT_PATH = filesConfig.OUTPUT_PATH;
+
   // Read configuration file(s)
   const dir = await opendir(CONFIGURATIONS_PATH);
   for await (const dirent of dir) {
     if (dirent.isFile()) {
       console.log(`Processing ${dirent.name}`);
       try {
-        await processSingleFile(`${CONFIGURATIONS_PATH}/${dirent.name}`);
+        await processSingleFile(`${CONFIGURATIONS_PATH}/${dirent.name}`, OUTPUT_PATH);
       } catch (error) {
         console.log(error);
       }
@@ -37,7 +40,7 @@ export async function generateOutput() {
   }
 }
 
-async function processSingleFile(path: string) {
+async function processSingleFile(path: string, outputPath: string) {
   // Get filename without extension
   let name = basename(path);
   let filename = name.substring(0, name.lastIndexOf("."));
@@ -66,7 +69,7 @@ async function processSingleFile(path: string) {
 
   // Write result into a json file
   await writeFile(
-    `${OUTPUT_PATH}/${filename}.json`,
+    `${outputPath}/${filename}.json`,
     JSON.stringify(payload, null, "\t"),
     {
       encoding: "utf8",
