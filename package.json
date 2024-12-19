@@ -6,6 +6,11 @@
   "main": "dist/main.js",
   "module": "dist/module.js",
   "types": "dist/types.d.ts",
+  "files": [
+    "dist/",
+    "src/",
+    "TEMPLATES/"
+  ],
   "scripts": {
     "start": "npx tsx main.ts",
     "watch": "parcel watch",
@@ -15,7 +20,7 @@
     "prettier": "npx prettier --write **/*.{js,jsx,ts,tsx,json,mts}",
     "test": "echo \"Error: no test specified\" && exit 0",
     "init": "npx tsc --init",
-    "checkRules": "npx xslt3 \"-s:output/TS-01-identifiers.xml\" \"-xsl:medicationscheme-validation-v2.xslt\" "
+    "checkRules": "npx xslt3 \"-s:output/ms/TS-01-identifiers.xml\" \"-xsl:medicationscheme-validation-v2.xslt\" "
   },
   "author": "jy95",
   "license": "MIT",
