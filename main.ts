@@ -6,8 +6,8 @@ import {
 
 console.log("MS STARTED");
 generateMSOutput({
-  CONFIGURATIONS_PATH: "./configurations/ms",
-  OUTPUT_PATH: "./output/ms",
+  CONFIGURATIONS_PATH: `${__dirname}/configurations/ms`,
+  OUTPUT_PATH: `${__dirname}/output/ms`,
 })
   .then(() => {
     console.log("MS FINISHED");
@@ -18,8 +18,8 @@ generateMSOutput({
 
 console.log("PCDH STARTED");
 generatePCDHOutput({
-  CONFIGURATIONS_PATH: "./configurations/pcdh",
-  OUTPUT_PATH: "./output/pcdh",
+  CONFIGURATIONS_PATH: `${__dirname}/configurations/pcdh`,
+  OUTPUT_PATH: `${__dirname}/output/pcdh`,
 })
   .then(() => {
     console.log("PCDH FINISHED");
@@ -30,8 +30,8 @@ generatePCDHOutput({
 
 console.log("FHIR DOSAGE STARTED");
 generateFHIRDosage({
-  CONFIGURATIONS_PATH: "./configurations/fhir-dosage",
-  OUTPUT_PATH: "./output/fhir-dosage",
+  CONFIGURATIONS_PATH: `${__dirname}/configurations/fhir-dosage`,
+  OUTPUT_PATH: `${__dirname}/output/fhir-dosage`,
 })
   .then(() => {
     console.log("FHIR DOSAGE FINISHED");
