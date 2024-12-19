@@ -1,5 +1,5 @@
 {
-  "name": "kmehr-tests",
+  "name": "@smals-jy/kmehr-tests",
   "version": "0.0.0-development",
   "description": "Comprehensive Testing Suite & tools for Belgian KMEHR Standards",
   "source": "src/index.ts",
@@ -12,8 +12,14 @@
     "TEMPLATES/"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/smals-jy"
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smals-jy/kmehr-tests.git"
+  },
+  "homepage": "https://smals-jy.github.io/KMEHR-tests/",
   "scripts": {
     "start": "npx tsx main.ts",
     "watch": "parcel watch",
