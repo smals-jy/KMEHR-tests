@@ -1,3 +1,5 @@
+import type { PrefixConfig } from "./config";
+
 // Constants, for the sake to make my life easier
 export const PREDEFINED_FIELDS = {
   // Author data
@@ -26,9 +28,6 @@ export const PREDEFINED_FIELDS = {
   TIME: "14:30:09",
   // MS version
   MS_VERSION: "42",
-  // Used only for generating namespaces stuff
-  ROOT_PREFIX: "",
-  COMMON_PREFIX: "",
 };
 
 // Add : to prefix, if existing
@@ -44,16 +43,19 @@ function generateSSIN() {
   return "XXXXXXXXXXX";
 }
 
-// In case your templates MS has namespaces, just edit these variables
-export const LOOKUP_KEYS = {
-  ID: "id", // "ns6:id"
-  PATIENT: "patient",
-  AUTHOR: "author",
-  RECIPIENT: "recipient",
-  TIME: "time",
-  DATE: "date",
-  VERSION: "version",
-};
+export const defaultPrefixConfig: PrefixConfig = {
+  ROOT_PREFIX: "",
+  COMMON_PREFIX: "",
+  LOOKUP_KEYS: {
+    ID: "id",
+    PATIENT: "patient",
+    AUTHOR: "author",
+    RECIPIENT: "recipient",
+    TIME: "time",
+    DATE: "date",
+    VERSION: "version",
+  },
+}
 
 // Types for manipulate data with fast-xml-parser
 export type Virtual_XML = Array<Virtual_XML_Entry> | Virtual_XML_Entry;

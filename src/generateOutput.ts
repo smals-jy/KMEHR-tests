@@ -2,36 +2,32 @@ import { opendir, readFile, writeFile } from "fs/promises";
 import { generateTransactions } from "./generateTransaction";
 import { setUpBasicPayload, readTemplateFile } from "./setUpBasicPayload";
 import { basename } from "path";
-import { addPrefix, PREDEFINED_FIELDS } from "./constants";
-import type { Configuration } from "./config";
+import { addPrefix, defaultPrefixConfig } from "./constants";
+import type { Configuration, PrefixConfig, OptionsConfig } from "./config";
 
 const { XMLBuilder } = require("fast-xml-parser");
 
-// Constants for file handling
-const CONFIGURATIONS_PATH = `${__dirname}/../configurations/ms`;
-const OUTPUT_PATH = `${__dirname}/../output/ms`;
-
-// For tweaking the payload later
-const KMEHR_KEY = addPrefix(PREDEFINED_FIELDS.COMMON_PREFIX, "kmehrmessage");
-const FOLDER_KEY = addPrefix(PREDEFINED_FIELDS.COMMON_PREFIX, "folder");
-const TRANSACTION_KEY = addPrefix(
-  PREDEFINED_FIELDS.COMMON_PREFIX,
-  "transaction",
-);
-
-export async function generateOutput() {
+export async function generateOutput(filesConfig: OptionsConfig, prefixConfig: PrefixConfig = defaultPrefixConfig) {
+  
   // Read template file
   const template = await readTemplateFile();
 
+  // Extract configuration from payload
+  const CONFIGURATIONS_PATH = filesConfig.CONFIGURATIONS_PATH;
+  const OUTPUT_PATH = filesConfig.OUTPUT_PATH;
+
   // Read configuration file(s)
   const dir = await opendir(CONFIGURATIONS_PATH);
+
   for await (const dirent of dir) {
     if (dirent.isFile()) {
       console.log(`Processing ${dirent.name}`);
       try {
         await processSingleFile(
           `${CONFIGURATIONS_PATH}/${dirent.name}`,
+          OUTPUT_PATH,
           template,
+          prefixConfig,
         );
       } catch (error) {
         console.log(error);
@@ -40,9 +36,9 @@ export async function generateOutput() {
   }
 }
 
-async function processSingleFile(path: string, template: any) {
+async function processSingleFile(inputPath: string, outputPath: string, template: any, prefixConfig: PrefixConfig) {
   // Get filename without extension
-  let name = basename(path);
+  let name = basename(inputPath);
   let filename = name.substring(0, name.lastIndexOf("."));
   let extension = name.substring(name.lastIndexOf(".") + 1);
 
@@ -53,23 +49,31 @@ async function processSingleFile(path: string, template: any) {
   switch (extension) {
     case "ts":
       // TODO later find out how to use await() instead ...
-      let module = require(`${path}`).default;
+      let module = require(`${inputPath}`).default;
       config = module() as Configuration;
       break;
 
     // It is considered as json by default
     default:
       // Read file
-      let contents = await readFile(path, { encoding: "utf8" });
+      let contents = await readFile(inputPath, { encoding: "utf8" });
       // Turn that to a JSON payload
       config = JSON.parse(contents) as Configuration;
   }
 
   // Set up basic payload
-  let payload = setUpBasicPayload(config!, template);
+  let payload = setUpBasicPayload(config!, template, prefixConfig);
 
   // Generate transaction
-  let transactions = generateTransactions(config!);
+  let transactions = generateTransactions(config!,  prefixConfig);
+
+  // KMEHR keys
+  const KMEHR_KEY = addPrefix(prefixConfig.COMMON_PREFIX, "kmehrmessage");
+  const FOLDER_KEY = addPrefix(prefixConfig.COMMON_PREFIX, "folder");
+  const TRANSACTION_KEY = addPrefix(
+    prefixConfig.COMMON_PREFIX,
+    "transaction",
+  );
 
   // @ts-ignore
   // console.log(payload[1][KMEHR_KEY][1][FOLDER_KEY])
@@ -81,13 +85,6 @@ async function processSingleFile(path: string, template: any) {
     ...payload[1][KMEHR_KEY][1][FOLDER_KEY],
     ...transactions,
   ];
-
-  // For debugging process only
-  /*
-  await writeFile(
-    `./lol_${filename}.json`,
-    JSON.stringify(payload, null, "\t")
-  );*/
 
   // Turn payload into
   let builder = new XMLBuilder({
@@ -107,7 +104,7 @@ async function processSingleFile(path: string, template: any) {
   let xml = builder.build(payload);
 
   // Write result into a xml file
-  await writeFile(`${OUTPUT_PATH}/${filename}.xml`, xml, {
+  await writeFile(`${outputPath}/${filename}.xml`, xml, {
     encoding: "utf8",
   });
 }

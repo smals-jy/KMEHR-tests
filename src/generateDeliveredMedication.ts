@@ -6,22 +6,24 @@ import type {
   PCDHConfiguration,
   TransactionPCDHConfig,
   RegimenPosology,
+  OptionsConfig
 } from "./config";
 
 const { XMLBuilder } = require("fast-xml-parser");
 
-// Constants for file handling
-const CONFIGURATIONS_PATH = `${__dirname}/../configurations/pcdh`;
-const OUTPUT_PATH = `${__dirname}/../output/pcdh`;
+export async function generateOutput(filesConfig: OptionsConfig) {
 
-export async function generateOutput() {
+  // Constants for file handling
+  const CONFIGURATIONS_PATH = filesConfig.CONFIGURATIONS_PATH;
+  const OUTPUT_PATH = filesConfig.OUTPUT_PATH;
+
   // Read configuration file(s)
   const dir = await opendir(CONFIGURATIONS_PATH);
   for await (const dirent of dir) {
     if (dirent.isFile()) {
       console.log(`Processing ${dirent.name}`);
       try {
-        await processSingleFile(`${CONFIGURATIONS_PATH}/${dirent.name}`);
+        await processSingleFile(`${CONFIGURATIONS_PATH}/${dirent.name}`, OUTPUT_PATH);
       } catch (error) {
         console.log(error);
       }
@@ -29,7 +31,7 @@ export async function generateOutput() {
   }
 }
 
-async function processSingleFile(path: string) {
+async function processSingleFile(path: string, outputPath: string) {
   // Get filename without extension
   let name = basename(path);
   let filename = name.substring(0, name.lastIndexOf("."));
@@ -74,7 +76,7 @@ async function processSingleFile(path: string) {
   let xml = builder.build(payload);
 
   // Write result into a xml file
-  await writeFile(`${OUTPUT_PATH}/${filename}.xml`, xml, {
+  await writeFile(`${outputPath}/${filename}.xml`, xml, {
     encoding: "utf8",
   });
 }

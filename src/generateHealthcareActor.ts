@@ -58,8 +58,7 @@ Fields (as individual) [1-1]:
 - Name [0-1]
 - First name [0-1]
 */
-function generateIndividual(config?: AuthorConfig): Virtual_XML_Entry {
-  const commonPrefix = PREDEFINED_FIELDS.COMMON_PREFIX;
+function generateIndividual(commonPrefix: string, config?: AuthorConfig): Virtual_XML_Entry {
 
   let result: Virtual_XML[] = [];
 
@@ -139,8 +138,7 @@ function generateIndividual(config?: AuthorConfig): Virtual_XML_Entry {
 - Type of organisation [1-1]: CD-HCPARTY
 - Name [0-1]: name of the organisation
 */
-function generateOrganization(config?: OrganizationConfig): Virtual_XML_Entry {
-  const commonPrefix = PREDEFINED_FIELDS.COMMON_PREFIX;
+function generateOrganization(commonPrefix: string,config?: OrganizationConfig): Virtual_XML_Entry {
 
   let result: Virtual_XML[] = [];
 
@@ -200,8 +198,7 @@ Fields (as hub) [0-1]:
 - Type (=hub) [1-1]: CD-HCPARTY
 - Name [0-1]: name of the hub
 */
-function generateHub(hub: Hub): Virtual_XML_Entry {
-  const commonPrefix = PREDEFINED_FIELDS.COMMON_PREFIX;
+function generateHub(commonPrefix: string, hub: Hub): Virtual_XML_Entry {
   let safeConfig = HubConfig[hub];
 
   // Result
@@ -249,8 +246,7 @@ Fields (as software) [0-1]:
 - Name [0-1]: name of the software
 - ID [1-1] : id of the software
 */
-function generateSoftware(software: SoftwareConfig): Virtual_XML_Entry {
-  const commonPrefix = PREDEFINED_FIELDS.COMMON_PREFIX;
+function generateSoftware(commonPrefix: string, software: SoftwareConfig): Virtual_XML_Entry {
 
   // Result
   let result: Virtual_XML[] = [];
@@ -310,15 +306,15 @@ function generateSoftware(software: SoftwareConfig): Virtual_XML_Entry {
   author must be identified as an individual, but can
   furthermore also be part of an organisation.
 */
-export function generateAuthor(config?: AuthorConfig): Virtual_XML {
+export function generateAuthor(config?: AuthorConfig, commonPrefix: string = ""): Virtual_XML {
   return [
     // (Optional) hub
-    config?.hub ? generateHub(config.hub) : undefined,
+    config?.hub ? generateHub(commonPrefix, config.hub) : undefined,
     // (Optional) organization
-    config?.org ? generateOrganization(config.org) : undefined,
+    config?.org ? generateOrganization(commonPrefix, config.org) : undefined,
     // (Optional) sofware
-    config?.software ? generateSoftware(config.software) : undefined,
+    config?.software ? generateSoftware(commonPrefix, config.software) : undefined,
     // Mandatory - Individual that wrote the MS line
-    generateIndividual(config),
+    generateIndividual(commonPrefix, config),
   ].filter((s) => s !== undefined) as Virtual_XML;
 }

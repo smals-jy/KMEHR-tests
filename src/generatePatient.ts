@@ -2,8 +2,7 @@ import type { Configuration } from "./config";
 import { PREDEFINED_FIELDS, addPrefix } from "./constants";
 import type { Virtual_XML } from "./constants";
 
-export function generatePatient(config?: Configuration): Virtual_XML {
-  const commonPrefix = PREDEFINED_FIELDS.COMMON_PREFIX;
+export function generatePatient(commonPrefix: string, config?: Configuration): Virtual_XML {
 
   return [
     // ID

@@ -1,10 +1,10 @@
 const { XMLParser } = require("fast-xml-parser");
 import { readFile } from "fs/promises";
-import type { Configuration } from "./config";
+import type { Configuration, PrefixConfig } from "./config";
 import type { Virtual_XML } from "./constants";
 
 // Constants, for the sake to make my life easier
-import { PREDEFINED_FIELDS, addPrefix } from "./constants";
+import { addPrefix } from "./constants";
 import { overwritePARTIAL_MS } from "./overwritePARTIAL_MS";
 
 // Read template file
@@ -37,6 +37,7 @@ export async function readTemplateFile() {
 export function setUpBasicPayload(
   config: Configuration,
   template: Virtual_XML,
+  prefixConfig: PrefixConfig
 ) {
   // Refactor it to be tool-friendly
   const kmehrmessageCandidat = Array.isArray(template)
@@ -61,16 +62,16 @@ export function setUpBasicPayload(
   // set up basic attributes for root
   let newAttributes = {
     [`@_xmlns${
-      PREDEFINED_FIELDS.COMMON_PREFIX.length > 0
-        ? `:${PREDEFINED_FIELDS.COMMON_PREFIX}`
+      prefixConfig.COMMON_PREFIX.length > 0
+        ? `:${prefixConfig.COMMON_PREFIX}`
         : ""
     }`]: "http://www.ehealth.fgov.be/standards/kmehr/schema/v1",
     "@_xmlns:ns2": "http://www.w3.org/2001/04/xmlenc#",
     "@_xmlns:ns3": "http://www.w3.org/2000/09/xmldsig#",
   } as any;
   // If a root prefix was put
-  if (PREDEFINED_FIELDS.ROOT_PREFIX.length !== 0) {
-    newAttributes[`@_xmlns:${PREDEFINED_FIELDS.ROOT_PREFIX}`] =
+  if (prefixConfig.ROOT_PREFIX.length !== 0) {
+    newAttributes[`@_xmlns:${prefixConfig.ROOT_PREFIX}`] =
       "http://www.ehealth.fgov.be/hubservices/core/v3";
   }
 
@@ -89,11 +90,11 @@ export function setUpBasicPayload(
     },
     // kmehr message
     {
-      [addPrefix(PREDEFINED_FIELDS.ROOT_PREFIX, "kmehrmessage")]:
+      [addPrefix(prefixConfig.ROOT_PREFIX, "kmehrmessage")]:
         overwritePARTIAL_MS(
           config,
           kmehrmessage,
-          PREDEFINED_FIELDS.COMMON_PREFIX,
+          prefixConfig,
         ),
       ":@": newAttributes,
     },

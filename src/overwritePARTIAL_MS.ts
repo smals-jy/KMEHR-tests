@@ -1,12 +1,12 @@
 import { isArray, isObjectLike } from "lodash";
 
 // Constants, for the sake to make my life easier
-import { PREDEFINED_FIELDS, addPrefix, LOOKUP_KEYS } from "./constants";
+import { PREDEFINED_FIELDS, addPrefix } from "./constants";
 
 import { generateAuthor } from "./generateHealthcareActor";
 import { generatePatient } from "./generatePatient";
 
-import type { Configuration } from "./config";
+import type { Configuration, PrefixConfig } from "./config";
 import type { Virtual_XML, Virtual_XML_Entry } from "./constants";
 
 // overwrite PARTIAL_MS
@@ -14,11 +14,16 @@ import type { Virtual_XML, Virtual_XML_Entry } from "./constants";
 export function overwritePARTIAL_MS(
   config: Configuration,
   obj: unknown,
-  commonPrefix: string = "",
+  prefixConfig: PrefixConfig,
 ): any {
+
+  // Set up variables
+  const commonPrefix = prefixConfig.COMMON_PREFIX;
+  const LOOKUP_KEYS = prefixConfig.LOOKUP_KEYS;
+
   // if Array, apply function on all item
   if (isArray(obj)) {
-    return obj.map((item) => overwritePARTIAL_MS(config, item, commonPrefix));
+    return obj.map((item) => overwritePARTIAL_MS(config, item, prefixConfig));
   }
 
   // If object, treat each property separatly
@@ -58,7 +63,7 @@ export function overwritePARTIAL_MS(
 
         // Override patient
         case LOOKUP_KEYS.PATIENT:
-          result[addPrefix(commonPrefix, "patient")] = generatePatient();
+          result[addPrefix(commonPrefix, "patient")] = generatePatient(commonPrefix);
           break;
 
         // Override id
@@ -95,7 +100,7 @@ export function overwritePARTIAL_MS(
           result[entryKey] = overwritePARTIAL_MS(
             config,
             entryValue,
-            commonPrefix,
+            prefixConfig,
           );
       }
     }

@@ -4,8 +4,8 @@ import type { AuthorConfig } from "./generateHealthcareActor";
 import { generateAuthor } from "./generateHealthcareActor";
 import { PREDEFINED_FIELDS, addPrefix } from "./constants";
 
-import type { Configuration } from "./config";
-import type { Virtual_XML, Virtual_XML_Entry } from "./constants";
+import type { Configuration, PrefixConfig } from "./config";
+import type { Virtual_XML } from "./constants";
 
 export type PeriodicityList =
   | "D"
@@ -759,8 +759,7 @@ export type TransactionPCDHConfig = {
 };
 
 // Generate the regimen part
-function generateRegimen(entry: RegimenPosology[]): Virtual_XML[] {
-  let commonPrefix = PREDEFINED_FIELDS.COMMON_PREFIX;
+function generateRegimen(commonPrefix: string, entry: RegimenPosology[]): Virtual_XML[] {
   let result: Virtual_XML[] = [];
 
   for (const regimen of entry) {
@@ -875,9 +874,9 @@ function generateRegimen(entry: RegimenPosology[]): Virtual_XML[] {
   return result;
 }
 
-export function generateTransactions(config: Configuration): Virtual_XML[] {
+export function generateTransactions(config: Configuration, prefixConfig: PrefixConfig): Virtual_XML[] {
   let result: Virtual_XML[] = [];
-  let commonPrefix = PREDEFINED_FIELDS.COMMON_PREFIX;
+  let commonPrefix = prefixConfig.COMMON_PREFIX;
 
   for (let [idx, item] of config.transactions.entries()) {
     let transaction_items: Virtual_XML[] = [];
@@ -949,6 +948,7 @@ export function generateTransactions(config: Configuration): Virtual_XML[] {
     transaction_items.push({
       [addPrefix(commonPrefix, "author")]: generateAuthor(
         item.author || config.author,
+        commonPrefix,
       ),
     });
 
@@ -971,7 +971,7 @@ export function generateTransactions(config: Configuration): Virtual_XML[] {
     });
 
     // items, heart of the medication scheme
-    transaction_items.push(...generateItems(item, idx + 1));
+    transaction_items.push(...generateItems(item, idx + 1, commonPrefix));
 
     // push back entry transaction
     result.push({
@@ -983,8 +983,7 @@ export function generateTransactions(config: Configuration): Virtual_XML[] {
 }
 
 // Generate the item "healthcareelement" for saying "adaptationflag"
-function generateAdaptationflag(idx: number): Virtual_XML[] {
-  let commonPrefix = PREDEFINED_FIELDS.COMMON_PREFIX;
+function generateAdaptationflag(commonPrefix : string, idx: number): Virtual_XML[] {
   return [
     // ID
     {
@@ -1046,8 +1045,8 @@ function generateAdaptationflag(idx: number): Virtual_XML[] {
 function generateSuspension(
   config: TransactionConfig,
   idx: number,
+  commonPrefix: string
 ): Virtual_XML[] {
-  let commonPrefix = PREDEFINED_FIELDS.COMMON_PREFIX;
 
   return [
     // ID
@@ -1094,9 +1093,8 @@ function generateSuspension(
 }
 
 // Generate a valid atc
-function generateAtc(config: TransactionConfig): Virtual_XML[] {
+function generateAtc(commonPrefix: string, config: TransactionConfig): Virtual_XML[] {
 
-  let commonPrefix = PREDEFINED_FIELDS.COMMON_PREFIX;
   let drugData = config.drug;
 
   return [
@@ -1116,8 +1114,8 @@ function generateAtc(config: TransactionConfig): Virtual_XML[] {
 }
 
 // Generate a valid drug
-function generateDrug(config: TransactionConfig, idx: number): Virtual_XML[] {
-  let commonPrefix = PREDEFINED_FIELDS.COMMON_PREFIX;
+function generateDrug(config: TransactionConfig, idx: number, commonPrefix: string): Virtual_XML[] {
+
   let drugData = config.drug;
   let isProduct =
     drugData.drugType !== undefined &&
@@ -1209,8 +1207,9 @@ function generateDrug(config: TransactionConfig, idx: number): Virtual_XML[] {
 function generateMedication(
   config: TransactionConfig,
   idx: number,
+  commonPrefix: string
 ): Virtual_XML[] {
-  let commonPrefix = PREDEFINED_FIELDS.COMMON_PREFIX;
+
   let drugData = config.drug;
   let hasDrug =
     drugData.drugType !== undefined || drugData.identifierType === "CD-EAN";
@@ -1247,11 +1246,11 @@ function generateMedication(
     },
     // Content [1]
     hasAtc && {
-      [addPrefix(commonPrefix, "content")]: generateAtc(config),
+      [addPrefix(commonPrefix, "content")]: generateAtc(commonPrefix, config),
     },
     // Content [2]
     hasDrug && {
-      [addPrefix(commonPrefix, "content")]: generateDrug(config, idx),
+      [addPrefix(commonPrefix, "content")]: generateDrug(config, idx, commonPrefix),
     },
     // Root text (for EAN or compoundprescription)
     textNeeded && {
@@ -1373,7 +1372,7 @@ function generateMedication(
     },
     // Regimen
     drugData.regimen !== undefined && {
-      [addPrefix(commonPrefix, "regimen")]: generateRegimen(drugData.regimen),
+      [addPrefix(commonPrefix, "regimen")]: generateRegimen(commonPrefix, drugData.regimen),
     },
     // Free text posology
     drugData.regimen === undefined &&
@@ -1431,13 +1430,13 @@ function generateMedication(
 
 // Hardest part now, generate the item like in KMEHR
 // idx is used for generating different
-function generateItems(config: TransactionConfig, idx: number): Virtual_XML[] {
+function generateItems(config: TransactionConfig, idx: number, commonPrefix: string): Virtual_XML[] {
   let result: Virtual_XML[] = [];
-  let commonPrefix = PREDEFINED_FIELDS.COMMON_PREFIX;
 
   // First item : the "healthcareelement" for saying "adaptationflag"
   result.push({
     [addPrefix(commonPrefix, "item")]: generateAdaptationflag(
+      commonPrefix,
       result.length + 1,
     ),
   });
@@ -1448,6 +1447,7 @@ function generateItems(config: TransactionConfig, idx: number): Virtual_XML[] {
       [addPrefix(commonPrefix, "item")]: generateSuspension(
         config,
         result.length + 1,
+        commonPrefix,
       ),
     });
   }
@@ -1458,6 +1458,7 @@ function generateItems(config: TransactionConfig, idx: number): Virtual_XML[] {
     [addPrefix(commonPrefix, "item")]: generateMedication(
       config,
       result.length + 1,
+      commonPrefix,
     ),
   });
 
