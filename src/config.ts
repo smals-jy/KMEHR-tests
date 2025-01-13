@@ -6,7 +6,7 @@ import type {
   DayPeriodList,
   PeriodicityList,
 } from "./generateTransaction";
-import type { AuthorConfig } from "./generateHealthcareActor";
+import type { AuthorConfig, OrganizationConfig } from "./generateHealthcareActor";
 
 // Config for external file
 export type Configuration = {
@@ -104,8 +104,8 @@ export type { RegimenPosology };
 // Re-export the transaction type in case of specific needs
 export type { TransactionConfig };
 
-// Re-export the author type in case of specific needs
-export type { AuthorConfig };
+// Re-export the author / organization types in case of specific needs
+export type { AuthorConfig, OrganizationConfig };
 
 // Re-export the TreatmentDuration in case of specific needs
 export type { TreatmentDuration };
