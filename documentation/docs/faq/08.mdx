@@ -28,10 +28,95 @@ So a testing plan could be handy to prepare your software to that.
       <cd S="CD-STANDARD" SV="1.4">20231110</cd>
   ```
 
-2. To generate the resulting XML file(s) in [`output/ms`](https://github.com/smals-jy/KMEHR-tests/tree/main/output/ms) folder :
+2. To generate the resulting XML file(s) in [`output/ms`][MS_OUTPUT_FOLDER] folder :
 
 ```bash
 npm start
 ```
 
-3. Check that each testing scenario explained on [the documentation](https://smals-jy.github.io/KMEHR-tests/docs/category/-read-scenarios) still work for you
+3. Check that each testing scenario explained on [the documentation](https://smals-jy.github.io/KMEHR-tests/docs/category/-read-scenarios) still work for you with these updated files
+
+4. Test these new test scenarios
+
+<details>
+
+      <summary>Toggle me!</summary>
+
+      Create a `BK-01-CD-ADMINISTRATIONUNIT.ts` file in the [`configurations/ms`][MS_CONFIG_FOLDER] folder with following content :
+
+      ```ts title="configurations/ms/BK-01-CD-ADMINISTRATIONUNIT.ts"
+        import type { Configuration, AdministrationUnit } from "../../src/config";
+        
+        export default function (): Configuration {
+          // List of administration-unit
+          const ADMINISTRATION_UNITS: AdministrationUnit[] = [
+            // @ts-ignore
+            "ampoule",
+            // @ts-ignore
+            "bandage",
+            // @ts-ignore
+            "bottle",
+            // @ts-ignore
+            "box",
+            // @ts-ignore
+            "effervescent-tablet",
+            // @ts-ignore
+            "iu",
+            // @ts-ignore
+            "liter",
+            // @ts-ignore
+            "meq",
+            // @ts-ignore
+            "micrograms",
+            // @ts-ignore
+            "miu",
+            // @ts-ignore
+            "mmol",
+            // @ts-ignore
+            "piece",
+            // @ts-ignore
+            "syringe",
+            // @ts-ignore
+            "syringe-ampoule"
+          ];
+        
+          // Generate ADMINISTRATION UNIT entries
+          return {
+            transactions: ADMINISTRATION_UNITS.map((unit, idx) => {
+              return {
+                id: idx + 2,
+                drug: {
+                  drugType: "compoundprescription",
+                  compoundprescriptionText: `${unit}`,
+                  temporality: "chronic",
+                  periodicity: "D",
+                  regimen: [
+                    // To test singular case
+                    {
+                      quantity: 1.0,
+                      timeOfDay: {
+                        dayPeriod: "morning",
+                      },
+                      unit: unit,
+                    },
+                    // To test plural case
+                    {
+                      quantity: 5.0,
+                      timeOfDay: {
+                        dayPeriod: "beforedinner",
+                      },
+                      unit: unit,
+                    },
+                  ],
+                },
+              };
+            }),
+          };
+        }
+      ```
+
+</details>
+
+
+[MS_OUTPUT_FOLDER]: https://github.com/smals-jy/KMEHR-tests/tree/main/output/ms
+[MS_CONFIG_FOLDER]: https://github.com/smals-jy/KMEHR-tests/tree/main/configurations/ms
