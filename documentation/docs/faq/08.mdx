@@ -1,6 +1,6 @@
 ---
 description: How to test the new KMEHR version impacts on Medication Scheme ?
-title: ⚠️ KMEHR 1.40.2 testing
+title: ⚠️ KMEHR 1.40.2 testing (Draft)
 ---
 
 ## Why ?
@@ -167,6 +167,104 @@ npm start
 
 </details>
 
+<details>
+
+      <summary>💉 Routes of administration</summary>
+
+      ```ts title="configurations/ms/BK-04-CD-DRUG-ROUTE.ts"
+        import type { Configuration, DrugRoute } from "../../src/config";
+
+        // Same expected results than https://smals-jy.github.io/KMEHR-tests/docs/tests/ms/read/ts-05/#expected-results , but with these values
+        export default function (): Configuration {
+          
+            const routes: DrugRoute[] = [
+                // Codes that are prohibited from cookbook
+                /*
+                "00003",
+                "00004",
+                "00006",
+                "00007",
+                "00014",
+                "00015",
+                "00016",
+                "00017",
+                "00018",
+                "00019",
+                "00020",
+                "00021",
+                "00022",
+                "00023",
+                "00024",
+                "00025",
+                "00026",
+                "00027",
+                "00028",
+                "00029",
+                "00030",
+                "00031",
+                "00032",
+                "00036",
+                "00037",
+                "00038",
+                "00039",
+                "00040",
+                "00041",
+                "00042",
+                "00043",
+                "00044",
+                "00047",
+                "00048",
+                "00050",
+                "00057",
+                "00058",
+                "00059",
+                "00061",
+                "00062",
+                "00063",
+                "00065",
+                "00069",
+                */
+                // Codes that aren't listed in cookbook but possible
+                "both_ears",
+                "both_eyes",
+                "both_nostrils",
+                "cutaneous_injection",
+                "derm",
+                "dermal_injection",
+                "ear_left",
+                "ear_right",
+                "eye_left",
+                "eye_right",
+                "hyperdermoclyse",
+                "icut",
+                "ider",
+                "larter",
+                "nose_left",
+                "nose_right",
+                "oft",
+                "transdermal",
+                "vitreal_injection",
+            ];  
+        
+          return {
+            transactions: routes.map((r, idx) => ({
+              id: idx + 2,
+              drug: {
+                drugType: "compoundprescription",
+                compoundprescriptionText: `${r}`,
+                temporality: "chronic",
+                periodicity: "D",
+                posologyFreeText: `...`,
+                route: r,
+              },
+            })),
+          };
+        }
+
+
+      ```
+
+</details>
 
 <details>
 
