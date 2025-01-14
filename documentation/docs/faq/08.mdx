@@ -36,13 +36,11 @@ npm start
 
 3. Check that each testing scenario explained on [the documentation](https://smals-jy.github.io/KMEHR-tests/docs/category/-read-scenarios) still work for you with these updated files
 
-4. Test these new test scenarios
+4. Create following new test scenarios in [`configurations/ms`][MS_CONFIG_FOLDER] folder
 
 <details>
 
-      <summary>Toggle me!</summary>
-
-      Create a `BK-01-CD-ADMINISTRATIONUNIT.ts` file in the [`configurations/ms`][MS_CONFIG_FOLDER] folder with following content :
+      <summary>Administration units</summary>
 
       ```ts title="configurations/ms/BK-01-CD-ADMINISTRATIONUNIT.ts"
         import type { Configuration, AdministrationUnit } from "../../src/config";
@@ -113,6 +111,56 @@ npm start
             }),
           };
         }
+      ```
+
+</details>
+
+<details>
+
+      <summary>Day periods</summary>
+
+      ```ts title="configurations/ms/BK-02-CD-DAYPERIOD.ts"
+        import type { Configuration, DayPeriod } from "../../src/config";
+        
+        export default function (): Configuration {
+          const periods: DayPeriod[] = [
+            // @ts-ignore
+            "aftermeal",
+            // @ts-ignore
+            "betweenmeals",
+            // @ts-ignore
+            "afternoon",
+            // @ts-ignore
+            "evening",
+            // @ts-ignore
+            "night"
+          ];
+        
+          return {
+            transactions: [
+              {
+                id: 2,
+                drug: {
+                  drugType: "compoundprescription",
+                  compoundprescriptionText: "CD-DAYPERIOD Drug",
+                  temporality: "chronic",
+                  periodicity: "MD",
+                  beginmoment: "2023-01-01",
+                  regimen: periods.map((p, idx) => ({
+                    quantity: 1,
+                    dayIngestion: {
+                      dayNumber: idx + 1,
+                    },
+                    timeOfDay: {
+                      dayPeriod: p,
+                    },
+                  })),
+                },
+              },
+            ],
+          };
+        }
+
       ```
 
 </details>
