@@ -1,0 +1,3830 @@
+[
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00001"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "5.mL",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "5.mL",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00002"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "732978007",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "732978007",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00003"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "413568008",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "413568008",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00004"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "428641000",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "428641000",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00005"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "336624003",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "336624003",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00006"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "408102007",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "408102007",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00007"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "[drp]",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "[drp]",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00008"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "419672006",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "419672006",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00009"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "732996003",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "732996003",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00010"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "129331004",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "129331004",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00011"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "422237004",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "422237004",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00012"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "257867005",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "257867005",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00013"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "732989000",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "732989000",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00014"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "336624003",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "336624003",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00015"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "337087003",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "337087003",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00016"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "mL",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "mL",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00017"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "73153001",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "73153001",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00018"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "34258004",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "34258004",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00019"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "429587008",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "429587008",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00020"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "419702001",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "419702001",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00021"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "732988008",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "732988008",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00022"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "733006000",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "733006000",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00023"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "415215001",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "415215001",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00024"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "429671000",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "429671000",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00025"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "733006000",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "733006000",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00026"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "430293001",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "430293001",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00027"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "418530008",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "418530008",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00028"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "116251003",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "116251003",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00029"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "428672001",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "428672001",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "00030"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "426148002",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "426148002",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "cm"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "cm",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "cm",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "dropsperminute"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "[drp]/min",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "[drp]/min",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "gm"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "g",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "g",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "internationalunits"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "[IU]",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "[IU]",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "mg"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "mg",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "mg",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "mg/ml"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "mg/mL",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "mg/mL",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "mck/h"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "ug/h",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "ug/h",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "mck/kg/minute"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "ug/kg/min",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "ug/kg/min",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "measure"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "767524001",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "767524001",
+							"system": "http://snomed.info/sct"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "mg/h"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "mg/h",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "mg/h",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "ml/h"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "ml/h",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "ml/h",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "tbl"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "{TBL}",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "{TBL}",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "tsp"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "[tsp_m]",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "[tsp_m]",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	},
+	{
+		"resourceType": "MedicationStatement",
+		"status": "unknown",
+		"meta": {
+			"profile": [
+				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+			]
+		},
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+				"valueString": "1"
+			},
+			{
+				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+				"valueCode": "unknown"
+			}
+		],
+		"subject": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Tasmanian Duck"
+		},
+		"informationSource": {
+			"identifier": {
+				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+				"value": "XXXXXXXXXXX"
+			},
+			"display": "Donald Duck"
+		},
+		"medicationCodeableConcept": {
+			"coding": [
+				{
+					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+					"code": "magistral"
+				}
+			],
+			"text": "unt/h"
+		},
+		"dosage": [
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 1,
+							"code": "[IU]/h",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"MORN"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			},
+			{
+				"doseAndRate": [
+					{
+						"doseQuantity": {
+							"value": 5,
+							"code": "[IU]/h",
+							"system": "http://unitsofmeasure.org"
+						}
+					}
+				],
+				"timing": {
+					"repeat": {
+						"when": [
+							"ACV"
+						],
+						"frequency": 1,
+						"period": 1,
+						"periodUnit": "d"
+					}
+				}
+			}
+		],
+		"effectivePeriod": {}
+	}
+]
