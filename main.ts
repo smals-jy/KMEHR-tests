@@ -1,7 +1,8 @@
 import {
   generateMSOutput,
   generateFHIRDosage,
-  generatePCDHOutput
+  generatePCDHOutput,
+  generateFHIRMSL
 } from "./src/index"
 
 console.log("MS STARTED");
@@ -35,6 +36,18 @@ generateFHIRDosage({
 })
   .then(() => {
     console.log("FHIR DOSAGE FINISHED");
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+
+console.log("FHIR Medication Scheme lines STARTED");
+generateFHIRMSL({
+  CONFIGURATIONS_PATH: `${__dirname}/configurations/ms`,
+  OUTPUT_PATH: `${__dirname}/output/fhir-ms`,
+})
+  .then(() => {
+    console.log("MS FINISHED");
   })
   .catch((error) => {
     console.error(error);
