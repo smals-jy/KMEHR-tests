@@ -45,7 +45,7 @@ npm start
       ```ts title="configurations/ms/BK-01-CD-ADMINISTRATIONUNIT.ts"
         import type { Configuration, AdministrationUnit } from "../../src/config";
 
-        // Same expected results than https://smals-jy.github.io/KMEHR-tests/docs/tests/ms/read/ts-03#expected-results , but with these values
+        // Same expected results that https://smals-jy.github.io/KMEHR-tests/docs/tests/ms/read/ts-03#expected-results , but with these values
         export default function (): Configuration {
           // List of administration-unit
           const ADMINISTRATION_UNITS: AdministrationUnit[] = [
@@ -123,7 +123,7 @@ npm start
       ```ts title="configurations/ms/BK-02-CD-DAYPERIOD.ts"
         import type { Configuration, DayPeriod } from "../../src/config";
 
-        // Same expected results than https://smals-jy.github.io/KMEHR-tests/docs/tests/ms/read/ts-04#expected-results , but with these values
+        // Same expected results that https://smals-jy.github.io/KMEHR-tests/docs/tests/ms/read/ts-04#expected-results , but with these values
         export default function (): Configuration {
           const periods: DayPeriod[] = [
             // @ts-ignore
@@ -169,12 +169,118 @@ npm start
 
 <details>
 
+      <summary>✍️ Authors</summary>
+
+      ```ts title="configurations/ms/BK-03-CD-HCPARTY.ts"
+
+          // Similar results that https://smals-jy.github.io/KMEHR-tests/docs/tests/ms/read/ts-12/#expected-results , but with these values
+          import type {
+            Configuration,
+            TransactionConfig,
+            AuthorConfig,
+            OrganizationConfig
+          } from "../../src/config";
+          
+          // To generate a number to a minimal length
+          function numberToPaddedString(num: number, minLength: number = 3): string {
+            const str = num.toString();
+            const paddingLength = Math.max(0, minLength - str.length);
+            const padding = "0".repeat(paddingLength);
+            return padding + str;
+          }
+          
+          // Some organizations
+          const ORGANIZATIONS : OrganizationConfig[] = [
+            "orgretirementhome",
+          	"orgrevalidationcenter",
+          	"orgshelteredliving",
+          	"orgpsychiatriccarehome",
+          	"orgpolyclinic",
+            "orgpharmacyinvoicingoffice"
+          ].map(kind => ({
+            type: kind,
+            name: `${kind} case`
+          })) 
+          
+          // Some authors
+          const DEFAULT_AUTHOR : AuthorConfig = {
+            familyname: "Duck",
+            firstname: "Donald",
+            ssin: "XXXXXXXXXXX",
+            type: "persphysician",
+            nihdi: "11186375004"
+          }
+          
+          const AUTHORS : AuthorConfig[] = [].map( (kind, index) => ({
+            familyname: "Mouse",
+            firstname: `Mickey ${index + 1}`,
+            type: kind
+          }) );
+          
+          
+          // Generate a dummy transaction so that I don't put n times the same stuff
+          type SimpleTransactionConfig = Partial<TransactionConfig>;
+          function generateTransaction(
+            config: SimpleTransactionConfig,
+          ): TransactionConfig {
+            return {
+              id: config.id || 2,
+              drug: {
+                drugType: "compoundprescription",
+                compoundprescriptionText: `Drug ${numberToPaddedString(config.id || 2, 4)}`,
+                temporality: "chronic",
+                periodicity: "D",
+                posologyFreeText: "Free text posology",
+                beginmoment: "2020-01-01",
+                medicationuse: config.drug?.medicationuse || "Test case scenario",
+              },
+              author: config.author,
+            };
+          }
+          
+          // Generate transactions
+          const organizationTransactions : TransactionConfig[] = ORGANIZATIONS.map( (org, idx) => generateTransaction({
+            id: idx + 2,
+            author: {
+              ...DEFAULT_AUTHOR,
+              org: org
+            }
+          }));
+          
+          const startingIndex = 2 + organizationTransactions.length
+          
+          const authorsTransactions : TransactionConfig[] = AUTHORS.map( (aut, idx) => generateTransaction({
+            id: startingIndex + idx,
+            author: aut
+          }));
+          
+          // Generate
+          export default function (): Configuration {
+            return {
+              // Medication last author was me, without software info
+              author: DEFAULT_AUTHOR,
+              transactions: [
+                // First, the organizations case
+                ...organizationTransactions,
+                // Second, the new HC-PARTY
+                ...authorsTransactions
+              ],
+            };
+          }
+
+
+      ```
+
+</details>
+
+<details>
+
       <summary>💉 Routes of administration</summary>
 
       ```ts title="configurations/ms/BK-04-CD-DRUG-ROUTE.ts"
         import type { Configuration, DrugRoute } from "../../src/config";
 
-        // Same expected results than https://smals-jy.github.io/KMEHR-tests/docs/tests/ms/read/ts-05/#expected-results , but with these values
+        // Same expected results that https://smals-jy.github.io/KMEHR-tests/docs/tests/ms/read/ts-05/#expected-results , but with these values
         export default function (): Configuration {
           
             const routes: DrugRoute[] = [
@@ -273,7 +379,7 @@ npm start
       ```ts title="configurations/ms/BK-05-CD-PERIODICITY.ts"
         import type { Configuration, Periodicity } from "../../src/config";
         
-        // Same expected results than https://smals-jy.github.io/KMEHR-tests/docs/tests/ms/read/ts-06#expected-results , but with these values
+        // Same expected results that https://smals-jy.github.io/KMEHR-tests/docs/tests/ms/read/ts-06#expected-results , but with these values
         export default function (): Configuration {
           const frequencies: Periodicity[] = [
             // @ts-ignore
