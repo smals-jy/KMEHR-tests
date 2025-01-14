@@ -107,7 +107,7 @@ export function generatePayload(config: MedicationEntry): MedicationStatement {
 }
 
 // From KMEHR free-text to FHIR dosage
-function fromKMEHRFreeTextPosologyToFHIRDosage(
+export function fromKMEHRFreeTextPosologyToFHIRDosage(
   config: MedicationEntry,
 ): Dosage {
   let asNeeded = FromKMEHRAsNeededToasNeededBoolean(config);
@@ -158,7 +158,7 @@ function FromKMEHRAsNeededToasNeededBoolean(
 }
 
 // From KMEHR regimen to FHIR dosage
-function fromKEMHRRegimenToFHIRDosage(
+export function fromKEMHRRegimenToFHIRDosage(
   regimenPosology: RegimenPosology[],
   config: MedicationEntry,
 ): Dosage[] {
