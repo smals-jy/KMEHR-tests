@@ -1,0 +1,37 @@
+---
+description: How to test the new KMEHR version impacts on Medication Scheme ?
+title: ⚠️ KMEHR 1.40.2 testing
+---
+
+## Why ?
+
+In a upcoming future, the [Medication Scheme specifications](https://www.ehealth.fgov.be/standards/kmehr/en/transactions/medication-scheme) are going to be updated with a new KMEHR version, more authorized values, ... .
+So a testing plan could be handy to prepare your software to that.
+
+## Prerequisites
+
+- Clone the Github project, e.g. `git clone https://github.com/smals-jy/KMEHR-tests`
+- Node.JS LTS
+- Install Github project dependancies, e.g. `npm install`
+
+## Steps
+
+1. Update the [`template file`](https://github.com/smals-jy/KMEHR-tests/blob/main/TEMPLATES/PARTIAL_MS.xml) to use the new KMEHR version
+
+  ```xml title="TEMPLATES/PARTIAL.xml (Before)"
+      <!-- KMEHR 1.28.0 version id -->
+      <cd S="CD-STANDARD" SV="1.4">20161201</cd>
+  ```
+
+  ```xml title="TEMPLATES/PARTIAL.xml (Before)"
+      <!-- KMEHR 1.40.2 version id -->
+      <cd S="CD-STANDARD" SV="1.4">20231110</cd>
+  ```
+
+2. To generate the resulting XML file(s) in [`output/ms`](https://github.com/smals-jy/KMEHR-tests/tree/main/output/ms) folder :
+
+```bash
+npm start
+```
+
+3. Check that each testing scenario explained on [the documentation](https://smals-jy.github.io/KMEHR-tests/docs/category/-read-scenarios) still work for you
