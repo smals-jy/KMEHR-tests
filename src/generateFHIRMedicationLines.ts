@@ -179,7 +179,7 @@ function generateEffectivePeriod(entry: MedicationEntry): Period {
 function generateDrug(entry : MedicationEntry, idx: Number): CodeableConcept {
 
     // To distinguish if it is a official medication from a free text one
-    let isProduct = entry.drugType !== undefined && ["substanceproduct", "medicinalproduct"].includes(entry.drugType);
+    let isProduct = (entry.deliveredcd || entry.intendedcd) !== undefined;
 
     // Magistral preparation are simple to handle
     if (!isProduct) {
