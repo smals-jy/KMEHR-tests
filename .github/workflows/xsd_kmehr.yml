@@ -21,7 +21,7 @@ jobs:
 
       - name: 📂 Extract ZIP contents
         run: |
-          unzip downloaded.zip -d xsd-kmehr
+          unzip -o downloaded.zip -d xsd-kmehr
 
       - name: 🗑️ Delete ZIP file
         run: |
