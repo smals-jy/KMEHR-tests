@@ -1,4 +1,56 @@
 ***********************************
+Version 1.40/Kmehr release 20231110
+***********************************
+
+Evolutions
+----------
+
+cd file
+
+CD-STANDARD: added value '20231110'
+CD-MEDIATYPE: added values 'application/fhir+json', 'application/fhir+xml'
+(1.40.1) CD-TRANSACTION: added value 'geriatrictransferreport'
+(1.40.1) CD-VACCINEINDICATION: added value 'monkeypox'
+
+kmehr file
+
+(1.40.1) added 'instructionforpharmacist' element
+(1.40.2) changed 'geriatrictransferreport' to 'transferreport'
+(1.40.2) corrected typo 'CD-VACCINEINDICATION' instead of 'CD-VACCINE' for fixed value in CD-VACCINEINDICATION type
+
+***********************************
+Version 1.39/Kmehr release 20230801
+***********************************
+
+Evolutions
+----------
+
+cd file
+
+CD-STANDARD: added value '20230801'
+CD-TRANSACTIONschemes: added value 'CD-TRANSACTION-INC-NOT'
+CD-TRANSACTION-TYPE: added values 'adanormal', 'adaextension', 'adarelapse'
+
+***********************************
+Version 1.38/Kmehr release 20230401
+***********************************
+
+Regressions
+-----------
+
+(1.38.1) CD-HCPARTY: removed new values from 1.38.0 except 'orgpharmacyinvoicingoffice', 'persoptometrist', 'persmobilityimprover', 'persbandagistorthosiologist',
+		 'persprosthesiologist', 'persshoetechnologist'
+
+Evolutions
+----------
+
+cd file
+
+(1.38.1) CD-STANDARD: added value '20230314'
+CD-STANDARD: added value '20230301'
+CD-HCPARTY: added many values
+
+***********************************
 Version 1.37/Kmehr release 20221001
 ***********************************
 
