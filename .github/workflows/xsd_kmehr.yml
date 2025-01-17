@@ -1,0 +1,37 @@
+name: Add new KMEHR version
+
+on:
+  workflow_dispatch:
+    inputs:
+      zip_url:
+        description: 'URL of the ZIP file to download'
+        required: true
+        type: string
+
+jobs:
+  KMEHRversion:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛎️ Checkout code
+        uses: actions/checkout@v4.1.7
+
+      - name: 🚀 Download ZIP file
+        run: |
+          curl -L ${{ github.event.inputs.zip_url }} -o downloaded.zip
+
+      - name: 📂 Extract ZIP contents
+        run: |
+          unzip downloaded.zip -d xsd-kmehr
+
+      - name: 🗑️ Delete ZIP file
+        run: |
+          rm downloaded.zip
+
+      - name: 🚀 Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          title: "Update xsd-kmehr contents"
+          body: |
+            This PR updates the contents of the xsd-kmehr directory based on the new ZIP file provided.
+          base: main
+          branch: update-xsd-kmehr-${{ github.run_id }}
