@@ -145,7 +145,8 @@ npm start
           	"orgshelteredliving",
           	"orgpsychiatriccarehome",
           	"orgpolyclinic",
-            "orgpharmacyinvoicingoffice"
+            "orgpharmacyinvoicingoffice",
+            "deptpsychogeriatry"
           ].map(kind => ({
             type: kind,
             name: `${kind} case`
@@ -160,7 +161,20 @@ npm start
             nihdi: "11186375004"
           }
           
-          const AUTHORS : AuthorConfig[] = [].map( (kind, index) => ({
+          const AUTHORS : AuthorConfig[] = [
+            "persappliedpsychbachelor",
+            "persfamilysciencebachelor",
+            "persgerontologymaster",
+            "persorthopedagogistmaster",
+            "perspsychomotortherapymaster",
+            "persreadaptationbachelor",
+            "perspedagogybachelor",
+            "persoptometrist",
+            "persmobilityimprover",
+            "persbandagistorthosiologist",
+            "persprosthesiologist",
+            "persshoetechnologist"
+          ].map( (kind, index) => ({
             familyname: "Mouse",
             firstname: `Mickey ${index + 1}`,
             type: kind
