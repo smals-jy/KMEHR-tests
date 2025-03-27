@@ -254,10 +254,10 @@
 
       <!--ASSERT ERROR-->
       <xsl:choose>
-         <xsl:when test="kmehr:standard/kmehr:cd = '20161201'"/>
+         <xsl:when test="kmehr:standard/kmehr:cd = '20231110'"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="kmehr:standard/kmehr:cd = '20161201'">
+                                test="kmehr:standard/kmehr:cd = '20231110'">
                <xsl:attribute name="id">version</xsl:attribute>
                <xsl:attribute name="flag">structure</xsl:attribute>
                <xsl:attribute name="role">ERROR</xsl:attribute>
@@ -265,7 +265,7 @@
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
                <svrl:text>
-                  The cd in &lt;standard&gt; must be equal to "20161201". (Current: <xsl:text/>
+                  The cd in &lt;standard&gt; must be equal to "20231110". (Current: <xsl:text/>
                   <xsl:value-of select="kmehr:standard/kmehr:cd"/>
                   <xsl:text/>)
                </svrl:text>
