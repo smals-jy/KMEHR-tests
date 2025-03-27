@@ -225,8 +225,6 @@ function generateDrug(entry : MedicationEntry, idx: Number): CodeableConcept {
 
     let productType = entry.drugType || "medicinalproduct";
 
-
-
     // Otherwise it is a product, with one or multiple indentifier(s)
     const finalProduct = entry.deliveredname || entry.intendedname || `${productType} ${idx}`;
     let codings : Coding[] = [
