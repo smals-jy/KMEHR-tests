@@ -1,1175 +1,1179 @@
-[
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+{
+	"resourceType": "Bundle",
+	"type": "collection",
+	"entry": [
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"extension": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2732808",
-					"display": "Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56"
-				}
-			],
-			"text": "Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 0.5,
-							"code": "336624003",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"ACM"
-						],
-						"frequency": 1,
-						"period": 2,
-						"periodUnit": "d"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 1
-						}
-					]
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
 				},
-				"patientInstruction": "Stopzetting 100"
-			}
-		],
-		"effectivePeriod": {
-			"start": "2024-10-26",
-			"end": "2024-12-31"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "3391273",
-					"display": "Dafalgan Forte 1 g bruistabl. 40"
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
-			"text": "Dafalgan Forte 1 g bruistabl. 40"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "336624003",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"ACM"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 1
-						}
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2024-10-26"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "0895540",
-					"display": "Medrol 32 mg tabl. 20"
-				}
-			],
-			"text": "Medrol 32 mg tabl. 20"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "336624003",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"ACM"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 1
-						}
-					]
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
 				},
-				"patientInstruction": "Stopzetting 102"
-			}
-		],
-		"effectivePeriod": {
-			"start": "2024-10-26",
-			"end": "2024-12-31"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+				"display": "Tasmanian Duck"
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2225597",
-					"display": "Aranesp 150 µg/0,3 ml inj. opl. s.c. voorgev. pen 0.3 ml"
-				}
-			],
-			"text": "Aranesp 150 µg/0,3 ml inj. opl. s.c. voorgev. pen 0.3 ml"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "733006000",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"MORN"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 1
-						}
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2020-10-01"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2218253",
-					"display": "Durogesic 50 µg/h transderm. pleister zakje 10 (8,4 mg/21 cm²)"
-				}
-			],
-			"text": "Durogesic 50 µg/h transderm. pleister zakje 10 (8,4 mg/21 cm²)"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "419702001",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"MORN"
-						],
-						"dayOfWeek": [
-							"mon"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "wk"
-					}
-				}
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "419702001",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"MORN"
-						],
-						"dayOfWeek": [
-							"fri"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "wk"
-					}
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2024-10-26"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "0431569",
-					"display": "Fraxiparine 5700 IU (Anti-Xa)/0,6 ml inj. sol. s.c. pre-filled syr."
-				}
-			],
-			"text": "Fraxiparine 5700 IU (Anti-Xa)/0,6 ml inj. sol. s.c. pre-filled syr."
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "732978007",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"MORN"
-						],
-						"frequency": 1,
-						"period": 4,
-						"periodUnit": "d"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 1
-						}
-					]
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
 				},
-				"patientInstruction": "Stopzetting 105"
+				"display": "Donald Duck"
 			},
-			{
-				"doseAndRate": [
+			"medicationCodeableConcept": {
+				"coding": [
 					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "732978007",
-							"system": "http://snomed.info/sct"
-						}
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2732808",
+						"display": "Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56"
 					}
 				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"MORN"
-						],
-						"frequency": 1,
-						"period": 4,
-						"periodUnit": "d"
-					},
-					"extension": [
+				"text": "Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
 						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 2
+							"doseQuantity": {
+								"value": 0.5,
+								"code": "336624003",
+								"system": "http://snomed.info/sct"
+							}
 						}
-					]
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"ACM"
+							],
+							"frequency": 1,
+							"period": 2,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 1
+							}
+						]
+					},
+					"patientInstruction": "Stopzetting 100"
+				}
+			],
+			"effectivePeriod": {
+				"start": "2024-10-26",
+				"end": "2024-12-31"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
 				},
-				"patientInstruction": "Stopzetting 105"
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "732978007",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"MORN"
-						],
-						"frequency": 1,
-						"period": 4,
-						"periodUnit": "d"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 4
-						}
-					]
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
 				},
-				"patientInstruction": "Stopzetting 105"
-			}
-		],
-		"effectivePeriod": {
-			"start": "2024-10-26",
-			"end": "2024-12-31"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+				"display": "Tasmanian Duck"
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2083491",
-					"display": "Omacor 1000 mg zachte caps. 28"
-				}
-			],
-			"text": "Omacor 1000 mg zachte caps. 28"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "428641000",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"MORN"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 1
-						}
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2024-10-26",
-			"end": "2024-10-30"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2573152",
-					"display": "Movicol Neutral 13,7 g or. opl. (pdr.) zakje 20"
-				}
-			],
-			"text": "Movicol Neutral 13,7 g or. opl. (pdr.) zakje 20"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "428672001",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CM"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "wk"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 1
-						}
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2024-10-26",
-			"end": "2024-10-30"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "1638311",
-					"display": "Perdolan Compositum 400 mg - 400 mg - 92 mg zetpil 12"
-				}
-			],
-			"text": "Perdolan Compositum 400 mg - 400 mg - 92 mg zetpil 12"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "430293001",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"ACD"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 1
-						}
-					]
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
 				},
-				"patientInstruction": "Stopzetting 110"
-			}
-		],
-		"effectivePeriod": {
-			"start": "2024-10-26",
-			"end": "2024-12-31"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+				"display": "Donald Duck"
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "3175510",
-					"display": "Azithromycine EG 500 mg filmomh. tabl. 24"
-				}
-			],
-			"text": "Azithromycine EG 500 mg filmomh. tabl. 24"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
+			"medicationCodeableConcept": {
+				"coding": [
 					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "336624003",
-							"system": "http://snomed.info/sct"
-						}
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "3391273",
+						"display": "Dafalgan Forte 1 g bruistabl. 40"
 					}
 				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"HS"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "a"
-					},
-					"event": [
-						"2024-10-01"
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2024-10-26",
-			"end": "2024-12-31"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+				"text": "Dafalgan Forte 1 g bruistabl. 40"
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"dosage": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "0048363",
-					"display": "Hydrocortisone tabl. (deelb.) 20x 20 mg"
-				}
-			],
-			"text": "Hydrocortisone tabl. (deelb.) 20x 20 mg"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "336624003",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CM"
-						],
-						"dayOfWeek": [
-							"mon"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "wk"
-					}
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2024-10-26",
-			"end": "2024-10-30"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "0135913",
-					"display": "Ventolin 100 microgrammes/dose dosisaerosol susp. spuitbus 200 doses"
-				}
-			],
-			"text": "Ventolin 100 microgrammes/dose dosisaerosol susp. spuitbus 200 doses"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "415215001",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"ACD"
-						],
-						"frequency": 1,
-						"period": 6,
-						"periodUnit": "d"
-					},
-					"extension": [
+					"doseAndRate": [
 						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 1
+							"doseQuantity": {
+								"value": 1,
+								"code": "336624003",
+								"system": "http://snomed.info/sct"
+							}
 						}
-					]
-				}
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "415215001",
-							"system": "http://snomed.info/sct"
-						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"ACM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 1
+							}
+						]
 					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"ACD"
-						],
-						"frequency": 1,
-						"period": 6,
-						"periodUnit": "d"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 5
-						}
-					]
-				}
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "415215001",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"ACD"
-						],
-						"frequency": 1,
-						"period": 6,
-						"periodUnit": "d"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 6
-						}
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2024-10-26",
-			"end": "2024-12-31"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2917110",
-					"display": "Magistrale Bereiding"
 				}
 			],
-			"text": "Magistrale Bereiding"
-		},
-		"dosage": [
-			{
-				"text": "Zalf smeren wanneer nodig. (CNK '2917-110' voor de bereidingen waarvan alle ingrediënten tenminste een D4-verdunning zijn)",
-				"timing": {
-					"repeat": {
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				}
+			"effectivePeriod": {
+				"start": "2024-10-26"
 			}
-		],
-		"effectivePeriod": {
-			"start": "2024-03-10",
-			"end": "2025-03-31"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
 		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"extension": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2542488",
-					"display": "Asaflow 80mg Comp Gastro Resist Bli 168x 80mg"
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
-			"text": "Asaflow 80mg Comp Gastro Resist Bli 168x 80mg"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
 					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "336624003",
-							"system": "http://snomed.info/sct"
-						}
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0895540",
+						"display": "Medrol 32 mg tabl. 20"
 					}
 				],
-				"timing": {
-					"repeat": {
-						"timeOfDay": [
-							"18:00:00"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					},
-					"extension": [
+				"text": "Medrol 32 mg tabl. 20"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
 						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 1
+							"doseQuantity": {
+								"value": 1,
+								"code": "336624003",
+								"system": "http://snomed.info/sct"
+							}
 						}
-					]
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"ACM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 1
+							}
+						]
+					},
+					"patientInstruction": "Stopzetting 102"
 				}
+			],
+			"effectivePeriod": {
+				"start": "2024-10-26",
+				"end": "2024-12-31"
 			}
-		],
-		"effectivePeriod": {
-			"start": "2024-02-13",
-			"end": "2024-12-31"
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2225597",
+						"display": "Aranesp 150 µg/0,3 ml inj. opl. s.c. voorgev. pen 0.3 ml"
+					}
+				],
+				"text": "Aranesp 150 µg/0,3 ml inj. opl. s.c. voorgev. pen 0.3 ml"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "733006000",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 1
+							}
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2020-10-01"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2218253",
+						"display": "Durogesic 50 µg/h transderm. pleister zakje 10 (8,4 mg/21 cm²)"
+					}
+				],
+				"text": "Durogesic 50 µg/h transderm. pleister zakje 10 (8,4 mg/21 cm²)"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "419702001",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"dayOfWeek": [
+								"mon"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "wk"
+						}
+					}
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "419702001",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"dayOfWeek": [
+								"fri"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "wk"
+						}
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2024-10-26"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0431569",
+						"display": "Fraxiparine 5700 IU (Anti-Xa)/0,6 ml inj. sol. s.c. pre-filled syr."
+					}
+				],
+				"text": "Fraxiparine 5700 IU (Anti-Xa)/0,6 ml inj. sol. s.c. pre-filled syr."
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "732978007",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"frequency": 1,
+							"period": 4,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 1
+							}
+						]
+					},
+					"patientInstruction": "Stopzetting 105"
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "732978007",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"frequency": 1,
+							"period": 4,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 2
+							}
+						]
+					},
+					"patientInstruction": "Stopzetting 105"
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "732978007",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"frequency": 1,
+							"period": 4,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 4
+							}
+						]
+					},
+					"patientInstruction": "Stopzetting 105"
+				}
+			],
+			"effectivePeriod": {
+				"start": "2024-10-26",
+				"end": "2024-12-31"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2083491",
+						"display": "Omacor 1000 mg zachte caps. 28"
+					}
+				],
+				"text": "Omacor 1000 mg zachte caps. 28"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "428641000",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 1
+							}
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2024-10-26",
+				"end": "2024-10-30"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2573152",
+						"display": "Movicol Neutral 13,7 g or. opl. (pdr.) zakje 20"
+					}
+				],
+				"text": "Movicol Neutral 13,7 g or. opl. (pdr.) zakje 20"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "428672001",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "wk"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 1
+							}
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2024-10-26",
+				"end": "2024-10-30"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "1638311",
+						"display": "Perdolan Compositum 400 mg - 400 mg - 92 mg zetpil 12"
+					}
+				],
+				"text": "Perdolan Compositum 400 mg - 400 mg - 92 mg zetpil 12"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "430293001",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"ACD"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 1
+							}
+						]
+					},
+					"patientInstruction": "Stopzetting 110"
+				}
+			],
+			"effectivePeriod": {
+				"start": "2024-10-26",
+				"end": "2024-12-31"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "3175510",
+						"display": "Azithromycine EG 500 mg filmomh. tabl. 24"
+					}
+				],
+				"text": "Azithromycine EG 500 mg filmomh. tabl. 24"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "336624003",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"HS"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "a"
+						},
+						"event": [
+							"2024-10-01"
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2024-10-26",
+				"end": "2024-12-31"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0048363",
+						"display": "Hydrocortisone tabl. (deelb.) 20x 20 mg"
+					}
+				],
+				"text": "Hydrocortisone tabl. (deelb.) 20x 20 mg"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "336624003",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CM"
+							],
+							"dayOfWeek": [
+								"mon"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "wk"
+						}
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2024-10-26",
+				"end": "2024-10-30"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0135913",
+						"display": "Ventolin 100 microgrammes/dose dosisaerosol susp. spuitbus 200 doses"
+					}
+				],
+				"text": "Ventolin 100 microgrammes/dose dosisaerosol susp. spuitbus 200 doses"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "415215001",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"ACD"
+							],
+							"frequency": 1,
+							"period": 6,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 1
+							}
+						]
+					}
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "415215001",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"ACD"
+							],
+							"frequency": 1,
+							"period": 6,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 5
+							}
+						]
+					}
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "415215001",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"ACD"
+							],
+							"frequency": 1,
+							"period": 6,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 6
+							}
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2024-10-26",
+				"end": "2024-12-31"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2917110",
+						"display": "Magistrale Bereiding"
+					}
+				],
+				"text": "Magistrale Bereiding"
+			},
+			"dosage": [
+				{
+					"text": "Zalf smeren wanneer nodig. (CNK '2917-110' voor de bereidingen waarvan alle ingrediënten tenminste een D4-verdunning zijn)",
+					"timing": {
+						"repeat": {
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2024-03-10",
+				"end": "2025-03-31"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2542488",
+						"display": "Asaflow 80mg Comp Gastro Resist Bli 168x 80mg"
+					}
+				],
+				"text": "Asaflow 80mg Comp Gastro Resist Bli 168x 80mg"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "336624003",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"timeOfDay": [
+								"18:00:00"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 1
+							}
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2024-02-13",
+				"end": "2024-12-31"
+			}
 		}
-	}
-]
+	]
+}

@@ -1,401 +1,405 @@
-[
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+{
+	"resourceType": "Bundle",
+	"type": "collection",
+	"entry": [
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
-				"value": "11425214001"
-			},
-			"display": "Devil Tasmanian"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"extension": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "3303948",
-					"display": "Pantoprazole EG 40 mg maagsapresist. tabl. 100"
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
-			"text": "Pantoprazole EG 40 mg maagsapresist. tabl. 100"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+					"value": "11425214001"
+				},
+				"display": "Devil Tasmanian"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
 					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "336624003",
-							"system": "http://snomed.info/sct"
-						}
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "3303948",
+						"display": "Pantoprazole EG 40 mg maagsapresist. tabl. 100"
 					}
 				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"MORN"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2020-06-10"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+				"text": "Pantoprazole EG 40 mg maagsapresist. tabl. 100"
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
-				"value": "11425214001"
-			},
-			"display": "Devil Tasmanian"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"dosage": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "0482554",
-					"display": "Kredex 25 mg tabl. 56"
-				}
-			],
-			"text": "Kredex 25 mg tabl. 56"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "336624003",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CM"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				}
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "336624003",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CV"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2020-06-10"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
-				"value": "11425214001"
-			},
-			"display": "Devil Tasmanian"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "4332284",
-					"display": "Trixeo Aerosphere 5 µg dosisaerosol susp. inhalator 3 x 120 doses"
-				}
-			],
-			"text": "Trixeo Aerosphere 5 µg dosisaerosol susp. inhalator 3 x 120 doses"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 2,
-							"code": "415215001",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CM"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					},
-					"extension": [
+					"doseAndRate": [
 						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 1
+							"doseQuantity": {
+								"value": 1,
+								"code": "336624003",
+								"system": "http://snomed.info/sct"
+							}
 						}
-					]
-				}
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "415215001",
-							"system": "http://snomed.info/sct"
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
 						}
 					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2020-06-10"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+					"value": "11425214001"
+				},
+				"display": "Devil Tasmanian"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0482554",
+						"display": "Kredex 25 mg tabl. 56"
+					}
 				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CV"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					},
-					"extension": [
+				"text": "Kredex 25 mg tabl. 56"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
 						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 1
+							"doseQuantity": {
+								"value": 1,
+								"code": "336624003",
+								"system": "http://snomed.info/sct"
+							}
 						}
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2020-06-10"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
-				"value": "11425214001"
-			},
-			"display": "Devil Tasmanian"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				},
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "3153665",
-					"display": "Jardiance 10 mg filmomh. tabl. 100"
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "336624003",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CV"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
 				}
 			],
-			"text": "Jardiance 10 mg filmomh. tabl. 100"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "336624003",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CM"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				}
+			"effectivePeriod": {
+				"start": "2020-06-10"
 			}
-		],
-		"effectivePeriod": {
-			"start": "2020-06-10"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
 		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
-				"value": "11425214001"
-			},
-			"display": "Devil Tasmanian"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"extension": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "3804788",
-					"display": "Tresiba 200 U/ml inj. opl. s.c. voorgev. pen 3 x 3 ml FlexTouch"
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
-			"text": "Tresiba 200 U/ml inj. opl. s.c. voorgev. pen 3 x 3 ml FlexTouch"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+					"value": "11425214001"
+				},
+				"display": "Devil Tasmanian"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
 					{
-						"doseQuantity": {
-							"value": 12,
-							"code": "[IU]",
-							"system": "http://unitsofmeasure.org"
-						}
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "4332284",
+						"display": "Trixeo Aerosphere 5 µg dosisaerosol susp. inhalator 3 x 120 doses"
 					}
 				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"HS"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
+				"text": "Trixeo Aerosphere 5 µg dosisaerosol susp. inhalator 3 x 120 doses"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 2,
+								"code": "415215001",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 1
+							}
+						]
+					}
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "415215001",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CV"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 1
+							}
+						]
 					}
 				}
+			],
+			"effectivePeriod": {
+				"start": "2020-06-10"
 			}
-		],
-		"effectivePeriod": {
-			"start": "2020-06-10"
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+					"value": "11425214001"
+				},
+				"display": "Devil Tasmanian"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "3153665",
+						"display": "Jardiance 10 mg filmomh. tabl. 100"
+					}
+				],
+				"text": "Jardiance 10 mg filmomh. tabl. 100"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "336624003",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2020-06-10"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+					"value": "11425214001"
+				},
+				"display": "Devil Tasmanian"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "3804788",
+						"display": "Tresiba 200 U/ml inj. opl. s.c. voorgev. pen 3 x 3 ml FlexTouch"
+					}
+				],
+				"text": "Tresiba 200 U/ml inj. opl. s.c. voorgev. pen 3 x 3 ml FlexTouch"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 12,
+								"code": "[IU]",
+								"system": "http://unitsofmeasure.org"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"HS"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2020-06-10"
+			}
 		}
-	}
-]
+	]
+}
