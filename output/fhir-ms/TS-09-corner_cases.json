@@ -1,597 +1,601 @@
-[
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+{
+	"resourceType": "Bundle",
+	"type": "collection",
+	"entry": [
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
-				"value": "11186375004"
-			},
-			"display": "Mickey Mouse"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"extension": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2732808",
-					"display": "Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56"
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
-			"text": "Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+					"value": "11186375004"
+				},
+				"display": "Mickey Mouse"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
 					{
-						"doseQuantity": {
-							"value": 1
-						}
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2732808",
+						"display": "Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56"
 					}
 				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"MORN"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2021-08-18",
-			"end": "2021-09-01"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+				"text": "Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56"
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
-				"value": "30019619001"
-			},
-			"display": "Balthazar Picsou"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"dosage": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-					"code": "magistral"
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
 				}
 			],
-			"text": "Dit is een tekst van ongeveer 300 characters. Dit is dicht bij de maximale lengte van een tekst veld. Hierbij kijken we na of de applicatie dit accepteert. This is a text of approximately 300 characters. This is close to the maximum length of a text field. With this we check if the application accepts this."
-		},
-		"dosage": [
-			{
-				"text": "Dit is een tekst van ongeveer 300 characters. Dit is dicht bij de maximale lengte van een tekst veld. Hierbij kijken we na of de applicatie dit accepteert. This is a text of approximately 300 characters. This is close to the maximum length of a text field. With this we check if the application accepts this.",
-				"patientInstruction": "Dit is een tekst van ongeveer 300 characters. Dit is dicht bij de maximale lengte van een tekst veld. Hierbij kijken we na of de applicatie dit accepteert. This is a text of approximately 300 characters. This is close to the maximum length of a text field. With this we check if the application accepts this.",
-				"timing": {
-					"repeat": {
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				}
+			"effectivePeriod": {
+				"start": "2021-08-18",
+				"end": "2021-09-01"
 			}
-		],
-		"effectivePeriod": {
-			"start": "2021-08-18"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
 		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
-				"value": "45598314401"
-			},
-			"display": "Piggy Muppets"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"extension": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-					"code": "magistral"
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
-			"text": "DifferentQuantities"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+					"value": "30019619001"
+				},
+				"display": "Balthazar Picsou"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
 					{
-						"doseQuantity": {
-							"value": 1
-						}
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+						"code": "magistral"
 					}
 				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CM"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "mo"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 1
-						}
-					]
-				}
+				"text": "Dit is een tekst van ongeveer 300 characters. Dit is dicht bij de maximale lengte van een tekst veld. Hierbij kijken we na of de applicatie dit accepteert. This is a text of approximately 300 characters. This is close to the maximum length of a text field. With this we check if the application accepts this."
 			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 2
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CM"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "mo"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 2
-						}
-					]
-				}
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 3
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CM"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "mo"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 3
-						}
-					]
-				}
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 4
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CM"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "mo"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 4
-						}
-					]
-				}
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 5
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CM"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "mo"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 5
-						}
-					]
-				}
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 4
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CM"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "mo"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 6
-						}
-					]
-				}
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 3
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CM"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "mo"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 7
-						}
-					]
-				}
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 2
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CM"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "mo"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 8
-						}
-					]
-				}
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CM"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "mo"
-					},
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 9
-						}
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2021-01-01"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
-				"value": "30019619001"
-			},
-			"display": "Balthazar Picsou"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"dosage": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-					"code": "magistral"
+					"text": "Dit is een tekst van ongeveer 300 characters. Dit is dicht bij de maximale lengte van een tekst veld. Hierbij kijken we na of de applicatie dit accepteert. This is a text of approximately 300 characters. This is close to the maximum length of a text field. With this we check if the application accepts this.",
+					"patientInstruction": "Dit is een tekst van ongeveer 300 characters. Dit is dicht bij de maximale lengte van een tekst veld. Hierbij kijken we na of de applicatie dit accepteert. This is a text of approximately 300 characters. This is close to the maximum length of a text field. With this we check if the application accepts this.",
+					"timing": {
+						"repeat": {
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
 				}
 			],
-			"text": "If needed"
+			"effectivePeriod": {
+				"start": "2021-08-18"
+			}
 		},
-		"dosage": [
-			{
-				"doseAndRate": [
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+					"value": "45598314401"
+				},
+				"display": "Piggy Muppets"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
 					{
-						"doseQuantity": {
-							"value": 2
-						}
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+						"code": "magistral"
 					}
 				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CV"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
+				"text": "DifferentQuantities"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "mo"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 1
+							}
+						]
 					}
 				},
-				"asNeededBoolean": true
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 3
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 2
+							}
 						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"MORN"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "mo"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 2
+							}
+						]
 					}
 				},
-				"asNeededBoolean": true
-			}
-		],
-		"effectivePeriod": {}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
-				"value": "30019619001"
-			},
-			"display": "Balthazar Picsou"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2933901",
-					"display": "Dafalgan 500 mg compr. efferv."
-				}
-			],
-			"text": "Dafalgan 500 mg compr. efferv."
-		},
-		"dosage": [
-			{
-				"text": "Free text",
-				"timing": {
-					"repeat": {
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 3
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "mo"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 3
+							}
+						]
+					}
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 4
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "mo"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 4
+							}
+						]
+					}
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 5
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "mo"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 5
+							}
+						]
+					}
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 4
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "mo"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 6
+							}
+						]
+					}
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 3
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "mo"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 7
+							}
+						]
+					}
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 2
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "mo"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 8
+							}
+						]
+					}
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "mo"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 9
+							}
+						]
 					}
 				}
+			],
+			"effectivePeriod": {
+				"start": "2021-01-01"
 			}
-		],
-		"effectivePeriod": {}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
 		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
-				"value": "30019619001"
-			},
-			"display": "Balthazar Picsou"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"extension": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2055200",
-					"display": "Crestor 10 mg compr. pellic. 98"
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
-			"text": "Crestor 10 mg compr. pellic. 98"
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+					"value": "30019619001"
+				},
+				"display": "Balthazar Picsou"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+						"code": "magistral"
+					}
+				],
+				"text": "If needed"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 2
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CV"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					},
+					"asNeededBoolean": true
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 3
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					},
+					"asNeededBoolean": true
+				}
+			],
+			"effectivePeriod": {}
 		},
-		"dosage": [
-			{
-				"text": "1 compr. - 3 fois chaque 4 jours",
-				"timing": {
-					"repeat": {
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+					"value": "30019619001"
+				},
+				"display": "Balthazar Picsou"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2933901",
+						"display": "Dafalgan 500 mg compr. efferv."
+					}
+				],
+				"text": "Dafalgan 500 mg compr. efferv."
+			},
+			"dosage": [
+				{
+					"text": "Free text",
+					"timing": {
+						"repeat": {
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
 					}
 				}
-			}
-		],
-		"effectivePeriod": {}
-	}
-]
+			],
+			"effectivePeriod": {}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+					"value": "30019619001"
+				},
+				"display": "Balthazar Picsou"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2055200",
+						"display": "Crestor 10 mg compr. pellic. 98"
+					}
+				],
+				"text": "Crestor 10 mg compr. pellic. 98"
+			},
+			"dosage": [
+				{
+					"text": "1 compr. - 3 fois chaque 4 jours",
+					"timing": {
+						"repeat": {
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				}
+			],
+			"effectivePeriod": {}
+		}
+	]
+}

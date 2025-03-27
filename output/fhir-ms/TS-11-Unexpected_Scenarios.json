@@ -1,2361 +1,2365 @@
-[
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+{
+	"resourceType": "Bundle",
+	"type": "collection",
+	"entry": [
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"extension": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2329969",
-					"display": "Aspirine 500 mg (36 bruistabletten)"
-				}
-			],
-			"text": "Aspirine 500 mg (36 bruistabletten)"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1001,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CV"
-						],
-						"dayOfWeek": [
-							"thu"
-						],
-						"frequency": 1,
-						"period": 10,
-						"periodUnit": "d"
-					}
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
 				},
-				"patientInstruction": "Weekday is used when frequency is a multiple of days ===EVSREF:100==="
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "1365543",
-					"display": "Asaflow 80 mg (56 tabletten)"
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
-			"text": "Asaflow 80 mg (56 tabletten)"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
 					{
-						"doseQuantity": {
-							"value": 1001,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2329969",
+						"display": "Aspirine 500 mg (36 bruistabletten)"
 					}
 				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"ACV"
-						],
-						"frequency": 1,
-						"period": 5,
-						"periodUnit": "d"
-					},
-					"extension": [
+				"text": "Aspirine 500 mg (36 bruistabletten)"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
 						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 5
+							"doseQuantity": {
+								"value": 1001,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
 						}
-					]
-				},
-				"patientInstruction": "Daynumber is bigger than the frequency. ===EVSREF:101==="
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CV"
+							],
+							"dayOfWeek": [
+								"thu"
+							],
+							"frequency": 1,
+							"period": 10,
+							"periodUnit": "d"
+						}
+					},
+					"patientInstruction": "Weekday is used when frequency is a multiple of days ===EVSREF:100==="
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"doseAndRate": [
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
 					{
-						"doseQuantity": {
-							"value": 1001,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "1365543",
+						"display": "Asaflow 80 mg (56 tabletten)"
 					}
 				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"ACV"
-						],
-						"frequency": 1,
-						"period": 5,
-						"periodUnit": "d"
-					},
-					"extension": [
+				"text": "Asaflow 80 mg (56 tabletten)"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
 						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 6
+							"doseQuantity": {
+								"value": 1001,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
 						}
-					]
-				},
-				"patientInstruction": "Daynumber is bigger than the frequency. ===EVSREF:101==="
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1001,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"ACV"
-						],
-						"frequency": 1,
-						"period": 5,
-						"periodUnit": "d"
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"ACV"
+							],
+							"frequency": 1,
+							"period": 5,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 5
+							}
+						]
 					},
-					"extension": [
+					"patientInstruction": "Daynumber is bigger than the frequency. ===EVSREF:101==="
+				},
+				{
+					"doseAndRate": [
 						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 4
+							"doseQuantity": {
+								"value": 1001,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
 						}
-					]
-				},
-				"patientInstruction": "Daynumber is bigger than the frequency. ===EVSREF:101==="
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2621936",
-					"display": "Cardio Aspirine 100 mg (84 tabletten)"
-				}
-			],
-			"text": "Cardio Aspirine 100 mg (84 tabletten)"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1001,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CV"
-						],
-						"frequency": 1,
-						"period": 5,
-						"periodUnit": "wk"
-					},
-					"event": [
-						"2011-12-21"
-					]
-				},
-				"patientInstruction": "Date is used when frequency is a multiple of weeks. ===EVSREF:102==="
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "1690262",
-					"display": "Aspirine 100 mg (30 tabletten)"
-				}
-			],
-			"text": "Aspirine 100 mg (30 tabletten)"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1001,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CV"
-						],
-						"dayOfWeek": [
-							"thu"
-						],
-						"frequency": 1,
-						"period": 6,
-						"periodUnit": "wk"
-					}
-				},
-				"patientInstruction": "Regimen with both weekdays and nothing (startdate will be used) ===EVSREF:103==="
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1001,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CD"
-						],
-						"dayOfWeek": [
-							"thu"
-						],
-						"frequency": 1,
-						"period": 6,
-						"periodUnit": "wk"
-					}
-				},
-				"patientInstruction": "Regimen with both weekdays and nothing (startdate will be used) ===EVSREF:103==="
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1001,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CV"
-						],
-						"dayOfWeek": [
-							"fri"
-						],
-						"frequency": 1,
-						"period": 6,
-						"periodUnit": "wk"
-					}
-				},
-				"patientInstruction": "Regimen with both weekdays and nothing (startdate will be used) ===EVSREF:103==="
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1001,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CD"
-						],
-						"dayOfWeek": [
-							"fri"
-						],
-						"frequency": 1,
-						"period": 6,
-						"periodUnit": "wk"
-					}
-				},
-				"patientInstruction": "Regimen with both weekdays and nothing (startdate will be used) ===EVSREF:103==="
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "3040532",
-					"display": "ASA EG 100 mg (168 tabletten)"
-				}
-			],
-			"text": "ASA EG 100 mg (168 tabletten)"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1001,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CV"
-						],
-						"dayOfWeek": [
-							"tue"
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"ACV"
+							],
+							"frequency": 1,
+							"period": 5,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 6
+							}
 						]
-					}
-				},
-				"patientInstruction": "No frequency is specified and weekday is used. ===EVSREF:104==="
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "3150158",
-					"display": "Aspirine Fasttabs 500 mg (20 tabletten)"
-				}
-			],
-			"text": "Aspirine Fasttabs 500 mg (20 tabletten)"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1001,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CV"
-						],
-						"frequency": 1,
-						"period": 9,
-						"periodUnit": "mo"
 					},
-					"extension": [
+					"patientInstruction": "Daynumber is bigger than the frequency. ===EVSREF:101==="
+				},
+				{
+					"doseAndRate": [
 						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 6
+							"doseQuantity": {
+								"value": 1001,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
 						}
-					]
-				},
-				"patientInstruction": "Daynumber is used when frequency is a multiple of months ===EVSREF:105==="
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2605335",
-					"display": "Cardio Aspirine 100 mg (56 tabletten)"
-				}
-			],
-			"text": "Cardio Aspirine 100 mg (56 tabletten)"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1001,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CV"
-						],
-						"frequency": 1,
-						"period": 9,
-						"periodUnit": "mo"
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"ACV"
+							],
+							"frequency": 1,
+							"period": 5,
+							"periodUnit": "d"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 4
+							}
+						]
 					},
-					"event": [
-						"2020-03-29"
-					]
-				},
-				"patientInstruction": "The 'day' part in the date field of the regimen is higher than 28 when frequency is a multiple of months. ===EVSREF:106==="
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "3001898",
-					"display": "Alka-Seltzer 324 mg (20 bruistabletten)"
+					"patientInstruction": "Daynumber is bigger than the frequency. ===EVSREF:101==="
 				}
 			],
-			"text": "Alka-Seltzer 324 mg (20 bruistabletten)"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1001,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CV"
-						],
-						"dayOfWeek": [
-							"thu"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "a"
-					}
-				},
-				"patientInstruction": "Weekday is used when frequency is a multiple of years. ===EVSREF:107==="
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
 			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
 		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"extension": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "1112481",
-					"display": "Cardegic 160 mg (30 zakjes)"
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
-			"text": "Cardegic 160 mg (30 zakjes)"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1001,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CV"
-						],
-						"frequency": 1,
-						"period": 2,
-						"periodUnit": "a"
-					},
-					"event": [
-						"2020-02-29"
-					]
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
 				},
-				"patientInstruction": "The 'day' part in the date field of the regimen is higher than 28 when frequency is a multiple of years. ===EVSREF:108==="
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+				"display": "Tasmanian Duck"
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
 			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2962975",
-					"display": "Aspirine Caffeïne 650 mg / 65 mg (30 tabletten)"
-				}
-			],
-			"text": "Aspirine Caffeïne 650 mg / 65 mg (30 tabletten)"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
+			"medicationCodeableConcept": {
+				"coding": [
 					{
-						"doseQuantity": {
-							"value": 1001,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2621936",
+						"display": "Cardio Aspirine 100 mg (84 tabletten)"
 					}
 				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CV"
-						],
-						"frequency": 1,
-						"period": 3,
-						"periodUnit": "wk"
-					},
-					"extension": [
+				"text": "Cardio Aspirine 100 mg (84 tabletten)"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
 						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
-							"valueInteger": 22
+							"doseQuantity": {
+								"value": 1001,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
 						}
-					]
-				},
-				"patientInstruction": "Daynumber in the regimen is higher than the multiple of weeks frequency. ===EVSREF:109==="
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "0102566",
-					"display": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
-				}
-			],
-			"text": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "732978007",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"timeOfDay": [
-							"12:00:00"
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CV"
+							],
+							"frequency": 1,
+							"period": 5,
+							"periodUnit": "wk"
+						},
+						"event": [
+							"2011-12-21"
 						]
 					},
-					"event": [
-						"2011-12-23"
-					]
-				},
-				"patientInstruction": "Medication is suspended without an endmoment. ===EVSREF:110==="
+					"patientInstruction": "Date is used when frequency is a multiple of weeks. ===EVSREF:102==="
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"doseAndRate": [
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
 					{
-						"doseQuantity": {
-							"value": 1.5,
-							"code": "732978007",
-							"system": "http://snomed.info/sct"
-						}
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "1690262",
+						"display": "Aspirine 100 mg (30 tabletten)"
 					}
 				],
-				"timing": {
-					"repeat": {
-						"timeOfDay": [
-							"15:00:00"
+				"text": "Aspirine 100 mg (30 tabletten)"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1001,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CV"
+							],
+							"dayOfWeek": [
+								"thu"
+							],
+							"frequency": 1,
+							"period": 6,
+							"periodUnit": "wk"
+						}
+					},
+					"patientInstruction": "Regimen with both weekdays and nothing (startdate will be used) ===EVSREF:103==="
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1001,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CD"
+							],
+							"dayOfWeek": [
+								"thu"
+							],
+							"frequency": 1,
+							"period": 6,
+							"periodUnit": "wk"
+						}
+					},
+					"patientInstruction": "Regimen with both weekdays and nothing (startdate will be used) ===EVSREF:103==="
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1001,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CV"
+							],
+							"dayOfWeek": [
+								"fri"
+							],
+							"frequency": 1,
+							"period": 6,
+							"periodUnit": "wk"
+						}
+					},
+					"patientInstruction": "Regimen with both weekdays and nothing (startdate will be used) ===EVSREF:103==="
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1001,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CD"
+							],
+							"dayOfWeek": [
+								"fri"
+							],
+							"frequency": 1,
+							"period": 6,
+							"periodUnit": "wk"
+						}
+					},
+					"patientInstruction": "Regimen with both weekdays and nothing (startdate will be used) ===EVSREF:103==="
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "3040532",
+						"display": "ASA EG 100 mg (168 tabletten)"
+					}
+				],
+				"text": "ASA EG 100 mg (168 tabletten)"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1001,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CV"
+							],
+							"dayOfWeek": [
+								"tue"
+							]
+						}
+					},
+					"patientInstruction": "No frequency is specified and weekday is used. ===EVSREF:104==="
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "3150158",
+						"display": "Aspirine Fasttabs 500 mg (20 tabletten)"
+					}
+				],
+				"text": "Aspirine Fasttabs 500 mg (20 tabletten)"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1001,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CV"
+							],
+							"frequency": 1,
+							"period": 9,
+							"periodUnit": "mo"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 6
+							}
 						]
 					},
-					"event": [
-						"2011-12-23"
-					]
-				},
-				"patientInstruction": "Medication is suspended without an endmoment. ===EVSREF:110==="
+					"patientInstruction": "Daynumber is used when frequency is a multiple of months ===EVSREF:105==="
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"doseAndRate": [
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
 					{
-						"doseQuantity": {
-							"value": 2,
-							"code": "732978007",
-							"system": "http://snomed.info/sct"
-						}
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2605335",
+						"display": "Cardio Aspirine 100 mg (56 tabletten)"
 					}
 				],
-				"timing": {
-					"repeat": {
-						"timeOfDay": [
-							"18:00:00"
+				"text": "Cardio Aspirine 100 mg (56 tabletten)"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1001,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CV"
+							],
+							"frequency": 1,
+							"period": 9,
+							"periodUnit": "mo"
+						},
+						"event": [
+							"2020-03-29"
 						]
 					},
-					"event": [
-						"2011-12-23"
-					]
+					"patientInstruction": "The 'day' part in the date field of the regimen is higher than 28 when frequency is a multiple of months. ===EVSREF:106==="
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
 				},
-				"patientInstruction": "Medication is suspended without an endmoment. ===EVSREF:110==="
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "0102566",
-					"display": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
-			"text": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
-		},
-		"dosage": [
-			{
-				"text": "Free text posology",
-				"timing": {
-					"event": [
-						"2011-12-20"
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
 			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "0102566",
-					"display": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
-				}
-			],
-			"text": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
+			"medicationCodeableConcept": {
+				"coding": [
 					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "732978007",
-							"system": "http://snomed.info/sct"
-						}
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "3001898",
+						"display": "Alka-Seltzer 324 mg (20 bruistabletten)"
 					}
 				],
-				"timing": {
-					"repeat": {
-						"timeOfDay": [
-							"12:00:00"
+				"text": "Alka-Seltzer 324 mg (20 bruistabletten)"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1001,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CV"
+							],
+							"dayOfWeek": [
+								"thu"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "a"
+						}
+					},
+					"patientInstruction": "Weekday is used when frequency is a multiple of years. ===EVSREF:107==="
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "1112481",
+						"display": "Cardegic 160 mg (30 zakjes)"
+					}
+				],
+				"text": "Cardegic 160 mg (30 zakjes)"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1001,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CV"
+							],
+							"frequency": 1,
+							"period": 2,
+							"periodUnit": "a"
+						},
+						"event": [
+							"2020-02-29"
 						]
 					},
-					"event": [
-						"2011-12-23"
-					]
-				},
-				"patientInstruction": "Temporality is missing ===EVSREF:111==="
+					"patientInstruction": "The 'day' part in the date field of the regimen is higher than 28 when frequency is a multiple of years. ===EVSREF:108==="
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"doseAndRate": [
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
 					{
-						"doseQuantity": {
-							"value": 1.5,
-							"code": "732978007",
-							"system": "http://snomed.info/sct"
-						}
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2962975",
+						"display": "Aspirine Caffeïne 650 mg / 65 mg (30 tabletten)"
 					}
 				],
-				"timing": {
-					"repeat": {
-						"timeOfDay": [
-							"15:00:00"
+				"text": "Aspirine Caffeïne 650 mg / 65 mg (30 tabletten)"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1001,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CV"
+							],
+							"frequency": 1,
+							"period": 3,
+							"periodUnit": "wk"
+						},
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+								"valueInteger": 22
+							}
 						]
 					},
-					"event": [
-						"2011-12-23"
-					]
-				},
-				"patientInstruction": "Temporality is missing ===EVSREF:111==="
+					"patientInstruction": "Daynumber in the regimen is higher than the multiple of weeks frequency. ===EVSREF:109==="
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"doseAndRate": [
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
 					{
-						"doseQuantity": {
-							"value": 2,
-							"code": "732978007",
-							"system": "http://snomed.info/sct"
-						}
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0102566",
+						"display": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
 					}
 				],
-				"timing": {
-					"repeat": {
-						"timeOfDay": [
-							"18:00:00"
+				"text": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "732978007",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"timeOfDay": [
+								"12:00:00"
+							]
+						},
+						"event": [
+							"2011-12-23"
 						]
 					},
-					"event": [
-						"2011-12-23"
-					]
+					"patientInstruction": "Medication is suspended without an endmoment. ===EVSREF:110==="
 				},
-				"patientInstruction": "Temporality is missing ===EVSREF:111==="
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2542488",
-					"display": "Asaflow 80 mg (168 tabletten)"
-				}
-			],
-			"text": "Asaflow 80 mg (168 tabletten)"
-		},
-		"dosage": [
-			{
-				"text": "Length of the instructionforpatient field is longer than 340 characters",
-				"patientInstruction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id condimentum risus. Suspendisse non viverra justo, malesuada commodo tellus. Aenean et quam id nunc fermentum auctor nec vel erat. Suspendisse nec imperdiet ex, eu convallis neque. Proin tempor urna eget augue tincidunt, eu dignissim nibh ultrices. Sed at congue ex. Curabitur ===EVSREF:112===",
-				"timing": {
-					"event": [
-						"2011-12-20"
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2767796",
-					"display": "Algostase Mono 500 mg (10 tabletten)"
-				}
-			],
-			"text": "Algostase Mono 500 mg (10 tabletten)"
-		},
-		"dosage": [
-			{
-				"text": "Free text posology",
-				"patientInstruction": "Medication in the treatment suspension differs from the corresponding medicationscheme element. ===EVSREF:113===",
-				"timing": {
-					"event": [
-						"2011-12-20"
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "0102566",
-					"display": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
-				}
-			],
-			"text": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
-		},
-		"dosage": [
-			{
-				"text": "Free text posology"
-			}
-		],
-		"effectivePeriod": {}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "0656835",
-					"display": "Actilyse inj./inf. oploss. (pdr.+solv.) i.v. [2x flac.] 1x 50mg"
-				}
-			],
-			"text": "Actilyse inj./inf. oploss. (pdr.+solv.) i.v. [2x flac.] 1x 50mg"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 9999,
-							"code": "429671000",
-							"system": "http://snomed.info/sct"
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1.5,
+								"code": "732978007",
+								"system": "http://snomed.info/sct"
+							}
 						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"ACD"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				},
-				"patientInstruction": "Quantity contains a value that is bigger than 4 digits. ===EVSREF:114==="
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 9999,
-							"code": "429671000",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CD"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				},
-				"patientInstruction": "Quantity contains a value that is bigger than 4 digits. ===EVSREF:114==="
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 99999,
-							"code": "429671000",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"PCD"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				},
-				"patientInstruction": "Quantity contains a value that is bigger than 4 digits. ===EVSREF:114==="
-			}
-		],
-		"effectivePeriod": {
-			"start": "2017-11-02",
-			"end": "2017-11-03"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "1553957",
-					"display": "Aspégic 500 mg (30 zakjes)"
-				}
-			],
-			"text": "Aspégic 500 mg (30 zakjes)"
-		},
-		"dosage": [
-			{
-				"text": "Free text posology",
-				"patientInstruction": "More than five treatment suspensions. ===EVSREF:115===",
-				"timing": {
-					"event": [
-						"2011-12-20"
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "1553957",
-					"display": "Aspégic 500 mg (30 zakjes)"
-				}
-			],
-			"text": "Aspégic 500 mg (30 zakjes)"
-		},
-		"dosage": [
-			{
-				"text": "Free text posology",
-				"patientInstruction": "More than five treatment suspensions. ===EVSREF:115===",
-				"timing": {
-					"event": [
-						"2011-12-21"
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-21",
-			"end": "2011-12-22"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "1553957",
-					"display": "Aspégic 500 mg (30 zakjes)"
-				}
-			],
-			"text": "Aspégic 500 mg (30 zakjes)"
-		},
-		"dosage": [
-			{
-				"text": "Free text posology",
-				"patientInstruction": "More than five treatment suspensions. ===EVSREF:115===",
-				"timing": {
-					"event": [
-						"2011-12-21"
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-21",
-			"end": "2011-12-22"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "1553957",
-					"display": "Aspégic 500 mg (30 zakjes)"
-				}
-			],
-			"text": "Aspégic 500 mg (30 zakjes)"
-		},
-		"dosage": [
-			{
-				"text": "Free text posology",
-				"patientInstruction": "More than five treatment suspensions. ===EVSREF:115===",
-				"timing": {
-					"event": [
-						"2011-12-21"
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-21",
-			"end": "2011-12-22"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "1553957",
-					"display": "Aspégic 500 mg (30 zakjes)"
-				}
-			],
-			"text": "Aspégic 500 mg (30 zakjes)"
-		},
-		"dosage": [
-			{
-				"text": "Free text posology",
-				"patientInstruction": "More than five treatment suspensions. ===EVSREF:115===",
-				"timing": {
-					"event": [
-						"2011-12-21"
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-21",
-			"end": "2011-12-22"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "1553957",
-					"display": "Aspégic 500 mg (30 zakjes)"
-				}
-			],
-			"text": "Aspégic 500 mg (30 zakjes)"
-		},
-		"dosage": [
-			{
-				"text": "Free text posology",
-				"patientInstruction": "More than five treatment suspensions. ===EVSREF:115===",
-				"timing": {
-					"event": [
-						"2011-12-21"
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-21",
-			"end": "2011-12-22"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "1553957",
-					"display": "Aspégic 500 mg (30 zakjes)"
-				}
-			],
-			"text": "Aspégic 500 mg (30 zakjes)"
-		},
-		"dosage": [
-			{
-				"text": "Free text posology",
-				"patientInstruction": "More than five treatment suspensions. ===EVSREF:115===",
-				"timing": {
-					"event": [
-						"2011-12-21"
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-21",
-			"end": "2011-12-22"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "1170232",
-					"display": "Troc (20 tabletten)"
-				}
-			],
-			"text": "Troc (20 tabletten)"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "732978007",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"timeOfDay": [
-							"12:00:00"
-						],
-						"duration": 5,
-						"durationUnit": "d"
-					},
-					"event": [
-						"2011-12-23"
-					]
-				},
-				"patientInstruction": "Endmoment and duration are used together. ===EVSREF:117==="
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1.5,
-							"code": "732978007",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"timeOfDay": [
-							"15:00:00"
-						],
-						"duration": 5,
-						"durationUnit": "d"
-					},
-					"event": [
-						"2011-12-23"
-					]
-				},
-				"patientInstruction": "Endmoment and duration are used together. ===EVSREF:117==="
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 2,
-							"code": "732978007",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"timeOfDay": [
-							"18:00:00"
-						],
-						"duration": 5,
-						"durationUnit": "d"
-					},
-					"event": [
-						"2011-12-23"
-					]
-				},
-				"patientInstruction": "Endmoment and duration are used together. ===EVSREF:117==="
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2113082",
-					"display": "Perdolan Compositum Volwassenen 200 mg / 200 mg / 46 mg (30 tabletten)"
-				}
-			],
-			"text": "Perdolan Compositum Volwassenen 200 mg / 200 mg / 46 mg (30 tabletten)"
-		},
-		"dosage": [
-			{
-				"text": "Free text posology",
-				"patientInstruction": "Duration bevat de waarde 0. ===EVSREF:119===",
-				"timing": {
-					"event": [
-						"2011-12-20"
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "2113082",
-					"display": "Perdolan Compositum Volwassenen 200 mg / 200 mg / 46 mg (30 tabletten)"
-				}
-			],
-			"text": "Perdolan Compositum Volwassenen 200 mg / 200 mg / 46 mg (30 tabletten)"
-		},
-		"dosage": [
-			{
-				"text": "Free text posology",
-				"timing": {
-					"repeat": {
-						"duration": 0,
-						"durationUnit": "d"
-					},
-					"event": [
-						"2011-12-21"
-					]
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-21"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "1563295",
-					"display": "Perdolan Kinderen 350 mg (12 zetpillen)"
-				}
-			],
-			"text": "Perdolan Kinderen 350 mg (12 zetpillen)"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": -1,
-							"code": "732978007",
-							"system": "http://snomed.info/sct"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"PCM"
+					],
+					"timing": {
+						"repeat": {
+							"timeOfDay": [
+								"15:00:00"
+							]
+						},
+						"event": [
+							"2011-12-23"
 						]
 					},
-					"event": [
-						"2011-12-20"
-					]
+					"patientInstruction": "Medication is suspended without an endmoment. ===EVSREF:110==="
 				},
-				"patientInstruction": "Quantity is kleiner of gelijk aan 0. ===EVSREF:120==="
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1.5,
-							"code": "732978007",
-							"system": "http://snomed.info/sct"
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 2,
+								"code": "732978007",
+								"system": "http://snomed.info/sct"
+							}
 						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CD"
-						],
-						"offset": 60
+					],
+					"timing": {
+						"repeat": {
+							"timeOfDay": [
+								"18:00:00"
+							]
+						},
+						"event": [
+							"2011-12-23"
+						]
 					},
-					"event": [
-						"2011-12-20"
-					]
-				},
-				"patientInstruction": "Quantity is kleiner of gelijk aan 0. ===EVSREF:120==="
-			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "0656835",
-					"display": "Actilyse inj./inf. oploss. (pdr.+solv.) i.v. [2x flac.] 1x 50mg"
+					"patientInstruction": "Medication is suspended without an endmoment. ===EVSREF:110==="
 				}
 			],
-			"text": "Actilyse inj./inf. oploss. (pdr.+solv.) i.v. [2x flac.] 1x 50mg"
-		},
-		"dosage": [
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CM"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				},
-				"patientInstruction": "Quantity contains a value with trailing zeros. ===EVSREF:121==="
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CD"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				},
-				"patientInstruction": "Quantity contains a value with trailing zeros. ===EVSREF:121==="
-			},
-			{
-				"doseAndRate": [
-					{
-						"doseQuantity": {
-							"value": 1,
-							"code": "5.mL",
-							"system": "http://unitsofmeasure.org"
-						}
-					}
-				],
-				"timing": {
-					"repeat": {
-						"when": [
-							"CV"
-						],
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				},
-				"patientInstruction": "Quantity contains a value with trailing zeros. ===EVSREF:121==="
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
 			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
 		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"extension": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "1439561",
-					"display": "STOFNAAM: Topazolam tab 50x 0,5mg"
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
 				},
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "1439562",
-					"display": "Topazolam tab 50x 1,0mg"
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
-			"text": "Topazolam tab 50x 1,0mg"
-		},
-		"dosage": [
-			{
-				"text": "Free text posology",
-				"patientInstruction": "Invalid CNK / INNCLUSTER code. ===EVSREF:126===",
-				"timing": {
-					"event": [
-						"2011-12-20"
-					]
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0102566",
+						"display": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
+					}
+				],
+				"text": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
+			},
+			"dosage": [
+				{
+					"text": "Free text posology",
+					"timing": {
+						"event": [
+							"2011-12-20"
+						]
+					}
 				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20"
 			}
-		],
-		"effectivePeriod": {
-			"start": "2011-12-20",
-			"end": "2019-01-15"
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0102566",
+						"display": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
+					}
+				],
+				"text": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "732978007",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"timeOfDay": [
+								"12:00:00"
+							]
+						},
+						"event": [
+							"2011-12-23"
+						]
+					},
+					"patientInstruction": "Temporality is missing ===EVSREF:111==="
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1.5,
+								"code": "732978007",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"timeOfDay": [
+								"15:00:00"
+							]
+						},
+						"event": [
+							"2011-12-23"
+						]
+					},
+					"patientInstruction": "Temporality is missing ===EVSREF:111==="
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 2,
+								"code": "732978007",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"timeOfDay": [
+								"18:00:00"
+							]
+						},
+						"event": [
+							"2011-12-23"
+						]
+					},
+					"patientInstruction": "Temporality is missing ===EVSREF:111==="
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2542488",
+						"display": "Asaflow 80 mg (168 tabletten)"
+					}
+				],
+				"text": "Asaflow 80 mg (168 tabletten)"
+			},
+			"dosage": [
+				{
+					"text": "Length of the instructionforpatient field is longer than 340 characters",
+					"patientInstruction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id condimentum risus. Suspendisse non viverra justo, malesuada commodo tellus. Aenean et quam id nunc fermentum auctor nec vel erat. Suspendisse nec imperdiet ex, eu convallis neque. Proin tempor urna eget augue tincidunt, eu dignissim nibh ultrices. Sed at congue ex. Curabitur ===EVSREF:112===",
+					"timing": {
+						"event": [
+							"2011-12-20"
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2767796",
+						"display": "Algostase Mono 500 mg (10 tabletten)"
+					}
+				],
+				"text": "Algostase Mono 500 mg (10 tabletten)"
+			},
+			"dosage": [
+				{
+					"text": "Free text posology",
+					"patientInstruction": "Medication in the treatment suspension differs from the corresponding medicationscheme element. ===EVSREF:113===",
+					"timing": {
+						"event": [
+							"2011-12-20"
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0102566",
+						"display": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
+					}
+				],
+				"text": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
+			},
+			"dosage": [
+				{
+					"text": "Free text posology"
+				}
+			],
+			"effectivePeriod": {}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0656835",
+						"display": "Actilyse inj./inf. oploss. (pdr.+solv.) i.v. [2x flac.] 1x 50mg"
+					}
+				],
+				"text": "Actilyse inj./inf. oploss. (pdr.+solv.) i.v. [2x flac.] 1x 50mg"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 9999,
+								"code": "429671000",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"ACD"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					},
+					"patientInstruction": "Quantity contains a value that is bigger than 4 digits. ===EVSREF:114==="
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 9999,
+								"code": "429671000",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CD"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					},
+					"patientInstruction": "Quantity contains a value that is bigger than 4 digits. ===EVSREF:114==="
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 99999,
+								"code": "429671000",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"PCD"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					},
+					"patientInstruction": "Quantity contains a value that is bigger than 4 digits. ===EVSREF:114==="
+				}
+			],
+			"effectivePeriod": {
+				"start": "2017-11-02",
+				"end": "2017-11-03"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "1553957",
+						"display": "Aspégic 500 mg (30 zakjes)"
+					}
+				],
+				"text": "Aspégic 500 mg (30 zakjes)"
+			},
+			"dosage": [
+				{
+					"text": "Free text posology",
+					"patientInstruction": "More than five treatment suspensions. ===EVSREF:115===",
+					"timing": {
+						"event": [
+							"2011-12-20"
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "1553957",
+						"display": "Aspégic 500 mg (30 zakjes)"
+					}
+				],
+				"text": "Aspégic 500 mg (30 zakjes)"
+			},
+			"dosage": [
+				{
+					"text": "Free text posology",
+					"patientInstruction": "More than five treatment suspensions. ===EVSREF:115===",
+					"timing": {
+						"event": [
+							"2011-12-21"
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-21",
+				"end": "2011-12-22"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "1553957",
+						"display": "Aspégic 500 mg (30 zakjes)"
+					}
+				],
+				"text": "Aspégic 500 mg (30 zakjes)"
+			},
+			"dosage": [
+				{
+					"text": "Free text posology",
+					"patientInstruction": "More than five treatment suspensions. ===EVSREF:115===",
+					"timing": {
+						"event": [
+							"2011-12-21"
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-21",
+				"end": "2011-12-22"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "1553957",
+						"display": "Aspégic 500 mg (30 zakjes)"
+					}
+				],
+				"text": "Aspégic 500 mg (30 zakjes)"
+			},
+			"dosage": [
+				{
+					"text": "Free text posology",
+					"patientInstruction": "More than five treatment suspensions. ===EVSREF:115===",
+					"timing": {
+						"event": [
+							"2011-12-21"
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-21",
+				"end": "2011-12-22"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "1553957",
+						"display": "Aspégic 500 mg (30 zakjes)"
+					}
+				],
+				"text": "Aspégic 500 mg (30 zakjes)"
+			},
+			"dosage": [
+				{
+					"text": "Free text posology",
+					"patientInstruction": "More than five treatment suspensions. ===EVSREF:115===",
+					"timing": {
+						"event": [
+							"2011-12-21"
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-21",
+				"end": "2011-12-22"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "1553957",
+						"display": "Aspégic 500 mg (30 zakjes)"
+					}
+				],
+				"text": "Aspégic 500 mg (30 zakjes)"
+			},
+			"dosage": [
+				{
+					"text": "Free text posology",
+					"patientInstruction": "More than five treatment suspensions. ===EVSREF:115===",
+					"timing": {
+						"event": [
+							"2011-12-21"
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-21",
+				"end": "2011-12-22"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "1553957",
+						"display": "Aspégic 500 mg (30 zakjes)"
+					}
+				],
+				"text": "Aspégic 500 mg (30 zakjes)"
+			},
+			"dosage": [
+				{
+					"text": "Free text posology",
+					"patientInstruction": "More than five treatment suspensions. ===EVSREF:115===",
+					"timing": {
+						"event": [
+							"2011-12-21"
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-21",
+				"end": "2011-12-22"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "1170232",
+						"display": "Troc (20 tabletten)"
+					}
+				],
+				"text": "Troc (20 tabletten)"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "732978007",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"timeOfDay": [
+								"12:00:00"
+							],
+							"duration": 5,
+							"durationUnit": "d"
+						},
+						"event": [
+							"2011-12-23"
+						]
+					},
+					"patientInstruction": "Endmoment and duration are used together. ===EVSREF:117==="
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1.5,
+								"code": "732978007",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"timeOfDay": [
+								"15:00:00"
+							],
+							"duration": 5,
+							"durationUnit": "d"
+						},
+						"event": [
+							"2011-12-23"
+						]
+					},
+					"patientInstruction": "Endmoment and duration are used together. ===EVSREF:117==="
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 2,
+								"code": "732978007",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"timeOfDay": [
+								"18:00:00"
+							],
+							"duration": 5,
+							"durationUnit": "d"
+						},
+						"event": [
+							"2011-12-23"
+						]
+					},
+					"patientInstruction": "Endmoment and duration are used together. ===EVSREF:117==="
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2113082",
+						"display": "Perdolan Compositum Volwassenen 200 mg / 200 mg / 46 mg (30 tabletten)"
+					}
+				],
+				"text": "Perdolan Compositum Volwassenen 200 mg / 200 mg / 46 mg (30 tabletten)"
+			},
+			"dosage": [
+				{
+					"text": "Free text posology",
+					"patientInstruction": "Duration bevat de waarde 0. ===EVSREF:119===",
+					"timing": {
+						"event": [
+							"2011-12-20"
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2113082",
+						"display": "Perdolan Compositum Volwassenen 200 mg / 200 mg / 46 mg (30 tabletten)"
+					}
+				],
+				"text": "Perdolan Compositum Volwassenen 200 mg / 200 mg / 46 mg (30 tabletten)"
+			},
+			"dosage": [
+				{
+					"text": "Free text posology",
+					"timing": {
+						"repeat": {
+							"duration": 0,
+							"durationUnit": "d"
+						},
+						"event": [
+							"2011-12-21"
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-21"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "1563295",
+						"display": "Perdolan Kinderen 350 mg (12 zetpillen)"
+					}
+				],
+				"text": "Perdolan Kinderen 350 mg (12 zetpillen)"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": -1,
+								"code": "732978007",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"PCM"
+							]
+						},
+						"event": [
+							"2011-12-20"
+						]
+					},
+					"patientInstruction": "Quantity is kleiner of gelijk aan 0. ===EVSREF:120==="
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1.5,
+								"code": "732978007",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CD"
+							],
+							"offset": 60
+						},
+						"event": [
+							"2011-12-20"
+						]
+					},
+					"patientInstruction": "Quantity is kleiner of gelijk aan 0. ===EVSREF:120==="
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0656835",
+						"display": "Actilyse inj./inf. oploss. (pdr.+solv.) i.v. [2x flac.] 1x 50mg"
+					}
+				],
+				"text": "Actilyse inj./inf. oploss. (pdr.+solv.) i.v. [2x flac.] 1x 50mg"
+			},
+			"dosage": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					},
+					"patientInstruction": "Quantity contains a value with trailing zeros. ===EVSREF:121==="
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CD"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					},
+					"patientInstruction": "Quantity contains a value with trailing zeros. ===EVSREF:121==="
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"CV"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					},
+					"patientInstruction": "Quantity contains a value with trailing zeros. ===EVSREF:121==="
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "1439561",
+						"display": "STOFNAAM: Topazolam tab 50x 0,5mg"
+					},
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "1439562",
+						"display": "Topazolam tab 50x 1,0mg"
+					}
+				],
+				"text": "Topazolam tab 50x 1,0mg"
+			},
+			"dosage": [
+				{
+					"text": "Free text posology",
+					"patientInstruction": "Invalid CNK / INNCLUSTER code. ===EVSREF:126===",
+					"timing": {
+						"event": [
+							"2011-12-20"
+						]
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2011-12-20",
+				"end": "2019-01-15"
+			}
 		}
-	}
-]
+	]
+}

@@ -1,359 +1,363 @@
-[
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+{
+	"resourceType": "Bundle",
+	"type": "collection",
+	"entry": [
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"extension": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-					"code": "magistral"
-				}
-			],
-			"text": "Free text drug"
-		},
-		"dosage": [
-			{
-				"text": "Free text drug",
-				"timing": {
-					"repeat": {
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2021-03-22"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "3356102",
-					"display": "Rhinathiol Naturactiv Pulmo 133Ml"
-				}
-			],
-			"text": "Rhinathiol Naturactiv Pulmo 133Ml"
-		},
-		"dosage": [
-			{
-				"text": "Free text drug",
-				"timing": {
-					"repeat": {
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2021-03-22"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "3356102",
-					"display": "Rhinathiol Naturactiv Pulmo 133Ml"
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
 				},
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "3319522",
-					"display": "Orgitan Care B+Pharma 90 Tabl"
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
-			"text": "Orgitan Care B+Pharma 90 Tabl"
-		},
-		"dosage": [
-			{
-				"text": "Free text drug",
-				"timing": {
-					"repeat": {
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+						"code": "magistral"
 					}
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2021-03-22"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+				],
+				"text": "Free text drug"
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"dosage": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "0000174",
-					"display": "aceclofenac oraal 100 mg, 20 tabletten"
+					"text": "Free text drug",
+					"timing": {
+						"repeat": {
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
 				}
 			],
-			"text": "aceclofenac oraal 100 mg, 20 tabletten"
-		},
-		"dosage": [
-			{
-				"text": "Free text drug",
-				"timing": {
-					"repeat": {
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				}
+			"effectivePeriod": {
+				"start": "2021-03-22"
 			}
-		],
-		"effectivePeriod": {
-			"start": "2021-03-22"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
 		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
 			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
+			"extension": [
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "30957",
-					"display": "simvastatine 40 mg tablet (or.)"
-				}
-			],
-			"text": "simvastatine 40 mg tablet (or.)"
-		},
-		"dosage": [
-			{
-				"text": "Free text drug",
-				"timing": {
-					"repeat": {
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
-					}
-				}
-			}
-		],
-		"effectivePeriod": {
-			"start": "2021-03-22"
-		}
-	},
-	{
-		"resourceType": "MedicationStatement",
-		"status": "unknown",
-		"meta": {
-			"profile": [
-				"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-			]
-		},
-		"extension": [
-			{
-				"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-				"valueString": "1"
-			},
-			{
-				"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-				"valueCode": "unknown"
-			}
-		],
-		"subject": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Tasmanian Duck"
-		},
-		"informationSource": {
-			"identifier": {
-				"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-				"value": "XXXXXXXXXXX"
-			},
-			"display": "Donald Duck"
-		},
-		"medicationCodeableConcept": {
-			"coding": [
-				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "30957",
-					"display": "simvastatine 40 mg tablet (or.)"
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
 				},
 				{
-					"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-					"code": "5058",
-					"display": "busulfan 2 mg comprimé (or.)"
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
-			"text": "busulfan 2 mg comprimé (or.)"
-		},
-		"dosage": [
-			{
-				"text": "Free text drug",
-				"timing": {
-					"repeat": {
-						"frequency": 1,
-						"period": 1,
-						"periodUnit": "d"
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "3356102",
+						"display": "Rhinathiol Naturactiv Pulmo 133Ml"
+					}
+				],
+				"text": "Rhinathiol Naturactiv Pulmo 133Ml"
+			},
+			"dosage": [
+				{
+					"text": "Free text drug",
+					"timing": {
+						"repeat": {
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
 					}
 				}
+			],
+			"effectivePeriod": {
+				"start": "2021-03-22"
 			}
-		],
-		"effectivePeriod": {
-			"start": "2021-03-22"
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "3356102",
+						"display": "Rhinathiol Naturactiv Pulmo 133Ml"
+					},
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "3319522",
+						"display": "Orgitan Care B+Pharma 90 Tabl"
+					}
+				],
+				"text": "Orgitan Care B+Pharma 90 Tabl"
+			},
+			"dosage": [
+				{
+					"text": "Free text drug",
+					"timing": {
+						"repeat": {
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2021-03-22"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0000174",
+						"display": "aceclofenac oraal 100 mg, 20 tabletten"
+					}
+				],
+				"text": "aceclofenac oraal 100 mg, 20 tabletten"
+			},
+			"dosage": [
+				{
+					"text": "Free text drug",
+					"timing": {
+						"repeat": {
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2021-03-22"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "30957",
+						"display": "simvastatine 40 mg tablet (or.)"
+					}
+				],
+				"text": "simvastatine 40 mg tablet (or.)"
+			},
+			"dosage": [
+				{
+					"text": "Free text drug",
+					"timing": {
+						"repeat": {
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2021-03-22"
+			}
+		},
+		{
+			"resourceType": "MedicationStatement",
+			"status": "unknown",
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"informationSource": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "30957",
+						"display": "simvastatine 40 mg tablet (or.)"
+					},
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "5058",
+						"display": "busulfan 2 mg comprimé (or.)"
+					}
+				],
+				"text": "busulfan 2 mg comprimé (or.)"
+			},
+			"dosage": [
+				{
+					"text": "Free text drug",
+					"timing": {
+						"repeat": {
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				}
+			],
+			"effectivePeriod": {
+				"start": "2021-03-22"
+			}
 		}
-	}
-]
+	]
+}
