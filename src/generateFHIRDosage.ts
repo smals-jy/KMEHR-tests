@@ -449,7 +449,7 @@ function fromKMEHRTimingToFHIRTiming(
   if (entry?.dayIngestion?.dayNumber !== undefined) {
     result.extension = [
       {
-        url: "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/dayNumber",
+        url: "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
         valueInteger: entry.dayIngestion.dayNumber,
       },
     ];
