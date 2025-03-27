@@ -16,8 +16,9 @@ import type {
     Reference,
     Period,
     CodeableConcept,
-    Coding
-  } from "fhir/r4";
+    Coding,
+    Bundle
+} from "fhir/r4";
 
 import type { OptionsConfig } from "./config";
 
@@ -66,7 +67,7 @@ async function processSingleFile(path: string, outputPath: string) {
         config = JSON.parse(contents) as Configuration;
     }
 
-    let payload = generatePayload(config!);
+    let payload = generateBody(config!);
 
     // Write result into a json file
     await writeFile(
@@ -78,8 +79,17 @@ async function processSingleFile(path: string, outputPath: string) {
     );
 }
 
+// A Medication scheme contains 0, 1 or * medications
+export function generatePayload(config: Configuration): Bundle {
+    return {
+        resourceType: "Bundle",
+        type: "collection",
+        entry: generateBody(config)
+    }
+}
+
 // For the final payload, use MedicationStatement as it will be the ressource of the medication scheme line / ...
-export function generatePayload(config: Configuration): MedicationStatement[] {
+export function generateBody(config: Configuration): MedicationStatement[] {
     
     return config.transactions.map( (transaction, idx) => {
 
