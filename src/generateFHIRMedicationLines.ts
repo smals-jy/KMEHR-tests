@@ -79,12 +79,31 @@ async function processSingleFile(path: string, outputPath: string) {
     );
 }
 
+function getCurrentInstant() {
+    const now = new Date();
+  
+    const offset = now.getTimezoneOffset();
+    const sign = offset > 0 ? '-' : '+';
+    const offsetHours = String(Math.abs(offset) / 60).padStart(2, '0');
+    const offsetMinutes = String(Math.abs(offset) % 60).padStart(2, '0');
+    
+    const timezoneOffset = `${sign}${offsetHours}:${offsetMinutes}`;
+  
+    // Format the current date with sub-millisecond precision
+    const formattedDate = now.toISOString(); // ISO 8601 format (includes milliseconds)
+    
+    // Replace 'Z' with the timezone offset
+    return formattedDate.replace('Z', timezoneOffset);
+  }
+
 // A Medication scheme contains 0, 1 or * medications
 export function generatePayload(config: Configuration): Bundle {
     return {
         resourceType: "Bundle",
         type: "collection",
-        entry: generateBody(config)
+        entry: generateBody(config),
+        total: config.transactions.length || 0,
+        timestamp: getCurrentInstant()
     }
 }
 
@@ -234,4 +253,3 @@ function generateDrug(entry : MedicationEntry, idx: Number): CodeableConcept {
         text: finalProduct
     }
 }
-
