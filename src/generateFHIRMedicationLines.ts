@@ -67,7 +67,7 @@ async function processSingleFile(path: string, outputPath: string) {
         config = JSON.parse(contents) as Configuration;
     }
 
-    let payload = generateBody(config!);
+    let payload = generatePayload(config!);
 
     // Write result into a json file
     await writeFile(
