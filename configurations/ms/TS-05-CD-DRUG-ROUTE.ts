@@ -32,7 +32,6 @@ export default function (): Configuration {
     "00071",
     "00072",
     "00073",
-    /*
     "both_ears",
     "both_eyes",
     "both_nostrils",
@@ -51,8 +50,7 @@ export default function (): Configuration {
     "nose_right",
     "oft",
     "transdermal",
-    "vitreal_injection",
-    */
+    "vitreal_injection"
   ];
 
   return {
