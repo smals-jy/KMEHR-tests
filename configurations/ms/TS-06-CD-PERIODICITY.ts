@@ -1,6 +1,6 @@
-import type { Configuration, Periodicity } from "../../src/config";
+import type { MSConfiguration, Periodicity } from "@smals-jy/kmehr-tests";
 
-export default function (): Configuration {
+export default function (): MSConfiguration {
   const frequencies: Periodicity[] = [
     "D",
     "DA",

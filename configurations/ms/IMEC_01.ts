@@ -1,6 +1,6 @@
-import type { Configuration } from "../../src/config";
+import type { MSConfiguration } from "@smals-jy/kmehr-tests";
 
-export default function (): Configuration {
+export default function (): MSConfiguration {
   return {
     version: 1,
     date: "2024-09-01",

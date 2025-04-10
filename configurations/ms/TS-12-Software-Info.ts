@@ -1,8 +1,9 @@
+// TODO change that import a bit later
 import type {
-  Configuration,
   TransactionConfig,
   AuthorConfig,
 } from "../../src/config";
+import type { MSConfiguration } from "@smals-jy/kmehr-tests";
 
 // To generate a number to a minimal length
 function numberToPaddedString(num: number, minLength: number = 3): string {
@@ -55,7 +56,7 @@ function generateTransaction(
 }
 
 // Generate
-export default function (): Configuration {
+export default function (): MSConfiguration {
   return {
     // Medication last author was Mickey Mouse, without software info
     author: AUTHORS.DR_MICKEY_MOUSE,

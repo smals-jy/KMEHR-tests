@@ -1,9 +1,9 @@
-import type { Configuration } from "../../src/config";
+import type { MSConfiguration } from "@smals-jy/kmehr-tests";
 
 // This test case (only for frontend) is to specifically for future medications in list view
 
 // Payload
-export default function (): Configuration {
+export default function (): MSConfiguration {
   // To change the year, if somebody wish to update that test here after 2099 ;)
   const FUTURE_YEAR = "2099";
   // date in the future

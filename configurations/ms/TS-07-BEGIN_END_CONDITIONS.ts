@@ -1,4 +1,4 @@
-import type { Configuration } from "../../src/config";
+import type { MSConfiguration } from "@smals-jy/kmehr-tests";
 
 // To generate combinations of endDate / beginCondition / endCondition
 function* booleanCombination(numPlace: number): Generator<boolean[]> {
@@ -34,7 +34,7 @@ function numberToPaddedString(num: number, minLength: number = 3): string {
 }
 
 // Payload
-export default function (): Configuration {
+export default function (): MSConfiguration {
   // generate combinations
   const combinations = Array.from(booleanCombination(3)) as [
     boolean,

@@ -1,6 +1,6 @@
-import type { Configuration, AdministrationUnit } from "../../src/config";
+import type { MSConfiguration, AdministrationUnit } from "@smals-jy/kmehr-tests";
 
-export default function (): Configuration {
+export default function (): MSConfiguration {
   // List of administration-unit
   const ADMINISTRATION_UNITS: AdministrationUnit[] = [
     "00001",

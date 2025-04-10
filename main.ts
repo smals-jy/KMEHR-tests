@@ -2,7 +2,8 @@ import {
   generateMSOutput,
   generateFHIRDosage,
   generatePCDHOutput,
-  generateFHIRMSL
+  generateFHIRMSL,
+  generateFHIRPrescriptions
 } from "./src/index"
 
 console.log("MS STARTED");
@@ -47,8 +48,20 @@ generateFHIRMSL({
   OUTPUT_PATH: `${__dirname}/output/fhir-ms`,
 })
   .then(() => {
-    console.log("MS FINISHED");
+    console.log("FHIR MS FINISHED");
   })
   .catch((error) => {
     console.error(error);
   });
+
+  console.log("FHIR Prescriptions STARTED");
+  generateFHIRPrescriptions({
+    CONFIGURATIONS_PATH: `${__dirname}/configurations/fhir-prescriptions`,
+    OUTPUT_PATH: `${__dirname}/output/fhir-prescriptions`,
+  })
+    .then(() => {
+      console.log("FHIR Prescriptions FINISHED");
+    })
+    .catch((error) => {
+      console.error(error);
+    });

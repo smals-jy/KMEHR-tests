@@ -1,7 +1,9 @@
-import type { Configuration, AuthorConfig } from "../../src/config";
+// TODO change that import a bit later
+import type { AuthorConfig } from "../../src/config";
+import type { MSConfiguration } from "@smals-jy/kmehr-tests";
 
 // Payload
-export default function (): Configuration {
+export default function (): MSConfiguration {
   // Some authors
   const AUTHORS: {
     [x: string]: AuthorConfig;

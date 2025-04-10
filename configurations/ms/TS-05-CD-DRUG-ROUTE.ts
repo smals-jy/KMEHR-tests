@@ -1,6 +1,6 @@
-import type { Configuration, DrugRoute } from "../../src/config";
+import type { MSConfiguration, DrugRoute } from "@smals-jy/kmehr-tests";
 
-export default function (): Configuration {
+export default function (): MSConfiguration {
   const routes: DrugRoute[] = [
     "00001",
     "00002",

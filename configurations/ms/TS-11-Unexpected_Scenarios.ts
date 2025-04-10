@@ -1,4 +1,6 @@
-import type { Configuration, TransactionConfig } from "../../src/config";
+// TODO change that import a bit later
+import type { TransactionConfig } from "../../src/config";
+import type { MSConfiguration } from "@smals-jy/kmehr-tests";
 
 // In case I need to tweak date
 function addDaysToDate(dateString: string, daysToAdd: number) {
@@ -12,7 +14,7 @@ function addDaysToDate(dateString: string, daysToAdd: number) {
   return `${year}-${month}-${day}`;
 }
 
-export default function (): Configuration {
+export default function (): MSConfiguration {
   const BEGIN_MOMENT = "2011-12-20";
   const END_MOMENT = "2019-01-15";
 

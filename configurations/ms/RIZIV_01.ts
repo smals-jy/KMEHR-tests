@@ -1,4 +1,4 @@
-import type { Configuration } from "../../src/config";
+import type { MSConfiguration } from "@smals-jy/kmehr-tests";
 
 /*
 Test scenario provided by RIZIV :
@@ -21,7 +21,7 @@ TRESIBA voorgevulde pen FlexTouch uit verpakking van 3 pennen van 3 ml 200 I/1 m
 12 Eenheden per dag ’s avonds 22h voor slapengaan, onderhuids
 */
 
-export default function (): Configuration {
+export default function (): MSConfiguration {
   const BEGIN_MOMENT = "2020-06-10";
 
   return {
