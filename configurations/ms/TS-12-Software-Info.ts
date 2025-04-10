@@ -1,9 +1,6 @@
 // TODO change that import a bit later
-import type {
-  TransactionConfig,
-  AuthorConfig,
-} from "../../src/config";
-import type { MSConfiguration } from "@smals-jy/kmehr-tests";
+import type { TransactionConfig } from "../../src/config";
+import type { MSConfiguration, AuthorConfig } from "@smals-jy/kmehr-tests";
 
 // To generate a number to a minimal length
 function numberToPaddedString(num: number, minLength: number = 3): string {

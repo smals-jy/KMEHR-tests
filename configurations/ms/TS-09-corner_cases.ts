@@ -1,6 +1,4 @@
-// TODO change that import a bit later
-import type { AuthorConfig } from "../../src/config";
-import type { MSConfiguration } from "@smals-jy/kmehr-tests";
+import type { MSConfiguration, AuthorConfig } from "@smals-jy/kmehr-tests";
 
 // Payload
 export default function (): MSConfiguration {
