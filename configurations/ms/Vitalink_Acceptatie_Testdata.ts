@@ -1,4 +1,4 @@
-import type { Configuration, AuthorConfig } from "../../src/config";
+import type { MSConfiguration, AuthorConfig } from "@smals-jy/kmehr-tests";
 
 /*
 Test scenario provided by Vitalink
@@ -8,7 +8,7 @@ https://vitalink.be/sites/default/files/2022-05/Vitalink_Acceptatie_Testdata_v0.
 Found on https://vitalink.be/voor-ontwikkelaars/technische-documentatie
 */
 
-export default function (): Configuration {
+export default function (): MSConfiguration {
   // Some authors
   const AUTHORS = {
     DR_MICKEY_MOUSE: {

@@ -1,4 +1,6 @@
-import type { Configuration, TransactionConfig } from "../../src/config";
+// TODO change that import a bit later
+import type { TransactionConfig } from "../../src/config";
+import type { MSConfiguration } from "@smals-jy/kmehr-tests";
 
 // To generate a number to a minimal length
 function numberToPaddedString(num: number, minLength: number = 3): string {
@@ -240,7 +242,7 @@ function generateTestScenario(): Scenario[] {
 }
 
 // Payload
-export default function (): Configuration {
+export default function (): MSConfiguration {
   // test scenario
   const scenarios = generateTestScenario();
 

@@ -151,7 +151,7 @@ export function generateBody(config: Configuration): MedicationStatement[] {
 }
 
 // To generate the patient block
-function generatePatient(patient?: AuthorConfig) : Reference {
+export function generatePatient(patient?: AuthorConfig) : Reference {
 
     const firstname = patient?.firstname || PREDEFINED_FIELDS.PATIENT_FIRSTNAME;
     const lastname = patient?.familyname || PREDEFINED_FIELDS.AUTHOR_LASTNAME;
@@ -169,7 +169,7 @@ function generatePatient(patient?: AuthorConfig) : Reference {
 }
 
 // To generate the author block
-function generateAuthor(author?: AuthorConfig) : Reference {
+export function generateAuthor(author?: AuthorConfig) : Reference {
 
     const firstname = author?.firstname || PREDEFINED_FIELDS.AUTHOR_FIRSTNAME;
     const lastname = author?.familyname || PREDEFINED_FIELDS.AUTHOR_LASTNAME;
@@ -205,7 +205,7 @@ function generateEffectivePeriod(entry: MedicationEntry): Period {
 }
 
 // To generate the medication that is going to be taken
-function generateDrug(entry : MedicationEntry, idx: Number): CodeableConcept {
+export function generateDrug(entry : MedicationEntry, idx: Number): CodeableConcept {
 
     // To distinguish if it is a official medication from a free text one
     let isProduct = (entry.deliveredcd || entry.intendedcd) !== undefined;

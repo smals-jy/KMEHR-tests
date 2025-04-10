@@ -1,6 +1,6 @@
-import type { Configuration, DayPeriod } from "../../src/config";
+import type { MSConfiguration, DayPeriod } from "@smals-jy/kmehr-tests";
 
-export default function (): Configuration {
+export default function (): MSConfiguration {
   const periods: DayPeriod[] = [
     "afterbreakfast",
     "afterdinner",
