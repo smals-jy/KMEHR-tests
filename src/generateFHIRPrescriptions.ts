@@ -7,7 +7,8 @@ import { generatePatient, generateAuthor, generateDrug } from "./generateFHIRMed
 import type {
     Bundle,
     Extension,
-    MedicationRequest
+    MedicationRequest,
+    MedicationRequestSubstitution
 } from "fhir/r4";
 
 import type { TransactionConfig} from "./generateTransaction";
@@ -23,7 +24,10 @@ type Item = Exclude<
 > & {
     // Reimbursement instructions 
     // Refer to https://hl7-be.github.io/medication/branches/prescription/ValueSet-be-vs-medication-request-reimbursement-type.html for the complete list
-    instructionforreimbursementCode?: "third-party-payer-applicable" | "first-dose" | "second-dose" | "third-dose" | "chronic-renal-failure-pathway" | "diabetes-care-pathway" | "diabetes-convention" | "non-reimbursable" | "startup-pathway-type-2-diabetes"
+    instructionforreimbursementCode?: "third-party-payer-applicable" | "first-dose" | "second-dose" | "third-dose" | "chronic-renal-failure-pathway" | "diabetes-care-pathway" | "diabetes-convention" | "non-reimbursable" | "startup-pathway-type-2-diabetes",
+    // Is substitution authorized ?
+    // Most of the time, implicitly, answer is yes, but some case, answer is no
+    issubstitutionallowed?: boolean
 };
 
 // Config for external file
@@ -181,6 +185,7 @@ export function generateBody(config: Configuration): MedicationRequest[] {
             intent: "order",
             authoredOn: authoredOn,
             extension: generateExtensions(transaction),
+            substitution: generateSubstitution(transaction),
             subject: patient,
             requester: author,
             dosageInstruction: drug.regimen === undefined 
@@ -232,3 +237,14 @@ function generateExtensions(entry: Item) : Extension[] | undefined {
 
     return (extensions.length > 0) ? extensions : undefined;
 } 
+
+function generateSubstitution(entry: Item): MedicationRequestSubstitution | undefined {
+
+    if (entry.issubstitutionallowed !== undefined) {
+        return {
+            allowedBoolean: entry.issubstitutionallowed
+        }
+    }
+
+    return undefined;
+}
