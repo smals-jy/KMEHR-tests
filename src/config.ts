@@ -94,6 +94,8 @@ export type OptionsConfig = {
   // Where to put the generated files
   OUTPUT_PATH: string,
 }
+// Re-export the configuration as MSConfiguration
+export type { Configuration as MSConfiguration };
 
 // Re-export the TransactionPCDHConfig
 export type { TransactionPCDHConfig };
@@ -126,3 +128,7 @@ export type {
   DrugRoute,
   MedicationEntry,
 } from "./generateTransaction";
+
+// Re-export the configurations 
+export type { MedicationEntry as FHIRDosage } from "./generateTransaction";
+export type { Configuration as FHIRPrescriptionConfiguration } from "./generateFHIRPrescriptions";
