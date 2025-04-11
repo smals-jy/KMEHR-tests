@@ -1,0 +1,88 @@
+{
+	"resourceType": "Bundle",
+	"type": "collection",
+	"entry": [
+		{
+			"resourceType": "MedicationRequest",
+			"status": "active",
+			"intent": "order",
+			"authoredOn": "2025-04-11T10:50:26.793+00:00",
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"requester": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"dosageInstruction": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 0.5,
+								"code": "336624003",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					},
+					"patientInstruction": "Inslikken en doorspoelen met een glas water"
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 0.5
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"ACV"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					},
+					"patientInstruction": "Inslikken en doorspoelen met een glas water"
+				}
+			],
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "1560929",
+						"display": "Sotalol Mylan tabl. (deelb.) 56x 160 mg"
+					}
+				],
+				"text": "Sotalol Mylan tabl. (deelb.) 56x 160 mg"
+			},
+			"identifier": [
+				{
+					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
+					"value": "BEP0K5PRSRW0"
+				}
+			]
+		}
+	],
+	"total": 1,
+	"timestamp": "2025-04-11T10:50:26.793+00:00"
+}

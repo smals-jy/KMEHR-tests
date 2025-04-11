@@ -1,0 +1,56 @@
+{
+	"resourceType": "Bundle",
+	"type": "collection",
+	"entry": [
+		{
+			"resourceType": "MedicationRequest",
+			"status": "active",
+			"intent": "order",
+			"authoredOn": "2025-04-11T10:50:26.869+00:00",
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"requester": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"dosageInstruction": [
+				{
+					"text": "10 L/min pendant environ 15 minutes",
+					"timing": {
+						"repeat": {
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				}
+			],
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0000000",
+						"display": "Traitement oxygène gazeuse pour 1 mois"
+					}
+				],
+				"text": "Traitement oxygène gazeuse pour 1 mois"
+			},
+			"identifier": [
+				{
+					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
+					"value": "BEP0P3D6LA6F"
+				}
+			]
+		}
+	],
+	"total": 1,
+	"timestamp": "2025-04-11T10:50:26.869+00:00"
+}

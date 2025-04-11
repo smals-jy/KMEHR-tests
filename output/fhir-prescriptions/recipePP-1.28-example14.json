@@ -1,0 +1,79 @@
+{
+	"resourceType": "Bundle",
+	"type": "collection",
+	"entry": [
+		{
+			"resourceType": "MedicationRequest",
+			"status": "active",
+			"intent": "order",
+			"authoredOn": "2025-04-11T10:50:26.826+00:00",
+			"extension": [
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/InstructionsForReimbursement",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/be-cs-medication-request-reimbursement-type",
+								"code": "chronic-renal-failure-pathway"
+							}
+						],
+						"text": "Trajet de soins insuffisance rénale chronique"
+					}
+				}
+			],
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"requester": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"dosageInstruction": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				}
+			],
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "2115517",
+						"display": "Belsar filmomh. tabl. 98x 20 mg"
+					}
+				],
+				"text": "Belsar filmomh. tabl. 98x 20 mg"
+			},
+			"identifier": [
+				{
+					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
+					"value": "BEP0ZS8PY5A2"
+				}
+			]
+		}
+	],
+	"total": 1,
+	"timestamp": "2025-04-11T10:50:26.826+00:00"
+}

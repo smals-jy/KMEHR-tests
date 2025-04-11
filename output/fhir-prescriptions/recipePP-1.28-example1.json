@@ -1,0 +1,67 @@
+{
+	"resourceType": "Bundle",
+	"type": "collection",
+	"entry": [
+		{
+			"resourceType": "MedicationRequest",
+			"status": "active",
+			"intent": "order",
+			"authoredOn": "2025-04-11T10:50:26.902+00:00",
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"requester": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"dosageInstruction": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "336624003",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				}
+			],
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0318717",
+						"display": "Adalat tabl. verl. afgifte Oros 28x 30 mg"
+					}
+				],
+				"text": "Adalat tabl. verl. afgifte Oros 28x 30 mg"
+			},
+			"identifier": [
+				{
+					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
+					"value": "BEP0EMDDZGEZ"
+				}
+			]
+		}
+	],
+	"total": 1,
+	"timestamp": "2025-04-11T10:50:26.902+00:00"
+}
