@@ -2,14 +2,15 @@ import { createGenerator } from "ts-json-schema-generator";
 import fs from "fs";
 import path from "path";
 
-const mainFile = path.resolve(process.cwd(), "src/config.ts");
+const mainFile = path.resolve(process.cwd(), "src/index.ts");
 
 const tsConfigFile = path.resolve(process.cwd(), "tsconfig.json");
 
 const configMap = {
-  transactionsMSSchema: "Configuration",
+  transactionsMSSchema: "MSConfiguration",
   transactionPCDHSchema: "PCDHConfiguration",
-  transactionFHIRDosage: "MedicationEntry",
+  transactionFHIRDosage: "FHIRDosage",
+  transactionFHIRPrescription: "FHIRPrescriptionConfiguration"
 };
 
 for (let [fileName, technicalKey] of Object.entries(configMap)) {
