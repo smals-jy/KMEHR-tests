@@ -9,6 +9,7 @@ export { generateOutput as generateFHIRPrescriptions } from "./generateFHIRPresc
 // Types
 export type { Configuration as MSConfiguration } from "./config";
 export type { PCDHConfiguration } from "./config";
+export type { MedicationEntry as FHIRDosage } from "./config";
 export type { Configuration as FHIRPrescriptionConfiguration } from "./generateFHIRPrescriptions";
 // Other useful types
 export type { AdministrationRoute, AdministrationUnit, DayPeriod, DrugRoute, Periodicity, AuthorConfig, OrganizationConfig } from "./config";
