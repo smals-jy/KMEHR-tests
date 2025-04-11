@@ -7,25 +7,26 @@ export default function (): FHIRPrescriptionConfiguration {
             {
                 id: 1,
                 drug: {
-                    drugType: "substanceproduct",
-                    identifierType: "CD-VMPGROUP",
-                    intendedcd: "0003863",
-                    intendedname: "bisoprolol oraal 10 mg [CAVE deelb.]",
+                    drugType: "medicinalproduct",
+                    identifierType: "CD-DRUG-CNK",
+                    intendedcd: "0132407",
+                    intendedname: "Terra-Cortril+Polymyxine B 10/5/10000 zalf 3,5g",
                     periodicity: "D",
-                    duration: {
-                        quantity: 90,
-                        timeunit: "d"
-                    },
                     regimen: [
                         {
                             quantity: 1,
-                            unit: "00005",
                             timeOfDay: {
                                 dayPeriod: "morning"
                             }
+                        },
+                        {
+                            quantity: 1,
+                            timeOfDay: {
+                                dayPeriod: "thehourofsleep"
+                            }
                         }
                     ],
-                    route: "00060"
+                    route: "00001"
                 }
             }
         ]

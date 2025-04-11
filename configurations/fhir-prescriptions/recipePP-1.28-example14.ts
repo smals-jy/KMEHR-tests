@@ -7,26 +7,22 @@ export default function (): FHIRPrescriptionConfiguration {
             {
                 id: 1,
                 drug: {
-                    drugType: "substanceproduct",
-                    identifierType: "CD-VMPGROUP",
-                    intendedcd: "0003863",
-                    intendedname: "bisoprolol oraal 10 mg [CAVE deelb.]",
+                    drugType: "medicinalproduct",
+                    identifierType: "CD-DRUG-CNK",
+                    intendedcd: "2115517",
+                    intendedname: "Belsar filmomh. tabl. 98x 20 mg",
                     periodicity: "D",
-                    duration: {
-                        quantity: 90,
-                        timeunit: "d"
-                    },
                     regimen: [
                         {
                             quantity: 1,
-                            unit: "00005",
                             timeOfDay: {
                                 dayPeriod: "morning"
                             }
                         }
-                    ],
-                    route: "00060"
-                }
+                    ]
+                },
+                // Cf. https://github.com/hl7-be/medication/pull/205
+                instructionforreimbursementCode: "chronic-renal-failure-pathway"
             }
         ]
     }
