@@ -1,0 +1,214 @@
+{
+	"resourceType": "Bundle",
+	"type": "collection",
+	"entry": [
+		{
+			"resourceType": "MedicationRequest",
+			"status": "active",
+			"intent": "order",
+			"authoredOn": "2025-04-11T10:50:26.926+00:00",
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"requester": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"dosageInstruction": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "336624003",
+								"system": "http://snomed.info/sct"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				}
+			],
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0318717",
+						"display": "Adalat tabl. verl. afgifte Oros 28x 30 mg"
+					}
+				],
+				"text": "Adalat tabl. verl. afgifte Oros 28x 30 mg"
+			},
+			"identifier": [
+				{
+					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
+					"value": "BEP048STBWXN"
+				}
+			]
+		},
+		{
+			"resourceType": "MedicationRequest",
+			"status": "active",
+			"intent": "order",
+			"authoredOn": "2025-04-11T10:50:26.926+00:00",
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"requester": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"dosageInstruction": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"HS"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				}
+			],
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0000000",
+						"display": "La Roche Posay Cicaplast Balsem 100 ml"
+					}
+				],
+				"text": "La Roche Posay Cicaplast Balsem 100 ml"
+			},
+			"identifier": [
+				{
+					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
+					"value": "BEP048STBWXN"
+				}
+			]
+		},
+		{
+			"resourceType": "MedicationRequest",
+			"status": "active",
+			"intent": "order",
+			"authoredOn": "2025-04-11T10:50:26.926+00:00",
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"requester": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"dosageInstruction": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1,
+								"code": "5.mL",
+								"system": "http://unitsofmeasure.org"
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"ACM"
+							]
+						}
+					}
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"timeOfDay": [
+								"20:00:00"
+							]
+						}
+					}
+				}
+			],
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+						"code": "magistral"
+					}
+				],
+				"text": "\n                        R/\tRanitidine.HCL \t\t\t\t\t\t\t\t\t\t1.675g \n                            Mononatriumfosfaat dihydraat \t\t\t\t0.3g \n                            Dinatriumfosfaat dihydraat \t\t\t\t\t\t1.3g \n                            Water \t\t\t\t\t\t\t\t\t\t\t\t\t30g \n                            Sterke oranjeschiltinctuur \t\t\t\t\t\tqs \n                            Geconserveerde enkelvoudige siroop \tad 100ml\n\n                            dt 300 ml\n                    "
+			},
+			"identifier": [
+				{
+					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
+					"value": "BEP048STBWXN"
+				}
+			]
+		}
+	],
+	"total": 3,
+	"timestamp": "2025-04-11T10:50:26.926+00:00"
+}

@@ -1,0 +1,112 @@
+{
+	"resourceType": "Bundle",
+	"type": "collection",
+	"entry": [
+		{
+			"resourceType": "MedicationRequest",
+			"status": "active",
+			"intent": "order",
+			"authoredOn": "2025-04-11T10:50:26.934+00:00",
+			"substitution": {
+				"allowedBoolean": false
+			},
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"requester": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"dosageInstruction": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"PCM"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d",
+							"duration": 5,
+							"durationUnit": "d"
+						}
+					}
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"PCV"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d",
+							"duration": 5,
+							"durationUnit": "d"
+						}
+					}
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"PCV"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d",
+							"duration": 5,
+							"durationUnit": "d"
+						}
+					}
+				}
+			],
+			"medicationCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"code": "0029025",
+						"display": "Augmentin 500/125 filmomh. tabl. (deelb.) 16x"
+					}
+				],
+				"text": "Augmentin 500/125 filmomh. tabl. (deelb.) 16x"
+			},
+			"identifier": [
+				{
+					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
+					"value": "BEP0CE11WWWB"
+				}
+			]
+		}
+	],
+	"total": 1,
+	"timestamp": "2025-04-11T10:50:26.934+00:00"
+}
