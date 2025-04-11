@@ -6,7 +6,9 @@ import { generatePatient, generateAuthor, generateDrug } from "./generateFHIRMed
 
 import type {
     Bundle,
-    MedicationRequest
+    Extension,
+    MedicationRequest,
+    MedicationRequestSubstitution
 } from "fhir/r4";
 
 import type { TransactionConfig} from "./generateTransaction";
@@ -16,6 +18,18 @@ import type { OptionsConfig } from "./config";
 
 type PrescriptionType = "P0" | "P1";
 
+type Item = Exclude<
+    TransactionConfig, 
+    "suspensionReason" | "suspensionReference" | "version" | "transactionDate" | "transactionTime" | "id" | "author" | "version" | "isValidated"
+> & {
+    // Reimbursement instructions 
+    // Refer to https://hl7-be.github.io/medication/branches/prescription/ValueSet-be-vs-medication-request-reimbursement-type.html for the complete list
+    instructionforreimbursementCode?: "third-party-payer-applicable" | "first-dose" | "second-dose" | "third-dose" | "chronic-renal-failure-pathway" | "diabetes-care-pathway" | "diabetes-convention" | "non-reimbursable" | "startup-pathway-type-2-diabetes",
+    // Is substitution authorized ?
+    // Most of the time, implicitly, answer is yes, but some case, answer is no
+    issubstitutionallowed?: boolean
+};
+
 // Config for external file
 export type Configuration = {
   /**
@@ -23,10 +37,7 @@ export type Configuration = {
    * @minLength 1
    * @maxLength 10
    */
-  transactions: Exclude<
-    TransactionConfig, 
-    "suspensionReason" | "suspensionReference" | "version" | "transactionDate" | "transactionTime" | "id" | "author" | "version" | "isValidated"
-  >[];
+  transactions: Item[];
   /**
    * Who is the author of the last modification of this MS ?
    */
@@ -173,6 +184,8 @@ export function generateBody(config: Configuration): MedicationRequest[] {
             status: "active",
             intent: "order",
             authoredOn: authoredOn,
+            extension: generateExtensions(transaction),
+            substitution: generateSubstitution(transaction),
             subject: patient,
             requester: author,
             dosageInstruction: drug.regimen === undefined 
@@ -187,4 +200,51 @@ export function generateBody(config: Configuration): MedicationRequest[] {
             ]
         }
     });
+}
+
+function generateExtensions(entry: Item) : Extension[] | undefined {
+
+    let extensions : Extension[] = [];
+
+    // Let's care about only reimbursement (coded) for now
+    if (entry.instructionforreimbursementCode !== undefined) {
+
+        let reimbursementMap = {
+            "third-party-payer-applicable": "Tiers-payant applicable",
+            "first-dose": "1ère dose",
+            "second-dose": "2ème dose + [date de la 1ère dose]",
+            "third-dose": "3ème dose + [date de la 1ère et 2ème dose]",
+            "chronic-renal-failure-pathway": "Trajet de soins insuffisance rénale chronique",
+            "diabetes-care-pathway": "Trajet de soins diabète",
+            "diabetes-convention": "Convention diabète",
+            "non-reimbursable": "Non remboursable",
+            "startup-pathway-type-2-diabetes": "Trajet de démarrage diabète type 2"
+        } 
+
+        extensions.push({
+            url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/InstructionsForReimbursement",
+            valueCodeableConcept: {
+                coding: [
+                    {
+                        system: "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/be-cs-medication-request-reimbursement-type",
+                        code: entry.instructionforreimbursementCode
+                    }
+                ],
+                text: reimbursementMap[entry.instructionforreimbursementCode]
+            }
+        });
+    }
+
+    return (extensions.length > 0) ? extensions : undefined;
+} 
+
+function generateSubstitution(entry: Item): MedicationRequestSubstitution | undefined {
+
+    if (entry.issubstitutionallowed !== undefined) {
+        return {
+            allowedBoolean: entry.issubstitutionallowed
+        }
+    }
+
+    return undefined;
 }
