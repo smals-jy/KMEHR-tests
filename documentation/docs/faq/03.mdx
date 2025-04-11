@@ -22,9 +22,9 @@ To be ready for :
 1. Create a new `ts` / `json` file in [`configurations/ms`](https://github.com/smals-jy/KMEHR-tests/tree/main/configurations/ms) folder. Existing files illustrates several scenarios. Here is a sample to start your own configurations :
 
 ```ts
-import type { Configuration } from "../../src/config";
+import type { MSConfiguration } from "@smals-jy/kmehr-tests";
 
-export default function (): Configuration {
+export default function (): MSConfiguration {
     return {
         transactions: [
             {

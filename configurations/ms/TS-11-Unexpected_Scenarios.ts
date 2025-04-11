@@ -1,6 +1,5 @@
-// TODO change that import a bit later
-import type { TransactionConfig } from "../../src/config";
 import type { MSConfiguration } from "@smals-jy/kmehr-tests";
+type TransactionConfig = MSConfiguration['transactions'][number];
 
 // In case I need to tweak date
 function addDaysToDate(dateString: string, daysToAdd: number) {
