@@ -1,0 +1,739 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$ref": "#/definitions/FHIRPrescriptionConfiguration",
+	"definitions": {
+		"FHIRPrescriptionConfiguration": {
+			"type": "object",
+			"properties": {
+				"transactions": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"additionalProperties": false,
+						"properties": {
+							"instructionforreimbursementCode": {
+								"type": "string",
+								"enum": [
+									"third-party-payer-applicable",
+									"first-dose",
+									"second-dose",
+									"third-dose",
+									"chronic-renal-failure-pathway",
+									"diabetes-care-pathway",
+									"diabetes-convention",
+									"non-reimbursable",
+									"startup-pathway-type-2-diabetes"
+								]
+							},
+							"issubstitutionallowed": {
+								"type": "boolean"
+							},
+							"id": {
+								"type": "number",
+								"description": "Used to refer transaction Start at 2 as first transaction is reserved to declare the ms",
+								"examples": [
+									2
+								]
+							},
+							"transactionDate": {
+								"type": "string",
+								"description": "When transaction occurs (YYYY-MM-DD)",
+								"examples": [
+									"2022-02-02"
+								]
+							},
+							"transactionTime": {
+								"type": "string",
+								"description": "When transaction occurs (HH:MM:SS)",
+								"examples": [
+									"08:23:52"
+								]
+							},
+							"author": {
+								"$ref": "#/definitions/AuthorConfig",
+								"description": "Author of the transaction"
+							},
+							"version": {
+								"type": "number",
+								"description": "Version of the line",
+								"default": 1
+							},
+							"isValidated": {
+								"type": "boolean",
+								"description": "Used in the past to express if a medication needs validation true : medication line is valid false : medication line needs to be reviewed",
+								"default": true,
+								"deprecated": true
+							},
+							"drug": {
+								"$ref": "#/definitions/MedicationEntry",
+								"description": "The heart of the transaction"
+							},
+							"suspensionReason": {
+								"type": "string",
+								"description": "Why suspension was created ?",
+								"examples": [
+									"Intolerance to lactose"
+								]
+							},
+							"suspensionReference": {
+								"type": "number",
+								"description": "Which transaction does the suspension is about to",
+								"examples": [
+									3
+								]
+							}
+						},
+						"required": [
+							"drug",
+							"id"
+						]
+					},
+					"description": "The drugs contained in that prescription (at least 1, max 10).",
+					"minLength": 1,
+					"maxLength": 10
+				},
+				"author": {
+					"$ref": "#/definitions/AuthorConfig",
+					"description": "Who is the author of the last modification of this MS ?"
+				},
+				"date": {
+					"type": "string",
+					"description": "Date when was the MS updated ? (YYYY-MM-DD)",
+					"format": "date"
+				},
+				"time": {
+					"type": "string",
+					"description": "Time when was the MS update (HH:MM:SS)",
+					"examples": [
+						"08:17:42"
+					],
+					"pattern": "^(0\\d|1\\d|2[0-3]):[0-5]\\d:[0-5]\\d(\\.\\d{1,3})?((\\+|-)(0\\d|1[0-2]):[0-5]\\d|Z)?$"
+				},
+				"type": {
+					"type": "string",
+					"enum": [
+						"P0",
+						"P1"
+					],
+					"description": "Type of prescription"
+				}
+			},
+			"required": [
+				"transactions",
+				"type"
+			],
+			"additionalProperties": false
+		},
+		"AuthorConfig": {
+			"type": "object",
+			"properties": {
+				"firstname": {
+					"type": "string"
+				},
+				"familyname": {
+					"type": "string"
+				},
+				"nihdi": {
+					"type": "string"
+				},
+				"ssin": {
+					"type": "string"
+				},
+				"type": {
+					"type": "string"
+				},
+				"org": {
+					"$ref": "#/definitions/OrganizationConfig"
+				},
+				"hub": {
+					"$ref": "#/definitions/Hub"
+				},
+				"software": {
+					"type": "object",
+					"properties": {
+						"name": {
+							"type": "string"
+						},
+						"id": {
+							"type": "string"
+						}
+					},
+					"required": [
+						"id"
+					],
+					"additionalProperties": false
+				}
+			},
+			"additionalProperties": false
+		},
+		"OrganizationConfig": {
+			"type": "object",
+			"properties": {
+				"nihdi": {
+					"type": "string"
+				},
+				"type": {
+					"type": "string"
+				},
+				"name": {
+					"type": "string"
+				}
+			},
+			"required": [
+				"type"
+			],
+			"additionalProperties": false
+		},
+		"Hub": {
+			"type": "string",
+			"enum": [
+				"VITALINK",
+				"RSW",
+				"RSB"
+			]
+		},
+		"MedicationEntry": {
+			"type": "object",
+			"properties": {
+				"drugType": {
+					"type": "string",
+					"enum": [
+						"medicinalproduct",
+						"substanceproduct",
+						"compoundprescription"
+					],
+					"description": "Type of drug.\n- \"compoundprescription\" : a free text drug\n- \"medicinalproduct\" : common drug (like Dafalgan)\n- \"substanceproduct\" : substance (like Paracetamol)",
+					"examples": [
+						"medicinalproduct"
+					]
+				},
+				"identifierType": {
+					"type": "string",
+					"enum": [
+						"CD-VMPGROUP",
+						"CD-INNCLUSTER",
+						"CD-DRUG-CNK",
+						"CD-EAN"
+					],
+					"description": "Identifier type of the drug",
+					"examples": [
+						"CD-DRUG-CNK"
+					]
+				},
+				"identifierIntendedType": {
+					"type": "string",
+					"enum": [
+						"CD-INNCLUSTER",
+						"CD-VMPGROUP"
+					],
+					"description": "Identifier type of the intended drug. By default, it is equal to \"identifierType\""
+				},
+				"identifierDeliveredType": {
+					"type": "string",
+					"const": "CD-DRUG-CNK",
+					"description": "Identifier type of the intended drug. By default, it is equal to \"identifierType\""
+				},
+				"intendedcd": {
+					"type": "string",
+					"description": "Which drug (code) was initially considered ?",
+					"examples": [
+						"3356102"
+					]
+				},
+				"intendedname": {
+					"type": "string",
+					"description": "Which drug (name) was initially considered ?",
+					"examples": [
+						"Rhinathiol Naturactiv Pulmo 133Ml"
+					]
+				},
+				"deliveredcd": {
+					"type": "string",
+					"description": "Which drug (code) was delivered ?",
+					"examples": [
+						"3319522"
+					]
+				},
+				"deliveredname": {
+					"type": "string",
+					"description": "Which drug (name) was delivered ?",
+					"examples": [
+						"Orgitan Care B+Pharma 90 Tabl"
+					]
+				},
+				"eanIdentifier": {
+					"type": "string",
+					"description": "EAN identifier (not possible anymore)",
+					"examples": [
+						"8712412561551"
+					],
+					"deprecated": true
+				},
+				"atcIdentifier": {
+					"type": "string",
+					"description": "ATC identifier"
+				},
+				"compoundprescriptionText": {
+					"type": "string",
+					"description": "text of the component prescription",
+					"examples": [
+						"Free text drug"
+					]
+				},
+				"comment": {
+					"type": "string",
+					"description": "comment put at root level, to express adaptation or CD-EAN case"
+				},
+				"beginmoment": {
+					"type": "string",
+					"description": "When to take drug, or when starts suspension ? (format is \"YYYY-MM-DD\")",
+					"examples": [
+						"2022-09-16"
+					],
+					"format": "date"
+				},
+				"endmoment": {
+					"type": "string",
+					"description": "When to end drug, or when stops suspension ? Format is \"YYYY-MM-DD\" FYI : Date is inclusive (so with my example, nothing after \"2022-09-17\")",
+					"examples": [
+						"2022-09-16"
+					],
+					"format": "date"
+				},
+				"lifecycle": {
+					"type": "string",
+					"enum": [
+						"suspended",
+						"stopped"
+					],
+					"description": "Used in suspension context :\n- \"suspended\": a temporary suspension\n- \"stopped\": a definitive suspension",
+					"examples": [
+						"suspended"
+					]
+				},
+				"duration": {
+					"$ref": "#/definitions/TreatmentDuration",
+					"description": "Duration of treatment Example : for 3 months"
+				},
+				"temporality": {
+					"type": "string",
+					"enum": [
+						"acute",
+						"chronic",
+						"oneshot"
+					]
+				},
+				"periodicity": {
+					"$ref": "#/definitions/Periodicity",
+					"description": "periodicity in frequency"
+				},
+				"posologyFreeText": {
+					"type": [
+						"string",
+						"null"
+					],
+					"description": "Free text posology. If set to null, default value won't be used & tag \\<posology\\> won't be included in payload",
+					"examples": [
+						"To take when you want"
+					],
+					"default": "Free text posology"
+				},
+				"regimen": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/RegimenPosology"
+					},
+					"description": "Codified posology (regimen)"
+				},
+				"route": {
+					"$ref": "#/definitions/AdministrationRoute",
+					"description": "Administration route",
+					"examples": [
+						"00001"
+					]
+				},
+				"instructionForPatient": {
+					"type": "string",
+					"description": "Instructions for patient",
+					"examples": [
+						"Take with water"
+					]
+				},
+				"medicationuse": {
+					"type": "string",
+					"description": "Why we need that drug ?",
+					"examples": [
+						"For heart issues"
+					]
+				},
+				"begincondition": {
+					"type": "string",
+					"description": "When to begin treatment ?",
+					"examples": [
+						"When you feel the need"
+					]
+				},
+				"endcondition": {
+					"type": "string",
+					"description": "When to finish treatment ?",
+					"examples": [
+						"When you don't feel the need"
+					]
+				}
+			},
+			"additionalProperties": false
+		},
+		"TreatmentDuration": {
+			"type": "object",
+			"properties": {
+				"quantity": {
+					"type": "number"
+				},
+				"timeunit": {
+					"type": "string",
+					"enum": [
+						"a",
+						"d",
+						"hr",
+						"min",
+						"mo",
+						"ms",
+						"ns",
+						"s",
+						"us",
+						"wk"
+					]
+				}
+			},
+			"required": [
+				"quantity",
+				"timeunit"
+			],
+			"additionalProperties": false
+		},
+		"Periodicity": {
+			"type": "string",
+			"enum": [
+				"D",
+				"DA",
+				"DD",
+				"DE",
+				"DN",
+				"DQ",
+				"DT",
+				"DV",
+				"DW",
+				"DX",
+				"DZ",
+				"J",
+				"JD",
+				"JH2",
+				"JQ",
+				"JT",
+				"JV",
+				"JZ",
+				"M",
+				"MA",
+				"MC",
+				"MD",
+				"ME",
+				"MN",
+				"MQ",
+				"MS",
+				"MT",
+				"MV",
+				"MX",
+				"MZ2",
+				"O1",
+				"U",
+				"UA",
+				"UD",
+				"UH",
+				"UT",
+				"UV",
+				"UW",
+				"UZ",
+				"W",
+				"WA",
+				"WD",
+				"WE",
+				"WN",
+				"WP",
+				"WQ",
+				"WS",
+				"WT",
+				"WV",
+				"WW",
+				"WX",
+				"WZ"
+			]
+		},
+		"RegimenPosology": {
+			"type": "object",
+			"properties": {
+				"quantity": {
+					"type": [
+						"number",
+						"string"
+					],
+					"description": "Quantity",
+					"examples": [
+						2.5
+					]
+				},
+				"unit": {
+					"$ref": "#/definitions/AdministrationUnit",
+					"description": "Unit",
+					"examples": [
+						"00001"
+					]
+				},
+				"timeOfDay": {
+					"type": "object",
+					"properties": {
+						"time": {
+							"type": "string",
+							"description": "Time (\"HH:MM:SS\")",
+							"examples": [
+								"08:17:42"
+							],
+							"pattern": "^(0\\d|1\\d|2[0-3]):[0-5]\\d:[0-5]\\d(\\.\\d{1,3})?((\\+|-)(0\\d|1[0-2]):[0-5]\\d|Z)?$"
+						},
+						"dayPeriod": {
+							"$ref": "#/definitions/DayPeriod",
+							"description": "Day period",
+							"examples": [
+								"morning"
+							]
+						}
+					},
+					"additionalProperties": false,
+					"description": "Time of the day : either <time> OR <dayperiod>"
+				},
+				"dayIngestion": {
+					"type": "object",
+					"properties": {
+						"date": {
+							"type": "string",
+							"description": "Option 1 : date (YYYY-MM-DD)",
+							"format": "date"
+						},
+						"weekday": {
+							"$ref": "#/definitions/Weekday",
+							"description": "Option 2 : weekday",
+							"examples": [
+								"monday"
+							]
+						},
+						"dayNumber": {
+							"type": "number",
+							"description": "Option 3 : day number",
+							"examples": [
+								1
+							],
+							"minimum": 1
+						}
+					},
+					"additionalProperties": false,
+					"description": "Day of ingestion : this can be included in various ways"
+				}
+			},
+			"required": [
+				"quantity",
+				"timeOfDay"
+			],
+			"additionalProperties": false
+		},
+		"AdministrationUnit": {
+			"type": "string",
+			"enum": [
+				"00001",
+				"00002",
+				"00003",
+				"00004",
+				"00005",
+				"00006",
+				"00007",
+				"00008",
+				"00009",
+				"00010",
+				"00011",
+				"00012",
+				"00013",
+				"00014",
+				"00015",
+				"00016",
+				"00017",
+				"00018",
+				"00019",
+				"00020",
+				"00021",
+				"00022",
+				"00023",
+				"00024",
+				"00025",
+				"00026",
+				"00027",
+				"00028",
+				"00029",
+				"00030",
+				"ampoule",
+				"bandage",
+				"bottle",
+				"box",
+				"cm",
+				"dropsperminute",
+				"effervescent-tablet",
+				"gm",
+				"internationalunits",
+				"iu",
+				"liter",
+				"meq",
+				"mg",
+				"mg/ml",
+				"mck/h",
+				"mck/kg/minute",
+				"measure",
+				"mg/h",
+				"ml/h",
+				"micrograms",
+				"miu",
+				"mmol",
+				"piece",
+				"syringe",
+				"syringe-ampoule",
+				"tbl",
+				"tsp",
+				"unt/h"
+			]
+		},
+		"DayPeriod": {
+			"type": "string",
+			"enum": [
+				"afterbreakfast",
+				"afterdinner",
+				"afterlunch",
+				"beforebreakfast",
+				"beforedinner",
+				"beforelunch",
+				"betweenbreakfastandlunch",
+				"betweenlunchanddinner",
+				"betweendinnerandsleep",
+				"duringbreakfast",
+				"duringdinner",
+				"duringlunch",
+				"morning",
+				"thehourofsleep"
+			]
+		},
+		"Weekday": {
+			"type": "string",
+			"enum": [
+				"monday",
+				"tuesday",
+				"wednesday",
+				"thursday",
+				"friday",
+				"saturday",
+				"sunday"
+			]
+		},
+		"AdministrationRoute": {
+			"type": "string",
+			"enum": [
+				"00001",
+				"00002",
+				"00003",
+				"00004",
+				"00005",
+				"00006",
+				"00007",
+				"00008",
+				"00009",
+				"00010",
+				"00011",
+				"00012",
+				"00013",
+				"00014",
+				"00015",
+				"00016",
+				"00017",
+				"00018",
+				"00019",
+				"00020",
+				"00021",
+				"00022",
+				"00023",
+				"00024",
+				"00025",
+				"00026",
+				"00027",
+				"00028",
+				"00029",
+				"00030",
+				"00031",
+				"00032",
+				"00033",
+				"00034",
+				"00035",
+				"00036",
+				"00037",
+				"00038",
+				"00039",
+				"00040",
+				"00041",
+				"00042",
+				"00043",
+				"00044",
+				"00045",
+				"00046",
+				"00047",
+				"00048",
+				"00049",
+				"00050",
+				"00051",
+				"00052",
+				"00053",
+				"00054",
+				"00055",
+				"00056",
+				"00057",
+				"00058",
+				"00059",
+				"00060",
+				"00061",
+				"00062",
+				"00063",
+				"00064",
+				"00065",
+				"00066",
+				"00067",
+				"00068",
+				"00069",
+				"00070",
+				"00071",
+				"00072",
+				"00073",
+				"both_ears",
+				"both_eyes",
+				"both_nostrils",
+				"cutaneous_injection",
+				"derm",
+				"dermal_injection",
+				"ear_left",
+				"ear_right",
+				"eye_left",
+				"eye_right",
+				"hyperdermoclyse",
+				"icut",
+				"ider",
+				"larter",
+				"nose_left",
+				"nose_right",
+				"oft",
+				"transdermal",
+				"vitreal_injection"
+			]
+		}
+	}
+}
