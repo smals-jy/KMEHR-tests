@@ -8,6 +8,7 @@ export { generateOutput as generateFHIRPrescriptions } from "./generateFHIRPresc
 
 // Types
 export type { 
+  Configuration,
   MSConfiguration,
   PCDHConfiguration,
   FHIRDosage,

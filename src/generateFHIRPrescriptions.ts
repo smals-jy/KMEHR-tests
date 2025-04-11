@@ -31,7 +31,7 @@ type Item = Exclude<
 };
 
 // Config for external file
-export type Configuration = {
+export type FHIRPrescriptionConfiguration = {
   /**
    * The drugs contained in that prescription (at least 1, max 10).
    * @minLength 1
@@ -87,14 +87,14 @@ async function processSingleFile(path: string, outputPath: string) {
   let extension = name.substring(name.lastIndexOf(".") + 1);
 
   // Set up variable to retrieve the config
-  let config: Configuration;
+  let config: FHIRPrescriptionConfiguration;
 
     // Depending of the extension, different load strategies
     switch (extension) {
         case "ts":
         // TODO later find out how to use await() instead ...
         let module = require(`${path}`).default;
-        config = module() as Configuration;
+        config = module() as FHIRPrescriptionConfiguration;
         break;
 
         // It is considered as json by default
@@ -102,7 +102,7 @@ async function processSingleFile(path: string, outputPath: string) {
         // Read file
         let contents = await readFile(path, { encoding: "utf8" });
         // Turn that to a JSON payload
-        config = JSON.parse(contents) as Configuration;
+        config = JSON.parse(contents) as FHIRPrescriptionConfiguration;
     }
 
     let payload = generatePayload(config!);
@@ -153,7 +153,7 @@ function generateRid(type: PrescriptionType) {
 }
 
 // Keep a bundle for making stuff simple
-export function generatePayload(config: Configuration): Bundle {
+export function generatePayload(config: FHIRPrescriptionConfiguration): Bundle {
     return {
         resourceType: "Bundle",
         type: "collection",
@@ -165,7 +165,7 @@ export function generatePayload(config: Configuration): Bundle {
 
 // https://hl7-be.github.io/medication/branches/prescription/StructureDefinition-BeMedicationPrescription.html
 // For the final payload, use MedicationRequest as it will be the ressource of the prescriptions / ...
-export function generateBody(config: Configuration): MedicationRequest[] {
+export function generateBody(config: FHIRPrescriptionConfiguration): MedicationRequest[] {
 
     // Generate the Recip-e Identifier (regardless of number of medications)
     const rid = generateRid(config.type);

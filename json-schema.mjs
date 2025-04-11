@@ -7,9 +7,9 @@ const mainFile = path.resolve(process.cwd(), "src/index.ts");
 const tsConfigFile = path.resolve(process.cwd(), "tsconfig.json");
 
 const configMap = {
-  //transactionsMSSchema: "MSConfiguration",
+  transactionsMSSchema: "MSConfiguration",
   transactionPCDHSchema: "PCDHConfiguration",
-  //transactionFHIRDosage: "FHIRDosage",
+  transactionFHIRDosage: "FHIRDosage",
   transactionFHIRPrescription: "FHIRPrescriptionConfiguration"
 };
 
