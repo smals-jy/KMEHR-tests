@@ -15,4 +15,4 @@ export type {
   FHIRPrescriptionConfiguration
 } from "./config";
 // Other useful types
-export type { AdministrationRoute, AdministrationUnit, DayPeriod, DrugRoute, Periodicity, AuthorConfig, OrganizationConfig } from "./config";
+export type { AdministrationRoute, AdministrationUnit, DayPeriod, DrugRoute, Periodicity, AuthorConfig, OrganizationConfig, MedicationEntry } from "./config";
