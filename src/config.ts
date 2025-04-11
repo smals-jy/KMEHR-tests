@@ -94,6 +94,8 @@ export type OptionsConfig = {
   // Where to put the generated files
   OUTPUT_PATH: string,
 }
+// Re-export the configuration as
+export type { Configuration as MSConfiguration };
 
 // Re-export the TransactionPCDHConfig
 export type { TransactionPCDHConfig };
