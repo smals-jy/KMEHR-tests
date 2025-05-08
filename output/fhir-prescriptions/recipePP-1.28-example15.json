@@ -6,7 +6,7 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2025-04-11T10:50:26.934+00:00",
+			"authoredOn": "2025-05-08T11:30:02.912+00:00",
 			"substitution": {
 				"allowedBoolean": false
 			},
@@ -89,6 +89,12 @@
 					}
 				}
 			],
+			"identifier": [
+				{
+					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
+					"value": "BEP0H9A9SN57"
+				}
+			],
 			"medicationCodeableConcept": {
 				"coding": [
 					{
@@ -98,15 +104,9 @@
 					}
 				],
 				"text": "Augmentin 500/125 filmomh. tabl. (deelb.) 16x"
-			},
-			"identifier": [
-				{
-					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP0CE11WWWB"
-				}
-			]
+			}
 		}
 	],
 	"total": 1,
-	"timestamp": "2025-04-11T10:50:26.934+00:00"
+	"timestamp": "2025-05-08T11:30:02.913+00:00"
 }
