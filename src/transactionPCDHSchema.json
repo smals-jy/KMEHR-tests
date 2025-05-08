@@ -143,6 +143,33 @@
 							"formulary": {
 								"type": "object",
 								"properties": {
+									"reference": {
+										"type": "string",
+										"enum": [
+											"BP4",
+											"BP5",
+											"BP6",
+											"EP1",
+											"EP2",
+											"EP3",
+											"EP4",
+											"EP5",
+											"EP6",
+											"EP7",
+											"EP8",
+											"EP9",
+											"EP10",
+											"MFS",
+											"NF4",
+											"NF5",
+											"NF6",
+											"PMF",
+											"TMF1",
+											"TMF2",
+											"TMF3",
+											"FNA"
+										]
+									},
 									"code": {
 										"type": "string"
 									},
