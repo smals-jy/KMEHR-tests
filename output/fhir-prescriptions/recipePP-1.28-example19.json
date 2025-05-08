@@ -1,0 +1,123 @@
+{
+	"resourceType": "Bundle",
+	"type": "collection",
+	"entry": [
+		{
+			"resourceType": "MedicationRequest",
+			"status": "active",
+			"intent": "order",
+			"authoredOn": "2025-05-08T12:55:24.902+00:00",
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"requester": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"dosageInstruction": [
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"HS"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				}
+			],
+			"identifier": [
+				{
+					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
+					"value": "BEP0REW303ES"
+				}
+			],
+			"contained": [
+				{
+					"resourceType": "Medication",
+					"id": "medication-1",
+					"ingredient": [
+						{
+							"itemCodeableConcept": {
+								"coding": [
+									{
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"code": "0103861",
+										"display": "Betnelan V crème 30g 1 mg/1 g"
+									}
+								],
+								"text": "Betnelan V crème 30g 1 mg/1 g"
+							},
+							"strength": {
+								"numerator": {
+									"value": 30,
+									"unit": "gm",
+									"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/cd-unit"
+								}
+							}
+						},
+						{
+							"itemCodeableConcept": {
+								"coding": [
+									{
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"code": "0587089",
+										"display": "GEBUF. CETOMACR. CREME  TMF2"
+									}
+								],
+								"text": "GEBUF. CETOMACR. CREME  TMF2"
+							},
+							"strength": {
+								"numerator": {
+									"value": 30,
+									"unit": "gm",
+									"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/cd-unit"
+								}
+							}
+						}
+					]
+				}
+			],
+			"medicationReference": {
+				"reference": "#medication-1"
+			}
+		}
+	],
+	"total": 1,
+	"timestamp": "2025-05-08T12:55:24.902+00:00"
+}
