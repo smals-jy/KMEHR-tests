@@ -28,6 +28,10 @@
 							"issubstitutionallowed": {
 								"type": "boolean"
 							},
+							"drug": {
+								"$ref": "#/definitions/MedicationEntry",
+								"description": "The heart of the transaction"
+							},
 							"id": {
 								"type": "number",
 								"description": "Used to refer transaction Start at 2 as first transaction is reserved to declare the ms",
@@ -63,10 +67,6 @@
 								"description": "Used in the past to express if a medication needs validation true : medication line is valid false : medication line needs to be reviewed",
 								"default": true,
 								"deprecated": true
-							},
-							"drug": {
-								"$ref": "#/definitions/MedicationEntry",
-								"description": "The heart of the transaction"
 							},
 							"suspensionReason": {
 								"type": "string",
@@ -123,74 +123,6 @@
 				"type"
 			],
 			"additionalProperties": false
-		},
-		"AuthorConfig": {
-			"type": "object",
-			"properties": {
-				"firstname": {
-					"type": "string"
-				},
-				"familyname": {
-					"type": "string"
-				},
-				"nihdi": {
-					"type": "string"
-				},
-				"ssin": {
-					"type": "string"
-				},
-				"type": {
-					"type": "string"
-				},
-				"org": {
-					"$ref": "#/definitions/OrganizationConfig"
-				},
-				"hub": {
-					"$ref": "#/definitions/Hub"
-				},
-				"software": {
-					"type": "object",
-					"properties": {
-						"name": {
-							"type": "string"
-						},
-						"id": {
-							"type": "string"
-						}
-					},
-					"required": [
-						"id"
-					],
-					"additionalProperties": false
-				}
-			},
-			"additionalProperties": false
-		},
-		"OrganizationConfig": {
-			"type": "object",
-			"properties": {
-				"nihdi": {
-					"type": "string"
-				},
-				"type": {
-					"type": "string"
-				},
-				"name": {
-					"type": "string"
-				}
-			},
-			"required": [
-				"type"
-			],
-			"additionalProperties": false
-		},
-		"Hub": {
-			"type": "string",
-			"enum": [
-				"VITALINK",
-				"RSW",
-				"RSB"
-			]
 		},
 		"MedicationEntry": {
 			"type": "object",
@@ -733,6 +665,74 @@
 				"oft",
 				"transdermal",
 				"vitreal_injection"
+			]
+		},
+		"AuthorConfig": {
+			"type": "object",
+			"properties": {
+				"firstname": {
+					"type": "string"
+				},
+				"familyname": {
+					"type": "string"
+				},
+				"nihdi": {
+					"type": "string"
+				},
+				"ssin": {
+					"type": "string"
+				},
+				"type": {
+					"type": "string"
+				},
+				"org": {
+					"$ref": "#/definitions/OrganizationConfig"
+				},
+				"hub": {
+					"$ref": "#/definitions/Hub"
+				},
+				"software": {
+					"type": "object",
+					"properties": {
+						"name": {
+							"type": "string"
+						},
+						"id": {
+							"type": "string"
+						}
+					},
+					"required": [
+						"id"
+					],
+					"additionalProperties": false
+				}
+			},
+			"additionalProperties": false
+		},
+		"OrganizationConfig": {
+			"type": "object",
+			"properties": {
+				"nihdi": {
+					"type": "string"
+				},
+				"type": {
+					"type": "string"
+				},
+				"name": {
+					"type": "string"
+				}
+			},
+			"required": [
+				"type"
+			],
+			"additionalProperties": false
+		},
+		"Hub": {
+			"type": "string",
+			"enum": [
+				"VITALINK",
+				"RSW",
+				"RSB"
 			]
 		}
 	}
