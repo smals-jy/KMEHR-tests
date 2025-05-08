@@ -667,76 +667,56 @@ type Common = {
 
 export type TransactionConfig = Common;
 
-export type TransactionPCDHConfig = {
-  /*
-   * Delivery mode : With or without prescription.
-   * @default With prescription
-   */
-  deliveredMode?:
-    | "dispensedForSamePrescription"
-    | "dispensedWithoutPrescription";
+type FormularyCode =
+  | "BP4"
+  | "BP5"
+  | "BP6"
+  | "EP1"
+  | "EP2"
+  | "EP3"
+  | "EP4"
+  | "EP5"
+  | "EP6"
+  | "EP7"
+  | "EP8"
+  | "EP9"
+  | "EP10"
+  | "MFS"
+  | "NF4"
+  | "NF5"
+  | "NF6"
+  | "PMF"
+  | "TMF1"
+  | "TMF2"
+  | "TMF3"
+  | "FNA";
+
+export type MagistralConfig = {
   /**
-   * Add extra attributes for drug (in case of)
-   * @minLength 1
-   */
-  drugs: (MedicationEntry & {
-    /**
-     * Dguid
-     * Useful ONLY when you want to DELETE / UPDATE entry
-     */
-    dispensationGuid?: string;
-    /**
-     * To skip the generation of <administrationInstructions>
-     * @default false
-     */
-    skipAdministrationInstructionsGeneration?: boolean;
-    /**
      * Magistral text
      */
-    magistralText?: string;
+  magistralText?: string;
+  /**
+   * Formulary case
+   * Examples on https://www.ehealth.fgov.be/standards/kmehr/en/tables/pharmacy-formulas-from-formularies
+   */
+  formulary?: {
+    reference?: FormularyCode;
+    code: string;
+    name: string;
+  };
+  /**
+   * Ingredients
+   */
+  ingredients?: {
     /**
-     * Formulary case
-     * Examples on https://www.ehealth.fgov.be/standards/kmehr/en/tables/pharmacy-formulas-from-formularies
+     * The ingredient
      */
-    formulary?: {
-      code: string;
-      name: string;
-    };
+    drug: MedicationEntry;
     /**
-     * Ingredients
+     * ad / qs / ....
      */
-    ingredients?: {
-      /**
-       * The ingredient
-       */
-      drug: MedicationEntry;
-      /**
-       * ad / qs / ....
-       */
-      quantityPrefix?: string;
-      /**
-       * Quantity
-       */
-      quantity?: {
-        /**
-         * Amount
-         */
-        amount: number;
-        /**
-         * QuantityType
-         */
-        unit?: string;
-      };
-    }[];
-    /**
-     * Galenic form
-     */
-    galenic?: {
-      // Coded
-      code?: string;
-      // Free text
-      text?: string;
-    };
+    quantityPrefix?: string;
     /**
      * Quantity
      */
@@ -750,6 +730,54 @@ export type TransactionPCDHConfig = {
        */
       unit?: string;
     };
+  }[];
+  /**
+   * Galenic form
+   */
+  galenic?: {
+    // Coded
+    code?: string;
+    // Free text
+    text?: string;
+  };
+  /**
+   * Quantity
+   */
+  quantity?: {
+    /**
+     * Amount
+     */
+    amount: number;
+    /**
+     * QuantityType
+     */
+    unit?: string;
+  };
+}
+
+export type TransactionPCDHConfig = {
+  /*
+   * Delivery mode : With or without prescription.
+   * @default With prescription
+   */
+  deliveredMode?:
+    | "dispensedForSamePrescription"
+    | "dispensedWithoutPrescription";
+  /**
+   * Add extra attributes for drug (in case of)
+   * @minLength 1
+   */
+  drugs: (MedicationEntry & MagistralConfig & {
+    /**
+     * Dguid
+     * Useful ONLY when you want to DELETE / UPDATE entry
+     */
+    dispensationGuid?: string;
+    /**
+     * To skip the generation of <administrationInstructions>
+     * @default false
+     */
+    skipAdministrationInstructionsGeneration?: boolean;
   })[];
   /**
    * Delivered units

@@ -6,12 +6,15 @@ import { generatePatient, generateAuthor, generateDrug } from "./generateFHIRMed
 
 import type {
     Bundle,
+    CodeableConcept,
     Extension,
+    Reference,
+    Medication,
     MedicationRequest,
     MedicationRequestSubstitution
 } from "fhir/r4";
 
-import type { TransactionConfig} from "./generateTransaction";
+import type { TransactionConfig, MedicationEntry, MagistralConfig} from "./generateTransaction";
 import type { AuthorConfig } from "./generateHealthcareActor";
 
 import type { OptionsConfig } from "./config";
@@ -27,7 +30,12 @@ type Item = Exclude<
     instructionforreimbursementCode?: "third-party-payer-applicable" | "first-dose" | "second-dose" | "third-dose" | "chronic-renal-failure-pathway" | "diabetes-care-pathway" | "diabetes-convention" | "non-reimbursable" | "startup-pathway-type-2-diabetes",
     // Is substitution authorized ?
     // Most of the time, implicitly, answer is yes, but some case, answer is no
-    issubstitutionallowed?: boolean
+    issubstitutionallowed?: boolean,
+    /**
+     * Add extra attributes for drug (in case of)
+     * @minLength 1
+     */
+    drug: MedicationEntry & MagistralConfig
 };
 
 // Config for external file
@@ -191,13 +199,14 @@ export function generateBody(config: FHIRPrescriptionConfiguration): MedicationR
             dosageInstruction: drug.regimen === undefined 
                 ? [fromKMEHRFreeTextPosologyToFHIRDosage(drug)]
                 : fromKEMHRRegimenToFHIRDosage(drug.regimen, drug),
-            medicationCodeableConcept: generateDrug(drug, idx),
             identifier: [
                 {
                     system: "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
                     value: rid
                 }
-            ]
+            ],
+            // Generate the medication, multiple cases
+            ...generateDrugInRequest(drug, idx)
         }
     });
 }
@@ -247,4 +256,80 @@ function generateSubstitution(entry: Item): MedicationRequestSubstitution | unde
     }
 
     return undefined;
+}
+
+// To generate the medication that is going to be taken
+function generateDrugInRequest(entry: MedicationEntry & MagistralConfig, idx: number): Partial<MedicationRequest> {
+
+    // If it is a formulary reference
+    if (entry.formulary !== undefined) {
+        return {
+            medicationCodeableConcept: {
+                coding: [
+                    {
+                        system: "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+                        code: "officinal"
+                    },
+                    {
+                        system: "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/pharmacy-formularies",
+                        code: entry.formulary.reference || "TMF2"
+                    },
+                    {
+                        system: "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+                        code: entry.formulary.code
+                    }
+                ],
+                text: entry.formulary.name || `Formulary reference ${idx}`
+            }
+        }
+    }
+
+    // If it is a list of ingredients
+    if (entry.ingredients !== undefined) {
+        return {
+            contained: [
+                {
+                    resourceType: "Medication",
+                    id: `medication-${idx + 1}`,
+                    ingredient: entry.ingredients.map( (ingredient, subIdx) => {
+                        return {
+                            // The drug name
+                            itemCodeableConcept: generateDrug(ingredient.drug, subIdx),
+                            // Quantity (optional)
+                            strength: (ingredient.quantity !== undefined) 
+                                ? {
+                                    numerator: {
+                                        value: ingredient.quantity.amount,
+                                        unit: ingredient.quantity.unit,
+                                        system: (ingredient.quantity.unit !== undefined) 
+                                            ? "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/cd-unit"
+                                            : undefined
+                                    }
+                                }
+                                : undefined
+                        }
+                    }),
+                    amount: (entry.quantity !== undefined) 
+                        ? {
+                            numerator: {
+                                value: entry.quantity.amount,
+                                unit: entry.quantity.unit,
+                                system: (entry.quantity.unit !== undefined) 
+                                    ? "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/pharmacy-formularies"
+                                    : undefined
+                            }
+                        }
+                        : undefined
+                }
+            ],
+            medicationReference: {
+                reference: `#medication-${idx + 1}`
+            }
+        }
+    }
+
+    // Otherwise as-is
+    return {
+        medicationCodeableConcept: generateDrug(entry, idx)
+    }
 }
