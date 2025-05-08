@@ -6,7 +6,7 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2025-04-11T10:50:26.926+00:00",
+			"authoredOn": "2025-05-08T11:30:03.024+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
@@ -44,6 +44,12 @@
 					}
 				}
 			],
+			"identifier": [
+				{
+					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
+					"value": "BEP0PTL9XXPB"
+				}
+			],
 			"medicationCodeableConcept": {
 				"coding": [
 					{
@@ -53,19 +59,13 @@
 					}
 				],
 				"text": "Adalat tabl. verl. afgifte Oros 28x 30 mg"
-			},
-			"identifier": [
-				{
-					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP048STBWXN"
-				}
-			]
+			}
 		},
 		{
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2025-04-11T10:50:26.926+00:00",
+			"authoredOn": "2025-05-08T11:30:03.024+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
@@ -120,6 +120,12 @@
 					}
 				}
 			],
+			"identifier": [
+				{
+					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
+					"value": "BEP0PTL9XXPB"
+				}
+			],
 			"medicationCodeableConcept": {
 				"coding": [
 					{
@@ -129,19 +135,13 @@
 					}
 				],
 				"text": "La Roche Posay Cicaplast Balsem 100 ml"
-			},
-			"identifier": [
-				{
-					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP048STBWXN"
-				}
-			]
+			}
 		},
 		{
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2025-04-11T10:50:26.926+00:00",
+			"authoredOn": "2025-05-08T11:30:03.024+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
@@ -192,6 +192,12 @@
 					}
 				}
 			],
+			"identifier": [
+				{
+					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
+					"value": "BEP0PTL9XXPB"
+				}
+			],
 			"medicationCodeableConcept": {
 				"coding": [
 					{
@@ -200,15 +206,9 @@
 					}
 				],
 				"text": "\n                        R/\tRanitidine.HCL \t\t\t\t\t\t\t\t\t\t1.675g \n                            Mononatriumfosfaat dihydraat \t\t\t\t0.3g \n                            Dinatriumfosfaat dihydraat \t\t\t\t\t\t1.3g \n                            Water \t\t\t\t\t\t\t\t\t\t\t\t\t30g \n                            Sterke oranjeschiltinctuur \t\t\t\t\t\tqs \n                            Geconserveerde enkelvoudige siroop \tad 100ml\n\n                            dt 300 ml\n                    "
-			},
-			"identifier": [
-				{
-					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP048STBWXN"
-				}
-			]
+			}
 		}
 	],
 	"total": 3,
-	"timestamp": "2025-04-11T10:50:26.926+00:00"
+	"timestamp": "2025-05-08T11:30:03.024+00:00"
 }

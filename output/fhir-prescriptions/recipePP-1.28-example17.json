@@ -6,7 +6,7 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2025-05-08T11:30:03.032+00:00",
+			"authoredOn": "2025-05-08T11:30:02.968+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
@@ -35,54 +35,12 @@
 					"timing": {
 						"repeat": {
 							"when": [
-								"PCM"
+								"CM"
 							],
 							"frequency": 1,
 							"period": 1,
 							"periodUnit": "d",
-							"duration": 5,
-							"durationUnit": "d"
-						}
-					}
-				},
-				{
-					"doseAndRate": [
-						{
-							"doseQuantity": {
-								"value": 1
-							}
-						}
-					],
-					"timing": {
-						"repeat": {
-							"when": [
-								"PCD"
-							],
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d",
-							"duration": 5,
-							"durationUnit": "d"
-						}
-					}
-				},
-				{
-					"doseAndRate": [
-						{
-							"doseQuantity": {
-								"value": 1
-							}
-						}
-					],
-					"timing": {
-						"repeat": {
-							"when": [
-								"PCV"
-							],
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d",
-							"duration": 5,
+							"duration": 90,
 							"durationUnit": "d"
 						}
 					}
@@ -91,21 +49,21 @@
 			"identifier": [
 				{
 					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP01BG12FLE"
+					"value": "BEP0DA1SF86T"
 				}
 			],
 			"medicationCodeableConcept": {
 				"coding": [
 					{
 						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-						"code": "0867556",
-						"display": "Brufen filmomh. tabl. Forte 30x 600mg"
+						"code": "0000000",
+						"display": "bisoprolol oraal 10 mg [CAVE deelb.]"
 					}
 				],
-				"text": "Brufen filmomh. tabl. Forte 30x 600mg"
+				"text": "bisoprolol oraal 10 mg [CAVE deelb.]"
 			}
 		}
 	],
 	"total": 1,
-	"timestamp": "2025-05-08T11:30:03.032+00:00"
+	"timestamp": "2025-05-08T11:30:02.968+00:00"
 }

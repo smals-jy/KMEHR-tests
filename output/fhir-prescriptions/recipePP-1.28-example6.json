@@ -6,7 +6,7 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2025-04-11T10:50:26.912+00:00",
+			"authoredOn": "2025-05-08T11:30:02.993+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
@@ -61,6 +61,12 @@
 					}
 				}
 			],
+			"identifier": [
+				{
+					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
+					"value": "BEP007HEPE7T"
+				}
+			],
 			"medicationCodeableConcept": {
 				"coding": [
 					{
@@ -70,15 +76,9 @@
 					}
 				],
 				"text": "Dermovate crème 30g 0,5 mg/1 g"
-			},
-			"identifier": [
-				{
-					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP09047EZKL"
-				}
-			]
+			}
 		}
 	],
 	"total": 1,
-	"timestamp": "2025-04-11T10:50:26.912+00:00"
+	"timestamp": "2025-05-08T11:30:02.993+00:00"
 }
