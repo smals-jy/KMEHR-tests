@@ -8,7 +8,6 @@ export default function (): FHIRPrescriptionConfiguration {
                 id: 1,
                 drug: {
                     drugType: "compoundprescription",
-                    periodicity: "D",
                     ingredients: [
                         {
                             drug: {
@@ -44,20 +43,7 @@ export default function (): FHIRPrescriptionConfiguration {
                         amount: 100,
                         unit: "ml"
                     },
-                    regimen: [
-                        {
-                            quantity: 1,
-                            timeOfDay: {
-                                dayPeriod: "morning"
-                            }
-                        },
-                        {
-                            quantity: 1,
-                            timeOfDay: {
-                                dayPeriod: "thehourofsleep"
-                            }
-                        }
-                    ]
+                    posologyFreeText: "volgens instructies"
                 }
             }
         ]
