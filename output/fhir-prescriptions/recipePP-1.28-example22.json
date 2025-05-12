@@ -6,7 +6,7 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2025-05-12T13:46:39.089+00:00",
+			"authoredOn": "2025-05-12T13:46:39.175+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
@@ -64,7 +64,7 @@
 			"identifier": [
 				{
 					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP05E07648D"
+					"value": "BEP0BHEWK89M"
 				}
 			],
 			"contained": [
@@ -77,18 +77,22 @@
 								"coding": [
 									{
 										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-										"code": "0103861",
-										"display": "Betnelan V crème 30g 1 mg/1 g"
+										"code": "0539320",
+										"display": "PASSIFLORAE HERBAE TINCTURA"
 									}
 								],
-								"text": "Betnelan V crème 30g 1 mg/1 g"
-							},
-							"strength": {
-								"numerator": {
-									"value": 30,
-									"unit": "gm",
-									"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/cd-unit"
-								}
+								"text": "PASSIFLORAE HERBAE TINCTURA"
+							}
+						},
+						{
+							"itemCodeableConcept": {
+								"coding": [
+									{
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+										"code": "magistral"
+									}
+								],
+								"text": "BALLOTAE NIGRAE HERBAE TINCTURA NORMATA"
 							}
 						},
 						{
@@ -96,21 +100,43 @@
 								"coding": [
 									{
 										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-										"code": "0587089",
-										"display": "GEBUF. CETOMACR. CREME  TMF2"
+										"code": "0517938",
+										"display": "CRATAEGI TINCTURA"
 									}
 								],
-								"text": "GEBUF. CETOMACR. CREME  TMF2"
+								"text": "CRATAEGI TINCTURA"
 							},
 							"strength": {
 								"numerator": {
-									"value": 30,
-									"unit": "gm",
+									"value": 100,
+									"unit": "ml",
 									"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/cd-unit"
 								}
-							}
+							},
+							"extension": [
+								{
+									"url": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/quantiy-prefix",
+									"valueCode": "ana ad"
+								}
+							]
 						}
-					]
+					],
+					"form": {
+						"coding": [
+							{
+								"code": "421026006",
+								"display": "Oral solution",
+								"system": "http://hl7.org/fhir/ValueSet/medication-form-codes"
+							}
+						]
+					},
+					"amount": {
+						"numerator": {
+							"value": 100,
+							"unit": "ml",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/pharmacy-formularies"
+						}
+					}
 				}
 			],
 			"medicationReference": {
@@ -119,5 +145,5 @@
 		}
 	],
 	"total": 1,
-	"timestamp": "2025-05-12T13:46:39.089+00:00"
+	"timestamp": "2025-05-12T13:46:39.175+00:00"
 }
