@@ -716,7 +716,7 @@ export type MagistralConfig = {
     /**
      * ad / qs / ....
      */
-    quantityPrefix?: string;
+    quantityPrefix?: "ana" | "ana ad" | "ad" | "qs";
     /**
      * Quantity
      */
@@ -736,7 +736,49 @@ export type MagistralConfig = {
    */
   galenic?: {
     // Coded
-    code?: string;
+    code?: 
+      | "1"  // Capsules
+      | "2"  // Tabletten / Comprimés
+      | "3"  // Creme
+      | "4"  // Gel
+      | "5"  // Pasta
+      | "6"  // Vette zalf
+      | "7"  // Granulaat
+      | "8"  // Suppo volwassene
+      | "9"  // Suppo kind
+      | "10" // Vaginale zetpillen
+      | "11" // Rektiool
+      | "12" // Niet-verdeeld poeder inwendig gebruik
+      | "13" // Niet-verdeeld poeder uitwendig gebruik
+      | "14" // Inhalatie
+      | "15" // Te verdelen poeders inwendig gebruik
+      | "16" // Te verdelen poeders uitwendig gebruik
+      | "17" // Neusdruppels
+      | "18" // Neuszalf
+      | "19" // Siroop
+      | "20" // Oplossing inwendig gebruik
+      | "21" // Oplossing uitwendig gebruik
+      | "22" // Druppels inwendig gebruik
+      | "23" // Druppels uitwendig gebruik
+      | "24" // Emulsie inwendig gebruik
+      | "25" // Emulsie uitwendig gebruik
+      | "26" // Shampoo
+      | "27" // Oogdruppels
+      | "28" // Ooglotion
+      | "29" // Oogbad
+      | "30" // Zalf
+      | "31" // Oogzalf
+      | "32" // Oordruppels
+      | "33" // Suspensie inwendig gebruik
+      | "34" // Suspensie uitwendig gebruik
+      | "40" // Kruidenmengsel
+      | "41" // Thee
+      | "71" // Enterisch omhulde capsules
+      | "90" // Als dusdanig
+      | "91" // Als dusdanig dermatologie (vast)
+      | "92" // Als dusdanig poeder
+      | "93" // Als dusdanig vloeistof
+    ;
     // Free text
     text?: string;
   };

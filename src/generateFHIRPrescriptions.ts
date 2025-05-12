@@ -291,6 +291,7 @@ function generateDrugInRequest(entry: MedicationEntry & MagistralConfig, idx: nu
                 {
                     resourceType: "Medication",
                     id: `medication-${idx + 1}`,
+                    // List of ingredients
                     ingredient: entry.ingredients.map( (ingredient, subIdx) => {
                         return {
                             // The drug name
@@ -306,9 +307,23 @@ function generateDrugInRequest(entry: MedicationEntry & MagistralConfig, idx: nu
                                             : undefined
                                     }
                                 }
+                                : undefined,
+                            // Quantity prefix (optional)
+                            extension: (ingredient.quantityPrefix !== undefined)
+                                ? [
+                                    {
+                                        url: "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/quantiy-prefix",
+                                        valueCode: ingredient.quantityPrefix
+                                    }
+                                ]
                                 : undefined
                         }
                     }),
+                    // galenic form (optional)
+                    form: (entry.galenic !== undefined) 
+                        ? generateDoseForm(entry.galenic) 
+                        : undefined,
+                    // Quantity of medication (optional)
                     amount: (entry.quantity !== undefined) 
                         ? {
                             numerator: {
@@ -319,7 +334,7 @@ function generateDrugInRequest(entry: MedicationEntry & MagistralConfig, idx: nu
                                     : undefined
                             }
                         }
-                        : undefined
+                        : undefined,
                 }
             ],
             medicationReference: {
@@ -331,5 +346,64 @@ function generateDrugInRequest(entry: MedicationEntry & MagistralConfig, idx: nu
     // Otherwise as-is
     return {
         medicationCodeableConcept: generateDrug(entry, idx)
+    }
+}
+
+type Galenic = MagistralConfig['galenic'];
+type GalenicCode = Extract<MagistralConfig['galenic'], { code: string }>['code'];
+
+const GALENIC_TO_SNOMED = {
+  "1": { code: "421637006", display: "Capsule" },
+  "2": { code: "385055001", display: "Tablet" },
+  "3": { code: "733024001", display: "Cream" },
+  "4": { code: "385024007", display: "Gel" },
+  "5": { code: "733025000", display: "Paste" },
+  "6": { code: "733026004", display: "Ointment" },
+  "7": { code: "385022008", display: "Granules" },
+  "8": { code: "419672006", display: "Suppository" },
+  "9": { code: "419672006", display: "Suppository" },
+  "10": { code: "421983003", display: "Vaginal suppository" },
+  "11": { code: "421682004", display: "Rectal solution" },
+  "12": { code: "736478001", display: "Powder for oral solution" },
+  "13": { code: "736477006", display: "Powder for cutaneous solution" },
+  "14": { code: "385050005", display: "Inhalation solution" },
+  "15": { code: "421838004", display: "Powder for oral suspension" },
+  "16": { code: "736477006", display: "Powder for cutaneous solution" },
+  "17": { code: "385047006", display: "Nasal drops" },
+  "18": { code: "421682004", display: "Nasal ointment" },
+  "19": { code: "385044004", display: "Syrup" },
+  "20": { code: "421026006", display: "Oral solution" },
+  "21": { code: "421128002", display: "Cutaneous solution" },
+  "22": { code: "385046002", display: "Oral drops" },
+  "23": { code: "421144002", display: "Cutaneous drops" },
+  "24": { code: "421285003", display: "Oral emulsion" },
+  "25": { code: "421293007", display: "Cutaneous emulsion" },
+  "26": { code: "421637006", display: "Shampoo" },
+  "27": { code: "385033007", display: "Eye drops" },
+  "28": { code: "421385000", display: "Eye lotion" },
+  "29": { code: "421388003", display: "Eye bath" },
+  "30": { code: "385018000", display: "Ointment" },
+  "31": { code: "421423006", display: "Eye ointment" },
+  "32": { code: "385034001", display: "Ear drops" },
+  "33": { code: "421346006", display: "Oral suspension" },
+  "34": { code: "421389006", display: "Cutaneous suspension" },
+  "40": { code: "734163000", display: "Herbal product" },
+  "41": { code: "734163000", display: "Herbal tea" },
+  "71": { code: "421637006", display: "Enteric coated capsule" },
+  "90": { code: "736390000", display: "Not otherwise specified" },
+  "91": { code: "736390000", display: "Dermatological solid" },
+  "92": { code: "736390000", display: "Powder, unspecified" },
+  "93": { code: "736390000", display: "Solution, unspecified" }
+} satisfies Record<GalenicCode, { "code": string, "display": string }>
+
+function generateDoseForm(galenic: Galenic): CodeableConcept | undefined {
+    return {
+        text: galenic!.text,
+        coding: (galenic!.code !== undefined) ? [
+            {
+                ...GALENIC_TO_SNOMED[galenic!.code],
+                system: "http://hl7.org/fhir/ValueSet/medication-form-codes"
+            }
+        ] : undefined
     }
 }
