@@ -330,7 +330,7 @@ function generateDrugInRequest(entry: MedicationEntry & MagistralConfig, idx: nu
                                 value: entry.quantity.amount,
                                 unit: entry.quantity.unit,
                                 system: (entry.quantity.unit !== undefined) 
-                                    ? "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/pharmacy-formularies"
+                                    ? "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/cd-unit" 
                                     : undefined
                             }
                         }
