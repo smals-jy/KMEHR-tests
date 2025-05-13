@@ -6,7 +6,7 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2025-05-13T06:42:18.363+00:00",
+			"authoredOn": "2025-05-13T06:52:22.524+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
@@ -29,7 +29,7 @@
 			"identifier": [
 				{
 					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP0N626WNHF"
+					"value": "BEP01XCAZN0G"
 				}
 			],
 			"contained": [
@@ -170,7 +170,7 @@
 						"numerator": {
 							"value": 300,
 							"unit": "ml",
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/pharmacy-formularies"
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/cd-unit"
 						}
 					}
 				}
@@ -181,5 +181,5 @@
 		}
 	],
 	"total": 1,
-	"timestamp": "2025-05-13T06:42:18.363+00:00"
+	"timestamp": "2025-05-13T06:52:22.525+00:00"
 }
