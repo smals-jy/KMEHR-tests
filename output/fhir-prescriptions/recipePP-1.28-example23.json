@@ -6,7 +6,7 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2025-05-13T06:27:00.769+00:00",
+			"authoredOn": "2025-05-13T06:27:00.707+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
@@ -23,13 +23,48 @@
 			},
 			"dosageInstruction": [
 				{
-					"text": "volgens instructies"
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"MORN"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
+				},
+				{
+					"doseAndRate": [
+						{
+							"doseQuantity": {
+								"value": 1
+							}
+						}
+					],
+					"timing": {
+						"repeat": {
+							"when": [
+								"HS"
+							],
+							"frequency": 1,
+							"period": 1,
+							"periodUnit": "d"
+						}
+					}
 				}
 			],
 			"identifier": [
 				{
 					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP0N5MBDGZB"
+					"value": "BEP0CB2G1R8Y"
 				}
 			],
 			"contained": [
@@ -42,22 +77,18 @@
 								"coding": [
 									{
 										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-										"code": "0539320",
-										"display": "PASSIFLORAE HERBAE TINCTURA"
+										"code": "0552125",
+										"display": "UREUM"
 									}
 								],
-								"text": "PASSIFLORAE HERBAE TINCTURA"
-							}
-						},
-						{
-							"itemCodeableConcept": {
-								"coding": [
-									{
-										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-										"code": "magistral"
-									}
-								],
-								"text": "BALLOTAE NIGRAE HERBAE TINCTURA NORMATA"
+								"text": "UREUM"
+							},
+							"strength": {
+								"numerator": {
+									"value": 5,
+									"unit": "%wv",
+									"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/cd-unit"
+								}
 							}
 						},
 						{
@@ -65,23 +96,42 @@
 								"coding": [
 									{
 										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-										"code": "0517938",
-										"display": "CRATAEGI TINCTURA"
+										"code": "0535047",
+										"display": "NATRIUMCHLORIDE"
 									}
 								],
-								"text": "CRATAEGI TINCTURA"
+								"text": "NATRIUMCHLORIDE"
+							},
+							"strength": {
+								"numerator": {
+									"value": 5,
+									"unit": "%wv",
+									"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/cd-unit"
+								}
+							}
+						},
+						{
+							"itemCodeableConcept": {
+								"coding": [
+									{
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"code": "0587089",
+										"display": "GEBUF. CETOMACR. CREME  TMF2"
+									}
+								],
+								"text": "GEBUF. CETOMACR. CREME  TMF2"
 							},
 							"strength": {
 								"numerator": {
 									"value": 100,
-									"unit": "ml",
+									"unit": "gm",
 									"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/cd-unit"
 								}
 							},
 							"extension": [
 								{
 									"url": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/quantiy-prefix",
-									"valueCode": "ana ad"
+									"valueCode": "ad"
 								}
 							]
 						}
@@ -89,8 +139,8 @@
 					"form": {
 						"coding": [
 							{
-								"code": "421026006",
-								"display": "Oral solution",
+								"code": "733024001",
+								"display": "Cream",
 								"system": "http://hl7.org/fhir/ValueSet/medication-form-codes"
 							}
 						]
@@ -98,7 +148,7 @@
 					"amount": {
 						"numerator": {
 							"value": 100,
-							"unit": "ml",
+							"unit": "gm",
 							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/pharmacy-formularies"
 						}
 					}
@@ -110,5 +160,5 @@
 		}
 	],
 	"total": 1,
-	"timestamp": "2025-05-13T06:27:00.770+00:00"
+	"timestamp": "2025-05-13T06:27:00.707+00:00"
 }
