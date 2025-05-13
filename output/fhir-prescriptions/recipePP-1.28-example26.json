@@ -6,7 +6,7 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2025-05-13T06:42:18.259+00:00",
+			"authoredOn": "2025-05-13T06:42:18.338+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
@@ -23,34 +23,34 @@
 			},
 			"dosageInstruction": [
 				{
-					"text": "10 L/min pendant environ 15 minutes",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
+					"text": "één - tot tweemaal per dag aanbrengen"
 				}
 			],
 			"identifier": [
 				{
 					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP0H8MY81AY"
+					"value": "BEP0T9E2KR47"
 				}
 			],
 			"medicationCodeableConcept": {
 				"coding": [
 					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+						"code": "officinal"
+					},
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/pharmacy-formularies",
+						"code": "TMF2"
+					},
+					{
 						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-						"code": "0000000",
-						"display": "Traitement oxygène gazeuse pour 1 mois"
+						"code": "0589028"
 					}
 				],
-				"text": "Traitement oxygène gazeuse pour 1 mois"
+				"text": "ERYTHROMYCINE SOL. HYDRO-ALC. 4% FTM2"
 			}
 		}
 	],
 	"total": 1,
-	"timestamp": "2025-05-13T06:42:18.259+00:00"
+	"timestamp": "2025-05-13T06:42:18.338+00:00"
 }
