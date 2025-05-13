@@ -1,0 +1,185 @@
+{
+	"resourceType": "Bundle",
+	"type": "collection",
+	"entry": [
+		{
+			"resourceType": "MedicationRequest",
+			"status": "active",
+			"intent": "order",
+			"authoredOn": "2025-05-13T06:27:00.837+00:00",
+			"subject": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Tasmanian Duck"
+			},
+			"requester": {
+				"identifier": {
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+					"value": "XXXXXXXXXXX"
+				},
+				"display": "Donald Duck"
+			},
+			"dosageInstruction": [
+				{
+					"text": "gebruik gekend"
+				}
+			],
+			"identifier": [
+				{
+					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
+					"value": "BEP07Z3XHCNL"
+				}
+			],
+			"contained": [
+				{
+					"resourceType": "Medication",
+					"id": "medication-1",
+					"ingredient": [
+						{
+							"itemCodeableConcept": {
+								"coding": [
+									{
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"code": "0586982",
+										"display": "RANITIDINEHYDROCHLORIDE"
+									}
+								],
+								"text": "RANITIDINEHYDROCHLORIDE"
+							},
+							"strength": {
+								"numerator": {
+									"value": 1.675,
+									"unit": "gm",
+									"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/cd-unit"
+								}
+							}
+						},
+						{
+							"itemCodeableConcept": {
+								"coding": [
+									{
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"code": "0535559",
+										"display": "SODIUM (MONO) PHOSPHATE DIHYDRATE"
+									}
+								],
+								"text": "SODIUM (MONO) PHOSPHATE DIHYDRATE"
+							},
+							"strength": {
+								"numerator": {
+									"value": 0.3,
+									"unit": "gm",
+									"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/cd-unit"
+								}
+							}
+						},
+						{
+							"itemCodeableConcept": {
+								"coding": [
+									{
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"code": "0535534",
+										"display": "DINATRIUMFOSFAAT DIHYDRAAT"
+									}
+								],
+								"text": "DINATRIUMFOSFAAT DIHYDRAAT"
+							},
+							"strength": {
+								"numerator": {
+									"value": 1.7,
+									"unit": "gm",
+									"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/cd-unit"
+								}
+							}
+						},
+						{
+							"itemCodeableConcept": {
+								"coding": [
+									{
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"code": "0507541",
+										"display": "WATER GEZUIVERD"
+									}
+								],
+								"text": "WATER GEZUIVERD"
+							},
+							"strength": {
+								"numerator": {
+									"value": 30,
+									"unit": "gm",
+									"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/cd-unit"
+								}
+							}
+						},
+						{
+							"itemCodeableConcept": {
+								"coding": [
+									{
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"code": "0589044",
+										"display": "ORANJESCHILTINCTUUR (BITTERE) (EPIC. EN MESOCARP.)"
+									}
+								],
+								"text": "ORANJESCHILTINCTUUR (BITTERE) (EPIC. EN MESOCARP.)"
+							},
+							"extension": [
+								{
+									"url": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/quantiy-prefix",
+									"valueCode": "qs"
+								}
+							]
+						},
+						{
+							"itemCodeableConcept": {
+								"coding": [
+									{
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"code": "0584938",
+										"display": "GECONSERVEERDE SUIKERSTROOP"
+									}
+								],
+								"text": "GECONSERVEERDE SUIKERSTROOP"
+							},
+							"strength": {
+								"numerator": {
+									"value": 100,
+									"unit": "ml",
+									"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/cd-unit"
+								}
+							},
+							"extension": [
+								{
+									"url": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/quantiy-prefix",
+									"valueCode": "ad"
+								}
+							]
+						}
+					],
+					"form": {
+						"coding": [
+							{
+								"code": "736477006",
+								"display": "Powder for cutaneous solution",
+								"system": "http://hl7.org/fhir/ValueSet/medication-form-codes"
+							}
+						]
+					},
+					"amount": {
+						"numerator": {
+							"value": 300,
+							"unit": "ml",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/pharmacy-formularies"
+						}
+					}
+				}
+			],
+			"medicationReference": {
+				"reference": "#medication-1"
+			}
+		}
+	],
+	"total": 1,
+	"timestamp": "2025-05-13T06:27:00.837+00:00"
+}
