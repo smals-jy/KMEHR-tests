@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import ReactJsonView from '@microlink/react-json-view'
 import ReactXmlViewer from 'react-xml-viewer';
 
