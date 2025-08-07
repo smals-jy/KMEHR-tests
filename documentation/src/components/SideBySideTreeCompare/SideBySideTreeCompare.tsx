@@ -35,7 +35,7 @@ export const SideBySideTreeCompare: React.FC<Props> = ({
       <div style={{ flex: 1, minWidth: 0, maxWidth: '100%', overflow: 'auto' }}>
         <div style={{ fontWeight: 'bold', marginBottom: 8 }}>{xmlLabel}</div>
         {xmlData ? ( 
-          <ReactXmlViewer xml={xml} collapsible style={{ fontSize: 13 }} />
+          <ReactXmlViewer xml={xmlData} collapsible style={{ fontSize: 13 }} />
         ) : (
           <span style={{color: 'red'}}>XML not found</span>
         )}
