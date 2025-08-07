@@ -4,27 +4,17 @@ import ReactXmlViewer from 'react-xml-viewer';
 
 interface Props {
   jsonData: any;
-  xmlUrl: string;
+  xmlData: any;
   jsonLabel?: string;
   xmlLabel?: string;
 }
 
 export const SideBySideTreeCompare: React.FC<Props> = ({
   jsonData,
-  xmlUrl,
+  xmlData,
   jsonLabel = 'JSON',
   xmlLabel = 'XML'
 }) => {
-  const [xml, setXml] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (xmlUrl) {
-      fetch(xmlUrl)
-        .then(response => response.text())
-        .then(setXml)
-        .catch(() => setXml(null));
-    }
-  }, [xmlUrl]);
 
   return (
     <div style={{
@@ -44,12 +34,11 @@ export const SideBySideTreeCompare: React.FC<Props> = ({
       </div>
       <div style={{ flex: 1, minWidth: 0, maxWidth: '100%', overflow: 'auto' }}>
         <div style={{ fontWeight: 'bold', marginBottom: 8 }}>{xmlLabel}</div>
-        {xml
-          ? <ReactXmlViewer xml={xml} collapsible style={{ fontSize: 13 }} />
-          : xmlUrl
-            ? 'Loading...'
-            : <span style={{color: 'red'}}>XML not found</span>
-        }
+        {xmlData ? ( 
+          <ReactXmlViewer xml={xml} collapsible style={{ fontSize: 13 }} />
+        ) : (
+          <span style={{color: 'red'}}>XML not found</span>
+        )}
       </div>
       <style>
         {`
