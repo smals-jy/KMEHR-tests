@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ReactJson from '@microlinkhq/react-json-view';
+import ReactJsonView from '@microlink/react-json-view'
 import ReactXmlViewer from 'react-xml-viewer';
 
 interface Props {
@@ -37,7 +37,7 @@ export const SideBySideTreeCompare: React.FC<Props> = ({
       <div style={{ flex: 1, minWidth: 0, maxWidth: '100%', overflow: 'auto' }}>
         <div style={{ fontWeight: 'bold', marginBottom: 8 }}>{jsonLabel}</div>
         {jsonData ? (
-          <ReactJson src={jsonData} name={null} collapsed={2} style={{ fontSize: 13 }} />
+          <ReactJsonView src={jsonData} name={null} collapsed={2} style={{ fontSize: 13 }} />
         ) : (
           <span style={{color: 'red'}}>JSON not found</span>
         )}
