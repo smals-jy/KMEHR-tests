@@ -1,0 +1,16 @@
+---
+description: Formats of medication in KMEHR
+title: 💊 TS-01 - Kind of drugs
+---
+
+import jsonData from '@site/static/output/fhir-ms/TS-01-identifiers.json';
+import xmlData from '!!raw-loader!@site/static/output/ms/TS-01-identifiers.xml';
+import { SideBySideTreeCompare } from '@site/src/components/SideBySideTreeCompare';
+
+## Description
+
+See if software in test can handle the formats of medication possible in KMEHR / FHIR
+
+## Comparison
+
+<SideBySideTreeCompare jsonData={jsonData} xmlData={xmlData} />

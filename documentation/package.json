@@ -5,6 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
+    "prebuild": "rm -rf static/output && cp -R ../output static/output",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -22,7 +23,10 @@
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-xml-viewer": "^3.0.1",
+    "@microlink/react-json-view": "^1.27.0",
+    "raw-loader": "^4.0.2"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.6.1",
