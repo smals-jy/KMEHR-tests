@@ -11,8 +11,8 @@ interface Props {
 const SideBySideTreeCompare: React.FC<Props> = ({
   jsonData,
   xmlData,
-  jsonLabel = 'JSON',
-  xmlLabel = 'XML'
+  jsonLabel = 'FHIR',
+  xmlLabel = 'KMEHR'
 }) => {
   return (
     <BrowserOnly fallback={<div>Loading...</div>}>
@@ -28,19 +28,19 @@ const SideBySideTreeCompare: React.FC<Props> = ({
             flexWrap: 'wrap'
           }}>
             <div style={{ flex: 1, minWidth: 0, maxWidth: '100%', overflow: 'auto' }}>
-              <div style={{ fontWeight: 'bold', marginBottom: 8 }}>{jsonLabel}</div>
-              {jsonData ? (
-                <ReactJsonView src={jsonData} name={null} collapsed={2} style={{ fontSize: 13 }} />
-              ) : (
-                <span style={{color: 'red'}}>JSON not found</span>
-              )}
-            </div>
-            <div style={{ flex: 1, minWidth: 0, maxWidth: '100%', overflow: 'auto' }}>
               <div style={{ fontWeight: 'bold', marginBottom: 8 }}>{xmlLabel}</div>
               {xmlData ? (
                 <ReactXmlViewer xml={xmlData} collapsible style={{ fontSize: 13 }} />
               ) : (
                 <span style={{color: 'red'}}>XML not found</span>
+              )}
+            </div>
+            <div style={{ flex: 1, minWidth: 0, maxWidth: '100%', overflow: 'auto' }}>
+              <div style={{ fontWeight: 'bold', marginBottom: 8 }}>{jsonLabel}</div>
+              {jsonData ? (
+                <ReactJsonView src={jsonData} name={null} collapsed={2} style={{ fontSize: 13 }} />
+              ) : (
+                <span style={{color: 'red'}}>JSON not found</span>
               )}
             </div>
             <style>
