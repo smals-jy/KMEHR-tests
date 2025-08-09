@@ -1,0 +1,16 @@
+---
+description: CD-DAYPERIOD
+title: 🌅 TS-04 - Day periods
+---
+
+import jsonData from '@site/static/output/fhir-ms/TS-04-CD-DAYPERIOD.json';
+import xmlData from '!!raw-loader!@site/static/output/ms/TS-04-CD-DAYPERIOD.xml';
+import { SideBySideTreeCompare } from '@site/src/components/SideBySideTreeCompare';
+
+## Description
+
+[See if software in test can handle all the authorized CD-DAYPERIOD](../../tests/ms/read/ts-04)
+
+## Comparison
+
+<SideBySideTreeCompare jsonData={jsonData} xmlData={xmlData} />

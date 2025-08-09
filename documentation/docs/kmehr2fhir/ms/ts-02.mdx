@@ -1,0 +1,16 @@
+---
+description: Formats of posology in KMEHR
+title: 🕑 TS-02 - Posologies
+---
+
+import jsonData from '@site/static/output/fhir-ms/TS-02-posologies.json';
+import xmlData from '!!raw-loader!@site/static/output/ms/TS-02-posologies.xml';
+import { SideBySideTreeCompare } from '@site/src/components/SideBySideTreeCompare';
+
+## Description
+
+[See if software in test can handle the formats of posologies possible in KMEHR](../../tests/ms/read/ts-02)
+
+## Comparison
+
+<SideBySideTreeCompare jsonData={jsonData} xmlData={xmlData} />
