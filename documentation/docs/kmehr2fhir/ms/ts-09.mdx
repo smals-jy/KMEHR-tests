@@ -1,0 +1,16 @@
+---
+description: Increasing & Decreasing quantities / long text / ...
+title: 🌀 TS-09 - Corner cases
+---
+
+import jsonData from '@site/static/output/fhir-ms/TS-09-corner_cases.json';
+import xmlData from '!!raw-loader!@site/static/output/ms/TS-09-corner_cases.xml';
+import { SideBySideTreeCompare } from '@site/src/components/SideBySideTreeCompare';
+
+## Description
+
+[See if software in test can handle very specific cases](../../tests/ms/read/ts-09)
+
+## Comparison
+
+<SideBySideTreeCompare jsonData={jsonData} xmlData={xmlData} />
