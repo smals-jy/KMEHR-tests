@@ -1,0 +1,16 @@
+---
+description: Expressions of <duration> in KMEHR
+title: ⏳ TS-13 - Durations
+---
+
+import jsonData from '@site/static/output/fhir-ms/TS-13-duration.json';
+import xmlData from '!!raw-loader!@site/static/output/ms/TS-13-duration.xml';
+import { SideBySideTreeCompare } from '@site/src/components/SideBySideTreeCompare';
+
+## Description
+
+[See if software in test can handle the formats of duration possible in KMEHR](../../tests/ms/read/ts-13)
+
+## Comparison
+
+<SideBySideTreeCompare jsonData={jsonData} xmlData={xmlData} />
