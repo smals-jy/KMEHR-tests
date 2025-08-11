@@ -1,0 +1,16 @@
+---
+description: Medications in future (e.g. 2099)
+title: 🚀 TS-10 - Future medications
+---
+
+import jsonData from '@site/static/output/fhir-ms/TS-10-future-drugs.json';
+import xmlData from '!!raw-loader!@site/static/output/ms/TS-10-future-drugs.xml';
+import { SideBySideTreeCompare } from '@site/src/components/SideBySideTreeCompare';
+
+## Description
+
+[See if software in test can handle medications that are in future e.g 2099](../../tests/ms/read/ts-10)
+
+## Comparison
+
+<SideBySideTreeCompare jsonData={jsonData} xmlData={xmlData} />
