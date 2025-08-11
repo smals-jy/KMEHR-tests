@@ -1,0 +1,16 @@
+---
+description: Temporary or definitive suspensions
+title: 🚫 TS-08 - Treatment suspensions
+---
+
+import jsonData from '@site/static/output/fhir-ms/TS-08-THERAPEUTIC_SUSPENSIONS.json';
+import xmlData from '!!raw-loader!@site/static/output/ms/TS-08-THERAPEUTIC_SUSPENSIONS.xml';
+import { SideBySideTreeCompare } from '@site/src/components/SideBySideTreeCompare';
+
+## Description
+
+[See if software in test can handle temporary or definitive suspensions](../../tests/ms/read/ts-08)
+
+## Comparison
+
+<SideBySideTreeCompare jsonData={jsonData} xmlData={xmlData} />
