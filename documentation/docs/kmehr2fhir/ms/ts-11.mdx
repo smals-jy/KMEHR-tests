@@ -1,0 +1,16 @@
+---
+description: Unexpected situations that can still occur with KMEHR
+title: 🚨 TS-11 - Unexpected scenarios
+---
+
+import jsonData from '@site/static/output/fhir-ms/TS-11-Unexpected_Scenarios.json';
+import xmlData from '!!raw-loader!@site/static/output/ms/TS-11-Unexpected_Scenarios.xml';
+import { SideBySideTreeCompare } from '@site/src/components/SideBySideTreeCompare';
+
+## Description
+
+[See if software in test can handle scenarios that passed validations whereas they should not](../../tests/ms/read/ts-11)
+
+## Comparison
+
+<SideBySideTreeCompare jsonData={jsonData} xmlData={xmlData} />
