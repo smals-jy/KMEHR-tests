@@ -112,6 +112,7 @@ type SuspensionValue = {
     start: string;
     text: string;
     end: string | undefined;
+    lifecycle : "suspended" | "stopped" | undefined
 };
 
 // For the final payload, use MedicationStatement as it will be the ressource of the medication scheme line / ...
@@ -125,7 +126,8 @@ export function generateBody(config: Configuration): MedicationStatement[] {
             const value = {
                 text: t.suspensionReason!,
                 start: t.drug.beginmoment!,
-                end: t.drug.endmoment
+                end: t.drug.endmoment,
+                lifecycle: t.drug.lifecycle
             };
 
             if (acc[key]) {
@@ -160,29 +162,41 @@ export function generateBody(config: Configuration): MedicationStatement[] {
                 }
             ]
 
+            let status : 'active'|'completed'|'entered-in-error'|'intended'|'stopped'|'on-hold'|'unknown'|'not-taken' = "unknown";
             let suspensions = suspensionsMap[transaction.id];
+            let statusReason : CodeableConcept[] = [];
+
             if (suspensions !== undefined) {
-                extensionForLine.push({
-                    url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
-                    extension: suspensions.map(s => ({
-                        url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
-                        valuePeriod: {
-                            start: s.start,
-                            end: s.end
-                        },
-                        extension: [
-                            {
-                                url: "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
-                                valueString: s.text
-                            }
-                        ]
-                    }))
-                });
+
+                statusReason = suspensions.map(s => ({
+                    extension: [
+                        {
+                            url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+                            valuePeriod: {
+                                start: s.start,
+                                end: s.end
+                            },
+                            extension: [
+                                {
+                                    url: "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+                                    valueString: s.text
+                                }
+                            ]
+                        }
+                    ],
+                    text: `${ s.lifecycle === "stopped" ? "Definitive" : "Temporary" } suspension from ${s.start} to ${ s.end || "forever" }`
+                }));
+
+                // If it contains a definitive suspension, let's put a proper status
+                if ( suspensions.some(s => s.lifecycle === "stopped") ) {
+                    status = "stopped";
+                }
             }
 
             return {
                 resourceType: "MedicationStatement",
-                status: "unknown",
+                status: status,
+                statusReason: (statusReason.length > 0) ? statusReason : undefined,
                 meta: {
                     profile: [
                         "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
