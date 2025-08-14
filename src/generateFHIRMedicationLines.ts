@@ -17,7 +17,8 @@ import type {
     Period,
     CodeableConcept,
     Coding,
-    Bundle
+    Bundle,
+    Extension
 } from "fhir/r4";
 
 import type { OptionsConfig } from "./config";
@@ -107,46 +108,96 @@ export function generatePayload(config: Configuration): Bundle {
     }
 }
 
+type SuspensionValue = {
+    start: string;
+    text: string;
+    end: string | undefined;
+};
+
 // For the final payload, use MedicationStatement as it will be the ressource of the medication scheme line / ...
 export function generateBody(config: Configuration): MedicationStatement[] {
     
-    return config.transactions.map( (transaction, idx) => {
+    const suspensionsMap = config
+        .transactions
+        .filter(t => t.suspensionReference !== undefined)
+        .reduce((acc, t) => {
+            const key = t.suspensionReference!;
+            const value = {
+                text: t.suspensionReason!,
+                start: t.drug.beginmoment!,
+                end: t.drug.endmoment
+            };
 
-        const drug = transaction.drug;
-        const author : AuthorConfig | undefined = transaction.author || config.author;
+            if (acc[key]) {
+                acc[key].push(value);
+            } else {
+                acc[key] = [value];
+            }
+            return acc;
+        }, {} as Record<string, SuspensionValue[]>);
 
-        return {
-            resourceType: "MedicationStatement",
-            status: "unknown",
-            meta: {
-                profile: [
-                    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-                ]
-            },
-            extension: [
-                // Two mandatory extensions to use
+    
+    return config
+        .transactions
+        .filter(t => t.suspensionReference == undefined)
+        .map( (transaction, idx) => {
+
+            const drug = transaction.drug;
+            const author : AuthorConfig | undefined = transaction.author || config.author;
+
+            let extensionForLine : Extension[] = [
+                // Two mandatory extensions to use at least
                 // 1) The version of the medication line, default to 1
                 {
                     url: "http://hl7.org/fhir/StructureDefinition/artifact-version",
                     valueString: `${transaction.version || 1}`
                 },
-
                 // 2) The adherence field, backported from R5 : https://hl7.org/fhir/medicationstatement-definitions.html#MedicationStatement.adherence
                 // https://github.com/hl7-be/medication/issues/210
                 {
                     url: "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
                     valueCode: "unknown"
                 }
-            ],
-            subject: generatePatient(),
-            informationSource: generateAuthor(author),
-            medicationCodeableConcept: generateDrug(drug, idx),
-            dosage : drug.regimen === undefined 
-                ? [fromKMEHRFreeTextPosologyToFHIRDosage(drug)]
-                : fromKEMHRRegimenToFHIRDosage(drug.regimen, drug),
-            effectivePeriod: generateEffectivePeriod(drug)
-        }
-    })
+            ]
+
+            let suspensions = suspensionsMap[transaction.id];
+            if (suspensions !== undefined) {
+                extensionForLine.push({
+                    url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+                    extension: suspensions.map(s => ({
+                        url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+                        valuePeriod: {
+                            start: s.start,
+                            end: s.end
+                        },
+                        extension: [
+                            {
+                                url: "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+                                valueString: s.text
+                            }
+                        ]
+                    }))
+                });
+            }
+
+            return {
+                resourceType: "MedicationStatement",
+                status: "unknown",
+                meta: {
+                    profile: [
+                        "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+                    ]
+                },
+                extension: extensionForLine,
+                subject: generatePatient(),
+                informationSource: generateAuthor(author),
+                medicationCodeableConcept: generateDrug(drug, idx),
+                dosage : drug.regimen === undefined 
+                    ? [fromKMEHRFreeTextPosologyToFHIRDosage(drug)]
+                    : fromKEMHRRegimenToFHIRDosage(drug.regimen, drug),
+                effectivePeriod: generateEffectivePeriod(drug)
+            }
+        })
     
 }
 
