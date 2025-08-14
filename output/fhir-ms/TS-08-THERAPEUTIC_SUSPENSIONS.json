@@ -18,6 +18,50 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-04",
+								"end": "2022-07-05"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-07",
+								"end": "2022-07-08"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-10",
+								"end": "2022-07-11"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -75,6 +119,37 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-04",
+								"end": "2022-07-07"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-08",
+								"end": "2022-07-11"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -132,6 +207,37 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-04",
+								"end": "2022-07-07"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-04",
+								"end": "2022-07-07"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -189,6 +295,37 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-04",
+								"end": "2022-07-07"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-05",
+								"end": "2022-07-08"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -246,6 +383,37 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-04",
+								"end": "2022-07-07"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-06",
+								"end": "2022-07-07"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -303,6 +471,37 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-06",
+								"end": "2022-07-07"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-04",
+								"end": "2022-07-07"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -360,6 +559,36 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-02",
+								"end": "2022-07-03"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-05"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -417,6 +646,36 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-02",
+								"end": "2022-07-03"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-04"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -474,6 +733,36 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-02",
+								"end": "2022-07-03"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-03"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -531,6 +820,36 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-02",
+								"end": "2022-07-03"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-02"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -588,6 +907,36 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-02",
+								"end": "2022-07-03"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-01"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -645,6 +994,35 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-05"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-02"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -702,6 +1080,35 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-03"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-03"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -759,6 +1166,50 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-04",
+								"end": "2022-07-05"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-07",
+								"end": "2022-07-08"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-10",
+								"end": "2022-07-11"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -817,6 +1268,37 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-04",
+								"end": "2022-07-07"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-08",
+								"end": "2022-07-11"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -875,6 +1357,37 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-04",
+								"end": "2022-07-07"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-04",
+								"end": "2022-07-07"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -933,6 +1446,37 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-04",
+								"end": "2022-07-07"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-05",
+								"end": "2022-07-08"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -991,6 +1535,37 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-04",
+								"end": "2022-07-07"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-06",
+								"end": "2022-07-07"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -1049,6 +1624,37 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-06",
+								"end": "2022-07-07"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-04",
+								"end": "2022-07-07"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -1107,6 +1713,36 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-02",
+								"end": "2022-07-03"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-05"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -1165,6 +1801,36 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-02",
+								"end": "2022-07-03"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-04"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -1223,6 +1889,36 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-02",
+								"end": "2022-07-03"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-03"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -1281,6 +1977,36 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-02",
+								"end": "2022-07-03"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-02"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -1339,6 +2065,36 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-02",
+								"end": "2022-07-03"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Temporary suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-01"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -1397,6 +2153,35 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-05"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-02"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -1455,6 +2240,35 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
+				},
+				{
+					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-03"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						},
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2022-07-03"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Definitive suspension"
+								}
+							]
+						}
+					]
 				}
 			],
 			"subject": {
@@ -1495,3123 +2309,9 @@
 			"effectivePeriod": {
 				"start": "2022-07-01",
 				"end": "2022-07-24"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 001"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-04",
-				"end": "2022-07-05"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 001"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-07",
-				"end": "2022-07-08"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 001"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-10",
-				"end": "2022-07-11"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 002"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-04",
-				"end": "2022-07-07"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 002"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-08",
-				"end": "2022-07-11"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 003"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-04",
-				"end": "2022-07-07"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 003"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-04",
-				"end": "2022-07-07"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 004"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-04",
-				"end": "2022-07-07"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 004"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-05",
-				"end": "2022-07-08"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 005"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-04",
-				"end": "2022-07-07"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 005"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-06",
-				"end": "2022-07-07"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 006"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-06",
-				"end": "2022-07-07"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 006"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-04",
-				"end": "2022-07-07"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 007"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-02",
-				"end": "2022-07-03"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 007"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-05"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 008"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-02",
-				"end": "2022-07-03"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 008"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-04"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 009"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-02",
-				"end": "2022-07-03"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 009"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-03"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 010"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-02",
-				"end": "2022-07-03"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 010"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-02"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 011"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-02",
-				"end": "2022-07-03"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 011"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-01"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 012"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-05"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 012"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-02"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 013"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-03"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 013"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-03"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 014"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-04",
-				"end": "2022-07-05"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 014"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-07",
-				"end": "2022-07-08"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 014"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-10",
-				"end": "2022-07-11"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 015"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-04",
-				"end": "2022-07-07"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 015"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-08",
-				"end": "2022-07-11"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 016"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-04",
-				"end": "2022-07-07"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 016"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-04",
-				"end": "2022-07-07"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 017"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-04",
-				"end": "2022-07-07"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 017"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-05",
-				"end": "2022-07-08"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 018"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-04",
-				"end": "2022-07-07"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 018"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-06",
-				"end": "2022-07-07"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 019"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-06",
-				"end": "2022-07-07"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 019"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-04",
-				"end": "2022-07-07"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 020"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-02",
-				"end": "2022-07-03"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 020"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-05"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 021"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-02",
-				"end": "2022-07-03"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 021"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-04"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 022"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-02",
-				"end": "2022-07-03"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 022"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-03"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 023"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-02",
-				"end": "2022-07-03"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 023"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-02"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 024"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-02",
-				"end": "2022-07-03"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 024"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-01"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 025"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-05"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 025"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-02"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 026"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-03"
-			}
-		},
-		{
-			"resourceType": "MedicationStatement",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
-					}
-				],
-				"text": "Drug 026"
-			},
-			"dosage": [
-				{
-					"text": "Free text posology",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
-						}
-					}
-				}
-			],
-			"effectivePeriod": {
-				"start": "2022-07-03"
 			}
 		}
 	],
 	"total": 80,
-	"timestamp": "2025-05-13T06:52:22.462+00:00"
+	"timestamp": "2025-08-14T09:45:35.395+00:00"
 }
