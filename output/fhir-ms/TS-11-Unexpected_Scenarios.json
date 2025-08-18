@@ -881,22 +881,8 @@
 		{
 			"resourceType": "MedicationStatement",
 			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
+			"statusReason": [
 				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				},
-				{
-					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
 					"extension": [
 						{
 							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
@@ -910,7 +896,23 @@
 								}
 							]
 						}
-					]
+					],
+					"text": "Temporary suspension from 2011-12-20 to forever"
+				}
+			],
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
 			"subject": {
@@ -1185,7 +1187,24 @@
 		},
 		{
 			"resourceType": "MedicationStatement",
-			"status": "unknown",
+			"status": "stopped",
+			"statusReason": [
+				{
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Wegens interactie met andere medicatie. definitief."
+								}
+							]
+						}
+					],
+					"text": "Definitive suspension from undefined to forever"
+				}
+			],
 			"meta": {
 				"profile": [
 					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
@@ -1199,21 +1218,6 @@
 				{
 					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 					"valueCode": "unknown"
-				},
-				{
-					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
-					"extension": [
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
-							"valuePeriod": {},
-							"extension": [
-								{
-									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
-									"valueString": "Wegens interactie met andere medicatie. definitief."
-								}
-							]
-						}
-					]
 				}
 			],
 			"subject": {
@@ -1374,22 +1378,8 @@
 		{
 			"resourceType": "MedicationStatement",
 			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
+			"statusReason": [
 				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				},
-				{
-					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
 					"extension": [
 						{
 							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
@@ -1403,59 +1393,12 @@
 									"valueString": "Wegens interactie met andere medicatie. definitief."
 								}
 							]
-						},
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
-							"valuePeriod": {
-								"start": "2011-12-21",
-								"end": "2011-12-22"
-							},
-							"extension": [
-								{
-									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
-									"valueString": "Wegens interactie met andere medicatie. definitief."
-								}
-							]
-						},
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
-							"valuePeriod": {
-								"start": "2011-12-21",
-								"end": "2011-12-22"
-							},
-							"extension": [
-								{
-									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
-									"valueString": "Wegens interactie met andere medicatie. definitief."
-								}
-							]
-						},
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
-							"valuePeriod": {
-								"start": "2011-12-21",
-								"end": "2011-12-22"
-							},
-							"extension": [
-								{
-									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
-									"valueString": "Wegens interactie met andere medicatie. definitief."
-								}
-							]
-						},
-						{
-							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
-							"valuePeriod": {
-								"start": "2011-12-21",
-								"end": "2011-12-22"
-							},
-							"extension": [
-								{
-									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
-									"valueString": "Wegens interactie met andere medicatie. definitief."
-								}
-							]
-						},
+						}
+					],
+					"text": "Temporary suspension from 2011-12-21 to 2011-12-22"
+				},
+				{
+					"extension": [
 						{
 							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 							"valuePeriod": {
@@ -1469,7 +1412,95 @@
 								}
 							]
 						}
-					]
+					],
+					"text": "Temporary suspension from 2011-12-21 to 2011-12-22"
+				},
+				{
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2011-12-21",
+								"end": "2011-12-22"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Wegens interactie met andere medicatie. definitief."
+								}
+							]
+						}
+					],
+					"text": "Temporary suspension from 2011-12-21 to 2011-12-22"
+				},
+				{
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2011-12-21",
+								"end": "2011-12-22"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Wegens interactie met andere medicatie. definitief."
+								}
+							]
+						}
+					],
+					"text": "Temporary suspension from 2011-12-21 to 2011-12-22"
+				},
+				{
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2011-12-21",
+								"end": "2011-12-22"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Wegens interactie met andere medicatie. definitief."
+								}
+							]
+						}
+					],
+					"text": "Temporary suspension from 2011-12-21 to 2011-12-22"
+				},
+				{
+					"extension": [
+						{
+							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+							"valuePeriod": {
+								"start": "2011-12-21",
+								"end": "2011-12-22"
+							},
+							"extension": [
+								{
+									"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+									"valueString": "Wegens interactie met andere medicatie. definitief."
+								}
+							]
+						}
+					],
+					"text": "Temporary suspension from 2011-12-21 to 2011-12-22"
+				}
+			],
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
 			"subject": {
@@ -1636,22 +1667,8 @@
 		{
 			"resourceType": "MedicationStatement",
 			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
+			"statusReason": [
 				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				},
-				{
-					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
 					"extension": [
 						{
 							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
@@ -1665,7 +1682,23 @@
 								}
 							]
 						}
-					]
+					],
+					"text": "Temporary suspension from 2011-12-21 to forever"
+				}
+			],
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
 			"subject": {
@@ -1982,5 +2015,5 @@
 		}
 	],
 	"total": 30,
-	"timestamp": "2025-08-14T09:45:35.329+00:00"
+	"timestamp": "2025-08-14T14:07:39.487+00:00"
 }
