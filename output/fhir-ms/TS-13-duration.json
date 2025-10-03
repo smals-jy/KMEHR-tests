@@ -595,22 +595,8 @@
 		{
 			"resourceType": "MedicationStatement",
 			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
-				]
-			},
-			"extension": [
+			"statusReason": [
 				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
-				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				},
-				{
-					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspensions",
 					"extension": [
 						{
 							"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
@@ -624,7 +610,23 @@
 								}
 							]
 						}
-					]
+					],
+					"text": "Temporary suspension from 2023-01-03 to forever"
+				}
+			],
+			"meta": {
+				"profile": [
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+					"valueString": "1"
+				},
+				{
+					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+					"valueCode": "unknown"
 				}
 			],
 			"subject": {
@@ -668,5 +670,5 @@
 		}
 	],
 	"total": 12,
-	"timestamp": "2025-08-14T09:45:35.336+00:00"
+	"timestamp": "2025-08-14T14:07:39.495+00:00"
 }
