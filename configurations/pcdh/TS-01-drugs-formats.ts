@@ -14,7 +14,7 @@ export default function (): PCDHConfiguration {
       firstname: "John",
       ssin: "12345678901",
     },
-    date: "2024-02-06",
+    //date: "2024-02-06",
     deliveries: [
       {
         deliveredAmount: 1,
