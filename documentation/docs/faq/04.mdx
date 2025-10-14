@@ -21,7 +21,8 @@ title: 🧬💊 Merge of MS configurations
 Here is an example. Adapt it to fit your needs : 
 
 ```ts
-import type { Configuration, TransactionConfig } from "../../src/config";
+import type { MSConfiguration } from "@smals-jy/kmehr-tests";
+type TransactionConfig = MSConfiguration['transactions'][number];
 import TS04CDDAYPERIOD from "./TS-04-CD-DAYPERIOD";
 import TS06CDPERIODICITY from "./TS-06-CD-PERIODICITY";
 import TS07BEGIN_END_CONDITIONS from "./TS-07-BEGIN_END_CONDITIONS";
@@ -33,7 +34,7 @@ import TS08THERAPEUTIC_SUSPENSIONS from "./TS-08-THERAPEUTIC_SUSPENSIONS";
 //import TS02 from "./TS-02-posologies.json";
 
 // Payload
-export default function (): Configuration {
+export default function (): MSConfiguration {
     
     let updatedTransactions = [
         //(TS01 as Configuration).transactions,
