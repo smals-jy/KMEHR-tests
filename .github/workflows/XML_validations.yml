@@ -13,7 +13,7 @@ jobs:
       has_ms_files: ${{ steps.check.outputs.has_ms_files }}
     steps:
       - name: 🛎️ Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - name: 📁 Check for MS XML files
         id: check
         run: |
@@ -30,7 +30,7 @@ jobs:
     if: needs.checkForMSXMLFiles.outputs.has_ms_files == 'true'
     steps:
       - name: 🛎️ Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - name: ☕ Install dependencies
         run: sudo apt-get update && sudo apt-get install -y libxml2-utils
       - name: 🤖 Validate MS XML files
@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛎️ Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - name: ☕ Install dependencies
         run: sudo apt-get update && sudo apt-get install -y libxml2-utils
       - name: 🤖 Validate PCDH XML files
@@ -55,7 +55,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛎️ Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - name: ☕ Install dependencies
         run: sudo apt-get update && sudo apt-get install -y libxml2-utils
       - name: 🤖 Validate PCDH Removal XML files
@@ -71,7 +71,7 @@ jobs:
     needs: [wellformedXMLS_MSbasic]
     steps:
       - name: 🛎️ Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         name: 📦 Setup Node.js environment
       - name: ☕ Install dependencies
