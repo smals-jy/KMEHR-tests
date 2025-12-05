@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Project Background
 
-This project originally began as an initiative within the VIDIS project, a key part of RIZIV's (National Institute for Health and Disability Insurance) ongoing efforts to improve eHealth services in Belgium. The VIDIS project, detailed [here](https://www.inami.fgov.be/fr/themes/esante/vidis-partager-les-donnees-sur-les-medicaments-de-facon-electronique), aims to facilitate the electronic sharing of medication data, ensuring more efficient and secure healthcare services.
+This project originally began as an thinking within the VIDIS project, a key part of RIZIV's (National Institute for Health and Disability Insurance) ongoing efforts to improve eHealth services in Belgium. The VIDIS project, detailed [here](https://www.inami.fgov.be/fr/themes/esante/vidis-partager-les-donnees-sur-les-medicaments-de-facon-electronique), aims to facilitate the electronic sharing of medication data, ensuring more efficient and secure healthcare services.
 
 During the development of VIDIS, it became evident that there was a critical need for more up-to-date and configurable testing mechanisms. This was especially important for ensuring that our frontend applications could reliably handle the nuances of the KMEHR format, which is known for its complexity and potential to cause subtle issues if not rigorously tested.
 
@@ -20,7 +20,7 @@ The specific needs that drove the creation of this project included:
 - **Generation of PCDH (FarmaFlux) XML files:** Creating PCDH XML files, which are essential for FarmaFlux integrations.
 - **...**
 
-These requirements highlighted the importance of a dedicated testing framework that could evolve alongside the project, leading to the development of this standalone project.
+These requirements highlighted the importance of a dedicated testing framework that could evolve regardless of the software used, leading to the development of this standalone project. It is thus not enforced or validated by any party mentionned above.
 
 ## Sources of inspiration
 
