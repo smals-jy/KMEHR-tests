@@ -1,0 +1,46 @@
+---
+description: CD-TEMPORALITY
+title: 🕰️ TS-14 - Temporalities
+---
+
+## Description
+
+See if software in test can handle all the authorized [CD-TEMPORALITY](https://www.ehealth.fgov.be/standards/kmehr/en/tables/temporality) by [MS Cookbook](https://www.ehealth.fgov.be/standards/kmehr/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/057e64396c1ea312a0b01607b0f94e4adcf456e8/20210331-safe_cookbook_medicatieschema_v5.8_en.pdf) :
+
+```xml title="Example"
+...
+<transaction>
+    ...
+    <item>
+        <id S="ID-KMEHR" SV="1.0">2</id>
+        <cd S="CD-ITEM" SV="1.11">medication</cd>
+        ...
+        <temporality>
+            <!-- The focus on the test -->
+            <cd "CD-TEMPORALITY" SV="1.0">oneshot</cd>
+        </temporality>
+    </item>
+    ...
+</transaction>
+...
+```
+
+## Test cases
+
+In other words, only a subset of [CD-TEMPORALITY](https://www.ehealth.fgov.be/standards/kmehr/en/tables/temporality) is authorized by [MS Cookbook](https://www.ehealth.fgov.be/standards/kmehr/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/057e64396c1ea312a0b01607b0f94e4adcf456e8/20210331-safe_cookbook_medicatieschema_v5.8_en.pdf) & my experiences :
+    - "acute"
+    - "chronic"
+    - "oneshot"
+
+Anything else (e.g. "ifnecessary") is rejected by vaults
+
+## Files
+
+- [XML file](/output/ms/TS-14-CD-TEMPORALITY.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/ms/TS-14-CD-TEMPORALITY.ts)
+
+## Expected results 
+
+When looking to the patient medication scheme, for each value authorized :
+    - The medication must be present (for easiness, they all have daily periodicity)
+    - The temporality translation to humans should respect [CD-TEMPORALITY](https://www.ehealth.fgov.be/standards/kmehr/en/tables/temporality) table
