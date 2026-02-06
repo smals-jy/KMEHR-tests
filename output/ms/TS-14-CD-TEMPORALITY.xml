@@ -16,11 +16,11 @@
     </sender>
     <recipient>
       <hcparty>
-        <id S="ID-HCPARTY" SV="1.0">11186375004</id>
+        <id S="ID-HCPARTY" SV="1.0">17892144001</id>
         <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
         <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
-        <firstname>Mickey</firstname>
-        <familyname>Mouse</familyname>
+        <firstname>Donald</firstname>
+        <familyname>Duck</familyname>
       </hcparty>
     </recipient>
   </header>
@@ -45,11 +45,11 @@
       <time>13:17:05</time>
       <author>
         <hcparty>
-          <id S="ID-HCPARTY" SV="1.0">11186375004</id>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
           <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
           <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
-          <firstname>Mickey</firstname>
-          <familyname>Mouse</familyname>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
         </hcparty>
       </author>
       <iscomplete>true</iscomplete>
@@ -64,11 +64,11 @@
       <time>13:17:05</time>
       <author>
         <hcparty>
-          <id S="ID-HCPARTY" SV="1.0">45598314401</id>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
           <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
-          <cd S="CD-HCPARTY" SV="1.0">persnurse</cd>
-          <firstname>Piggy</firstname>
-          <familyname>Muppets</familyname>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
         </hcparty>
       </author>
       <iscomplete>true</iscomplete>
@@ -85,14 +85,14 @@
         <id S="ID-KMEHR" SV="1.0">2</id>
         <cd S="CD-ITEM" SV="1.4">medication</cd>
         <content>
-          <compoundprescription L="nl">Drug 0002</compoundprescription>
+          <compoundprescription L="nl">acute</compoundprescription>
         </content>
-        <text L="nl">Drug 0002</text>
+        <text L="nl">acute</text>
         <beginmoment>
-          <date>2020-01-01</date>
+          <date>2026-02-05</date>
         </beginmoment>
         <temporality>
-          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+          <cd S="CD-TEMPORALITY" SV="1.0">acute</cd>
         </temporality>
         <frequency>
           <periodicity>
@@ -100,18 +100,8 @@
           </periodicity>
         </frequency>
         <posology>
-          <text L="nl">Free text posology</text>
+          <text L="nl">...</text>
         </posology>
-      </item>
-      <item>
-        <id S="ID-KMEHR" SV="1.0">3</id>
-        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
-        <content>
-          <cd S="CD-ITEM-MS" SV="1.0">medicationuse</cd>
-        </content>
-        <content>
-          <text L="nl">NO SOFTWARE INFO PRESENT</text>
-        </content>
       </item>
     </transaction>
     <transaction>
@@ -122,15 +112,11 @@
       <time>13:17:05</time>
       <author>
         <hcparty>
-          <id S="LOCAL" SL="endusersoftwareinfo" SV="1.0">helena.care-prescribers</id>
-          <cd S="CD-HCPARTY" SV="1.0">software</cd>
-        </hcparty>
-        <hcparty>
-          <id S="ID-HCPARTY" SV="1.0">11186375004</id>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
           <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
           <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
-          <firstname>Mickey</firstname>
-          <familyname>Mouse</familyname>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
         </hcparty>
       </author>
       <iscomplete>true</iscomplete>
@@ -147,11 +133,11 @@
         <id S="ID-KMEHR" SV="1.0">2</id>
         <cd S="CD-ITEM" SV="1.4">medication</cd>
         <content>
-          <compoundprescription L="nl">Drug 0003</compoundprescription>
+          <compoundprescription L="nl">chronic</compoundprescription>
         </content>
-        <text L="nl">Drug 0003</text>
+        <text L="nl">chronic</text>
         <beginmoment>
-          <date>2020-01-01</date>
+          <date>2026-02-05</date>
         </beginmoment>
         <temporality>
           <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
@@ -162,18 +148,8 @@
           </periodicity>
         </frequency>
         <posology>
-          <text L="nl">Free text posology</text>
+          <text L="nl">...</text>
         </posology>
-      </item>
-      <item>
-        <id S="ID-KMEHR" SV="1.0">3</id>
-        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
-        <content>
-          <cd S="CD-ITEM-MS" SV="1.0">medicationuse</cd>
-        </content>
-        <content>
-          <text L="nl">ONLY SOFTWARE ID PRESENT</text>
-        </content>
       </item>
     </transaction>
     <transaction>
@@ -184,89 +160,11 @@
       <time>13:17:05</time>
       <author>
         <hcparty>
-          <id S="LOCAL" SL="endusersoftwareinfo" SV="1.0">nihdi-vidis-caregiver</id>
-          <cd S="CD-HCPARTY" SV="1.0">software</cd>
-          <name>VIDIS Healthcare Software</name>
-        </hcparty>
-        <hcparty>
-          <id S="ID-HCPARTY" SV="1.0">30019619001</id>
-          <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
-          <cd S="CD-HCPARTY" SV="1.0">persdentist</cd>
-          <firstname>Balthazar</firstname>
-          <familyname>Picsou</familyname>
-        </hcparty>
-      </author>
-      <iscomplete>true</iscomplete>
-      <isvalidated>true</isvalidated>
-      <item>
-        <id S="ID-KMEHR" SV="1.0">1</id>
-        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
-        <content>
-          <cd S="CD-ITEM-MS" SV="1.0">adaptationflag</cd>
-          <cd S="CD-MS-ADAPTATION" SV="1.0">medication</cd>
-        </content>
-      </item>
-      <item>
-        <id S="ID-KMEHR" SV="1.0">2</id>
-        <cd S="CD-ITEM" SV="1.4">medication</cd>
-        <content>
-          <compoundprescription L="nl">Drug 0004</compoundprescription>
-        </content>
-        <text L="nl">Drug 0004</text>
-        <beginmoment>
-          <date>2020-01-01</date>
-        </beginmoment>
-        <temporality>
-          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
-        </temporality>
-        <frequency>
-          <periodicity>
-            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
-          </periodicity>
-        </frequency>
-        <posology>
-          <text L="nl">Free text posology</text>
-        </posology>
-      </item>
-      <item>
-        <id S="ID-KMEHR" SV="1.0">3</id>
-        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
-        <content>
-          <cd S="CD-ITEM-MS" SV="1.0">medicationuse</cd>
-        </content>
-        <content>
-          <text L="nl">SOFTWARE ID &amp; NAME PRESENT</text>
-        </content>
-      </item>
-    </transaction>
-    <transaction>
-      <id S="ID-KMEHR" SV="1.0">5</id>
-      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme/5/1</id>
-      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
-      <date>2026-02-05</date>
-      <time>13:17:05</time>
-      <author>
-        <hcparty>
-          <id S="ID-HCPARTY" SV="1.0">1990000728</id>
-          <cd S="CD-HCPARTY" SV="1.0">hub</cd>
-          <name>RSB</name>
-        </hcparty>
-        <hcparty>
-          <id S="ID-HCPARTY" SV="1.0">80000551</id>
-          <cd S="CD-HCPARTY" SV="1.0">orghospital</cd>
-          <name>U.Z. Brussel</name>
-        </hcparty>
-        <hcparty>
-          <id S="LOCAL" SL="endusersoftwareinfo" SV="1.0">nihdi-vidis-caregiver</id>
-          <cd S="CD-HCPARTY" SV="1.0">software</cd>
-          <name>VIDIS Healthcare Software</name>
-        </hcparty>
-        <hcparty>
-          <id S="ID-HCPARTY" SV="1.0">11186375004</id>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
           <id S="INSS" SV="1.0">XXXXXXXXXXX</id>
           <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
-          <firstname>Mickey</firstname>
-          <familyname>Mouse</familyname>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
         </hcparty>
       </author>
       <iscomplete>true</iscomplete>
@@ -283,14 +181,14 @@
         <id S="ID-KMEHR" SV="1.0">2</id>
         <cd S="CD-ITEM" SV="1.4">medication</cd>
         <content>
-          <compoundprescription L="nl">Drug 0005</compoundprescription>
+          <compoundprescription L="nl">oneshot</compoundprescription>
         </content>
-        <text L="nl">Drug 0005</text>
+        <text L="nl">oneshot</text>
         <beginmoment>
-          <date>2020-01-01</date>
+          <date>2026-02-05</date>
         </beginmoment>
         <temporality>
-          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+          <cd S="CD-TEMPORALITY" SV="1.0">oneshot</cd>
         </temporality>
         <frequency>
           <periodicity>
@@ -298,18 +196,8 @@
           </periodicity>
         </frequency>
         <posology>
-          <text L="nl">Free text posology</text>
+          <text L="nl">...</text>
         </posology>
-      </item>
-      <item>
-        <id S="ID-KMEHR" SV="1.0">3</id>
-        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
-        <content>
-          <cd S="CD-ITEM-MS" SV="1.0">medicationuse</cd>
-        </content>
-        <content>
-          <text L="nl">FULL HCPARTY : author / org / software / hub</text>
-        </content>
       </item>
     </transaction>
   </folder>
