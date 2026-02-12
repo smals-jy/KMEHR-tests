@@ -22,6 +22,7 @@ export default function (): MSConfiguration {
         drugType: "compoundprescription",
         compoundprescriptionText: `${numberToPaddedString(idx + 1)}`,
         periodicity: "D",
+        medicationuse: r,
         posologyFreeText: `${ (r !== undefined) ? "With medicationuse": "Without medicationuse" }`
       },
     })),
