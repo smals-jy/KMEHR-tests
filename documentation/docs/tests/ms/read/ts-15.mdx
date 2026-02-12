@@ -1,0 +1,46 @@
+---
+description: medicationuse
+title: 🚦 TS-15 - medicationuse
+---
+
+
+## Description
+
+See if software in test can handle `medicationuse` element and it usage, as stated in [MS Cookbook](https://www.ehealth.fgov.be/standards/kmehr/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/057e64396c1ea312a0b01607b0f94e4adcf456e8/20210331-safe_cookbook_medicatieschema_v5.8_en.pdf) : 
+
+```xml title="Example"
+...
+<transaction>
+    ...
+    <!-- medicationuse -->
+    <item>
+        <id S="ID-KMEHR" SV="1.0">3</id>
+        <cd S="CD-ITEM" SV="1.11">healthcareelement</cd>
+        <content>
+            <cd S="CD-ITEM-MS" SV="1.0">medicationuse</cd>
+        </content>
+        <content>
+            <!-- The focus on the test -->
+            <text L="nl">For stomachache</text>
+        </content>
+    </item>
+    ...
+</transaction>
+...
+```
+
+## Test cases
+
+- With medicationuse
+- Without medicationuse
+
+## Files
+
+- [XML file](/output/ms/TS-15-medicationuse.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/ms/TS-15-medicationuse.ts)
+
+## Expected results 
+
+For each medication of the test cases :
+    - Medication must be present   
+    - If **medicationuse** is specified, display it (e.g. "For stomachache")   
