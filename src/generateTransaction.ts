@@ -1510,8 +1510,8 @@ function generateMedication(
 function generateItems(config: TransactionConfig, idx: number, commonPrefix: string): Virtual_XML[] {
   let result: Virtual_XML[] = [];
 
-  // First item : the "healthcareelement" for saying "adaptationflag"
-  if (config.adaptationFlag) {
+  // (Optional) first entry : the "healthcareelement" for saying "adaptationflag"
+  if (config.adaptationFlag === true) {
     result.push({
       [addPrefix(commonPrefix, "item")]: generateAdaptationflag(
         commonPrefix,
