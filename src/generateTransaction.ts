@@ -663,6 +663,13 @@ type Common = {
    * @example 3
    */
   suspensionReference?: number;
+  /**
+   * Used in the past to express that medication line was updated
+   *  
+   * @default false
+   * @deprecated
+   */
+  adaptationFlag?: boolean;
 };
 
 export type TransactionConfig = Common;
@@ -1504,12 +1511,14 @@ function generateItems(config: TransactionConfig, idx: number, commonPrefix: str
   let result: Virtual_XML[] = [];
 
   // First item : the "healthcareelement" for saying "adaptationflag"
-  result.push({
-    [addPrefix(commonPrefix, "item")]: generateAdaptationflag(
-      commonPrefix,
-      result.length + 1,
-    ),
-  });
+  if (config.adaptationFlag) {
+    result.push({
+      [addPrefix(commonPrefix, "item")]: generateAdaptationflag(
+        commonPrefix,
+        result.length + 1,
+      ),
+    });
+  }
 
   // (Optional) Second entry, the suspension
   if (config.suspensionReason) {
