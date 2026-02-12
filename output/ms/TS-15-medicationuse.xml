@@ -85,35 +85,20 @@
         <id S="ID-KMEHR" SV="1.0">2</id>
         <cd S="CD-ITEM" SV="1.4">medication</cd>
         <content>
-          <medicinalproduct>
-            <intendedcd S="CD-DRUG-CNK" SV="1.0">2732808</intendedcd>
-            <intendedname>Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56</intendedname>
-          </medicinalproduct>
+          <compoundprescription L="nl">001</compoundprescription>
         </content>
+        <text L="nl">001</text>
         <beginmoment>
-          <date>2099-01-01</date>
+          <date>2026-02-11</date>
         </beginmoment>
-        <temporality>
-          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
-        </temporality>
         <frequency>
           <periodicity>
             <cd S="CD-PERIODICITY" SV="1.0">D</cd>
           </periodicity>
         </frequency>
-        <regimen>
-          <daytime>
-            <dayperiod>
-              <cd S="CD-DAYPERIOD" SV="1.0">morning</cd>
-            </dayperiod>
-          </daytime>
-          <quantity>
-            <decimal>1</decimal>
-            <unit>
-              <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00001</cd>
-            </unit>
-          </quantity>
-        </regimen>
+        <posology>
+          <text L="nl">Without medicationuse</text>
+        </posology>
       </item>
     </transaction>
     <transaction>
@@ -145,35 +130,20 @@
         <id S="ID-KMEHR" SV="1.0">2</id>
         <cd S="CD-ITEM" SV="1.4">medication</cd>
         <content>
-          <medicinalproduct>
-            <intendedcd S="CD-DRUG-CNK" SV="1.0">2933901</intendedcd>
-            <intendedname>Dafalgan 500 mg compr. efferv.</intendedname>
-          </medicinalproduct>
+          <compoundprescription L="nl">002</compoundprescription>
         </content>
+        <text L="nl">002</text>
         <beginmoment>
-          <date>2099-01-01</date>
+          <date>2026-02-11</date>
         </beginmoment>
-        <temporality>
-          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
-        </temporality>
         <frequency>
           <periodicity>
             <cd S="CD-PERIODICITY" SV="1.0">D</cd>
           </periodicity>
         </frequency>
         <posology>
-          <text L="nl">Free text</text>
+          <text L="nl">With medicationuse</text>
         </posology>
-      </item>
-      <item>
-        <id S="ID-KMEHR" SV="1.0">3</id>
-        <cd S="CD-ITEM" SV="1.4">healthcareelement</cd>
-        <content>
-          <cd S="CD-ITEM-MS" SV="1.0">endcondition</cd>
-        </content>
-        <content>
-          <text L="nl">2099-12-30</text>
-        </content>
       </item>
     </transaction>
   </folder>
