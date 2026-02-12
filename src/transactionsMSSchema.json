@@ -95,6 +95,12 @@
 					"examples": [
 						3
 					]
+				},
+				"adaptationFlag": {
+					"type": "boolean",
+					"description": "Used in the past to express that medication line was updated",
+					"default": false,
+					"deprecated": true
 				}
 			},
 			"required": [
