@@ -2,253 +2,401 @@
 description: Temporary or definitive suspensions
 title: 🛑 RIZIV_02 - Suspensions situations
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+# RIZIV_02
+
 ## Description
 
-See if software in test can handle temporary or definitive suspensions, as stated in [MS Cookbook](https://www.ehealth.fgov.be/standards/kmehr/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/057e64396c1ea312a0b01607b0f94e4adcf456e8/20210331-safe_cookbook_medicatieschema_v5.8_en.pdf) 
+This test demonstrates various medication suspension scenarios, both temporary and definitive.
 
-## Files
+### Data source
 
-- [XML file](/output/ms/RIZIV_02.xml)
-- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/ms/RIZIV_02.ts)
+- XML file: [ms-RIZIV_02.xml](https://github.com/smals-jy/KMEHR-tests/blob/main/output/ms/RIZIV_02/ms-RIZIV_02.xml)
+- Configuration: [RIZIV_02.ts](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/ms/RIZIV_02.ts)
 
-## Expected results
-
-When looking to the patient medication scheme, for each scenario as stated in the following table   :
-    - The medication must be present only the expected days
-    - The software should warn users the last day before suspension (so that patients don't take the medication)
-    - The suspension date & reason should be displayed (for example in the details of the medication)
+## Timeline
 
 <Tabs>
+  <TabItem value="timeline" label="Timeline" default>
+    ```mermaid
+    gantt
+        title RIZIV_02 - Medication Suspension Scenarios
+        dateFormat  YYYY-MM-DD
+        axisFormat %d-%m-%Y
 
-    <TabItem value="picture" label="Timeline" default>
+        section Drug 001
 
-        ```mermaid
-        gantt
-            title Therapeutic Suspension
-            dateFormat  DD-MM-YYYY
-            axisFormat %d-%m-%Y
-            %% Simpler to see when events starts
-            tickInterval 2day
-            
-            %% 3 temporary suspensions separated by one day each
-            section "Drug 001 / 014"
-            Active medication :a1, 01-07-2022, 3d
-            Temporary suspension     :crit, active, a2, 04-07-2022, 2d
-            Active medication :a3, 06-07-2022, 1d
-            Temporary suspension     :crit, active, a4, 07-07-2022, 2d
-            Active medication :a5, after a4, 1d
-            Temporary suspension     :crit, active, a6, 10-07-2022, 2d
-            Active medication :after a6, 31-07-2022
-            End of Drug 014  :milestone, 24-07-2022, 1min
+        section Drug 002
+        Temporary suspension :crit, active, 07-02-2026, 19d
 
-            %% 2 temporary suspensions that describes an extended suspension
-            section "Drug 002 / 015"
-            Active medication :b1, 01-07-2022, 3d
-            Temporary suspension     :crit, active, b2, 04-07-2022, 4d
-            Temporary suspension     :crit, active, b3, 08-07-2022, 4d
-            Active medication :after b3, 31-07-2022
-            End of Drug 015  :milestone, 24-07-2022, 1min
+        section Drug 003
+        Active medication :07-02-2026, 3d
+        Temporary suspension :crit, active, 10-02-2026, 16d
 
-            %% 2 temporary suspensions that overlap fully
-            section "Drug 003 / 016"
-            Active medication :c1, 01-07-2022, 3d
-            Temporary suspension     :crit, active, c2, 04-07-2022, 4d
-            Temporary suspension     :crit, active, c3, 04-07-2022, 4d
-            Active medication :after c3, 31-07-2022
-            End of Drug 016  :milestone, 24-07-2022, 1min
+        section Drug 004
+        Active medication :07-02-2026, 3d
+        Temporary suspension :crit, active, 10-02-2026, 6d
 
-            %% 2 temporary suspensions of same length & overlap (A-1,B+1)
-            section "Drug 004 / 017"
-            Active medication :d1, 01-07-2022, 3d
-            Temporary suspension     :crit, active, d2, 04-07-2022, 4d
-            Temporary suspension     :crit, active, d3, 05-07-2022, 4d
-            Active medication :after d3, 31-07-2022
-            End of Drug 017  :milestone, 24-07-2022, 1min
+        section Drug 005
+        Active medication :07-02-2026, 114d
+        Temporary suspension :crit, active, 01-06-2026, 15d
 
-            %% 2 temporary suspensions where the second is included in the first
-            section "Drug 005 / 018"
-            Active medication :e1, 01-07-2022, 3d
-            Temporary suspension     :crit, active, e2, 04-07-2022, 4d
-            Temporary suspension     :crit, active, e3, 06-07-2022, 2d
-            Active medication :after e3, 31-07-2022
-            End of Drug 018  :milestone, 24-07-2022, 1min
+        section Drug 006
+        Active medication :07-02-2026, 11d
+        Temporary suspension :crit, active, 18-02-2026, 26d
 
-            %% 2 temporary suspensions where the first is included in the second
-            section "Drug 006 / 019"
-            Active medication :f1, 01-07-2022, 3d
-            Temporary suspension     :crit, active, f3, 06-07-2022, 2d
-            Temporary suspension     :crit, active, f2, 04-07-2022, 4d
-            Active medication :after f3, 31-07-2022
-            End of Drug 019  :milestone, 24-07-2022, 1min
+        section Drug 007
+        Temporary suspension :crit, active, 07-02-2026, 12d
 
-            %% 1 temporary suspension and afterwards 1 definitive suspension separated by one day each
-            section "Drug 007 / 020"
-            Active medication :g1, 01-07-2022, 1d
-            Temporary suspension :crit, active, g2, 02-07-2022, 2d
-            Active medication :g3, after g2, 1d
-            Definitive suspension :crit, after g3, 31-07-2022
-            Original end of Drug 020 :milestone, 24-07-2022, 1min
+        section Drug 008
+        Active medication :07-02-2026, 3d
+        Definitive suspension :crit, 10-02-2026, 30d
 
-            %% 1 temporary suspension and afterwards 1 definitive suspension directly
-            section "Drug 008 / 021"
-            Active medication :h1, 01-07-2022, 1d
-            Temporary suspension :crit, active, h2, 02-07-2022, 1d
-            Definitive suspension :crit, after h2, 31-07-2022
-            Original end of Drug 021 :milestone, 24-07-2022, 1min
+        section Drug 009
+        Active medication :07-02-2026, 11d
+        Definitive suspension :crit, 18-02-2026, 30d
 
-            %% 1 temporary suspension and 1 definitive suspension that starts within the first suspension
-            section "Drug 009 / 022"
-            Active medication :i1, 01-07-2022, 1d
-            Temporary suspension :crit, active, i2, 02-07-2022, 2d
-            Definitive suspension :crit, 03-07-2022, 31-07-2022
-            Original end of Drug 022 :milestone, 24-07-2022, 1min
+        section Drug 010
+        Active medication :07-02-2026, 36d
+        Definitive suspension :crit, 15-03-2026, 30d
 
-            %% 1 temporary suspension and 1 definitive suspension that starts at the same date
-            section "Drug 010 / 023"
-            Active medication :j1, 01-07-2022, 1d
-            Temporary suspension :crit, active, j2, 02-07-2022, 2d
-            Definitive suspension :crit, 02-07-2022, 31-07-2022
-            Original end of Drug 023 :milestone, 24-07-2022, 1min
+        section Drug 011
+        Definitive suspension (before start) :crit, 05-01-2026, 1d
 
-            %% 1 temporary suspension and 1 definitive suspension, where the second starts before the first one
-            section "Drug 011 / 024"
-            Active medication :01-07-2022, 0d
-            Temporary suspension :crit, active, 02-07-2022, 2d
-            Definitive suspension :crit, 01-07-2022, 31-07-2022
-            Original end of Drug 024 :milestone, 24-07-2022, 1min
+        section Drug 012
+        Active medication :07-02-2026, 224d
+        End of medication :milestone, 18-09-2026, 1min
 
-            %% 2 definitive suspensions where the second starts before the first one
-            section "Drug 012 / 025"
-            Active medication :01-07-2022, 1d
-            Definitive suspension :crit, 05-07-2022, 31-07-2022
-            Definitive suspension :crit, 02-07-2022, 31-07-2022
-            Original end of Drug 025 :milestone, 24-07-2022, 1min
+        section Drug 013
+        Temporary suspension :crit, active, 07-02-2026, 19d
+        Active medication :26-02-2026, 205d
+        End of medication :milestone, 18-09-2026, 1min
 
-            %% 2 definitive suspensions that start at the same time
-            section "Drug 013 / 026"
-            Active medication :01-07-2022, 2d
-            Definitive suspension :crit, 03-07-2022, 31-07-2022
-            Definitive suspension :crit, 03-07-2022, 31-07-2022
-            Original end of Drug 026 :milestone, 24-07-2022, 1min
-        ```
+        section Drug 014
+        Active medication :07-02-2026, 8d
+        Temporary suspension :crit, active, 15-02-2026, 11d
+        Active medication :26-02-2026, 205d
+        End of medication :milestone, 18-09-2026, 1min
 
-    </TabItem>
+        section Drug 015
+        Active medication :07-02-2026, 11d
+        Temporary suspension :crit, active, 18-02-2026, 8d
+        Active medication :26-02-2026, 205d
+        End of medication :milestone, 18-09-2026, 1min
 
-    <TabItem value="mermaid" label="Mermaid code">
+        section Drug 016
+        Active medication :07-02-2026, 3d
+        Temporary suspension :crit, active, 10-02-2026, 9d
+        Active medication :19-02-2026, 212d
+        End of medication :milestone, 18-09-2026, 1min
 
-        ```markup
-        gantt
-            title Therapeutic Suspension
-            dateFormat  DD-MM-YYYY
-            axisFormat %d-%m-%Y
-            %% Simpler to see when events starts
-            tickInterval 2day
-            
-            %% 3 temporary suspensions separated by one day each
-            section "Drug 001 / 014"
-            Active medication :a1, 01-07-2022, 3d
-            Temporary suspension     :crit, active, a2, 04-07-2022, 2d
-            Active medication :a3, 06-07-2022, 1d
-            Temporary suspension     :crit, active, a4, 07-07-2022, 2d
-            Active medication :a5, after a4, 1d
-            Temporary suspension     :crit, active, a6, 10-07-2022, 2d
-            Active medication :after a6, 31-07-2022
-            End of Drug 014  :milestone, 24-07-2022, 1min
+        section Drug 017
+        Active medication :07-02-2026, 114d
+        Temporary suspension :crit, active, 01-06-2026, 15d
+        Active medication :16-06-2026, 95d
+        End of medication :milestone, 18-09-2026, 1min
 
-            %% 2 temporary suspensions that describes an extended suspension
-            section "Drug 002 / 015"
-            Active medication :b1, 01-07-2022, 3d
-            Temporary suspension     :crit, active, b2, 04-07-2022, 4d
-            Temporary suspension     :crit, active, b3, 08-07-2022, 4d
-            Active medication :after b3, 31-07-2022
-            End of Drug 015  :milestone, 24-07-2022, 1min
+        section Drug 018
+        Definitive suspension (before start) :crit, 15-01-2026, 1d
+        Active medication :07-02-2026, 224d
+        End of medication :milestone, 18-09-2026, 1min
 
-            %% 2 temporary suspensions that overlap fully
-            section "Drug 003 / 016"
-            Active medication :c1, 01-07-2022, 3d
-            Temporary suspension     :crit, active, c2, 04-07-2022, 4d
-            Temporary suspension     :crit, active, c3, 04-07-2022, 4d
-            Active medication :after c3, 31-07-2022
-            End of Drug 016  :milestone, 24-07-2022, 1min
+        section Drug 019
+        Active medication :07-02-2026, 8d
+        Definitive suspension :crit, 15-02-2026, 216d
+        End of medication :milestone, 18-09-2026, 1min
 
-            %% 2 temporary suspensions of same length & overlap (A-1,B+1)
-            section "Drug 004 / 017"
-            Active medication :d1, 01-07-2022, 3d
-            Temporary suspension     :crit, active, d2, 04-07-2022, 4d
-            Temporary suspension     :crit, active, d3, 05-07-2022, 4d
-            Active medication :after d3, 31-07-2022
-            End of Drug 017  :milestone, 24-07-2022, 1min
+        section Drug 020
+        Active medication :07-02-2026, 11d
+        Definitive suspension :crit, 18-02-2026, 213d
+        End of medication :milestone, 18-09-2026, 1min
 
-            %% 2 temporary suspensions where the second is included in the first
-            section "Drug 005 / 018"
-            Active medication :e1, 01-07-2022, 3d
-            Temporary suspension     :crit, active, e2, 04-07-2022, 4d
-            Temporary suspension     :crit, active, e3, 06-07-2022, 2d
-            Active medication :after e3, 31-07-2022
-            End of Drug 018  :milestone, 24-07-2022, 1min
+        section Drug 021
+        Active medication :07-02-2026, 114d
+        Definitive suspension :crit, 01-06-2026, 110d
+        End of medication :milestone, 18-09-2026, 1min
 
-            %% 2 temporary suspensions where the first is included in the second
-            section "Drug 006 / 019"
-            Active medication :f1, 01-07-2022, 3d
-            Temporary suspension     :crit, active, f3, 06-07-2022, 2d
-            Temporary suspension     :crit, active, f2, 04-07-2022, 4d
-            Active medication :after f3, 31-07-2022
-            End of Drug 019  :milestone, 24-07-2022, 1min
+        section Drug 022
+        Active medication :07-02-2026, 22d
+        Temporary suspension :crit, active, 01-03-2026, 15d
+        Active medication :16-03-2026, 187d
+        End of medication :milestone, 18-09-2026, 1min
 
-            %% 1 temporary suspension and afterwards 1 definitive suspension separated by one day each
-            section "Drug 007 / 020"
-            Active medication :g1, 01-07-2022, 1d
-            Temporary suspension :crit, active, g2, 02-07-2022, 2d
-            Active medication :g3, after g2, 1d
-            Definitive suspension :crit, after g3, 31-07-2022
-            Original end of Drug 020 :milestone, 24-07-2022, 1min
+        section Drug 023
+        Active medication :07-02-2026, 236d
+        Temporary suspension :crit, active, 01-10-2026, 15d
+        End of medication :milestone, 18-09-2026, 1min
 
-            %% 1 temporary suspension and afterwards 1 definitive suspension directly
-            section "Drug 008 / 021"
-            Active medication :h1, 01-07-2022, 1d
-            Temporary suspension :crit, active, h2, 02-07-2022, 1d
-            Definitive suspension :crit, after h2, 31-07-2022
-            Original end of Drug 021 :milestone, 24-07-2022, 1min
+        section Drug 024
+        Active medication :07-02-2026, 3d
+        Temporary suspension :crit, active, 10-02-2026, 16d
+        Active medication :26-02-2026, 95d
+        Temporary suspension :crit, active, 01-06-2026, 15d
+        Active medication :16-06-2026, 95d
+        End of medication :milestone, 18-09-2026, 1min
 
-            %% 1 temporary suspension and 1 definitive suspension that starts within the first suspension
-            section "Drug 009 / 022"
-            Active medication :i1, 01-07-2022, 1d
-            Temporary suspension :crit, active, i2, 02-07-2022, 2d
-            Definitive suspension :crit, 03-07-2022, 31-07-2022
-            Original end of Drug 022 :milestone, 24-07-2022, 1min
+        section Drug 025
+        Active medication :07-02-2026, 3d
+        Temporary suspension :crit, active, 10-02-2026, 16d
+        Active medication :26-02-2026, 3d
+        Definitive suspension :crit, 01-03-2026, 202d
+        End of medication :milestone, 18-09-2026, 1min
+    ```
+  </TabItem>
+  <TabItem value="mermaid" label="Mermaid code">
+    ```markup
+    gantt
+        title RIZIV_02 - Medication Suspension Scenarios
+        dateFormat  YYYY-MM-DD
+        axisFormat %d-%m-%Y
 
-            %% 1 temporary suspension and 1 definitive suspension that starts at the same date
-            section "Drug 010 / 023"
-            Active medication :j1, 01-07-2022, 1d
-            Temporary suspension :crit, active, j2, 02-07-2022, 2d
-            Definitive suspension :crit, 02-07-2022, 31-07-2022
-            Original end of Drug 023 :milestone, 24-07-2022, 1min
+        section Drug 001
 
-            %% 1 temporary suspension and 1 definitive suspension, where the second starts before the first one
-            section "Drug 011 / 024"
-            Active medication :01-07-2022, 0d
-            Temporary suspension :crit, active, 02-07-2022, 2d
-            Definitive suspension :crit, 01-07-2022, 31-07-2022
-            Original end of Drug 024 :milestone, 24-07-2022, 1min
+        section Drug 002
+        Temporary suspension :crit, active, 07-02-2026, 19d
 
-            %% 2 definitive suspensions where the second starts before the first one
-            section "Drug 012 / 025"
-            Active medication :01-07-2022, 1d
-            Definitive suspension :crit, 05-07-2022, 31-07-2022
-            Definitive suspension :crit, 02-07-2022, 31-07-2022
-            Original end of Drug 025 :milestone, 24-07-2022, 1min
+        section Drug 003
+        Active medication :07-02-2026, 3d
+        Temporary suspension :crit, active, 10-02-2026, 16d
 
-            %% 2 definitive suspensions that start at the same time
-            section "Drug 013 / 026"
-            Active medication :01-07-2022, 2d
-            Definitive suspension :crit, 03-07-2022, 31-07-2022
-            Definitive suspension :crit, 03-07-2022, 31-07-2022
-            Original end of Drug 026 :milestone, 24-07-2022, 1min
-        ```
+        section Drug 004
+        Active medication :07-02-2026, 3d
+        Temporary suspension :crit, active, 10-02-2026, 6d
 
-    </TabItem>
+        section Drug 005
+        Active medication :07-02-2026, 114d
+        Temporary suspension :crit, active, 01-06-2026, 15d
 
+        section Drug 006
+        Active medication :07-02-2026, 11d
+        Temporary suspension :crit, active, 18-02-2026, 26d
+
+        section Drug 007
+        Temporary suspension :crit, active, 07-02-2026, 12d
+
+        section Drug 008
+        Active medication :07-02-2026, 3d
+        Definitive suspension :crit, 10-02-2026, 30d
+
+        section Drug 009
+        Active medication :07-02-2026, 11d
+        Definitive suspension :crit, 18-02-2026, 30d
+
+        section Drug 010
+        Active medication :07-02-2026, 36d
+        Definitive suspension :crit, 15-03-2026, 30d
+
+        section Drug 011
+        Definitive suspension (before start) :crit, 05-01-2026, 1d
+
+        section Drug 012
+        Active medication :07-02-2026, 224d
+        End of medication :milestone, 18-09-2026, 1min
+
+        section Drug 013
+        Temporary suspension :crit, active, 07-02-2026, 19d
+        Active medication :26-02-2026, 205d
+        End of medication :milestone, 18-09-2026, 1min
+
+        section Drug 014
+        Active medication :07-02-2026, 8d
+        Temporary suspension :crit, active, 15-02-2026, 11d
+        Active medication :26-02-2026, 205d
+        End of medication :milestone, 18-09-2026, 1min
+
+        section Drug 015
+        Active medication :07-02-2026, 11d
+        Temporary suspension :crit, active, 18-02-2026, 8d
+        Active medication :26-02-2026, 205d
+        End of medication :milestone, 18-09-2026, 1min
+
+        section Drug 016
+        Active medication :07-02-2026, 3d
+        Temporary suspension :crit, active, 10-02-2026, 9d
+        Active medication :19-02-2026, 212d
+        End of medication :milestone, 18-09-2026, 1min
+
+        section Drug 017
+        Active medication :07-02-2026, 114d
+        Temporary suspension :crit, active, 01-06-2026, 15d
+        Active medication :16-06-2026, 95d
+        End of medication :milestone, 18-09-2026, 1min
+
+        section Drug 018
+        Definitive suspension (before start) :crit, 15-01-2026, 1d
+        Active medication :07-02-2026, 224d
+        End of medication :milestone, 18-09-2026, 1min
+
+        section Drug 019
+        Active medication :07-02-2026, 8d
+        Definitive suspension :crit, 15-02-2026, 216d
+        End of medication :milestone, 18-09-2026, 1min
+
+        section Drug 020
+        Active medication :07-02-2026, 11d
+        Definitive suspension :crit, 18-02-2026, 213d
+        End of medication :milestone, 18-09-2026, 1min
+
+        section Drug 021
+        Active medication :07-02-2026, 114d
+        Definitive suspension :crit, 01-06-2026, 110d
+        End of medication :milestone, 18-09-2026, 1min
+
+        section Drug 022
+        Active medication :07-02-2026, 22d
+        Temporary suspension :crit, active, 01-03-2026, 15d
+        Active medication :16-03-2026, 187d
+        End of medication :milestone, 18-09-2026, 1min
+
+        section Drug 023
+        Active medication :07-02-2026, 236d
+        Temporary suspension :crit, active, 01-10-2026, 15d
+        End of medication :milestone, 18-09-2026, 1min
+
+        section Drug 024
+        Active medication :07-02-2026, 3d
+        Temporary suspension :crit, active, 10-02-2026, 16d
+        Active medication :26-02-2026, 95d
+        Temporary suspension :crit, active, 01-06-2026, 15d
+        Active medication :16-06-2026, 95d
+        End of medication :milestone, 18-09-2026, 1min
+
+        section Drug 025
+        Active medication :07-02-2026, 3d
+        Temporary suspension :crit, active, 10-02-2026, 16d
+        Active medication :26-02-2026, 3d
+        Definitive suspension :crit, 01-03-2026, 202d
+        End of medication :milestone, 18-09-2026, 1min
+    ```
+  </TabItem>
 </Tabs>
+
+## Expected Result
+
+### Drug 001 - Temporary suspension before drug start (ends before drug start)
+- Suspension: 15/01/2026 to 31/01/2026 (temporary)
+- Drug start: 07/02/2026 (no end date)
+- Expected: Drug is active from start date with no interruptions (suspension was before start)
+
+### Drug 002 - Temporary suspension before drug start (extends into drug period)
+- Suspension: 15/01/2026 to 25/02/2026 (temporary)
+- Drug start: 07/02/2026 (no end date)
+- Expected: Drug starts suspended until 25/02/2026, then becomes active
+
+### Drug 003 - Temporary suspension starting shortly after drug start
+- Suspension: 10/02/2026 to 25/02/2026 (temporary)
+- Drug start: 07/02/2026 (no end date)
+- Expected: Drug is active for 3 days, then suspended for 16 days, then active again
+
+### Drug 004 - Short temporary suspension after drug start
+- Suspension: 10/02/2026 to 15/02/2026 (temporary)
+- Drug start: 07/02/2026 (no end date)
+- Expected: Drug is active for 3 days, suspended for 6 days, then active again
+
+### Drug 005 - Temporary suspension well into drug period
+- Suspension: 01/06/2026 to 15/06/2026 (temporary)
+- Drug start: 07/02/2026 (no end date)
+- Expected: Drug is active for 114 days, suspended for 15 days, then active again
+
+### Drug 006 - Temporary suspension at test date
+- Suspension: 18/02/2026 to 15/03/2026 (temporary)
+- Drug start: 07/02/2026 (no end date)
+- Expected: Drug is active for 11 days, suspended for 26 days, then active again
+
+### Drug 007 - Temporary suspension ending at test date
+- Suspension: 15/01/2026 to 18/02/2026 (temporary)
+- Drug start: 07/02/2026 (no end date)
+- Expected: Drug starts suspended for 12 days, then becomes active
+
+### Drug 008 - Definitive suspension shortly after start
+- Suspension: 10/02/2026 (definitive)
+- Drug start: 07/02/2026 (no end date)
+- Expected: Drug is active for 3 days, then definitively suspended
+
+### Drug 009 - Definitive suspension at test date
+- Suspension: 18/02/2026 (definitive)
+- Drug start: 07/02/2026 (no end date)
+- Expected: Drug is active for 11 days, then definitively suspended
+
+### Drug 010 - Definitive suspension later in drug period
+- Suspension: 15/03/2026 (definitive)
+- Drug start: 07/02/2026 (no end date)
+- Expected: Drug is active for 36 days, then definitively suspended
+
+### Drug 011 - Definitive suspension before drug start
+- Suspension: 05/01/2026 (definitive)
+- Drug start: 07/02/2026 (no end date)
+- Expected: Drug is definitively suspended from before start
+
+### Drug 012 - Drug with end date, no overlapping suspensions
+- Drug: 07/02/2026 to 18/09/2026
+- Suspension: 15/01/2026 to 18/01/2026 (temporary, before start)
+- Expected: Drug is active for entire period (224 days)
+
+### Drug 013 - Temporary suspension extends into drug start
+- Drug: 07/02/2026 to 18/09/2026
+- Suspension: 05/02/2026 to 25/02/2026 (temporary)
+- Expected: Drug starts suspended for 19 days, then active for 205 days
+
+### Drug 014 - Temporary suspension after drug start
+- Drug: 07/02/2026 to 18/09/2026
+- Suspension: 15/02/2026 to 25/02/2026 (temporary)
+- Expected: Active 8 days, suspended 11 days, active 205 days
+
+### Drug 015 - Temporary suspension at test date
+- Drug: 07/02/2026 to 18/09/2026
+- Suspension: 18/02/2026 to 25/02/2026 (temporary)
+- Expected: Active 11 days, suspended 8 days, active 205 days
+
+### Drug 016 - Temporary suspension ending before test date
+- Drug: 07/02/2026 to 18/09/2026
+- Suspension: 10/02/2026 to 18/02/2026 (temporary)
+- Expected: Active 3 days, suspended 9 days, active 212 days
+
+### Drug 017 - Temporary suspension mid-period
+- Drug: 07/02/2026 to 18/09/2026
+- Suspension: 01/06/2026 to 15/06/2026 (temporary)
+- Expected: Active 114 days, suspended 15 days, active 95 days
+
+### Drug 018 - Definitive suspension before start (drug still has end date)
+- Drug: 07/02/2026 to 18/09/2026
+- Suspension: 15/01/2026 (definitive, before start)
+- Expected: Drug shows definitive suspension marker, but active period displayed
+
+### Drug 019 - Definitive suspension shortly after start
+- Drug: 07/02/2026 to 18/09/2026
+- Suspension: 15/02/2026 (definitive)
+- Expected: Active 8 days, then definitively suspended for 216 days
+
+### Drug 020 - Definitive suspension at test date
+- Drug: 07/02/2026 to 18/09/2026
+- Suspension: 18/02/2026 (definitive)
+- Expected: Active 11 days, then definitively suspended for 213 days
+
+### Drug 021 - Definitive suspension mid-period
+- Drug: 07/02/2026 to 18/09/2026
+- Suspension: 01/06/2026 (definitive)
+- Expected: Active 114 days, then definitively suspended for 110 days
+
+### Drug 022 - Two temporary suspensions (both within period)
+- Drug: 07/02/2026 to 18/09/2026
+- Suspensions: 15/01/2026 to 20/01/2026 and 01/03/2026 to 15/03/2026
+- Expected: Active 22 days, suspended 15 days, active 187 days
+
+### Drug 023 - Two temporary suspensions (second after end)
+- Drug: 07/02/2026 to 18/09/2026
+- Suspensions: 15/01/2026 to 20/01/2026 and 01/10/2026 to 15/10/2026
+- Expected: Active 236 days, second suspension shows after end
+
+### Drug 024 - Two temporary suspensions (both during period)
+- Drug: 07/02/2026 to 18/09/2026
+- Suspensions: 10/02/2026 to 25/02/2026 and 01/06/2026 to 15/06/2026
+- Expected: Active 3d, suspended 16d, active 95d, suspended 15d, active 95d
+
+### Drug 025 - Temporary suspension followed by definitive
+- Drug: 07/02/2026 to 18/09/2026
+- Suspensions: 10/02/2026 to 25/02/2026 (temporary) and 01/03/2026 (definitive)
+- Expected: Active 3d, suspended 16d, active 3d, definitively suspended 202d
