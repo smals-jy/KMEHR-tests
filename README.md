@@ -1,4 +1,4 @@
-# KMEHR tests
+# KMEHR tests [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/smals-jy/KMEHR-tests)
 
 See more on : https://smals-jy.github.io/KMEHR-tests/
 
