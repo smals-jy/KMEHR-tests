@@ -3,11 +3,11 @@
 	"type": "collection",
 	"entry": [
 		{
-			"resourceType": "MedicationStatement",
+			"resourceType": "BeMedicationLine",
 			"status": "unknown",
 			"meta": {
 				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
 				]
 			},
 			"extension": [
@@ -404,5 +404,5 @@
 		}
 	],
 	"total": 1,
-	"timestamp": "2026-04-09T13:18:27.051+00:00"
+	"timestamp": "2026-04-09T13:32:56.816+00:00"
 }
