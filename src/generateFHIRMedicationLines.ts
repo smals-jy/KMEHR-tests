@@ -105,7 +105,7 @@ export function generatePayload(config: Configuration): Bundle {
     
     return {
         resourceType: "Bundle",
-        type: "collection",
+        type: "searchset",
         entry: resources.map(res => ({
             fullUrl: `urn:uuid:${uuidv4()}`,
             resource: res
