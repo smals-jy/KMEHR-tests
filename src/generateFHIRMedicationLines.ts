@@ -99,10 +99,15 @@ function getCurrentInstant() {
 
 // A Medication scheme contains 0, 1 or * medications
 export function generatePayload(config: Configuration): Bundle {
+
+    const resources = generateBody(config);
+    
     return {
         resourceType: "Bundle",
         type: "collection",
-        entry: generateBody(config),
+        entry: resources.map(res => ({
+            resource: res
+        })),
         total: config.transactions.length || 0,
         timestamp: getCurrentInstant()
     }
