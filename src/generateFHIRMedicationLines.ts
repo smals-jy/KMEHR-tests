@@ -194,12 +194,12 @@ export function generateBody(config: Configuration): MedicationStatement[] {
             }
 
             return {
-                resourceType: "MedicationStatement",
+                resourceType: "BeMedicationLine",
                 status: status,
                 statusReason: (statusReason.length > 0) ? statusReason : undefined,
                 meta: {
                     profile: [
-                        "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationstatement"
+                        "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
                     ]
                 },
                 extension: extensionForLine,
