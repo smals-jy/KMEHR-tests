@@ -1,5 +1,6 @@
 import { opendir, readFile, writeFile } from "fs/promises";
 import { basename } from "path";
+import { v4 as uuidv4 } from "uuid";
 
 import { fromKEMHRRegimenToFHIRDosage, fromKMEHRFreeTextPosologyToFHIRDosage } from "./generateFHIRDosage";
 
@@ -106,6 +107,7 @@ export function generatePayload(config: Configuration): Bundle {
         resourceType: "Bundle",
         type: "collection",
         entry: resources.map(res => ({
+            fullUrl: `urn:uuid:${uuidv4()}`,
             resource: res
         })),
         total: config.transactions.length || 0,
