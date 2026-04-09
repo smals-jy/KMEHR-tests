@@ -6,13 +6,13 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2026-02-16T14:03:30.650+00:00",
+			"authoredOn": "2026-04-09T13:18:27.127+00:00",
 			"substitution": {
 				"allowedBoolean": false
 			},
 			"subject": {
 				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
 					"value": "XXXXXXXXXXX"
 				},
 				"display": "Tasmanian Duck"
@@ -92,7 +92,7 @@
 			"identifier": [
 				{
 					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP08L3A49TF"
+					"value": "BEP0A94BN766"
 				}
 			],
 			"medicationCodeableConcept": {
@@ -108,5 +108,5 @@
 		}
 	],
 	"total": 1,
-	"timestamp": "2026-02-16T14:03:30.651+00:00"
+	"timestamp": "2026-04-09T13:18:27.127+00:00"
 }
