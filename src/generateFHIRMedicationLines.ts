@@ -226,7 +226,7 @@ export function generatePatient(patient?: AuthorConfig) : Reference {
 
     return {
         identifier: {
-            system: "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+            system: "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
             value: ssin
         },
         display: fullname
