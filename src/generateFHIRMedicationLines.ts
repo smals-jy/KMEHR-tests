@@ -199,7 +199,7 @@ export function generateBody(config: Configuration): MedicationStatement[] {
             }
 
             return {
-                resourceType: "BeMedicationLine",
+                resourceType: "MedicationStatement",
                 status: status,
                 statusReason: (statusReason.length > 0) ? statusReason : undefined,
                 meta: {
