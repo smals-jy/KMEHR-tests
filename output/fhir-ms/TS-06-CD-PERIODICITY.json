@@ -3,2970 +3,3074 @@
 	"type": "collection",
 	"entry": [
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "D"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "d"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "D"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 1,
+								"periodUnit": "d"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "DA"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 8,
-							"periodUnit": "d"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "DA"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 8,
+								"periodUnit": "d"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "DD"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 3,
-							"periodUnit": "d"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "DD"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 3,
+								"periodUnit": "d"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "DE"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 11,
-							"periodUnit": "d"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "DE"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 11,
+								"periodUnit": "d"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "DN"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 9,
-							"periodUnit": "d"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "DN"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 9,
+								"periodUnit": "d"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "DQ"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 5,
-							"periodUnit": "d"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "DQ"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 5,
+								"periodUnit": "d"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "DT"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 2,
-							"periodUnit": "d"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "DT"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 2,
+								"periodUnit": "d"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "DV"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 4,
-							"periodUnit": "d"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "DV"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 4,
+								"periodUnit": "d"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "DW"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 12,
-							"periodUnit": "d"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "DW"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 12,
+								"periodUnit": "d"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "DX"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 10,
-							"periodUnit": "d"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "DX"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 10,
+								"periodUnit": "d"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "DZ"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 6,
-							"periodUnit": "d"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "DZ"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 6,
+								"periodUnit": "d"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "J"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "a"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "J"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 1,
+								"periodUnit": "a"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "JD"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 3,
-							"periodUnit": "a"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "JD"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 3,
+								"periodUnit": "a"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "JH2"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 0.5,
-							"periodUnit": "a"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "JH2"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 0.5,
+								"periodUnit": "a"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "JQ"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 5,
-							"periodUnit": "a"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "JQ"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 5,
+								"periodUnit": "a"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "JT"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 2,
-							"periodUnit": "a"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "JT"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 2,
+								"periodUnit": "a"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "JV"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 4,
-							"periodUnit": "a"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "JV"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 4,
+								"periodUnit": "a"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "JZ"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 6,
-							"periodUnit": "a"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "JZ"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 6,
+								"periodUnit": "a"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "M"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "mo"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "M"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 1,
+								"periodUnit": "mo"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "MA"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 8,
-							"periodUnit": "mo"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "MA"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 8,
+								"periodUnit": "mo"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "MC"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 18,
-							"periodUnit": "mo"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "MC"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 18,
+								"periodUnit": "mo"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "MD"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 3,
-							"periodUnit": "mo"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "MD"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 3,
+								"periodUnit": "mo"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "ME"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 11,
-							"periodUnit": "mo"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "ME"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 11,
+								"periodUnit": "mo"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "MN"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 9,
-							"periodUnit": "mo"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "MN"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 9,
+								"periodUnit": "mo"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "MQ"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 5,
-							"periodUnit": "mo"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "MQ"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 5,
+								"periodUnit": "mo"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "MS"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 7,
-							"periodUnit": "mo"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "MS"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 7,
+								"periodUnit": "mo"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "MT"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 2,
-							"periodUnit": "mo"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "MT"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 2,
+								"periodUnit": "mo"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "MV"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 4,
-							"periodUnit": "mo"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "MV"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 4,
+								"periodUnit": "mo"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "MX"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 10,
-							"periodUnit": "mo"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "MX"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 10,
+								"periodUnit": "mo"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "MZ2"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 6,
-							"periodUnit": "mo"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "MZ2"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 6,
+								"periodUnit": "mo"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "O1"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 2,
-							"periodUnit": "d"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "O1"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 2,
+								"periodUnit": "d"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "U"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "h"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "U"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 1,
+								"periodUnit": "h"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "UA"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 8,
-							"periodUnit": "h"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "UA"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 8,
+								"periodUnit": "h"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "UD"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 3,
-							"periodUnit": "h"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "UD"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 3,
+								"periodUnit": "h"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "UH"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 0.5,
-							"periodUnit": "h"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "UH"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 0.5,
+								"periodUnit": "h"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "UT"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 2,
-							"periodUnit": "h"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "UT"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 2,
+								"periodUnit": "h"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "UV"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 4,
-							"periodUnit": "h"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "UV"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 4,
+								"periodUnit": "h"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "UW"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 12,
-							"periodUnit": "h"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "UW"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 12,
+								"periodUnit": "h"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "UZ"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 6,
-							"periodUnit": "h"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "UZ"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 6,
+								"periodUnit": "h"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "W"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 1,
-							"periodUnit": "wk"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "W"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 1,
+								"periodUnit": "wk"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "WA"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 8,
-							"periodUnit": "wk"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "WA"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 8,
+								"periodUnit": "wk"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "WD"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 3,
-							"periodUnit": "wk"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "WD"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 3,
+								"periodUnit": "wk"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "WE"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 11,
-							"periodUnit": "wk"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "WE"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 11,
+								"periodUnit": "wk"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "WN"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 9,
-							"periodUnit": "wk"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "WN"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 9,
+								"periodUnit": "wk"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "WP"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 24,
-							"periodUnit": "wk"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "WP"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 24,
+								"periodUnit": "wk"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "WQ"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 5,
-							"periodUnit": "wk"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "WQ"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 5,
+								"periodUnit": "wk"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "WS"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 7,
-							"periodUnit": "wk"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "WS"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 7,
+								"periodUnit": "wk"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "WT"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 2,
-							"periodUnit": "wk"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "WT"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 2,
+								"periodUnit": "wk"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "WV"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 4,
-							"periodUnit": "wk"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "WV"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 4,
+								"periodUnit": "wk"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "WW"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 12,
-							"periodUnit": "wk"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "WW"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 12,
+								"periodUnit": "wk"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "WX"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 10,
-							"periodUnit": "wk"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "WX"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 10,
+								"periodUnit": "wk"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		},
 		{
-			"resourceType": "BeMedicationLine",
-			"status": "unknown",
-			"meta": {
-				"profile": [
-					"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-				]
-			},
-			"extension": [
-				{
-					"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-					"valueString": "1"
+			"resource": {
+				"resourceType": "BeMedicationLine",
+				"status": "unknown",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
 				},
-				{
-					"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-					"valueCode": "unknown"
-				}
-			],
-			"subject": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Tasmanian Duck"
-			},
-			"informationSource": {
-				"identifier": {
-					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
-				},
-				"display": "Donald Duck"
-			},
-			"medicationCodeableConcept": {
-				"coding": [
+				"extension": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-						"code": "magistral"
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"valueCode": "unknown"
 					}
 				],
-				"text": "WZ"
-			},
-			"dosage": [
-				{
-					"text": "...",
-					"timing": {
-						"repeat": {
-							"frequency": 1,
-							"period": 6,
-							"periodUnit": "wk"
+				"subject": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Tasmanian Duck"
+				},
+				"informationSource": {
+					"identifier": {
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					},
+					"display": "Donald Duck"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+							"code": "magistral"
+						}
+					],
+					"text": "WZ"
+				},
+				"dosage": [
+					{
+						"text": "...",
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 6,
+								"periodUnit": "wk"
+							}
 						}
 					}
+				],
+				"effectivePeriod": {
+					"start": "2015-09-16"
 				}
-			],
-			"effectivePeriod": {
-				"start": "2015-09-16"
 			}
 		}
 	],
 	"total": 52,
-	"timestamp": "2026-04-09T13:32:56.980+00:00"
+	"timestamp": "2026-04-09T13:48:19.639+00:00"
 }
