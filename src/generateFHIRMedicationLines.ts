@@ -109,7 +109,8 @@ export function generateDateTime(
 /**
  * Stable key used to de-duplicate authors.
  * Priority: NIHDI (rizivnr) > SSIN > fallback SSIN constant.
- * This key is also the value used in "PractitionerRole/<key>" references.
+ * This key is also the value used in logical references:
+ *   "Practitioner/<key>"  and  "PractitionerRole/<key>"
  */
 function authorKey(author: AuthorConfig): string {
     return author.nihdi ?? author.ssin ?? PREDEFINED_FIELDS.AUTHOR_SSIN;
@@ -117,8 +118,11 @@ function authorKey(author: AuthorConfig): string {
 
 // ─── FHIR resource builders ───────────────────────────────────────────────────
 
-/** Produces a single FHIR Patient resource with a freshly generated UUID. */
-function buildPatientResource(): { uuid: string; resource: Patient } {
+/**
+ * Produces a single FHIR Patient resource.
+ * fullUrl = "Patient/<PATIENT_SSIN>"
+ */
+function buildPatientResource(): { resource: Patient } {
     const resource: Patient = {
         resourceType: "Patient",
         identifier: [
@@ -136,79 +140,87 @@ function buildPatientResource(): { uuid: string; resource: Patient } {
         birthDate: PREDEFINED_FIELDS.PATIENT_BIRTHDAY,
         gender: PREDEFINED_FIELDS.PATIENT_SEX as Patient["gender"],
     };
-    return { uuid: uuidv4(), resource };
+    return { resource };
 }
 
-/** Produces a FHIR Practitioner resource from an AuthorConfig. */
-function buildPractitionerResource(author: AuthorConfig): {
-    uuid: string;
-    resource: Practitioner;
-} {
-    const identifiers: Practitioner["identifier"] = [];
+/**
+ * Produces a FHIR Practitioner resource from an AuthorConfig.
+ *
+ * Single identifier — priority: NIHDI > SSIN > fallback SSIN.
+ * Returns `identifierValue` so the caller can build:
+ *   fullUrl = "Practitioner/<identifierValue>"
+ */
+function buildPractitionerResource(
+    author: AuthorConfig,
+    configAuthor: AuthorConfig,
+): { identifierValue: string; resource: Practitioner } {
+    // Merge: transaction-level author takes priority over config-level author
+    const resolved: AuthorConfig = { ...configAuthor, ...author };
 
-    if (author.nihdi) {
-        identifiers.push({
-            system: "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
-            value: author.nihdi,
-        });
-    }
+    // Single identifier — NIHDI preferred, then SSIN, then fallback
+    let system: string;
+    let identifierValue: string;
 
-    if (author.ssin) {
-        identifiers.push({
-            system: "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-            value: author.ssin,
-        });
-    }
-
-    if (identifiers.length === 0) {
-        identifiers.push({
-            system: "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-            value: PREDEFINED_FIELDS.AUTHOR_SSIN,
-        });
+    if (resolved.nihdi) {
+        system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi";
+        identifierValue = resolved.nihdi;
+    } else if (resolved.ssin) {
+        system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin";
+        identifierValue = resolved.ssin;
+    } else {
+        system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin";
+        identifierValue = PREDEFINED_FIELDS.AUTHOR_SSIN;
     }
 
     const resource: Practitioner = {
         resourceType: "Practitioner",
-        identifier: identifiers,
+        identifier: [{ system, value: identifierValue }],
         name: [
             {
-                family: author.familyname ?? PREDEFINED_FIELDS.AUTHOR_LASTNAME,
-                given: [author.firstname ?? PREDEFINED_FIELDS.AUTHOR_FIRSTNAME],
+                family: resolved.familyname ?? PREDEFINED_FIELDS.AUTHOR_LASTNAME,
+                given: [resolved.firstname ?? PREDEFINED_FIELDS.AUTHOR_FIRSTNAME],
             },
         ],
     };
-    return { uuid: uuidv4(), resource };
+
+    return { identifierValue, resource };
 }
 
 /**
  * Produces a FHIR PractitionerRole resource.
- * Its `practitioner` field references the paired Practitioner via `urn:uuid`.
+ * `practitioner.reference` = "Practitioner/<practitionerIdentifierValue>"
+ *   matching the Practitioner's fullUrl.
+ * fullUrl for this resource = "PractitionerRole/<authorKey>"
  */
 function buildPractitionerRoleResource(
     author: AuthorConfig,
-    practitionerUuid: string,
-): { uuid: string; resource: PractitionerRole } {
+    configAuthor: AuthorConfig,
+    practitionerIdentifierValue: string,
+): { resource: PractitionerRole } {
+    const resolved: AuthorConfig = { ...configAuthor, ...author };
+
     const resource: PractitionerRole = {
         resourceType: "PractitionerRole",
+        // reference matches "Practitioner/<identifierValue>" fullUrl
         practitioner: {
-            reference: `urn:uuid:${practitionerUuid}`,
+            reference: `Practitioner/${practitionerIdentifierValue}`,
         },
     };
 
-    if (author.type) {
+    if (resolved.type) {
         resource.code = [
             {
                 coding: [
                     {
                         system: "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
-                        code: author.type,
+                        code: resolved.type,
                     },
                 ],
             },
         ];
     }
 
-    return { uuid: uuidv4(), resource };
+    return { resource };
 }
 
 // ─── Suspension helpers ───────────────────────────────────────────────────────
@@ -250,18 +262,21 @@ function buildSuspensionsMap(
 /**
  * Generates a FHIR Bundle (searchset) from a KMEHR-like Configuration.
  *
- * Entry order:
- *  1. One Patient resource  — fullUrl: "Patient/<ssin>"
- *  2. For every unique author:
- *       Practitioner        — fullUrl: "urn:uuid:<practitionerUuid>"
- *       PractitionerRole    — fullUrl: "PractitionerRole/<nihdi|ssin>"
- *  3. One MedicationStatement per non-suspension transaction
- *                           — fullUrl: "urn:uuid:<uuid>"
+ * Entry order + fullUrl pattern:
+ *  1. Patient              → "Patient/<ssin>"
+ *  2. Per unique author:
+ *       Practitioner       → "Practitioner/<nihdi|ssin>"
+ *       PractitionerRole   → "PractitionerRole/<nihdi|ssin>"
+ *  3. MedicationStatement  → "MedicationStatement/<uuid>"
+ *
+ * References inside resources mirror the fullUrl values above.
  */
 export function generatePayload(config: Configuration): Bundle {
 
+    const configAuthor: AuthorConfig = config.author ?? {};
+
     // 1. Patient
-    const { uuid: patientUuid, resource: patientResource } = buildPatientResource();
+    const { resource: patientResource } = buildPatientResource();
 
     // 2. Collect & de-duplicate authors across all non-suspension transactions
     const nonSuspensionTransactions = config.transactions.filter(
@@ -270,7 +285,7 @@ export function generatePayload(config: Configuration): Bundle {
 
     const uniqueAuthors = new Map<string, AuthorConfig>();
     for (const t of nonSuspensionTransactions) {
-        const author = t.author ?? config.author ?? {};
+        const author = t.author ?? configAuthor;
         const key = authorKey(author);
         if (!uniqueAuthors.has(key)) {
             uniqueAuthors.set(key, author);
@@ -279,66 +294,69 @@ export function generatePayload(config: Configuration): Bundle {
 
     // 3. Build Practitioner + PractitionerRole for each unique author
     type AuthorResources = {
-        practitionerUuid: string;
-        practitionerRoleUuid: string;
+        /** Value used in Practitioner.identifier[0].value and in the fullUrl */
+        practitionerIdentifierValue: string;
         practitionerResource: Practitioner;
         practitionerRoleResource: PractitionerRole;
     };
 
     const authorResourceMap = new Map<string, AuthorResources>();
     for (const [key, author] of uniqueAuthors) {
-        const { uuid: practitionerUuid, resource: practitionerResource } =
-            buildPractitionerResource(author);
-        const { uuid: practitionerRoleUuid, resource: practitionerRoleResource } =
-            buildPractitionerRoleResource(author, practitionerUuid);
+        const { identifierValue: practitionerIdentifierValue, resource: practitionerResource } =
+            buildPractitionerResource(author, configAuthor);
+        const { resource: practitionerRoleResource } =
+            buildPractitionerRoleResource(author, configAuthor, practitionerIdentifierValue);
         authorResourceMap.set(key, {
-            practitionerUuid,
-            practitionerRoleUuid,
+            practitionerIdentifierValue,
             practitionerResource,
             practitionerRoleResource,
         });
     }
 
-    // 4. Suspension map (needed when building MedicationStatements)
+    // 4. Suspension map
     const suspensionsMap = buildSuspensionsMap(config);
 
     // 5. MedicationStatements
-    const medicationStatements = nonSuspensionTransactions.map((t, idx) => {
-        const author = t.author ?? config.author ?? {};
-        return buildMedicationStatement(
+    //    Generate the identifier UUID upfront so we can use it as the fullUrl.
+    const medicationEntries = nonSuspensionTransactions.map((t, idx) => {
+        const author = t.author ?? configAuthor;
+        const medicationLineId = uuidv4();
+        const ms = buildMedicationStatement(
             config,
             t,
             idx,
             author,
+            medicationLineId,
             suspensionsMap,
         );
+        return { medicationLineId, ms };
     });
 
-    // 6. Assemble entries
+    // 6. Assemble entries — every fullUrl follows "ResourceType/<mainIdentifier>"
     const entries: BundleEntry[] = [
-        // 6a. Patient — logical reference fullUrl
+        // 6a. Patient
         {
             fullUrl: `Patient/${PREDEFINED_FIELDS.PATIENT_SSIN}`,
             resource: patientResource,
         },
 
         // 6b. Practitioner + PractitionerRole pairs
-        //     Practitioner  → urn:uuid (no stable business identifier on the resource level)
-        //     PractitionerRole → logical reference "PractitionerRole/<nihdi|ssin>"
         ...[...authorResourceMap.entries()].flatMap(([authorId, ar]) => [
             {
-                fullUrl: `urn:uuid:${ar.practitionerUuid}`,
+                // "Practitioner/<nihdi|ssin>" — matches practitioner.identifier[0].value
+                fullUrl: `Practitioner/${ar.practitionerIdentifierValue}`,
                 resource: ar.practitionerResource,
             },
             {
+                // "PractitionerRole/<nihdi|ssin>" — matches informationSource.reference
                 fullUrl: `PractitionerRole/${authorId}`,
                 resource: ar.practitionerRoleResource,
             },
         ]),
 
-        // 6c. MedicationStatements — urn:uuid (no stable business id at entry level)
-        ...medicationStatements.map((ms) => ({
-            fullUrl: `urn:uuid:${uuidv4()}`,
+        // 6c. MedicationStatements — "MedicationStatement/<uuid>"
+        ...medicationEntries.map(({ medicationLineId, ms }) => ({
+            fullUrl: `MedicationStatement/${medicationLineId}`,
             resource: ms,
         })),
     ];
@@ -347,7 +365,7 @@ export function generatePayload(config: Configuration): Bundle {
         resourceType: "Bundle",
         type: "searchset",
         timestamp: getCurrentInstant(),
-        total: medicationStatements.length,
+        total: medicationEntries.length,
         entry: entries,
     };
 }
@@ -359,6 +377,7 @@ function buildMedicationStatement(
     transaction: SingleTransaction,
     idx: number,
     author: AuthorConfig,
+    medicationLineId: string,
     suspensionsMap: Record<string, SuspensionValue[]>,
 ): MedicationStatement {
 
@@ -367,8 +386,8 @@ function buildMedicationStatement(
     // subject  → "Patient/<ssin>"
     const patientSsin = PREDEFINED_FIELDS.PATIENT_SSIN;
 
-    // informationSource → "PractitionerRole/<rizivnr | ssin>"
-    const authorId = author.nihdi ?? author.ssin ?? PREDEFINED_FIELDS.AUTHOR_SSIN;
+    // informationSource → "PractitionerRole/<nihdi|ssin>" (matches fullUrl)
+    const authorId = authorKey(author);
 
     const extensionForLine: Extension[] = [
         {
@@ -429,21 +448,22 @@ function buildMedicationStatement(
                 "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine",
             ],
         },
+        // identifier value == the medicationLineId used as fullUrl suffix
         identifier: [
             {
                 system: "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-                value: uuidv4(),
+                value: medicationLineId,
             },
         ],
         extension: extensionForLine,
         status,
         statusReason: statusReason.length > 0 ? statusReason : undefined,
-        // subject → "Patient/<ssin>"
+        // "Patient/<ssin>" — matches Patient fullUrl
         subject: {
             reference: `Patient/${patientSsin}`,
         },
         dateAsserted: getCurrentInstant(),
-        // informationSource → "PractitionerRole/<rizivnr|ssin>"
+        // "PractitionerRole/<nihdi|ssin>" — matches PractitionerRole fullUrl
         informationSource: {
             reference: `PractitionerRole/${authorId}`,
         },
