@@ -165,7 +165,14 @@ export function generateBody(config: Configuration): MedicationStatement[] {
                 // https://github.com/hl7-be/medication/issues/210
                 {
                     url: "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-                    valueCode: "unknown"
+                    valueCodeableConcept: {
+                        coding: [
+                            {
+                                system: "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusVS",
+                                code: "unknown"
+                            }
+                        ]
+                    }
                 },
                 // 3) the status of registration of the medication line
                 // https://ehealth.fgov.be/standards/fhir/medication/StructureDefinition-BeMedicationLine-definitions.html#MedicationStatement.extension:registrationStatus
