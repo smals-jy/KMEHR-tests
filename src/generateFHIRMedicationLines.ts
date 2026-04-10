@@ -109,6 +109,7 @@ export function generateDateTime(
 /**
  * Stable key used to de-duplicate authors.
  * Priority: NIHDI (rizivnr) > SSIN > fallback SSIN constant.
+ * This key is also the value used in "PractitionerRole/<key>" references.
  */
 function authorKey(author: AuthorConfig): string {
     return author.nihdi ?? author.ssin ?? PREDEFINED_FIELDS.AUTHOR_SSIN;
@@ -250,9 +251,12 @@ function buildSuspensionsMap(
  * Generates a FHIR Bundle (searchset) from a KMEHR-like Configuration.
  *
  * Entry order:
- *  1. One Patient resource
- *  2. For every unique author: one Practitioner + one PractitionerRole
+ *  1. One Patient resource  — fullUrl: "Patient/<ssin>"
+ *  2. For every unique author:
+ *       Practitioner        — fullUrl: "urn:uuid:<practitionerUuid>"
+ *       PractitionerRole    — fullUrl: "PractitionerRole/<nihdi|ssin>"
  *  3. One MedicationStatement per non-suspension transaction
+ *                           — fullUrl: "urn:uuid:<uuid>"
  */
 export function generatePayload(config: Configuration): Bundle {
 
@@ -305,29 +309,34 @@ export function generatePayload(config: Configuration): Bundle {
             config,
             t,
             idx,
-            author,          // ← pass the author so we can build logical references
+            author,
             suspensionsMap,
         );
     });
 
     // 6. Assemble entries
     const entries: BundleEntry[] = [
-        // 6a. Patient
-        { fullUrl: `urn:uuid:${patientUuid}`, resource: patientResource },
+        // 6a. Patient — logical reference fullUrl
+        {
+            fullUrl: `Patient/${PREDEFINED_FIELDS.PATIENT_SSIN}`,
+            resource: patientResource,
+        },
 
-        // 6b. Practitioner + PractitionerRole pairs (one pair per unique author)
-        ...[...authorResourceMap.values()].flatMap((ar) => [
+        // 6b. Practitioner + PractitionerRole pairs
+        //     Practitioner  → urn:uuid (no stable business identifier on the resource level)
+        //     PractitionerRole → logical reference "PractitionerRole/<nihdi|ssin>"
+        ...[...authorResourceMap.entries()].flatMap(([authorId, ar]) => [
             {
                 fullUrl: `urn:uuid:${ar.practitionerUuid}`,
                 resource: ar.practitionerResource,
             },
             {
-                fullUrl: `urn:uuid:${ar.practitionerRoleUuid}`,
+                fullUrl: `PractitionerRole/${authorId}`,
                 resource: ar.practitionerRoleResource,
             },
         ]),
 
-        // 6c. MedicationStatements
+        // 6c. MedicationStatements — urn:uuid (no stable business id at entry level)
         ...medicationStatements.map((ms) => ({
             fullUrl: `urn:uuid:${uuidv4()}`,
             resource: ms,
@@ -349,13 +358,12 @@ function buildMedicationStatement(
     config: Configuration,
     transaction: SingleTransaction,
     idx: number,
-    author: AuthorConfig,            // ← replaces patientUuid + practitionerRoleUuid
+    author: AuthorConfig,
     suspensionsMap: Record<string, SuspensionValue[]>,
 ): MedicationStatement {
 
     const drug = transaction.drug;
 
-    // ── Logical reference values ──────────────────────────────────────────────
     // subject  → "Patient/<ssin>"
     const patientSsin = PREDEFINED_FIELDS.PATIENT_SSIN;
 
@@ -430,12 +438,12 @@ function buildMedicationStatement(
         extension: extensionForLine,
         status,
         statusReason: statusReason.length > 0 ? statusReason : undefined,
-        // ── subject → "Patient/<ssin>" ────────────────────────────────────────
+        // subject → "Patient/<ssin>"
         subject: {
             reference: `Patient/${patientSsin}`,
         },
         dateAsserted: getCurrentInstant(),
-        // ── informationSource → "PractitionerRole/<rizivnr|ssin>" ────────────
+        // informationSource → "PractitionerRole/<rizivnr|ssin>"
         informationSource: {
             reference: `PractitionerRole/${authorId}`,
         },
