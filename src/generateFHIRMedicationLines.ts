@@ -137,6 +137,11 @@ function authorKey(author: AuthorConfig): string {
 function buildPatientResource(): { resource: Patient } {
     const resource: Patient = {
         resourceType: "Patient",
+        meta: {
+           profile: [
+               "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient"
+           ]  
+        },
         identifier: [
             {
                 system: "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
@@ -186,6 +191,11 @@ function buildPractitionerResource(
 
     const resource: Practitioner = {
         resourceType: "Practitioner",
+        meta: {
+           profile: [
+               "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"
+           ]  
+        },
         identifier: [{ system, value: identifierValue }],
         name: [
             {
@@ -213,6 +223,11 @@ function buildPractitionerRoleResource(
 
     const resource: PractitionerRole = {
         resourceType: "PractitionerRole",
+        meta: {
+           profile: [
+               "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"
+           ]  
+        },
         // reference matches "Practitioner/<identifierValue>" fullUrl
         practitioner: {
             reference: `Practitioner/${practitionerIdentifierValue}`,
