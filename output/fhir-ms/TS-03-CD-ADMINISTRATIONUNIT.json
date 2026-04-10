@@ -1,12 +1,63 @@
 {
 	"resourceType": "Bundle",
-	"type": "searchset",
+	"type": "collection",
+	"timestamp": "2026-04-10T15:07:11.228+00:00",
 	"entry": [
 		{
-			"fullUrl": "urn:uuid:0f527240-6336-4a43-8c83-3d6d89675ddd",
+			"fullUrl": "Patient/XXXXXXXXXXX",
+			"resource": {
+				"resourceType": "Patient",
+				"identifier": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					}
+				],
+				"name": [
+					{
+						"family": "Devil",
+						"given": [
+							"Tasmanian"
+						]
+					}
+				],
+				"birthDate": "1992-06-19",
+				"gender": "male"
+			}
+		},
+		{
+			"fullUrl": "Practitioner/XXXXXXXXXXX",
+			"resource": {
+				"resourceType": "Practitioner",
+				"identifier": [
+					{
+						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+						"value": "XXXXXXXXXXX"
+					}
+				],
+				"name": [
+					{
+						"family": "Duck",
+						"given": [
+							"Donald"
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "PractitionerRole/XXXXXXXXXXX",
+			"resource": {
+				"resourceType": "PractitionerRole",
+				"practitioner": {
+					"reference": "Practitioner/XXXXXXXXXXX"
+				}
+			}
+		},
+		{
+			"fullUrl": "MedicationStatement/f73fac71-de11-4b1d-bc9a-201ae8d63936",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -15,7 +66,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "aa763abf-5d17-4878-81a6-b886be27611d"
+						"value": "f73fac71-de11-4b1d-bc9a-201ae8d63936"
 					}
 				],
 				"extension": [
@@ -25,10 +76,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -43,20 +94,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.271+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -115,10 +159,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:8c67ff65-258e-4b30-bb96-1f5d6192f69a",
+			"fullUrl": "MedicationStatement/9ebba7b5-e2f7-4797-b912-bf88d2a40fe1",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -127,7 +170,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "011f0258-8b69-4d79-bf77-7bf440d01c6c"
+						"value": "9ebba7b5-e2f7-4797-b912-bf88d2a40fe1"
 					}
 				],
 				"extension": [
@@ -137,10 +180,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -155,20 +198,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.271+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -227,10 +263,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:c4d96e33-71d2-4eaf-ae63-907fb7c8cd9e",
+			"fullUrl": "MedicationStatement/d745fe23-4ba5-4608-84fe-9e3efa36ba3b",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -239,7 +274,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "101361c9-3393-456f-9fd3-e887b2245993"
+						"value": "d745fe23-4ba5-4608-84fe-9e3efa36ba3b"
 					}
 				],
 				"extension": [
@@ -249,10 +284,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -267,20 +302,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -339,10 +367,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:e8bc7f1b-937a-4eb9-bd85-5ff455c93156",
+			"fullUrl": "MedicationStatement/80780450-6c5d-4bfc-92c5-fa832cac023a",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -351,7 +378,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "c06fb672-f958-498c-a8f0-f15e06a35c2b"
+						"value": "80780450-6c5d-4bfc-92c5-fa832cac023a"
 					}
 				],
 				"extension": [
@@ -361,10 +388,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -379,20 +406,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -451,10 +471,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:992bd741-dc61-4bc7-bbdc-a51ab2da5aad",
+			"fullUrl": "MedicationStatement/28fd3b29-3ca4-47ad-8ad9-15232957801f",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -463,7 +482,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "75f03b61-9024-4cd8-b50f-d85d9258f2c8"
+						"value": "28fd3b29-3ca4-47ad-8ad9-15232957801f"
 					}
 				],
 				"extension": [
@@ -473,10 +492,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -491,20 +510,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -563,10 +575,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:a57d0796-ae8d-4208-8cd4-c921807b4df8",
+			"fullUrl": "MedicationStatement/68a127a3-f80b-4433-8fb0-874ee3776be9",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -575,7 +586,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "a7bd682f-78a5-4596-847e-610b853eee2c"
+						"value": "68a127a3-f80b-4433-8fb0-874ee3776be9"
 					}
 				],
 				"extension": [
@@ -585,10 +596,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -603,20 +614,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -675,10 +679,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:871510e9-96f8-4371-99fe-9f1f3db413f6",
+			"fullUrl": "MedicationStatement/93815184-8f8d-47aa-b337-b7d217e46e33",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -687,7 +690,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "3415efc2-ebe2-43a2-883a-3315181c83d7"
+						"value": "93815184-8f8d-47aa-b337-b7d217e46e33"
 					}
 				],
 				"extension": [
@@ -697,10 +700,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -715,20 +718,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -787,10 +783,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:c28e468c-56b9-47d9-a24a-5ab78b0bd91f",
+			"fullUrl": "MedicationStatement/f17b2858-7017-47b8-a3ae-71ff7b972520",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -799,7 +794,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "57b5bf6a-dc46-4919-8b71-6e693effd5d2"
+						"value": "f17b2858-7017-47b8-a3ae-71ff7b972520"
 					}
 				],
 				"extension": [
@@ -809,10 +804,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -827,20 +822,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -899,10 +887,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:1259219a-cc1b-4cd1-b74f-a923f6cbc720",
+			"fullUrl": "MedicationStatement/8b4b24a9-c09f-4690-ba51-a1a8084b88e2",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -911,7 +898,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "d750e8bf-5a73-47e3-a01b-cfdff3ee56be"
+						"value": "8b4b24a9-c09f-4690-ba51-a1a8084b88e2"
 					}
 				],
 				"extension": [
@@ -921,10 +908,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -939,20 +926,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -1011,10 +991,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:d0350794-9b45-4764-b177-4137f0406331",
+			"fullUrl": "MedicationStatement/9e328cd8-c893-4005-a262-28c69f50f350",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -1023,7 +1002,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "b0393863-04a2-48c0-96c0-e44f6efc21fa"
+						"value": "9e328cd8-c893-4005-a262-28c69f50f350"
 					}
 				],
 				"extension": [
@@ -1033,10 +1012,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -1051,20 +1030,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -1123,10 +1095,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:15ed632e-76c9-451b-9437-7c31ae96dce3",
+			"fullUrl": "MedicationStatement/30d115e0-60f7-407e-bc6f-2659697f4db0",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -1135,7 +1106,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "3a65d710-5086-43ca-a686-3ed85a37e6ee"
+						"value": "30d115e0-60f7-407e-bc6f-2659697f4db0"
 					}
 				],
 				"extension": [
@@ -1145,10 +1116,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -1163,20 +1134,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -1235,10 +1199,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:5b87960c-f297-4c51-9d10-107882087571",
+			"fullUrl": "MedicationStatement/2388995b-566f-4745-845a-f2b5bd38d863",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -1247,7 +1210,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "4d7db215-02ad-4897-8876-7975b3957bff"
+						"value": "2388995b-566f-4745-845a-f2b5bd38d863"
 					}
 				],
 				"extension": [
@@ -1257,10 +1220,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -1275,20 +1238,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -1347,10 +1303,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:b300496a-8d58-476e-bba5-30d69f33e438",
+			"fullUrl": "MedicationStatement/1f93a4a1-3b27-46dc-95d9-1a52a4a39c3d",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -1359,7 +1314,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "cdd7a043-4957-4f8a-8679-ae4d46d7dd5d"
+						"value": "1f93a4a1-3b27-46dc-95d9-1a52a4a39c3d"
 					}
 				],
 				"extension": [
@@ -1369,10 +1324,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -1387,20 +1342,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -1459,10 +1407,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:e1e610b8-71d8-4aee-871d-a22278b5877e",
+			"fullUrl": "MedicationStatement/1d684992-21d8-4d64-929c-4b292d651e20",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -1471,7 +1418,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "f2ba091d-bee0-4bfb-b75f-18ec735f94cf"
+						"value": "1d684992-21d8-4d64-929c-4b292d651e20"
 					}
 				],
 				"extension": [
@@ -1481,10 +1428,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -1499,20 +1446,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -1571,10 +1511,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:bbf823f1-b491-4618-8e41-504508c4a12b",
+			"fullUrl": "MedicationStatement/33f53706-fb7d-4157-876f-42f636b6ebb3",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -1583,7 +1522,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "70888e46-54a7-4328-ae91-73f43cbc5b4d"
+						"value": "33f53706-fb7d-4157-876f-42f636b6ebb3"
 					}
 				],
 				"extension": [
@@ -1593,10 +1532,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -1611,20 +1550,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -1683,10 +1615,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:5c59ca3a-e8d7-4b9e-95d3-5e79c9cf80ce",
+			"fullUrl": "MedicationStatement/fe118736-9a64-4b4a-97e3-8a84780a3113",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -1695,7 +1626,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "f7028cbb-50c1-4d0f-aef0-1e3aef6a4098"
+						"value": "fe118736-9a64-4b4a-97e3-8a84780a3113"
 					}
 				],
 				"extension": [
@@ -1705,10 +1636,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -1723,20 +1654,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -1795,10 +1719,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:de0ae781-fea5-4ca0-9dec-a2761bea5a83",
+			"fullUrl": "MedicationStatement/ba440144-7903-498f-a6c5-41dee1c48091",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -1807,7 +1730,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "9067c736-1a3c-4cfa-a31f-da9ea6e641af"
+						"value": "ba440144-7903-498f-a6c5-41dee1c48091"
 					}
 				],
 				"extension": [
@@ -1817,10 +1740,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -1835,20 +1758,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -1907,10 +1823,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:e9ff83f1-2437-4acb-b648-f192ba90044d",
+			"fullUrl": "MedicationStatement/c9c39910-4276-4297-bfbe-fde91e7d6269",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -1919,7 +1834,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "64d639ad-515f-4387-a568-78a3ca9db96a"
+						"value": "c9c39910-4276-4297-bfbe-fde91e7d6269"
 					}
 				],
 				"extension": [
@@ -1929,10 +1844,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -1947,20 +1862,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -2019,10 +1927,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:3b885356-6107-4b7b-8f50-b0f43509bdb1",
+			"fullUrl": "MedicationStatement/f8ea42ba-4b69-4498-a7e0-bbc89d9cff8d",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -2031,7 +1938,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "837a1227-9b9e-4998-9bea-53affeec8278"
+						"value": "f8ea42ba-4b69-4498-a7e0-bbc89d9cff8d"
 					}
 				],
 				"extension": [
@@ -2041,10 +1948,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -2059,20 +1966,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -2131,10 +2031,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:919a17a1-02fa-454b-819d-8970b982c063",
+			"fullUrl": "MedicationStatement/82065e86-e580-4d8d-a69a-842cbfcaf8b8",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -2143,7 +2042,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "da11c0a7-e136-4475-abce-6199ec21c27a"
+						"value": "82065e86-e580-4d8d-a69a-842cbfcaf8b8"
 					}
 				],
 				"extension": [
@@ -2153,10 +2052,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -2171,20 +2070,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -2243,10 +2135,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:e2d0c1c5-e24b-4243-bd83-698b3d2d7a4b",
+			"fullUrl": "MedicationStatement/62d5bcb3-20d4-4735-9372-4805f9ce832f",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -2255,7 +2146,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "089770cc-4179-46c4-9b68-43dba908d067"
+						"value": "62d5bcb3-20d4-4735-9372-4805f9ce832f"
 					}
 				],
 				"extension": [
@@ -2265,10 +2156,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -2283,20 +2174,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -2355,10 +2239,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:840cbbcb-17cb-4061-8c7a-e77cb3a60ce0",
+			"fullUrl": "MedicationStatement/c8fb9e34-6633-4df8-8860-3c4af6463e46",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -2367,7 +2250,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "e36b502a-de6d-4c57-8e44-e44a501666ed"
+						"value": "c8fb9e34-6633-4df8-8860-3c4af6463e46"
 					}
 				],
 				"extension": [
@@ -2377,10 +2260,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -2395,20 +2278,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -2467,10 +2343,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:92283c91-9ab8-4177-9e46-049f20913d70",
+			"fullUrl": "MedicationStatement/57ff245b-c7de-43e5-a5fd-53247aa8549b",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -2479,7 +2354,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "4563bfeb-3a1d-4f62-9ffd-3f2c70591cfa"
+						"value": "57ff245b-c7de-43e5-a5fd-53247aa8549b"
 					}
 				],
 				"extension": [
@@ -2489,10 +2364,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -2507,20 +2382,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -2579,10 +2447,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:c82b8a4d-1c26-4a3d-a156-f56b87ce45b9",
+			"fullUrl": "MedicationStatement/91cac46b-ec84-4bdb-93cf-ae70fc1b176c",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -2591,7 +2458,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "74162163-283e-4675-a698-59f20f49658e"
+						"value": "91cac46b-ec84-4bdb-93cf-ae70fc1b176c"
 					}
 				],
 				"extension": [
@@ -2601,10 +2468,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -2619,20 +2486,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -2691,10 +2551,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:2213c02c-fb80-4baf-8925-5a571e4f4ff1",
+			"fullUrl": "MedicationStatement/8d27493b-653b-4291-92de-1232695058c9",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -2703,7 +2562,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "8b3ddf21-75b2-4645-a2f8-ed3d00898e83"
+						"value": "8d27493b-653b-4291-92de-1232695058c9"
 					}
 				],
 				"extension": [
@@ -2713,10 +2572,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -2731,20 +2590,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -2803,10 +2655,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:37012d6b-e176-44f5-9e32-195679956a32",
+			"fullUrl": "MedicationStatement/167ae962-3cae-4b42-8282-376439ecdff3",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -2815,7 +2666,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "25d5b8c7-b8fc-4783-97bd-c4260081ddc4"
+						"value": "167ae962-3cae-4b42-8282-376439ecdff3"
 					}
 				],
 				"extension": [
@@ -2825,10 +2676,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -2843,20 +2694,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -2915,10 +2759,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:626fc938-d44b-4bd2-853f-3dde19f90e58",
+			"fullUrl": "MedicationStatement/2742c54e-811c-4a5a-84fc-dd1db5060877",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -2927,7 +2770,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "b833b4e1-4935-4cff-85f3-efc88422fc1e"
+						"value": "2742c54e-811c-4a5a-84fc-dd1db5060877"
 					}
 				],
 				"extension": [
@@ -2937,10 +2780,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -2955,20 +2798,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -3027,10 +2863,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:5b1f0fca-0a8f-4e48-a43a-314ffd5cee0d",
+			"fullUrl": "MedicationStatement/8edc652a-4dfe-4941-9739-430108a343ed",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -3039,7 +2874,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "79e0cd59-6a01-42fd-b988-66e7c24b3f63"
+						"value": "8edc652a-4dfe-4941-9739-430108a343ed"
 					}
 				],
 				"extension": [
@@ -3049,10 +2884,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -3067,20 +2902,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.227+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -3139,10 +2967,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:46c46c6d-e54a-400a-a21e-79c9a3003e03",
+			"fullUrl": "MedicationStatement/16b0832f-a769-40c7-ba40-b7faf6d01dea",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -3151,7 +2978,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "23047e7f-fba1-40cd-a113-5ddfaf9ab1fe"
+						"value": "16b0832f-a769-40c7-ba40-b7faf6d01dea"
 					}
 				],
 				"extension": [
@@ -3161,10 +2988,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -3179,20 +3006,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -3251,10 +3071,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:fea09c54-f6d1-4527-a168-c00c7041c4b7",
+			"fullUrl": "MedicationStatement/2501d127-32eb-4fd3-8bd0-ffaa0f309936",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -3263,7 +3082,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "f499730c-4fe7-472e-bc84-534e71051d97"
+						"value": "2501d127-32eb-4fd3-8bd0-ffaa0f309936"
 					}
 				],
 				"extension": [
@@ -3273,10 +3092,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -3291,20 +3110,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -3363,10 +3175,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:ee3e692d-173b-47d9-bbef-b9e8a4f4a1f6",
+			"fullUrl": "MedicationStatement/c09e6bb7-7784-48ed-80a0-07e2a90551bb",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -3375,7 +3186,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "edd73847-fd79-47e9-a42f-96ad27f008d0"
+						"value": "c09e6bb7-7784-48ed-80a0-07e2a90551bb"
 					}
 				],
 				"extension": [
@@ -3385,10 +3196,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -3403,20 +3214,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -3471,10 +3275,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:d074c7fc-d889-4566-9597-e50de90de2fa",
+			"fullUrl": "MedicationStatement/323c18ac-6c6d-46c9-9b27-75a4b620d1b6",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -3483,7 +3286,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "a268cf15-515a-4b99-a6b0-6ab7594f6f87"
+						"value": "323c18ac-6c6d-46c9-9b27-75a4b620d1b6"
 					}
 				],
 				"extension": [
@@ -3493,10 +3296,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -3511,20 +3314,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -3579,10 +3375,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:bdb9ffec-3569-4039-bcb9-b04b655a40f9",
+			"fullUrl": "MedicationStatement/d0ad4bd0-46a1-4cd7-b926-7fac6e13af6e",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -3591,7 +3386,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "839b2881-a6e7-47a1-8741-ef963e5bc1d4"
+						"value": "d0ad4bd0-46a1-4cd7-b926-7fac6e13af6e"
 					}
 				],
 				"extension": [
@@ -3601,10 +3396,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -3619,20 +3414,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -3687,10 +3475,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:6cda0194-be07-4a47-b21e-5f54bc40ae03",
+			"fullUrl": "MedicationStatement/b2e09056-42f3-47fc-b3ef-d8faed66f78d",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -3699,7 +3486,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "a42c5b3a-1e8a-4dc3-aa43-31ec639889e3"
+						"value": "b2e09056-42f3-47fc-b3ef-d8faed66f78d"
 					}
 				],
 				"extension": [
@@ -3709,10 +3496,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -3727,20 +3514,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -3795,10 +3575,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:6ae392e8-4fc9-4de3-9cf5-07f4fe68d515",
+			"fullUrl": "MedicationStatement/fab29f8f-2fb9-47f3-bc77-72a9b93b0f8a",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -3807,7 +3586,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "31b7906a-fdc7-4fa9-aabe-2e5e4db9a265"
+						"value": "fab29f8f-2fb9-47f3-bc77-72a9b93b0f8a"
 					}
 				],
 				"extension": [
@@ -3817,10 +3596,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -3835,20 +3614,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -3907,10 +3679,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:254802c0-8b86-4391-869d-15b0f05181f7",
+			"fullUrl": "MedicationStatement/ca9ec515-c542-4332-a71b-c1267b828dc2",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -3919,7 +3690,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "a2831edd-2f4f-456b-942d-5436fa6a930d"
+						"value": "ca9ec515-c542-4332-a71b-c1267b828dc2"
 					}
 				],
 				"extension": [
@@ -3929,10 +3700,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -3947,20 +3718,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.272+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -4019,10 +3783,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:3c0f2b10-3dbf-4693-87b9-1f9a7e09e9b7",
+			"fullUrl": "MedicationStatement/7cb40f67-d47d-44c2-9e67-9ba1c1977462",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -4031,7 +3794,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "1426b0c1-8ca9-4877-badf-352b0a828ae2"
+						"value": "7cb40f67-d47d-44c2-9e67-9ba1c1977462"
 					}
 				],
 				"extension": [
@@ -4041,10 +3804,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -4059,20 +3822,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -4127,10 +3883,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:6655cad5-a69e-46c3-b142-d5c56bbbff35",
+			"fullUrl": "MedicationStatement/d84b8cee-00ad-4cd4-b4ba-eb6ee86c4f32",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -4139,7 +3894,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "4fa84f6f-747d-4ea1-bacd-f29ce82e930f"
+						"value": "d84b8cee-00ad-4cd4-b4ba-eb6ee86c4f32"
 					}
 				],
 				"extension": [
@@ -4149,10 +3904,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -4167,20 +3922,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -4239,10 +3987,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:b37664e7-f526-46a9-b0ef-581c918a7ccc",
+			"fullUrl": "MedicationStatement/6e6a4e4d-5983-4054-a97d-0d3bdb4085d0",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -4251,7 +3998,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "703798ec-4367-4c44-a6c3-ca984817a83e"
+						"value": "6e6a4e4d-5983-4054-a97d-0d3bdb4085d0"
 					}
 				],
 				"extension": [
@@ -4261,10 +4008,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -4279,20 +4026,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -4351,10 +4091,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:78115de6-57a1-4c58-9189-4f45ef32a6a3",
+			"fullUrl": "MedicationStatement/e32465bc-28c1-4b9e-82ef-5d063417f0fd",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -4363,7 +4102,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "388d43ff-60c9-47bb-b591-e45d7c1e5ceb"
+						"value": "e32465bc-28c1-4b9e-82ef-5d063417f0fd"
 					}
 				],
 				"extension": [
@@ -4373,10 +4112,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -4391,20 +4130,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -4459,10 +4191,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:9d87d2e8-7bf1-499b-85b4-2a42756fa34f",
+			"fullUrl": "MedicationStatement/59969ea3-2819-4f5f-a7b5-cc26af7e632a",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -4471,7 +4202,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "90ff01cf-77ad-4232-8a0d-c7825668045e"
+						"value": "59969ea3-2819-4f5f-a7b5-cc26af7e632a"
 					}
 				],
 				"extension": [
@@ -4481,10 +4212,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -4499,20 +4230,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -4567,10 +4291,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:1470adbb-c475-423c-a796-942cd2ac01ae",
+			"fullUrl": "MedicationStatement/9c007729-720b-4523-b275-a4630465af4f",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -4579,7 +4302,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "fbbf98dc-7bdb-4708-98f9-5090999f2a7a"
+						"value": "9c007729-720b-4523-b275-a4630465af4f"
 					}
 				],
 				"extension": [
@@ -4589,10 +4312,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -4607,20 +4330,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -4675,10 +4391,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:b0fed96c-a842-4bba-a0bf-21cd1351c497",
+			"fullUrl": "MedicationStatement/270a0590-de5f-47be-a790-7c2d16d7d2d9",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -4687,7 +4402,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "207ad856-113c-4d2d-832d-836fcb150ac0"
+						"value": "270a0590-de5f-47be-a790-7c2d16d7d2d9"
 					}
 				],
 				"extension": [
@@ -4697,10 +4412,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -4715,20 +4430,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -4787,10 +4495,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:c4137018-b329-4158-a8b7-161e1c109ac3",
+			"fullUrl": "MedicationStatement/214de312-b71d-44bb-a4cd-89c9cce7f47e",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -4799,7 +4506,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "04cff4e9-2678-4c0d-b585-867923539b04"
+						"value": "214de312-b71d-44bb-a4cd-89c9cce7f47e"
 					}
 				],
 				"extension": [
@@ -4809,10 +4516,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -4827,20 +4534,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -4899,10 +4599,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:08e09706-4981-4fbe-acf6-dcc34d5e7ffa",
+			"fullUrl": "MedicationStatement/9fc22bf4-2e41-455e-b777-d73a6346c9fb",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -4911,7 +4610,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "acec0837-0b7d-480f-aa20-e5ca96638618"
+						"value": "9fc22bf4-2e41-455e-b777-d73a6346c9fb"
 					}
 				],
 				"extension": [
@@ -4921,10 +4620,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -4939,20 +4638,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -5011,10 +4703,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:7d8fcbe4-f08b-4567-99a6-cf3cd9d0fa04",
+			"fullUrl": "MedicationStatement/99fac9ae-2533-4f01-ab1e-9a477c4a8634",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -5023,7 +4714,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "bc1734a9-ae6e-4ffb-9cca-59f43a64f4e5"
+						"value": "99fac9ae-2533-4f01-ab1e-9a477c4a8634"
 					}
 				],
 				"extension": [
@@ -5033,10 +4724,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -5051,20 +4742,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -5123,10 +4807,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:cfcf8f04-981e-4af2-9c35-63334b4ed1b1",
+			"fullUrl": "MedicationStatement/37288c8f-a8b6-4c91-91f3-85bbf3583c26",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -5135,7 +4818,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "9e6d776c-4526-4bf2-a439-5bba07962399"
+						"value": "37288c8f-a8b6-4c91-91f3-85bbf3583c26"
 					}
 				],
 				"extension": [
@@ -5145,10 +4828,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -5163,20 +4846,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -5235,10 +4911,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:e35390ea-a85b-475b-9a05-b15065e4a51c",
+			"fullUrl": "MedicationStatement/67715936-e9b2-43d1-b912-e8f0de2b3ad1",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -5247,7 +4922,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "4ee49710-8c05-46ee-ae67-eb0cf9d4201f"
+						"value": "67715936-e9b2-43d1-b912-e8f0de2b3ad1"
 					}
 				],
 				"extension": [
@@ -5257,10 +4932,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -5275,20 +4950,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -5347,10 +5015,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:c3371f0a-1602-46a9-9405-53015818f6ac",
+			"fullUrl": "MedicationStatement/6986a9ea-3a74-4a56-91ee-ea7299d742d3",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -5359,7 +5026,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "bb866465-c430-4402-b86c-23e3599ede14"
+						"value": "6986a9ea-3a74-4a56-91ee-ea7299d742d3"
 					}
 				],
 				"extension": [
@@ -5369,10 +5036,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -5387,20 +5054,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -5459,10 +5119,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:b01e9307-3791-45e7-9680-335ee42a1d0b",
+			"fullUrl": "MedicationStatement/d8328051-864f-4dc0-981a-3d0a8f2617c8",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -5471,7 +5130,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "69427ffd-a70c-49d1-9da1-770195a3dd3a"
+						"value": "d8328051-864f-4dc0-981a-3d0a8f2617c8"
 					}
 				],
 				"extension": [
@@ -5481,10 +5140,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -5499,20 +5158,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -5567,10 +5219,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:32104a19-1d60-407b-97a4-222eaa672f7b",
+			"fullUrl": "MedicationStatement/000cdf50-0dfe-4c7d-bed1-26e774dd1f38",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -5579,7 +5230,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "c607a0d4-197b-4437-b61d-22be16c3a816"
+						"value": "000cdf50-0dfe-4c7d-bed1-26e774dd1f38"
 					}
 				],
 				"extension": [
@@ -5589,10 +5240,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -5607,20 +5258,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -5675,10 +5319,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:895c60d6-cc6e-4eb3-bd88-0e36d7b97fd0",
+			"fullUrl": "MedicationStatement/e69a0a9b-b475-490b-a026-361ba8f44baf",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -5687,7 +5330,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "41a9ac31-61d2-4dc8-b215-29fb3ab7d1a3"
+						"value": "e69a0a9b-b475-490b-a026-361ba8f44baf"
 					}
 				],
 				"extension": [
@@ -5697,10 +5340,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -5715,20 +5358,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -5783,10 +5419,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:da0d0681-101e-4616-8ea7-83394430401e",
+			"fullUrl": "MedicationStatement/7eb79545-bc89-46c2-a9ce-f06d3b043668",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -5795,7 +5430,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "540e2335-a6ff-463e-b8a2-90417683c57f"
+						"value": "7eb79545-bc89-46c2-a9ce-f06d3b043668"
 					}
 				],
 				"extension": [
@@ -5805,10 +5440,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -5823,20 +5458,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -5891,10 +5519,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:a5441f9c-329c-4ff7-8a77-ab262cb55fac",
+			"fullUrl": "MedicationStatement/71e9b266-4c20-412c-956e-40bfed921ec5",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -5903,7 +5530,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "3e2f7dbc-d694-4370-aa79-ec923413849a"
+						"value": "71e9b266-4c20-412c-956e-40bfed921ec5"
 					}
 				],
 				"extension": [
@@ -5913,10 +5540,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -5931,20 +5558,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -5999,10 +5619,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:7aab6c75-4d38-4efa-90f1-c6ad579f1bf4",
+			"fullUrl": "MedicationStatement/3005fdab-142d-4469-b056-968aec87e216",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -6011,7 +5630,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "2e27e78c-96af-42c0-a1d8-bac5d864bb27"
+						"value": "3005fdab-142d-4469-b056-968aec87e216"
 					}
 				],
 				"extension": [
@@ -6021,10 +5640,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -6039,20 +5658,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -6107,10 +5719,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:17ebd269-61d9-40cc-b825-9e82bef70bae",
+			"fullUrl": "MedicationStatement/dcbb8efb-ef7e-4cda-832c-23186862de30",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -6119,7 +5730,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "6490734f-2121-49ad-8f2d-1618c9722f1d"
+						"value": "dcbb8efb-ef7e-4cda-832c-23186862de30"
 					}
 				],
 				"extension": [
@@ -6129,10 +5740,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -6147,20 +5758,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -6219,10 +5823,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:c06fdda0-e946-4e5b-8df2-582ec0402216",
+			"fullUrl": "MedicationStatement/542fc2ad-c06f-48eb-b62f-df1dc1a81ce3",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -6231,7 +5834,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "5795b0f6-aae7-495d-97fe-9b75557e36d9"
+						"value": "542fc2ad-c06f-48eb-b62f-df1dc1a81ce3"
 					}
 				],
 				"extension": [
@@ -6241,10 +5844,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -6259,20 +5862,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -6331,10 +5927,9 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:04075d2b-7841-4324-b693-6b6b3f5b7ca3",
+			"fullUrl": "MedicationStatement/1f0cb4d2-65e3-4165-8fa1-68f122af5aaf",
 			"resource": {
 				"resourceType": "MedicationStatement",
-				"status": "unknown",
 				"meta": {
 					"profile": [
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
@@ -6343,7 +5938,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "644612d9-2055-429f-a507-d6d5c2d062af"
+						"value": "1f0cb4d2-65e3-4165-8fa1-68f122af5aaf"
 					}
 				],
 				"extension": [
@@ -6353,10 +5948,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T11:23:58Z"
+						"valueDateTime": "2026-04-10T15:07:11Z"
 					},
 					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -6371,20 +5966,13 @@
 						"valueCode": "recorded"
 					}
 				],
+				"status": "unknown",
 				"subject": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Tasmanian Duck"
+					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T11:23:58.273+00:00",
+				"dateAsserted": "2026-04-10T15:07:11.228+00:00",
 				"informationSource": {
-					"identifier": {
-						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-						"value": "XXXXXXXXXXX"
-					},
-					"display": "Donald Duck"
+					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -6442,7 +6030,5 @@
 				"effectivePeriod": {}
 			}
 		}
-	],
-	"total": 58,
-	"timestamp": "2026-04-10T11:23:58.273+00:00"
+	]
 }
