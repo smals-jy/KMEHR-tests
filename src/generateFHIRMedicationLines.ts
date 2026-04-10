@@ -155,7 +155,7 @@ export function generateBody(config: Configuration): MedicationStatement[] {
             const author : AuthorConfig | undefined = transaction.author || config.author;
 
             let extensionForLine : Extension[] = [
-                // Two mandatory extensions to use at least
+                // Three mandatory extensions to use at least
                 // 1) The version of the medication line, default to 1
                 {
                     url: "http://hl7.org/fhir/StructureDefinition/artifact-version",
@@ -166,6 +166,12 @@ export function generateBody(config: Configuration): MedicationStatement[] {
                 {
                     url: "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
                     valueCode: "unknown"
+                },
+                // 3) the status of registration of the medication line
+                // https://ehealth.fgov.be/standards/fhir/medication/StructureDefinition-BeMedicationLine-definitions.html#MedicationStatement.extension:registrationStatus
+                {
+                    url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
+                    valueCode: "recorded"
                 }
             ]
 
