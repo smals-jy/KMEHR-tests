@@ -261,8 +261,27 @@ export function generateDateTime(config: Configuration, transaction: SingleTrans
     // Logic: Transaction Value >> Config Value >> Today's Default
     const date = transaction.transactionDate || config.date || defaultDate;
     const time = transaction.transactionTime || config.time || defaultTime;
+    const timezone = getTimezoneOffset();
 
-    return `${date}T${time}`
+    return `${date}T${time}${timezone}`
+}
+
+/**
+ * Helper to generate timezone offset in (+|-)HH:MM format
+ * or simply return 'Z' for UTC.
+ */
+function getTimezoneOffset(): string {
+    const now = new Date();
+    const offsetMinutes = now.getTimezoneOffset();
+    
+    if (offsetMinutes === 0) return 'Z';
+
+    const sign = offsetMinutes > 0 ? '-' : '+'; // Note: getTimezoneOffset() is inverted
+    const absMinutes = Math.abs(offsetMinutes);
+    const hours = Math.floor(absMinutes / 60).toString().padStart(2, '0');
+    const minutes = (absMinutes % 60).toString().padStart(2, '0');
+
+    return `${sign}${hours}:${minutes}`;
 }
 
 // To generate the patient block
