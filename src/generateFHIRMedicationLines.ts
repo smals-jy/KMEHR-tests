@@ -363,9 +363,8 @@ export function generatePayload(config: Configuration): Bundle {
 
     return {
         resourceType: "Bundle",
-        type: "searchset",
+        type: "collection",
         timestamp: getCurrentInstant(),
-        total: medicationEntries.length,
         entry: entries,
     };
 }
