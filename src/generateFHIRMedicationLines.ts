@@ -54,7 +54,6 @@ async function processSingleFile(path: string, outputPath: string) {
     let config: Configuration;
     switch (extension) {
         case "ts":
-            // TODO later find out how to use await() instead …
             const module = require(`${path}`).default;
             config = module() as Configuration;
             break;
@@ -109,7 +108,7 @@ export function generateDateTime(
 
 /**
  * Stable key used to de-duplicate authors.
- * Priority: NIHDI > SSIN > fallback SSIN constant.
+ * Priority: NIHDI (rizivnr) > SSIN > fallback SSIN constant.
  */
 function authorKey(author: AuthorConfig): string {
     return author.nihdi ?? author.ssin ?? PREDEFINED_FIELDS.AUTHOR_SSIN;
@@ -160,7 +159,6 @@ function buildPractitionerResource(author: AuthorConfig): {
         });
     }
 
-    // Fallback when neither NIHDI nor SSIN is provided
     if (identifiers.length === 0) {
         identifiers.push({
             system: "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
@@ -196,7 +194,6 @@ function buildPractitionerRoleResource(
         },
     };
 
-    // Carry the CD-HCPARTY type when available
     if (author.type) {
         resource.code = [
             {
@@ -304,13 +301,11 @@ export function generatePayload(config: Configuration): Bundle {
     // 5. MedicationStatements
     const medicationStatements = nonSuspensionTransactions.map((t, idx) => {
         const author = t.author ?? config.author ?? {};
-        const { practitionerRoleUuid } = authorResourceMap.get(authorKey(author))!;
         return buildMedicationStatement(
             config,
             t,
             idx,
-            patientUuid,
-            practitionerRoleUuid,
+            author,          // ← pass the author so we can build logical references
             suspensionsMap,
         );
     });
@@ -354,26 +349,28 @@ function buildMedicationStatement(
     config: Configuration,
     transaction: SingleTransaction,
     idx: number,
-    patientUuid: string,
-    practitionerRoleUuid: string,
+    author: AuthorConfig,            // ← replaces patientUuid + practitionerRoleUuid
     suspensionsMap: Record<string, SuspensionValue[]>,
 ): MedicationStatement {
 
     const drug = transaction.drug;
 
+    // ── Logical reference values ──────────────────────────────────────────────
+    // subject  → "Patient/<ssin>"
+    const patientSsin = PREDEFINED_FIELDS.PATIENT_SSIN;
+
+    // informationSource → "PractitionerRole/<rizivnr | ssin>"
+    const authorId = author.nihdi ?? author.ssin ?? PREDEFINED_FIELDS.AUTHOR_SSIN;
+
     const extensionForLine: Extension[] = [
-        // 1) Version of the medication line
         {
             url: "http://hl7.org/fhir/StructureDefinition/artifact-version",
             valueString: `${transaction.version ?? 1}`,
         },
-        // 2) When the data was recorded
         {
             url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
             valueDateTime: generateDateTime(config, transaction),
         },
-        // 3) Recorder — TODO https://ehealth.fgov.be/standards/fhir/medication/StructureDefinition-BeExtRecorder.html
-        // 4) Adherence (backported from R5)
         {
             url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
             valueCodeableConcept: {
@@ -385,7 +382,6 @@ function buildMedicationStatement(
                 ],
             },
         },
-        // 5) Registration status
         {
             url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
             valueCode: "recorded",
@@ -434,14 +430,14 @@ function buildMedicationStatement(
         extension: extensionForLine,
         status,
         statusReason: statusReason.length > 0 ? statusReason : undefined,
-        // subject → Patient urn:uuid
+        // ── subject → "Patient/<ssin>" ────────────────────────────────────────
         subject: {
-            reference: `urn:uuid:${patientUuid}`,
+            reference: `Patient/${patientSsin}`,
         },
         dateAsserted: getCurrentInstant(),
-        // informationSource → PractitionerRole urn:uuid (not the Practitioner)
+        // ── informationSource → "PractitionerRole/<rizivnr|ssin>" ────────────
         informationSource: {
-            reference: `urn:uuid:${practitionerRoleUuid}`,
+            reference: `PractitionerRole/${authorId}`,
         },
         medicationCodeableConcept: generateDrug(drug, idx),
         dosage:
@@ -452,7 +448,7 @@ function buildMedicationStatement(
     };
 }
 
-// ─── Pure helpers (unchanged logic) ──────────────────────────────────────────
+// ─── Pure helpers ─────────────────────────────────────────────────────────────
 
 function generateEffectivePeriod(entry: MedicationEntry): Period {
     return { start: entry.beginmoment, end: entry.endmoment };
