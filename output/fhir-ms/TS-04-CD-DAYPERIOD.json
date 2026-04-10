@@ -3,7 +3,7 @@
 	"type": "searchset",
 	"entry": [
 		{
-			"fullUrl": "urn:uuid:ecbe9c7d-86de-443c-82ed-2e17cb02c7ce",
+			"fullUrl": "urn:uuid:2d06a40e-8f4d-4dc0-8af9-64ff0bca1e4d",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"status": "unknown",
@@ -12,6 +12,12 @@
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
 					]
 				},
+				"identifier": [
+					{
+						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
+						"value": "63b61956-8710-46dc-a50c-e4020eae1d7c"
+					}
+				],
 				"extension": [
 					{
 						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
@@ -40,7 +46,7 @@
 					},
 					"display": "Tasmanian Duck"
 				},
-				"dateAsserted": "2026-04-10T10:36:25.157+00:00",
+				"dateAsserted": "2026-04-10T10:51:59.129+00:00",
 				"informationSource": {
 					"identifier": {
 						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
@@ -419,5 +425,5 @@
 		}
 	],
 	"total": 1,
-	"timestamp": "2026-04-10T10:36:25.158+00:00"
+	"timestamp": "2026-04-10T10:51:59.129+00:00"
 }
