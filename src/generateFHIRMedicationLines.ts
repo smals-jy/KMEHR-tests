@@ -24,6 +24,8 @@ import type {
 
 import type { OptionsConfig } from "./config";
 
+type SingleTransaction = Configuration['transactions'][number];
+
 export async function generateOutput(filesConfig: OptionsConfig) {
 
     // Constants for file handling
@@ -155,13 +157,20 @@ export function generateBody(config: Configuration): MedicationStatement[] {
             const author : AuthorConfig | undefined = transaction.author || config.author;
 
             let extensionForLine : Extension[] = [
-                // Three mandatory extensions to use at least
+                // 5 mandatory extensions to use at least
                 // 1) The version of the medication line, default to 1
                 {
                     url: "http://hl7.org/fhir/StructureDefinition/artifact-version",
                     valueString: `${transaction.version || 1}`
                 },
-                // 2) The adherence field, backported from R5 : https://hl7.org/fhir/medicationstatement-definitions.html#MedicationStatement.adherence
+                // 2) When the data was recorded
+                {
+                    url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
+                    valueDateTime: generateDateTime(config, transaction)
+                },
+                // 3) Recorder
+                // TODO https://ehealth.fgov.be/standards/fhir/medication/StructureDefinition-BeExtRecorder.html
+                // 4) The adherence field, backported from R5 : https://hl7.org/fhir/medicationstatement-definitions.html#MedicationStatement.adherence
                 // https://github.com/hl7-be/medication/issues/210
                 {
                     url: "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -174,7 +183,7 @@ export function generateBody(config: Configuration): MedicationStatement[] {
                         ]
                     }
                 },
-                // 3) the status of registration of the medication line
+                // 5) the status of registration of the medication line
                 // https://ehealth.fgov.be/standards/fhir/medication/StructureDefinition-BeMedicationLine-definitions.html#MedicationStatement.extension:registrationStatus
                 {
                     url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
@@ -241,6 +250,19 @@ export function generateBody(config: Configuration): MedicationStatement[] {
             }
         })
     
+}
+
+export function generateDateTime(config: Configuration, transaction: SingleTransaction) {
+    // Get current date/time components as fallbacks
+    const now = new Date();
+    const defaultDate = now.toISOString().split('T')[0]; // YYYY-MM-DD
+    const defaultTime = now.toTimeString().split(' ')[0]; // HH:MM:SS
+
+    // Logic: Transaction Value >> Config Value >> Today's Default
+    const date = transaction.transactionDate || config.date || defaultDate;
+    const time = transaction.transactionTime || config.time || defaultTime;
+
+    return `${date}T${time}`
 }
 
 // To generate the patient block
