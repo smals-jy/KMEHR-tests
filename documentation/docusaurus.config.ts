@@ -9,32 +9,26 @@ const config: Config = {
 
   // Set the production url of your site here
   url: process.env.GITHUB_ORIGIN || "http://localhost:3000",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: process.env.GITHUB_BASE || "/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'smals-jy', // Usually your GitHub org/user name.
-  projectName: 'KMEHR-tests', // Usually your repo name.
+  organizationName: 'smals-jy',
+  projectName: 'KMEHR-tests',
 
   onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn', // Moved from markdown.hooks for standard practice
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
 
-  // Enable Mermaid
   markdown: {
     mermaid: true,
-    hooks: {
-      onBrokenMarkdownLinks: 'warn'
-    }
+    // Docusaurus 3+ uses MDX 3, which is more strict about CommonMark specs
+    format: 'detect', 
   },
+
+  // Mermaid is a theme, but it also requires the markdown setting above
   themes: ['@docusaurus/theme-mermaid'],
 
   presets: [
@@ -43,12 +37,9 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/smals-jy/KMEHR-tests/tree/main/documentation/',
         },
-        // Optional: disable the blog plugin
         blog: false,
         theme: {
           customCss: './src/css/custom.css',
@@ -58,15 +49,13 @@ const config: Config = {
   ],
 
   themeConfig: {
+    // Algolia configuration remains the same
     algolia: {
-      // The application ID provided by Algolia
       appId: '01EEAZMA4Z',
-      // Public API key: it is safe to commit it
       apiKey: '9122cf65f23c2c1c43e2115c201c8302',
       indexName: 'smals-jyio',
+      contextualSearch: true, // Recommended for better results
     },
-    // Replace with your project's social card
-    //image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'KMEHR-tests',
       logo: {
@@ -95,7 +84,12 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ["bash", "markup", "typescript", "properties"]
+      // 'markup' includes XML/HTML, which is essential for KMEHR files
+      additionalLanguages: ["bash", "markup", "typescript", "properties", "json"],
+    },
+    // Added specific mermaid config for better visual control in 3.10
+    mermaid: {
+      theme: {light: 'neutral', dark: 'forest'},
     },
   } satisfies Preset.ThemeConfig,
 };
