@@ -173,7 +173,7 @@ export function generateBody(config: Configuration): MedicationStatement[] {
                 // 4) The adherence field, backported from R5 : https://hl7.org/fhir/medicationstatement-definitions.html#MedicationStatement.adherence
                 // https://github.com/hl7-be/medication/issues/210
                 {
-                    url: "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+                    url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
                     valueCodeableConcept: {
                         coding: [
                             {
