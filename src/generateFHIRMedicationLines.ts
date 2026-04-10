@@ -27,6 +27,17 @@ import type {
 
 type SingleTransaction = Configuration["transactions"][number];
 
+/**
+ * Default physician used when neither transaction.author nor config.author is defined.
+ * All fields are sourced from PREDEFINED_FIELDS (predefined constants).
+ */
+const DEFAULT_AUTHOR: AuthorConfig = {
+    nihdi: PREDEFINED_FIELDS.AUTHOR_NIHDI,
+    firstname: PREDEFINED_FIELDS.AUTHOR_FIRSTNAME,
+    familyname: PREDEFINED_FIELDS.AUTHOR_LASTNAME,
+    type: PREDEFINED_FIELDS.AUTHOR_TYPE,
+};
+
 // ─── File I/O ─────────────────────────────────────────────────────────────────
 
 export async function generateOutput(filesConfig: OptionsConfig) {
@@ -263,6 +274,11 @@ function buildSuspensionsMap(
 /**
  * Generates a FHIR Bundle (searchset) from a KMEHR-like Configuration.
  *
+ * Author resolution priority (highest → lowest):
+ *  1. transaction.author  — per-transaction override
+ *  2. config.author       — file-level default
+ *  3. DEFAULT_AUTHOR      — predefined physician (PREDEFINED_FIELDS constants)
+ *
  * Entry order + fullUrl pattern:
  *  1. Patient              → "Patient/<ssin>"
  *  2. Per unique author:
@@ -274,7 +290,10 @@ function buildSuspensionsMap(
  */
 export function generatePayload(config: Configuration): Bundle {
 
-    const configAuthor: AuthorConfig = config.author ?? {};
+    // config.author takes precedence over DEFAULT_AUTHOR (predefined physician).
+    // When config.author is also absent, DEFAULT_AUTHOR ensures a well-known
+    // physician (Donald Duck / NIHDI 17892144001 / persphysician) is always used.
+    const configAuthor: AuthorConfig = config.author ?? DEFAULT_AUTHOR;
 
     // 1. Patient
     const { resource: patientResource } = buildPatientResource();
@@ -286,6 +305,7 @@ export function generatePayload(config: Configuration): Bundle {
 
     const uniqueAuthors = new Map<string, AuthorConfig>();
     for (const t of nonSuspensionTransactions) {
+        // transaction.author → configAuthor (which is already DEFAULT_AUTHOR when omitted)
         const author = t.author ?? configAuthor;
         const key = authorKey(author);
         if (!uniqueAuthors.has(key)) {
