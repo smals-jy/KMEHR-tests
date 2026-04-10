@@ -3,7 +3,7 @@
 	"type": "searchset",
 	"entry": [
 		{
-			"fullUrl": "urn:uuid:d4302429-2bdf-4ab2-8a4d-6fd9318ab4c7",
+			"fullUrl": "urn:uuid:a8e0e3c4-1dff-436e-8b9c-8024acd85bb5",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"status": "unknown",
@@ -19,7 +19,14 @@
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"valueCode": "unknown"
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusVS",
+									"code": "unknown"
+								}
+							]
+						}
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
@@ -33,7 +40,7 @@
 					},
 					"display": "Tasmanian Duck"
 				},
-				"dateAsserted": "2026-04-10T09:41:27.894+00:00",
+				"dateAsserted": "2026-04-10T10:04:51.180+00:00",
 				"informationSource": {
 					"identifier": {
 						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
@@ -78,7 +85,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:3b2b4209-3b34-4c35-9a69-b59daa6f73c2",
+			"fullUrl": "urn:uuid:c81cbcd9-c0c8-4956-b8c7-6dee9265a65b",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"status": "unknown",
@@ -94,7 +101,14 @@
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"valueCode": "unknown"
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusVS",
+									"code": "unknown"
+								}
+							]
+						}
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
@@ -108,7 +122,7 @@
 					},
 					"display": "Tasmanian Duck"
 				},
-				"dateAsserted": "2026-04-10T09:41:27.894+00:00",
+				"dateAsserted": "2026-04-10T10:04:51.181+00:00",
 				"informationSource": {
 					"identifier": {
 						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
@@ -145,5 +159,5 @@
 		}
 	],
 	"total": 2,
-	"timestamp": "2026-04-10T09:41:27.894+00:00"
+	"timestamp": "2026-04-10T10:04:51.181+00:00"
 }
