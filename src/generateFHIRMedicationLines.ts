@@ -168,7 +168,7 @@ export function generateBody(config: Configuration): MedicationStatement[] {
                     valueCodeableConcept: {
                         coding: [
                             {
-                                system: "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusVS",
+                                system: "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
                                 code: "unknown"
                             }
                         ]
