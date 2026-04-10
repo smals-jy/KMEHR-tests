@@ -3,7 +3,7 @@
 	"type": "searchset",
 	"entry": [
 		{
-			"fullUrl": "urn:uuid:f28917f0-b3de-4815-928f-6e427fce98a3",
+			"fullUrl": "urn:uuid:8ae99290-ec2b-41ca-bf4d-7a8396e8fa90",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"status": "unknown",
@@ -12,6 +12,12 @@
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
 					]
 				},
+				"identifier": [
+					{
+						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
+						"value": "302267b2-2cca-44e3-9fd5-d378fca682da"
+					}
+				],
 				"extension": [
 					{
 						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
@@ -40,7 +46,7 @@
 					},
 					"display": "Tasmanian Duck"
 				},
-				"dateAsserted": "2026-04-10T10:36:25.333+00:00",
+				"dateAsserted": "2026-04-10T10:51:59.296+00:00",
 				"informationSource": {
 					"identifier": {
 						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
@@ -73,7 +79,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:baa8f9de-0a12-4f84-aa9a-a5e6d68c3023",
+			"fullUrl": "urn:uuid:5cc88505-acdf-4e12-a23f-609d82fe1df6",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"status": "unknown",
@@ -82,6 +88,12 @@
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
 					]
 				},
+				"identifier": [
+					{
+						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
+						"value": "71502575-f3a0-4f56-adc8-9e6644236963"
+					}
+				],
 				"extension": [
 					{
 						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
@@ -110,7 +122,7 @@
 					},
 					"display": "Tasmanian Duck"
 				},
-				"dateAsserted": "2026-04-10T10:36:25.333+00:00",
+				"dateAsserted": "2026-04-10T10:51:59.296+00:00",
 				"informationSource": {
 					"identifier": {
 						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
@@ -144,5 +156,5 @@
 		}
 	],
 	"total": 2,
-	"timestamp": "2026-04-10T10:36:25.333+00:00"
+	"timestamp": "2026-04-10T10:51:59.296+00:00"
 }

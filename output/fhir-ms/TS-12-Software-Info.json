@@ -3,7 +3,7 @@
 	"type": "searchset",
 	"entry": [
 		{
-			"fullUrl": "urn:uuid:a7769181-43b0-44a7-a4ee-ae619903e012",
+			"fullUrl": "urn:uuid:379ec800-bc29-400e-a855-9037bcc81b71",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"status": "unknown",
@@ -12,6 +12,12 @@
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
 					]
 				},
+				"identifier": [
+					{
+						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
+						"value": "d2ff7a5a-ad5e-454d-b7ae-86d01d9353fd"
+					}
+				],
 				"extension": [
 					{
 						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
@@ -40,7 +46,7 @@
 					},
 					"display": "Tasmanian Duck"
 				},
-				"dateAsserted": "2026-04-10T10:36:25.273+00:00",
+				"dateAsserted": "2026-04-10T10:51:59.234+00:00",
 				"informationSource": {
 					"identifier": {
 						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
@@ -75,7 +81,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:9e754013-fc79-410f-84a6-bd9a447dba62",
+			"fullUrl": "urn:uuid:bb1c1ed7-42d2-4a6c-bf33-cc7d329da2b7",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"status": "unknown",
@@ -84,6 +90,12 @@
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
 					]
 				},
+				"identifier": [
+					{
+						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
+						"value": "75fbbbbe-f150-432e-8bfb-3a85b1ec264e"
+					}
+				],
 				"extension": [
 					{
 						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
@@ -112,7 +124,7 @@
 					},
 					"display": "Tasmanian Duck"
 				},
-				"dateAsserted": "2026-04-10T10:36:25.273+00:00",
+				"dateAsserted": "2026-04-10T10:51:59.234+00:00",
 				"informationSource": {
 					"identifier": {
 						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
@@ -147,7 +159,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:b8ebaa4b-2341-4e07-a453-3f17e6647a2b",
+			"fullUrl": "urn:uuid:8477d157-33df-4ef1-9213-15a795d1566f",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"status": "unknown",
@@ -156,6 +168,12 @@
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
 					]
 				},
+				"identifier": [
+					{
+						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
+						"value": "d3b2ecbf-f792-4bdc-88a0-1e4f26818c0b"
+					}
+				],
 				"extension": [
 					{
 						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
@@ -184,7 +202,7 @@
 					},
 					"display": "Tasmanian Duck"
 				},
-				"dateAsserted": "2026-04-10T10:36:25.273+00:00",
+				"dateAsserted": "2026-04-10T10:51:59.234+00:00",
 				"informationSource": {
 					"identifier": {
 						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
@@ -219,7 +237,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:7e87fc67-6a07-4d8a-ac09-ba0692da5a29",
+			"fullUrl": "urn:uuid:363ed2d8-3b66-41f8-81ed-89fab76d84dc",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"status": "unknown",
@@ -228,6 +246,12 @@
 						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
 					]
 				},
+				"identifier": [
+					{
+						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
+						"value": "d7410edf-fddf-4e01-8977-6416ff917d18"
+					}
+				],
 				"extension": [
 					{
 						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
@@ -256,7 +280,7 @@
 					},
 					"display": "Tasmanian Duck"
 				},
-				"dateAsserted": "2026-04-10T10:36:25.273+00:00",
+				"dateAsserted": "2026-04-10T10:51:59.234+00:00",
 				"informationSource": {
 					"identifier": {
 						"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
@@ -292,5 +316,5 @@
 		}
 	],
 	"total": 4,
-	"timestamp": "2026-04-10T10:36:25.273+00:00"
+	"timestamp": "2026-04-10T10:51:59.235+00:00"
 }
