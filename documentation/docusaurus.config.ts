@@ -25,7 +25,10 @@ const config: Config = {
   markdown: {
     mermaid: true,
     // Docusaurus 3+ uses MDX 3, which is more strict about CommonMark specs
-    format: 'detect', 
+    format: 'detect',
+    hooks: {
+          onBrokenMarkdownLinks: 'warn'
+    }
   },
 
   // Mermaid is a theme, but it also requires the markdown setting above
