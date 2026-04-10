@@ -211,6 +211,7 @@ export function generateBody(config: Configuration): MedicationStatement[] {
                 },
                 extension: extensionForLine,
                 subject: generatePatient(),
+                dateAsserted: getCurrentInstant(),
                 informationSource: generateAuthor(author),
                 medicationCodeableConcept: generateDrug(drug, idx),
                 dosage : drug.regimen === undefined 
