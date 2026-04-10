@@ -222,6 +222,13 @@ export function generateBody(config: Configuration): MedicationStatement[] {
                         "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
                     ]
                 },
+                identifier: [
+                    {
+                        system: "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
+                        // TODO specs unclear about the generation, but let's pick up a basic strategy from now
+                        value: `${uuidv4()}`
+                    }
+                ],    
                 extension: extensionForLine,
                 subject: generatePatient(),
                 dateAsserted: getCurrentInstant(),
