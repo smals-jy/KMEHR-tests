@@ -15,7 +15,6 @@ const config: Config = {
   projectName: 'KMEHR-tests',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn', // Moved from markdown.hooks for standard practice
 
   i18n: {
     defaultLocale: 'en',
