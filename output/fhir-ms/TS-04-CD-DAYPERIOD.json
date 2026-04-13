@@ -1,7 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"type": "collection",
-	"timestamp": "2026-04-10T20:36:52.139+00:00",
+	"timestamp": "2026-04-13T07:00:31.284+00:00",
 	"entry": [
 		{
 			"fullUrl": "Patient/XXXXXXXXXXX",
@@ -25,9 +25,7 @@
 							"Tasmanian"
 						]
 					}
-				],
-				"birthDate": "1992-06-19",
-				"gender": "male"
+				]
 			}
 		},
 		{
@@ -80,7 +78,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/7aab8982-67fd-4b4b-bd21-1a4717641075",
+			"fullUrl": "MedicationStatement/cbdb99a7-c9cb-449b-94f6-19d3e5c02ac0",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -91,7 +89,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "7aab8982-67fd-4b4b-bd21-1a4717641075"
+						"value": "cbdb99a7-c9cb-449b-94f6-19d3e5c02ac0"
 					}
 				],
 				"extension": [
@@ -101,7 +99,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T20:36:52Z"
+						"valueDateTime": "2026-04-13T07:00:31Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -123,7 +121,7 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T20:36:52.138+00:00",
+				"dateAsserted": "2026-04-13T07:00:31.284+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
