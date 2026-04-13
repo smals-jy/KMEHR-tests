@@ -1,7 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"type": "collection",
-	"timestamp": "2026-04-10T20:36:52.288+00:00",
+	"timestamp": "2026-04-13T07:00:31.444+00:00",
 	"entry": [
 		{
 			"fullUrl": "Patient/XXXXXXXXXXX",
@@ -25,9 +25,7 @@
 							"Tasmanian"
 						]
 					}
-				],
-				"birthDate": "1992-06-19",
-				"gender": "male"
+				]
 			}
 		},
 		{
@@ -80,7 +78,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/ebe356f3-2f68-421d-907d-1b44f233a67a",
+			"fullUrl": "MedicationStatement/e39a7cee-d0a7-4bf9-8b17-fb792c09f6e3",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -91,7 +89,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "ebe356f3-2f68-421d-907d-1b44f233a67a"
+						"value": "e39a7cee-d0a7-4bf9-8b17-fb792c09f6e3"
 					}
 				],
 				"extension": [
@@ -101,7 +99,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T20:36:52Z"
+						"valueDateTime": "2026-04-13T07:00:31Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -123,7 +121,7 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T20:36:52.288+00:00",
+				"dateAsserted": "2026-04-13T07:00:31.444+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
@@ -152,7 +150,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/1aa42062-80fc-4fec-a42b-771c297cca9a",
+			"fullUrl": "MedicationStatement/84e6908f-b27d-4e85-9a2f-8bcff81ed433",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -163,7 +161,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "1aa42062-80fc-4fec-a42b-771c297cca9a"
+						"value": "84e6908f-b27d-4e85-9a2f-8bcff81ed433"
 					}
 				],
 				"extension": [
@@ -173,7 +171,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-10T20:36:52Z"
+						"valueDateTime": "2026-04-13T07:00:31Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -195,7 +193,7 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-10T20:36:52.288+00:00",
+				"dateAsserted": "2026-04-13T07:00:31.444+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
