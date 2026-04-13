@@ -153,9 +153,7 @@ function buildPatientResource(): { resource: Patient } {
                 family: PREDEFINED_FIELDS.PATIENT_LASTNAME,
                 given: [PREDEFINED_FIELDS.PATIENT_FIRSTNAME],
             },
-        ],
-        birthDate: PREDEFINED_FIELDS.PATIENT_BIRTHDAY,
-        gender: PREDEFINED_FIELDS.PATIENT_SEX as Patient["gender"],
+        ]
     };
     return { resource };
 }
