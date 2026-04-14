@@ -6,7 +6,7 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2026-04-13T07:00:31.267+00:00",
+			"authoredOn": "2026-04-14T12:47:51.026+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
@@ -47,13 +47,13 @@
 			"identifier": [
 				{
 					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP0H832BZ79"
+					"value": "BEP0F89N88M6"
 				}
 			],
 			"medicationCodeableConcept": {
 				"coding": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 						"code": "0318717",
 						"display": "Adalat tabl. verl. afgifte Oros 28x 30 mg"
 					}
@@ -65,7 +65,7 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2026-04-13T07:00:31.267+00:00",
+			"authoredOn": "2026-04-14T12:47:51.026+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
@@ -123,13 +123,13 @@
 			"identifier": [
 				{
 					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP0H832BZ79"
+					"value": "BEP0F89N88M6"
 				}
 			],
 			"medicationCodeableConcept": {
 				"coding": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 						"code": "0035717",
 						"display": "Dermovate crème 30g 0,5 mg/1 g"
 					}
@@ -139,5 +139,5 @@
 		}
 	],
 	"total": 2,
-	"timestamp": "2026-04-13T07:00:31.267+00:00"
+	"timestamp": "2026-04-14T12:47:51.026+00:00"
 }

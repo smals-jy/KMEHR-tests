@@ -6,7 +6,7 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2026-04-13T07:00:31.350+00:00",
+			"authoredOn": "2026-04-14T12:47:51.099+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
@@ -64,13 +64,13 @@
 			"identifier": [
 				{
 					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP0ZW4YSZ6H"
+					"value": "BEP0S2XSC1BG"
 				}
 			],
 			"medicationCodeableConcept": {
 				"coding": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 						"code": "0132407",
 						"display": "Terra-Cortril+Polymyxine B 10/5/10000 zalf 3,5g"
 					}
@@ -80,5 +80,5 @@
 		}
 	],
 	"total": 1,
-	"timestamp": "2026-04-13T07:00:31.350+00:00"
+	"timestamp": "2026-04-14T12:47:51.099+00:00"
 }

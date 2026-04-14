@@ -6,7 +6,7 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2026-04-13T07:00:31.498+00:00",
+			"authoredOn": "2026-04-14T12:47:51.233+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
@@ -64,7 +64,7 @@
 			"identifier": [
 				{
 					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP08WD47ANS"
+					"value": "BEP0GYMBABGC"
 				}
 			],
 			"contained": [
@@ -76,7 +76,7 @@
 							"itemCodeableConcept": {
 								"coding": [
 									{
-										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 										"code": "0552125",
 										"display": "UREUM"
 									}
@@ -95,7 +95,7 @@
 							"itemCodeableConcept": {
 								"coding": [
 									{
-										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 										"code": "0535047",
 										"display": "NATRIUMCHLORIDE"
 									}
@@ -114,7 +114,7 @@
 							"itemCodeableConcept": {
 								"coding": [
 									{
-										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 										"code": "0587089",
 										"display": "GEBUF. CETOMACR. CREME  TMF2"
 									}
@@ -160,5 +160,5 @@
 		}
 	],
 	"total": 1,
-	"timestamp": "2026-04-13T07:00:31.498+00:00"
+	"timestamp": "2026-04-14T12:47:51.233+00:00"
 }

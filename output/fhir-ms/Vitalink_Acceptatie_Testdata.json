@@ -1,7 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"type": "collection",
-	"timestamp": "2026-04-13T07:00:31.477+00:00",
+	"timestamp": "2026-04-14T12:47:51.212+00:00",
 	"entry": [
 		{
 			"fullUrl": "Patient/XXXXXXXXXXX",
@@ -225,7 +225,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/398a2fe6-2699-4a86-9799-2a4c89b536a0",
+			"fullUrl": "MedicationStatement/aab54543-f5b8-4f00-97b2-0b4998574b83",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -236,7 +236,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "398a2fe6-2699-4a86-9799-2a4c89b536a0"
+						"value": "aab54543-f5b8-4f00-97b2-0b4998574b83"
 					}
 				],
 				"extension": [
@@ -246,7 +246,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -268,14 +268,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.477+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.211+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/11186375004"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "0039347",
 							"display": "Dafalgan 500 mg comp. 30"
 						}
@@ -360,7 +360,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/b5d74a57-b248-4c4d-a555-12a4372509e6",
+			"fullUrl": "MedicationStatement/d88847f3-b06a-414c-bb36-16a9194d4b1c",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -371,7 +371,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "b5d74a57-b248-4c4d-a555-12a4372509e6"
+						"value": "d88847f3-b06a-414c-bb36-16a9194d4b1c"
 					}
 				],
 				"extension": [
@@ -381,7 +381,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -403,14 +403,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.477+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.211+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/20807092001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "0119065",
 							"display": "Marcoumar 3 mg comp. 25"
 						}
@@ -434,7 +434,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/d7e1a994-76f7-4a97-878f-a6e9ba92d695",
+			"fullUrl": "MedicationStatement/b3557ceb-a775-4752-b76a-febdbdcdb7a3",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -445,7 +445,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "d7e1a994-76f7-4a97-878f-a6e9ba92d695"
+						"value": "b3557ceb-a775-4752-b76a-febdbdcdb7a3"
 					}
 				],
 				"extension": [
@@ -455,7 +455,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -477,14 +477,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.477+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.211+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/XXXXXXXXXXX"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "2257095",
 							"display": "Amoxicilline EG 1000 mg compr. efferv. 8"
 						}
@@ -510,7 +510,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/2bcc2e2b-7894-4022-a94b-a8d5d37d3abd",
+			"fullUrl": "MedicationStatement/e78f883d-ce19-4f1e-8128-600ca48070f4",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -521,7 +521,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "2bcc2e2b-7894-4022-a94b-a8d5d37d3abd"
+						"value": "e78f883d-ce19-4f1e-8128-600ca48070f4"
 					}
 				],
 				"extension": [
@@ -531,7 +531,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -553,14 +553,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.477+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.211+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/11186375004"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "0066746",
 							"display": "Penicilline 1000000 UI sol. inj. (pdr.) i.m./i.v./i.artic. flac. 100 x 1 10*6 UI"
 						}
@@ -586,7 +586,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/d9828190-71e6-4aa3-9162-42b048bdb962",
+			"fullUrl": "MedicationStatement/32c351ab-2b11-41f0-a220-1dd82b3aefd3",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -597,7 +597,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "d9828190-71e6-4aa3-9162-42b048bdb962"
+						"value": "32c351ab-2b11-41f0-a220-1dd82b3aefd3"
 					}
 				],
 				"extension": [
@@ -607,7 +607,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -629,14 +629,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.477+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.211+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/11186375004"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "1557396",
 							"display": "Zinnat 500 mg compr. pellic. 20"
 						}
@@ -1326,7 +1326,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/39daa482-d962-47e8-b6a1-faad714cee84",
+			"fullUrl": "MedicationStatement/92e501d5-74dc-4746-bc00-2e42a882cc3c",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1337,7 +1337,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "39daa482-d962-47e8-b6a1-faad714cee84"
+						"value": "92e501d5-74dc-4746-bc00-2e42a882cc3c"
 					}
 				],
 				"extension": [
@@ -1347,7 +1347,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -1369,14 +1369,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.477+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.211+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/11186375004"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "2915353",
 							"display": "Clarithromycine Sandoz 500 mg compr. pellic. 21"
 						}
@@ -1408,7 +1408,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/c7f1d030-c3bf-4f58-9c7e-da77df2bb185",
+			"fullUrl": "MedicationStatement/6eff3aa5-d33b-4361-ae90-2f7af31f231f",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1419,7 +1419,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "c7f1d030-c3bf-4f58-9c7e-da77df2bb185"
+						"value": "6eff3aa5-d33b-4361-ae90-2f7af31f231f"
 					}
 				],
 				"extension": [
@@ -1429,7 +1429,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -1451,14 +1451,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.477+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.211+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/45598314401"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "2744753",
 							"display": "Clindamycine Fresenius Kabi 150 mg/ml sol. inj. i.m./i.v. amp. 10 x 2 ml"
 						}
@@ -1546,7 +1546,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/1ef16c18-1860-49ae-acc5-2fb162fb54f8",
+			"fullUrl": "MedicationStatement/70c46fb7-fe09-4bde-aa6b-10b8261857b2",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1557,7 +1557,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "1ef16c18-1860-49ae-acc5-2fb162fb54f8"
+						"value": "70c46fb7-fe09-4bde-aa6b-10b8261857b2"
 					}
 				],
 				"extension": [
@@ -1567,7 +1567,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -1589,14 +1589,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.477+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.211+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/20807092001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "0062521",
 							"display": "Nystatine Labaz 100000 UI/ml susp. buv. 24 ml"
 						}
@@ -1613,7 +1613,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/ef920e07-1427-41c0-9b76-94f0a52c2b6b",
+			"fullUrl": "MedicationStatement/00264da0-6b1a-4f54-8d74-5c30c047e7ef",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1624,7 +1624,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "ef920e07-1427-41c0-9b76-94f0a52c2b6b"
+						"value": "00264da0-6b1a-4f54-8d74-5c30c047e7ef"
 					}
 				],
 				"extension": [
@@ -1634,7 +1634,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -1656,14 +1656,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.477+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.211+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/11186375004"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "3301",
 							"display": "benzylpénicilline 1000000 UI poudre (inj.)"
 						}
@@ -1708,7 +1708,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/019d14d7-9f33-4ebf-a511-446f03e14bbb",
+			"fullUrl": "MedicationStatement/0bba156f-404e-4462-bc79-397b7587ca16",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1719,7 +1719,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019d14d7-9f33-4ebf-a511-446f03e14bbb"
+						"value": "0bba156f-404e-4462-bc79-397b7587ca16"
 					}
 				],
 				"extension": [
@@ -1729,7 +1729,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -1751,14 +1751,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.477+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.211+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/45598314401"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "0041020",
 							"display": "Fasigyn 500 mg compr. pellic. 4"
 						}
@@ -1790,7 +1790,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/4d8fc5dc-d19e-472d-a911-3d34cc3dedd6",
+			"fullUrl": "MedicationStatement/38f50adc-24cc-43aa-88e0-6d9800d0043c",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1801,7 +1801,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "4d8fc5dc-d19e-472d-a911-3d34cc3dedd6"
+						"value": "38f50adc-24cc-43aa-88e0-6d9800d0043c"
 					}
 				],
 				"extension": [
@@ -1811,7 +1811,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -1833,7 +1833,7 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.477+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.212+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/20807092001"
 				},
@@ -1855,7 +1855,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/1111d5dd-9e6a-4f97-99ab-f4d7b1cd840b",
+			"fullUrl": "MedicationStatement/01563aa9-00a5-421f-b292-1257089ec615",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1866,7 +1866,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "1111d5dd-9e6a-4f97-99ab-f4d7b1cd840b"
+						"value": "01563aa9-00a5-421f-b292-1257089ec615"
 					}
 				],
 				"extension": [
@@ -1876,7 +1876,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -1898,14 +1898,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.477+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.212+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/11186375004"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "2120046",
 							"display": "Fluconazole Mylan 50 mg gél. 10"
 						}

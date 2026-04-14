@@ -1,7 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"type": "collection",
-	"timestamp": "2026-04-13T07:00:31.429+00:00",
+	"timestamp": "2026-04-14T12:47:51.168+00:00",
 	"entry": [
 		{
 			"fullUrl": "Patient/XXXXXXXXXXX",
@@ -78,7 +78,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/2235ecd1-d987-4ead-adcf-9e513bbe6471",
+			"fullUrl": "MedicationStatement/620ba944-9ac4-4caa-a761-df9d9c2c98f8",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -89,7 +89,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "2235ecd1-d987-4ead-adcf-9e513bbe6471"
+						"value": "620ba944-9ac4-4caa-a761-df9d9c2c98f8"
 					}
 				],
 				"extension": [
@@ -99,7 +99,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -121,14 +121,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.428+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "2329969",
 							"display": "Aspirine 500 mg (36 bruistabletten)"
 						}
@@ -169,7 +169,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/e0e21023-072c-4f9d-b2b7-7edc2a95068b",
+			"fullUrl": "MedicationStatement/ee661eb2-b5b8-4ca5-95ea-c8811316778a",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -180,7 +180,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "e0e21023-072c-4f9d-b2b7-7edc2a95068b"
+						"value": "ee661eb2-b5b8-4ca5-95ea-c8811316778a"
 					}
 				],
 				"extension": [
@@ -190,7 +190,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -212,14 +212,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.428+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "1365543",
 							"display": "Asaflow 80 mg (56 tabletten)"
 						}
@@ -319,7 +319,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/a300a8d5-52af-407d-bccc-1cf5cfeef23c",
+			"fullUrl": "MedicationStatement/7824c132-9670-489d-a496-4d1ad24e3834",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -330,7 +330,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "a300a8d5-52af-407d-bccc-1cf5cfeef23c"
+						"value": "7824c132-9670-489d-a496-4d1ad24e3834"
 					}
 				],
 				"extension": [
@@ -340,7 +340,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -362,14 +362,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.428+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "2621936",
 							"display": "Cardio Aspirine 100 mg (84 tabletten)"
 						}
@@ -410,7 +410,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/5004971b-a86a-4f90-8a46-71c770aace52",
+			"fullUrl": "MedicationStatement/98b69daa-57ae-4f13-b57b-8e3b35cc6d52",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -421,7 +421,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "5004971b-a86a-4f90-8a46-71c770aace52"
+						"value": "98b69daa-57ae-4f13-b57b-8e3b35cc6d52"
 					}
 				],
 				"extension": [
@@ -431,7 +431,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -453,14 +453,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.428+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "1690262",
 							"display": "Aspirine 100 mg (30 tabletten)"
 						}
@@ -576,7 +576,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/78bc7fc9-65a9-4d3e-b17e-67acc8340fbc",
+			"fullUrl": "MedicationStatement/897345ed-f918-470e-9da0-778928262efd",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -587,7 +587,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "78bc7fc9-65a9-4d3e-b17e-67acc8340fbc"
+						"value": "897345ed-f918-470e-9da0-778928262efd"
 					}
 				],
 				"extension": [
@@ -597,7 +597,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -619,14 +619,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.428+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "3040532",
 							"display": "ASA EG 100 mg (168 tabletten)"
 						}
@@ -664,7 +664,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/1eef7bb5-5375-4efb-b26f-61b23b6be05b",
+			"fullUrl": "MedicationStatement/a4de08a3-c9be-407e-85f1-9bca0e3ffc36",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -675,7 +675,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "1eef7bb5-5375-4efb-b26f-61b23b6be05b"
+						"value": "a4de08a3-c9be-407e-85f1-9bca0e3ffc36"
 					}
 				],
 				"extension": [
@@ -685,7 +685,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -707,14 +707,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.428+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "3150158",
 							"display": "Aspirine Fasttabs 500 mg (20 tabletten)"
 						}
@@ -758,7 +758,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/4b7dae7e-82b4-4744-a736-f2387c98a975",
+			"fullUrl": "MedicationStatement/e10702a6-93c1-4207-a038-e0b89c9f5cf1",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -769,7 +769,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "4b7dae7e-82b4-4744-a736-f2387c98a975"
+						"value": "e10702a6-93c1-4207-a038-e0b89c9f5cf1"
 					}
 				],
 				"extension": [
@@ -779,7 +779,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -801,14 +801,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.428+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "2605335",
 							"display": "Cardio Aspirine 100 mg (56 tabletten)"
 						}
@@ -849,7 +849,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/1aa636b8-9c14-4a97-83bb-d09c7a6d4ea0",
+			"fullUrl": "MedicationStatement/519ef552-5c8e-40ca-ae39-d5b6a32094f4",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -860,7 +860,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "1aa636b8-9c14-4a97-83bb-d09c7a6d4ea0"
+						"value": "519ef552-5c8e-40ca-ae39-d5b6a32094f4"
 					}
 				],
 				"extension": [
@@ -870,7 +870,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -892,14 +892,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.428+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "3001898",
 							"display": "Alka-Seltzer 324 mg (20 bruistabletten)"
 						}
@@ -940,7 +940,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/9061b930-2a26-47ce-bd1c-b3f4b427efa8",
+			"fullUrl": "MedicationStatement/2fd33ab6-2b01-4c0c-b7af-7a10c25f99e3",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -951,7 +951,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "9061b930-2a26-47ce-bd1c-b3f4b427efa8"
+						"value": "2fd33ab6-2b01-4c0c-b7af-7a10c25f99e3"
 					}
 				],
 				"extension": [
@@ -961,7 +961,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -983,14 +983,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.428+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "1112481",
 							"display": "Cardegic 160 mg (30 zakjes)"
 						}
@@ -1031,7 +1031,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/452de731-f9a8-4eae-9528-e8ed427c8e4a",
+			"fullUrl": "MedicationStatement/fab4b0fc-619a-4f80-9e33-34e40fbcbbda",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1042,7 +1042,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "452de731-f9a8-4eae-9528-e8ed427c8e4a"
+						"value": "fab4b0fc-619a-4f80-9e33-34e40fbcbbda"
 					}
 				],
 				"extension": [
@@ -1052,7 +1052,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -1074,14 +1074,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.428+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "2962975",
 							"display": "Aspirine Caffeïne 650 mg / 65 mg (30 tabletten)"
 						}
@@ -1124,7 +1124,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/d66bf2df-ad82-408b-9321-863680c581a3",
+			"fullUrl": "MedicationStatement/500f79ec-7de5-4667-97f0-7b925644911d",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1135,7 +1135,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "d66bf2df-ad82-408b-9321-863680c581a3"
+						"value": "500f79ec-7de5-4667-97f0-7b925644911d"
 					}
 				],
 				"extension": [
@@ -1145,7 +1145,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -1186,14 +1186,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.428+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "0102566",
 							"display": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
 						}
@@ -1275,7 +1275,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/bb4ba9c5-005b-4a42-b38a-3b1897b70db3",
+			"fullUrl": "MedicationStatement/5bac5ec9-1ecd-4a97-af61-94494a95ca68",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1286,7 +1286,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "bb4ba9c5-005b-4a42-b38a-3b1897b70db3"
+						"value": "5bac5ec9-1ecd-4a97-af61-94494a95ca68"
 					}
 				],
 				"extension": [
@@ -1296,7 +1296,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -1318,14 +1318,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.428+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "0102566",
 							"display": "Aspirine C 400 mg / 240 mg (20 bruistabletten)"
 						}
@@ -1407,7 +1407,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/a371997a-c345-46a8-83c7-8efb7d627e06",
+			"fullUrl": "MedicationStatement/023e6fff-5857-41a8-8f66-8d9af940dc37",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1418,7 +1418,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "a371997a-c345-46a8-83c7-8efb7d627e06"
+						"value": "023e6fff-5857-41a8-8f66-8d9af940dc37"
 					}
 				],
 				"extension": [
@@ -1428,7 +1428,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -1450,14 +1450,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.428+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "2542488",
 							"display": "Asaflow 80 mg (168 tabletten)"
 						}
@@ -1482,7 +1482,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/421dff76-7ca0-4172-87c4-867e6f986b58",
+			"fullUrl": "MedicationStatement/a3b6b4c9-822c-4225-a5a4-a193ed4e97d7",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1493,7 +1493,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "421dff76-7ca0-4172-87c4-867e6f986b58"
+						"value": "a3b6b4c9-822c-4225-a5a4-a193ed4e97d7"
 					}
 				],
 				"extension": [
@@ -1503,7 +1503,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -1542,14 +1542,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.429+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "2767796",
 							"display": "Algostase Mono 500 mg (10 tabletten)"
 						}
@@ -1574,7 +1574,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/8ddada01-95f5-4d0a-b7b2-d19420822004",
+			"fullUrl": "MedicationStatement/d628116b-47c8-469d-865e-953d72e21f1f",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1585,7 +1585,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "8ddada01-95f5-4d0a-b7b2-d19420822004"
+						"value": "d628116b-47c8-469d-865e-953d72e21f1f"
 					}
 				],
 				"extension": [
@@ -1595,7 +1595,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -1617,14 +1617,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.429+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "0656835",
 							"display": "Actilyse inj./inf. oploss. (pdr.+solv.) i.v. [2x flac.] 1x 50mg"
 						}
@@ -1706,7 +1706,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/e5bb561a-bf5d-4885-94a1-96279665a885",
+			"fullUrl": "MedicationStatement/5e5191b3-de74-4845-a4d2-ba08a915c119",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1717,7 +1717,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "e5bb561a-bf5d-4885-94a1-96279665a885"
+						"value": "5e5191b3-de74-4845-a4d2-ba08a915c119"
 					}
 				],
 				"extension": [
@@ -1727,7 +1727,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -1859,14 +1859,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.429+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "1553957",
 							"display": "Aspégic 500 mg (30 zakjes)"
 						}
@@ -1891,7 +1891,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/c7feee84-0c3f-4828-87b2-730f377be96c",
+			"fullUrl": "MedicationStatement/44d2e5f3-f01d-4a64-8b6d-5b23d440c40d",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1902,7 +1902,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "c7feee84-0c3f-4828-87b2-730f377be96c"
+						"value": "44d2e5f3-f01d-4a64-8b6d-5b23d440c40d"
 					}
 				],
 				"extension": [
@@ -1912,7 +1912,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -1934,14 +1934,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.429+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "1170232",
 							"display": "Troc (20 tabletten)"
 						}
@@ -2029,7 +2029,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/5d81738d-19e9-4a94-a992-1fc0de0ae831",
+			"fullUrl": "MedicationStatement/b9ab075d-dd97-4c34-806a-a5095feba398",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -2040,7 +2040,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "5d81738d-19e9-4a94-a992-1fc0de0ae831"
+						"value": "b9ab075d-dd97-4c34-806a-a5095feba398"
 					}
 				],
 				"extension": [
@@ -2050,7 +2050,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -2091,14 +2091,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.429+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "2113082",
 							"display": "Perdolan Compositum Volwassenen 200 mg / 200 mg / 46 mg (30 tabletten)"
 						}
@@ -2123,7 +2123,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/9d45887b-124b-47bb-ba10-db01ad83ff16",
+			"fullUrl": "MedicationStatement/b5d7f362-69c2-4e19-830a-2846cc83c530",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -2134,7 +2134,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "9d45887b-124b-47bb-ba10-db01ad83ff16"
+						"value": "b5d7f362-69c2-4e19-830a-2846cc83c530"
 					}
 				],
 				"extension": [
@@ -2144,7 +2144,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -2166,14 +2166,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.429+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.167+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "1563295",
 							"display": "Perdolan Kinderen 350 mg (12 zetpillen)"
 						}
@@ -2234,7 +2234,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/2f20ab25-02bb-4dd8-8643-3845ccf05d3e",
+			"fullUrl": "MedicationStatement/8328e715-7ec7-4133-a408-85c2f2253d80",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -2245,7 +2245,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "2f20ab25-02bb-4dd8-8643-3845ccf05d3e"
+						"value": "8328e715-7ec7-4133-a408-85c2f2253d80"
 					}
 				],
 				"extension": [
@@ -2255,7 +2255,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -2277,14 +2277,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.429+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.168+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "0656835",
 							"display": "Actilyse inj./inf. oploss. (pdr.+solv.) i.v. [2x flac.] 1x 50mg"
 						}
@@ -2366,7 +2366,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/7fc0142d-c90f-4394-bfa9-e642717b7f12",
+			"fullUrl": "MedicationStatement/b106072c-b633-4ee7-af5f-0ab12d7fbb98",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -2377,7 +2377,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "7fc0142d-c90f-4394-bfa9-e642717b7f12"
+						"value": "b106072c-b633-4ee7-af5f-0ab12d7fbb98"
 					}
 				],
 				"extension": [
@@ -2387,7 +2387,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -2409,19 +2409,19 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.429+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.168+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "1439561",
 							"display": "STOFNAAM: Topazolam tab 50x 0,5mg"
 						},
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "1439562",
 							"display": "Topazolam tab 50x 1,0mg"
 						}

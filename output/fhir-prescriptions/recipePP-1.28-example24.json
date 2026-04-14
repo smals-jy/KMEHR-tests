@@ -6,7 +6,7 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2026-04-13T07:00:31.432+00:00",
+			"authoredOn": "2026-04-14T12:47:51.171+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
@@ -29,7 +29,7 @@
 			"identifier": [
 				{
 					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP0P72H2G94"
+					"value": "BEP048TYS6CE"
 				}
 			],
 			"contained": [
@@ -41,7 +41,7 @@
 							"itemCodeableConcept": {
 								"coding": [
 									{
-										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 										"code": "0586982",
 										"display": "RANITIDINEHYDROCHLORIDE"
 									}
@@ -60,7 +60,7 @@
 							"itemCodeableConcept": {
 								"coding": [
 									{
-										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 										"code": "0535559",
 										"display": "SODIUM (MONO) PHOSPHATE DIHYDRATE"
 									}
@@ -79,7 +79,7 @@
 							"itemCodeableConcept": {
 								"coding": [
 									{
-										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 										"code": "0535534",
 										"display": "DINATRIUMFOSFAAT DIHYDRAAT"
 									}
@@ -98,7 +98,7 @@
 							"itemCodeableConcept": {
 								"coding": [
 									{
-										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 										"code": "0507541",
 										"display": "WATER GEZUIVERD"
 									}
@@ -117,7 +117,7 @@
 							"itemCodeableConcept": {
 								"coding": [
 									{
-										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 										"code": "0589044",
 										"display": "ORANJESCHILTINCTUUR (BITTERE) (EPIC. EN MESOCARP.)"
 									}
@@ -135,7 +135,7 @@
 							"itemCodeableConcept": {
 								"coding": [
 									{
-										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+										"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 										"code": "0584938",
 										"display": "GECONSERVEERDE SUIKERSTROOP"
 									}
@@ -181,5 +181,5 @@
 		}
 	],
 	"total": 1,
-	"timestamp": "2026-04-13T07:00:31.432+00:00"
+	"timestamp": "2026-04-14T12:47:51.171+00:00"
 }

@@ -6,7 +6,7 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2026-04-13T07:00:31.340+00:00",
+			"authoredOn": "2026-04-14T12:47:51.079+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
@@ -64,13 +64,13 @@
 			"identifier": [
 				{
 					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP04CE5Y7DE"
+					"value": "BEP0M18FBLYF"
 				}
 			],
 			"medicationCodeableConcept": {
 				"coding": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 						"code": "0000000",
 						"display": "La Roche Posay Cicaplast Balsem 100 ml"
 					}
@@ -80,5 +80,5 @@
 		}
 	],
 	"total": 1,
-	"timestamp": "2026-04-13T07:00:31.340+00:00"
+	"timestamp": "2026-04-14T12:47:51.079+00:00"
 }
