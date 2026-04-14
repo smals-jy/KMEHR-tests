@@ -536,7 +536,7 @@ export function generateDrug(entry: MedicationEntry, idx: Number): CodeableConce
 
     const codings: Coding[] = [
         {
-            system: "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+            system: "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
             code: entry.intendedcd ?? "0000000",
             display: entry.intendedname ?? `Intended product name ${idx}`,
         },
@@ -544,7 +544,7 @@ export function generateDrug(entry: MedicationEntry, idx: Number): CodeableConce
 
     if (entry.deliveredcd) {
         codings.push({
-            system: "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+            system: "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
             code: entry.deliveredcd,
             display: entry.deliveredname ?? `Delivered product name ${idx}`,
         });
