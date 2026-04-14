@@ -1,7 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"type": "collection",
-	"timestamp": "2026-04-13T07:00:31.355+00:00",
+	"timestamp": "2026-04-14T12:47:51.106+00:00",
 	"entry": [
 		{
 			"fullUrl": "Patient/XXXXXXXXXXX",
@@ -78,7 +78,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/608c406e-16cd-4717-b022-9e17532dab44",
+			"fullUrl": "MedicationStatement/2f57852c-1b01-4670-a24b-2fa0273e7d9b",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -89,7 +89,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "608c406e-16cd-4717-b022-9e17532dab44"
+						"value": "2f57852c-1b01-4670-a24b-2fa0273e7d9b"
 					}
 				],
 				"extension": [
@@ -99,7 +99,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -121,7 +121,7 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.355+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.106+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
@@ -152,7 +152,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/ac5fd7e3-bd3c-4b5c-9fd1-df0df2c0cf1b",
+			"fullUrl": "MedicationStatement/b6413117-faa8-4c1d-b6c9-b41bfff35ce5",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -163,7 +163,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "ac5fd7e3-bd3c-4b5c-9fd1-df0df2c0cf1b"
+						"value": "b6413117-faa8-4c1d-b6c9-b41bfff35ce5"
 					}
 				],
 				"extension": [
@@ -173,7 +173,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -195,14 +195,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.355+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.106+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "3356102",
 							"display": "Rhinathiol Naturactiv Pulmo 133Ml"
 						}
@@ -227,7 +227,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/a4754bcf-52ab-49ea-9eff-1be3d656b937",
+			"fullUrl": "MedicationStatement/519103a2-15fc-4959-a5e0-3f58a042328f",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -238,7 +238,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "a4754bcf-52ab-49ea-9eff-1be3d656b937"
+						"value": "519103a2-15fc-4959-a5e0-3f58a042328f"
 					}
 				],
 				"extension": [
@@ -248,7 +248,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -270,19 +270,19 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.355+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.106+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "3356102",
 							"display": "Rhinathiol Naturactiv Pulmo 133Ml"
 						},
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "3319522",
 							"display": "Orgitan Care B+Pharma 90 Tabl"
 						}
@@ -307,7 +307,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/21354c06-3130-49eb-94f5-382e24833161",
+			"fullUrl": "MedicationStatement/2c890521-9a57-4acf-93b4-6d096ec444c2",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -318,7 +318,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "21354c06-3130-49eb-94f5-382e24833161"
+						"value": "2c890521-9a57-4acf-93b4-6d096ec444c2"
 					}
 				],
 				"extension": [
@@ -328,7 +328,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -350,14 +350,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.355+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.106+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "0000174",
 							"display": "aceclofenac oraal 100 mg, 20 tabletten"
 						}
@@ -382,7 +382,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/7b545cb6-628a-4705-a5c1-a8b359e7aa3d",
+			"fullUrl": "MedicationStatement/c17cd82f-079f-405f-9373-f14dae8c6ff4",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -393,7 +393,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "7b545cb6-628a-4705-a5c1-a8b359e7aa3d"
+						"value": "c17cd82f-079f-405f-9373-f14dae8c6ff4"
 					}
 				],
 				"extension": [
@@ -403,7 +403,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -425,14 +425,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.355+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.106+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "30957",
 							"display": "simvastatine 40 mg tablet (or.)"
 						}
@@ -457,7 +457,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/b7eeb424-0478-433a-8f67-d1a73181d0f7",
+			"fullUrl": "MedicationStatement/7bb070e6-04f6-468a-8754-d53ec2bd77d1",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -468,7 +468,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "b7eeb424-0478-433a-8f67-d1a73181d0f7"
+						"value": "7bb070e6-04f6-468a-8754-d53ec2bd77d1"
 					}
 				],
 				"extension": [
@@ -478,7 +478,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-04-13T07:00:31Z"
+						"valueDateTime": "2026-04-14T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -500,19 +500,19 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.355+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.106+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "30957",
 							"display": "simvastatine 40 mg tablet (or.)"
 						},
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "1628023",
 							"display": "Myleran 2 mg filmomh. tabl. 100"
 						}

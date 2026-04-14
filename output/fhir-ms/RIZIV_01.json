@@ -1,7 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"type": "collection",
-	"timestamp": "2026-04-13T07:00:31.450+00:00",
+	"timestamp": "2026-04-14T12:47:51.189+00:00",
 	"entry": [
 		{
 			"fullUrl": "Patient/XXXXXXXXXXX",
@@ -78,7 +78,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/96fad02c-9f2e-48cd-ac1f-999a18187622",
+			"fullUrl": "MedicationStatement/d262ba3e-499f-4f76-8cfe-cf13457512a8",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -89,7 +89,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "96fad02c-9f2e-48cd-ac1f-999a18187622"
+						"value": "d262ba3e-499f-4f76-8cfe-cf13457512a8"
 					}
 				],
 				"extension": [
@@ -99,7 +99,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2020-06-10T07:00:31Z"
+						"valueDateTime": "2020-06-10T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -121,14 +121,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.450+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.189+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/11425214001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "3303948",
 							"display": "Pantoprazole EG 40 mg maagsapresist. tabl. 100"
 						}
@@ -164,7 +164,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/85e0d4f7-b6a0-4b75-a469-504ef8fac5c6",
+			"fullUrl": "MedicationStatement/c3eab5b4-23d1-4f7b-a89c-0fc9b3c53df9",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -175,7 +175,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "85e0d4f7-b6a0-4b75-a469-504ef8fac5c6"
+						"value": "c3eab5b4-23d1-4f7b-a89c-0fc9b3c53df9"
 					}
 				],
 				"extension": [
@@ -185,7 +185,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2020-06-10T07:00:31Z"
+						"valueDateTime": "2020-06-10T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -207,14 +207,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.450+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.189+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/11425214001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "0482554",
 							"display": "Kredex 25 mg tabl. 56"
 						}
@@ -271,7 +271,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/4a5f3f4c-aadc-4d50-b533-5b3ae2559bb1",
+			"fullUrl": "MedicationStatement/ca6a3c90-ed52-4876-a15e-9b26eafe0d66",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -282,7 +282,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "4a5f3f4c-aadc-4d50-b533-5b3ae2559bb1"
+						"value": "ca6a3c90-ed52-4876-a15e-9b26eafe0d66"
 					}
 				],
 				"extension": [
@@ -292,7 +292,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2020-06-10T07:00:31Z"
+						"valueDateTime": "2020-06-10T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -314,14 +314,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.450+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.189+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/11425214001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "4332284",
 							"display": "Trixeo Aerosphere 5 µg dosisaerosol susp. inhalator 3 x 120 doses"
 						}
@@ -390,7 +390,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/ee1e5e6c-61b2-448c-9684-f44b302bc135",
+			"fullUrl": "MedicationStatement/329add4e-d68e-4f6d-9b8b-6b52f1a6da4f",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -401,7 +401,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "ee1e5e6c-61b2-448c-9684-f44b302bc135"
+						"value": "329add4e-d68e-4f6d-9b8b-6b52f1a6da4f"
 					}
 				],
 				"extension": [
@@ -411,7 +411,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2020-06-10T07:00:31Z"
+						"valueDateTime": "2020-06-10T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -433,14 +433,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.450+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.189+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/11425214001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "3153665",
 							"display": "Jardiance 10 mg filmomh. tabl. 100"
 						}
@@ -476,7 +476,7 @@
 			}
 		},
 		{
-			"fullUrl": "MedicationStatement/00a76fc0-e452-41fa-a5ea-3a97e7192ab9",
+			"fullUrl": "MedicationStatement/b97c2de7-3236-43da-afa9-58c9defd29d8",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -487,7 +487,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "00a76fc0-e452-41fa-a5ea-3a97e7192ab9"
+						"value": "b97c2de7-3236-43da-afa9-58c9defd29d8"
 					}
 				],
 				"extension": [
@@ -497,7 +497,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2020-06-10T07:00:31Z"
+						"valueDateTime": "2020-06-10T12:47:51Z"
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
@@ -519,14 +519,14 @@
 				"subject": {
 					"reference": "Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-04-13T07:00:31.450+00:00",
+				"dateAsserted": "2026-04-14T12:47:51.189+00:00",
 				"informationSource": {
 					"reference": "PractitionerRole/11425214001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 							"code": "3804788",
 							"display": "Tresiba 200 U/ml inj. opl. s.c. voorgev. pen 3 x 3 ml FlexTouch"
 						}

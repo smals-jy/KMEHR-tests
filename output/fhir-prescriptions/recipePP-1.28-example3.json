@@ -6,7 +6,7 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2026-04-13T07:00:31.408+00:00",
+			"authoredOn": "2026-04-14T12:47:51.152+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
@@ -36,13 +36,13 @@
 			"identifier": [
 				{
 					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP006K7TSGW"
+					"value": "BEP0MT3F3LS9"
 				}
 			],
 			"medicationCodeableConcept": {
 				"coding": [
 					{
-						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+						"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
 						"code": "0000000",
 						"display": "Traitement oxygène gazeuse pour 1 mois"
 					}
@@ -52,5 +52,5 @@
 		}
 	],
 	"total": 1,
-	"timestamp": "2026-04-13T07:00:31.408+00:00"
+	"timestamp": "2026-04-14T12:47:51.152+00:00"
 }
