@@ -1,6 +1,6 @@
 import { opendir, readFile, writeFile } from "fs/promises";
 import { basename } from "path";
-import { v4 as uuidv4 } from "uuid";
+import { v7 as uuidv7 } from "uuid";
 
 
 import {
@@ -354,7 +354,7 @@ export function generatePayload(config: Configuration): Bundle {
     //    Generate the identifier UUID upfront so we can use it as the fullUrl.
     const medicationEntries = nonSuspensionTransactions.map((t, idx) => {
         const author = t.author ?? configAuthor;
-        const medicationLineId = uuidv4();
+        const medicationLineId = uuidv7();
         const ms = buildMedicationStatement(
             config,
             t,
