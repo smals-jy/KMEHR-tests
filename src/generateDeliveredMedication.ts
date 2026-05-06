@@ -399,14 +399,14 @@ function generateDelivery(
           {  
             "model:name": [  
               {  
-                "#text": author.firstname || PREDEFINED_FIELDS.AUTHOR_FIRSTNAME,  
+                "#text": author?.firstname || PREDEFINED_FIELDS.AUTHOR_FIRSTNAME,  
               },  
             ],  
           },
           {  
             "model:familyName": [  
               {  
-                "#text": author.familyname || PREDEFINED_FIELDS.AUTHOR_LASTNAME,  
+                "#text": author?.familyname || PREDEFINED_FIELDS.AUTHOR_LASTNAME,  
               },  
             ],  
           },
