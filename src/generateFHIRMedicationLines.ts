@@ -228,7 +228,7 @@ function buildPractitionerRoleResource(
         },
         // reference matches "Practitioner/<identifierValue>" fullUrl
         practitioner: {
-            reference: `Practitioner/${practitionerIdentifierValue}`,
+            reference: `urn:be:custom:Practitioner/${practitionerIdentifierValue}`,
         },
     };
 
@@ -370,7 +370,7 @@ export function generatePayload(config: Configuration): Bundle {
     const entries: BundleEntry[] = [
         // 6a. Patient
         {
-            fullUrl: `Patient/${PREDEFINED_FIELDS.PATIENT_SSIN}`,
+            fullUrl: `urn:be:custom:Patient/${PREDEFINED_FIELDS.PATIENT_SSIN}`,
             resource: patientResource,
         },
 
@@ -378,12 +378,12 @@ export function generatePayload(config: Configuration): Bundle {
         ...[...authorResourceMap.entries()].flatMap(([authorId, ar]) => [
             {
                 // "Practitioner/<nihdi|ssin>" — matches practitioner.identifier[0].value
-                fullUrl: `Practitioner/${ar.practitionerIdentifierValue}`,
+                fullUrl: `urn:be:custom:Practitioner/${ar.practitionerIdentifierValue}`,
                 resource: ar.practitionerResource,
             },
             {
                 // "PractitionerRole/<nihdi|ssin>" — matches informationSource.reference
-                fullUrl: `PractitionerRole/${authorId}`,
+                fullUrl: `urn:be:custom:PractitionerRole/${authorId}`,
                 resource: ar.practitionerRoleResource,
             },
         ]),
@@ -493,12 +493,12 @@ function buildMedicationStatement(
         statusReason: statusReason.length > 0 ? statusReason : undefined,
         // "Patient/<ssin>" — matches Patient fullUrl
         subject: {
-            reference: `Patient/${patientSsin}`,
+            reference: `urn:be:custom:Patient/${patientSsin}`,
         },
         dateAsserted: getCurrentInstant(),
         // "PractitionerRole/<nihdi|ssin>" — matches PractitionerRole fullUrl
         informationSource: {
-            reference: `PractitionerRole/${authorId}`,
+            reference: `urn:be:custom:PractitionerRole/${authorId}`,
         },
         medicationCodeableConcept: generateDrug(drug, idx),
         dosage:
