@@ -390,7 +390,7 @@ export function generatePayload(config: Configuration): Bundle {
 
         // 6c. MedicationStatements — "MedicationStatement/<uuid>"
         ...medicationEntries.map(({ medicationLineId, ms }) => ({
-            fullUrl: `MedicationStatement/${medicationLineId}`,
+            fullUrl: `urn:uuid:${medicationLineId}`,
             resource: ms,
         })),
     ];
