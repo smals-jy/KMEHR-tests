@@ -432,7 +432,7 @@ function buildMedicationStatement(
             valueDateTime: generateDateTime(config, transaction),
         },
         {
-            url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
+            url: "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
             valueCodeableConcept: {
                 coding: [
                     {
