@@ -433,14 +433,19 @@ function buildMedicationStatement(
         },
         {
             url: "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-            valueCodeableConcept: {
-                coding: [
-                    {
-                        system: "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-                        code: "unknown",
-                    },
-                ],
-            },
+            extension: [
+                {
+                    url: "code",
+                    valueCodeableConcept: {
+                        coding: [
+                            {
+                                system: "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
+                                code: "unknown"
+                            }
+                        ]
+                    }
+                }
+            ]
         },
         {
             url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
