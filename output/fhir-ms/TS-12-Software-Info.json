@@ -1,7 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"type": "collection",
-	"timestamp": "2026-06-04T12:48:45.674+00:00",
+	"timestamp": "2026-06-04T12:54:54.576+00:00",
 	"entry": [
 		{
 			"fullUrl": "urn:be:custom:Patient/XXXXXXXXXXX",
@@ -176,7 +176,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019e92ad-d26a-7056-9745-c6abd208e8a2",
+			"fullUrl": "urn:uuid:019e92b3-7370-7517-9c14-e34bfef42300",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -187,7 +187,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019e92ad-d26a-7056-9745-c6abd208e8a2"
+						"value": "019e92b3-7370-7517-9c14-e34bfef42300"
 					}
 				],
 				"extension": [
@@ -197,10 +197,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-06-04T12:48:45Z"
+						"valueDateTime": "2026-06-04T12:54:54Z"
 					},
 					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -225,7 +225,7 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-04T12:48:45.674+00:00",
+				"dateAsserted": "2026-06-04T12:54:54.576+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/45598314401"
 				},
@@ -256,7 +256,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019e92ad-d26a-7056-9745-c9b9d3232b01",
+			"fullUrl": "urn:uuid:019e92b3-7370-7517-9c14-e709b5333acd",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -267,7 +267,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019e92ad-d26a-7056-9745-c9b9d3232b01"
+						"value": "019e92b3-7370-7517-9c14-e709b5333acd"
 					}
 				],
 				"extension": [
@@ -277,10 +277,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-06-04T12:48:45Z"
+						"valueDateTime": "2026-06-04T12:54:54Z"
 					},
 					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -305,7 +305,7 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-04T12:48:45.674+00:00",
+				"dateAsserted": "2026-06-04T12:54:54.576+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/11186375004"
 				},
@@ -336,7 +336,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019e92ad-d26a-7056-9745-ccc425f391cd",
+			"fullUrl": "urn:uuid:019e92b3-7370-7517-9c14-eb879869f94e",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -347,7 +347,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019e92ad-d26a-7056-9745-ccc425f391cd"
+						"value": "019e92b3-7370-7517-9c14-eb879869f94e"
 					}
 				],
 				"extension": [
@@ -357,10 +357,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-06-04T12:48:45Z"
+						"valueDateTime": "2026-06-04T12:54:54Z"
 					},
 					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -385,7 +385,7 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-04T12:48:45.674+00:00",
+				"dateAsserted": "2026-06-04T12:54:54.576+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/30019619001"
 				},
@@ -416,7 +416,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019e92ad-d26a-7056-9745-d1e3f18cf6a3",
+			"fullUrl": "urn:uuid:019e92b3-7370-7517-9c14-ec9799790c8b",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -427,7 +427,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019e92ad-d26a-7056-9745-d1e3f18cf6a3"
+						"value": "019e92b3-7370-7517-9c14-ec9799790c8b"
 					}
 				],
 				"extension": [
@@ -437,10 +437,10 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-06-04T12:48:45Z"
+						"valueDateTime": "2026-06-04T12:54:54Z"
 					},
 					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 						"valueCodeableConcept": {
 							"coding": [
 								{
@@ -465,7 +465,7 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-04T12:48:45.674+00:00",
+				"dateAsserted": "2026-06-04T12:54:54.576+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/11186375004"
 				},
