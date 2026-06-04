@@ -1,10 +1,10 @@
 {
 	"resourceType": "Bundle",
 	"type": "collection",
-	"timestamp": "2026-06-04T12:07:14.588+00:00",
+	"timestamp": "2026-06-04T12:35:36.118+00:00",
 	"entry": [
 		{
-			"fullUrl": "Patient/XXXXXXXXXXX",
+			"fullUrl": "urn:be:custom:Patient/XXXXXXXXXXX",
 			"resource": {
 				"resourceType": "Patient",
 				"meta": {
@@ -29,7 +29,7 @@
 			}
 		},
 		{
-			"fullUrl": "Practitioner/11186375004",
+			"fullUrl": "urn:be:custom:Practitioner/11186375004",
 			"resource": {
 				"resourceType": "Practitioner",
 				"meta": {
@@ -54,7 +54,7 @@
 			}
 		},
 		{
-			"fullUrl": "PractitionerRole/11186375004",
+			"fullUrl": "urn:be:custom:PractitionerRole/11186375004",
 			"resource": {
 				"resourceType": "PractitionerRole",
 				"meta": {
@@ -63,7 +63,7 @@
 					]
 				},
 				"practitioner": {
-					"reference": "Practitioner/11186375004"
+					"reference": "urn:be:custom:Practitioner/11186375004"
 				},
 				"code": [
 					{
@@ -78,7 +78,7 @@
 			}
 		},
 		{
-			"fullUrl": "Practitioner/30019619001",
+			"fullUrl": "urn:be:custom:Practitioner/30019619001",
 			"resource": {
 				"resourceType": "Practitioner",
 				"meta": {
@@ -103,7 +103,7 @@
 			}
 		},
 		{
-			"fullUrl": "PractitionerRole/30019619001",
+			"fullUrl": "urn:be:custom:PractitionerRole/30019619001",
 			"resource": {
 				"resourceType": "PractitionerRole",
 				"meta": {
@@ -112,7 +112,7 @@
 					]
 				},
 				"practitioner": {
-					"reference": "Practitioner/30019619001"
+					"reference": "urn:be:custom:Practitioner/30019619001"
 				},
 				"code": [
 					{
@@ -127,7 +127,7 @@
 			}
 		},
 		{
-			"fullUrl": "Practitioner/45598314401",
+			"fullUrl": "urn:be:custom:Practitioner/45598314401",
 			"resource": {
 				"resourceType": "Practitioner",
 				"meta": {
@@ -152,7 +152,7 @@
 			}
 		},
 		{
-			"fullUrl": "PractitionerRole/45598314401",
+			"fullUrl": "urn:be:custom:PractitionerRole/45598314401",
 			"resource": {
 				"resourceType": "PractitionerRole",
 				"meta": {
@@ -161,7 +161,7 @@
 					]
 				},
 				"practitioner": {
-					"reference": "Practitioner/45598314401"
+					"reference": "urn:be:custom:Practitioner/45598314401"
 				},
 				"code": [
 					{
@@ -176,7 +176,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019e9287-cf9c-72c8-8fd6-87db4d78fa0b",
+			"fullUrl": "urn:uuid:019e92a1-c635-7218-8f44-9f929fd8175c",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -187,7 +187,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019e9287-cf9c-72c8-8fd6-87db4d78fa0b"
+						"value": "019e92a1-c635-7218-8f44-9f929fd8175c"
 					}
 				],
 				"extension": [
@@ -217,11 +217,11 @@
 				],
 				"status": "unknown",
 				"subject": {
-					"reference": "Patient/XXXXXXXXXXX"
+					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-04T12:07:14.588+00:00",
+				"dateAsserted": "2026-06-04T12:35:36.117+00:00",
 				"informationSource": {
-					"reference": "PractitionerRole/11186375004"
+					"reference": "urn:be:custom:PractitionerRole/11186375004"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -261,7 +261,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019e9287-cf9c-72c8-8fd6-897f87c01166",
+			"fullUrl": "urn:uuid:019e92a1-c635-7218-8f44-a294a3d7b6ec",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -272,7 +272,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019e9287-cf9c-72c8-8fd6-897f87c01166"
+						"value": "019e92a1-c635-7218-8f44-a294a3d7b6ec"
 					}
 				],
 				"extension": [
@@ -302,11 +302,11 @@
 				],
 				"status": "unknown",
 				"subject": {
-					"reference": "Patient/XXXXXXXXXXX"
+					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-04T12:07:14.588+00:00",
+				"dateAsserted": "2026-06-04T12:35:36.117+00:00",
 				"informationSource": {
-					"reference": "PractitionerRole/30019619001"
+					"reference": "urn:be:custom:PractitionerRole/30019619001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -336,7 +336,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019e9287-cf9c-72c8-8fd6-8d5544777552",
+			"fullUrl": "urn:uuid:019e92a1-c635-7218-8f44-a4e9b212ca61",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -347,7 +347,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019e9287-cf9c-72c8-8fd6-8d5544777552"
+						"value": "019e92a1-c635-7218-8f44-a4e9b212ca61"
 					}
 				],
 				"extension": [
@@ -377,11 +377,11 @@
 				],
 				"status": "unknown",
 				"subject": {
-					"reference": "Patient/XXXXXXXXXXX"
+					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-04T12:07:14.588+00:00",
+				"dateAsserted": "2026-06-04T12:35:36.117+00:00",
 				"informationSource": {
-					"reference": "PractitionerRole/45598314401"
+					"reference": "urn:be:custom:PractitionerRole/45598314401"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -625,7 +625,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019e9287-cf9c-72c8-8fd6-9327bedacf29",
+			"fullUrl": "urn:uuid:019e92a1-c636-766e-9763-1759d2826522",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -636,7 +636,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019e9287-cf9c-72c8-8fd6-9327bedacf29"
+						"value": "019e92a1-c636-766e-9763-1759d2826522"
 					}
 				],
 				"extension": [
@@ -666,11 +666,11 @@
 				],
 				"status": "unknown",
 				"subject": {
-					"reference": "Patient/XXXXXXXXXXX"
+					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-04T12:07:14.588+00:00",
+				"dateAsserted": "2026-06-04T12:35:36.118+00:00",
 				"informationSource": {
-					"reference": "PractitionerRole/30019619001"
+					"reference": "urn:be:custom:PractitionerRole/30019619001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -727,7 +727,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019e9287-cf9c-72c8-8fd6-967644ade37c",
+			"fullUrl": "urn:uuid:019e92a1-c636-766e-9763-1adf30c0bc47",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -738,7 +738,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019e9287-cf9c-72c8-8fd6-967644ade37c"
+						"value": "019e92a1-c636-766e-9763-1adf30c0bc47"
 					}
 				],
 				"extension": [
@@ -768,11 +768,11 @@
 				],
 				"status": "unknown",
 				"subject": {
-					"reference": "Patient/XXXXXXXXXXX"
+					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-04T12:07:14.588+00:00",
+				"dateAsserted": "2026-06-04T12:35:36.118+00:00",
 				"informationSource": {
-					"reference": "PractitionerRole/30019619001"
+					"reference": "urn:be:custom:PractitionerRole/30019619001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
@@ -800,7 +800,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019e9287-cf9c-72c8-8fd6-9af9914ee5e1",
+			"fullUrl": "urn:uuid:019e92a1-c636-766e-9763-1dbd232fbd72",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -811,7 +811,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019e9287-cf9c-72c8-8fd6-9af9914ee5e1"
+						"value": "019e92a1-c636-766e-9763-1dbd232fbd72"
 					}
 				],
 				"extension": [
@@ -841,11 +841,11 @@
 				],
 				"status": "unknown",
 				"subject": {
-					"reference": "Patient/XXXXXXXXXXX"
+					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-04T12:07:14.588+00:00",
+				"dateAsserted": "2026-06-04T12:35:36.118+00:00",
 				"informationSource": {
-					"reference": "PractitionerRole/30019619001"
+					"reference": "urn:be:custom:PractitionerRole/30019619001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
