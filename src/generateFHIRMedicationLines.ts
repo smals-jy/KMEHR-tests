@@ -446,6 +446,12 @@ function buildMedicationStatement(
             url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
             valueCode: "recorded",
         },
+        {
+            url: "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
+            valueReference: {
+                reference: `urn:be:custom:PractitionerRole/${authorId}`
+            }
+        }
     ];
 
     let status: MedicationStatement["status"] = "unknown";
