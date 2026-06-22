@@ -394,15 +394,14 @@ function generateDelivery(
               {
                 "id:riziv": [
                   {
-                    "#text":
-                      author?.nihdi || PREDEFINED_FIELDS.AUTHOR_NIHDI,
-                  },
+                    "#text": author?.nihdi || PREDEFINED_FIELDS.AUTHOR_NIHDI
+                  }
                 ],
-                ":@": {
-                  "@_xsi:type": "id:RizivIdType",
-                },
               },
             ],
+            ":@": {
+              "`@_xsi`:type": "id:RizivIdType",
+            },
           },
           {
             "model:type": [
