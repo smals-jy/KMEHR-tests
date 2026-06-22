@@ -400,7 +400,7 @@ function generateDelivery(
               },
             ],
             ":@": {
-              "`@_xsi`:type": "id:RizivIdType",
+              "@_xsi:type": "id:RizivIdType",
             },
           },
           {
