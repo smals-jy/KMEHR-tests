@@ -390,25 +390,40 @@ function generateDelivery(
       fromPrescription && {
         "model:hcparty": [
           {
+            "model:id": [
+              {
+                "id:riziv": [
+                  {
+                    "#text":
+                      author?.nihdi || PREDEFINED_FIELDS.AUTHOR_NIHDI,
+                  },
+                ],
+                ":@": {
+                  "@_xsi:type": "id:RizivIdType",
+                },
+              },
+            ],
+          },
+          {
             "model:type": [
               {
                 "#text": author?.type || PREDEFINED_FIELDS.AUTHOR_TYPE,
               },
             ],
           },
-          {  
-            "model:name": [  
-              {  
-                "#text": author?.firstname || PREDEFINED_FIELDS.AUTHOR_FIRSTNAME,  
-              },  
-            ],  
+          {
+            "model:name": [
+              {
+                "#text": author?.firstname || PREDEFINED_FIELDS.AUTHOR_FIRSTNAME,
+              },
+            ],
           },
-          {  
-            "model:familyName": [  
-              {  
-                "#text": author?.familyname || PREDEFINED_FIELDS.AUTHOR_LASTNAME,  
-              },  
-            ],  
+          {
+            "model:familyName": [
+              {
+                "#text": author?.familyname || PREDEFINED_FIELDS.AUTHOR_LASTNAME,
+              },
+            ],
           },
           {
             "model:address": [
@@ -535,7 +550,7 @@ function generateDelivery(
                   "model:magistralPreparation": [
                     // Magistral text
                     (drug.magistralText || drug.compoundprescriptionText) !==
-                      undefined && {
+                    undefined && {
                       "model:magistralText": [
                         {
                           "#text":
@@ -840,8 +855,8 @@ function generateDelivery(
           ].filter((s) => s !== false) as Virtual_XML[],
           ":@": fromPrescription
             ? {
-                "@_onSubstanceName": true,
-              }
+              "@_onSubstanceName": true,
+            }
             : {},
         };
       }),
