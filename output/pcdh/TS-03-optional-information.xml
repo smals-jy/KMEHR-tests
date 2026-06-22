@@ -3,8 +3,8 @@
   <smc:unsigned>
     <smc:header>
       <smc:version>1.0</smc:version>
-      <smc:messageCreateDate>2026-06-03T13:00:08</smc:messageCreateDate>
-      <smc:messageID>2e993c20-9d1c-4b0c-870a-33bb3255e39e</smc:messageID>
+      <smc:messageCreateDate>2026-06-21T09:08:12</smc:messageCreateDate>
+      <smc:messageID>4fdafff9-8532-4ef4-9e49-c844c753df50</smc:messageID>
       <smc:sender>
         <model:refPharmacy>
           <model:pharmacyId xsi:type="id:NihiiIdType">
@@ -16,7 +16,7 @@
     <smc:eventFolder>
       <smc:events>
         <smc:event xsi:type="smc:PharmaceuticalCareEventType">
-          <smc:sessionDateTime>2026-06-03T13:00:08</smc:sessionDateTime>
+          <smc:sessionDateTime>2026-06-21T09:08:12</smc:sessionDateTime>
           <smc:pharmacyId>
             <id:nihiiPharmacyNumber>80000551</id:nihiiPharmacyNumber>
           </smc:pharmacyId>
@@ -31,6 +31,9 @@
           </model:max-Patient>
           <smc:dispensedForSamePrescription>
             <model:hcparty>
+              <model:id xsi:type="id:RizivIdType">
+                <id:riziv>17892144001</id:riziv>
+              </model:id>
               <model:type>persphysician</model:type>
               <model:name>Donald</model:name>
               <model:familyName>Duck</model:familyName>
@@ -65,7 +68,7 @@
                   <model:instructionforpatient>beginmoment case</model:instructionforpatient>
                 </model:administrationInstructions>
               </model:dispensation>
-              <model:dispensationGUID>a886cf76-466a-4f7a-9d4b-4555950b0010</model:dispensationGUID>
+              <model:dispensationGUID>4c1ad37e-a09a-4ffa-afbb-b8ca8b1c55b9</model:dispensationGUID>
             </smc:product>
             <smc:product onSubstanceName="true">
               <model:description>
@@ -83,7 +86,7 @@
                   <model:instructionforpatient>endmoment case</model:instructionforpatient>
                 </model:administrationInstructions>
               </model:dispensation>
-              <model:dispensationGUID>bd3d7421-0ea5-4226-9a7d-e1e8c68e5835</model:dispensationGUID>
+              <model:dispensationGUID>919abc47-e229-4485-b4e2-9e60048a1fbd</model:dispensationGUID>
             </smc:product>
             <smc:product onSubstanceName="true">
               <model:description>
@@ -104,7 +107,7 @@
                   <model:instructionforpatient>beginmoment &amp; endmoment case</model:instructionforpatient>
                 </model:administrationInstructions>
               </model:dispensation>
-              <model:dispensationGUID>4fcb7677-0476-4396-bc68-7a4b38a86bdc</model:dispensationGUID>
+              <model:dispensationGUID>62e43e01-2ff0-4e83-a216-7999f6fa1e62</model:dispensationGUID>
             </smc:product>
             <smc:product onSubstanceName="true">
               <model:description>
@@ -123,7 +126,7 @@
                   <model:instructionforpatient>duration case</model:instructionforpatient>
                 </model:administrationInstructions>
               </model:dispensation>
-              <model:dispensationGUID>843257f7-a858-4e88-97a0-c52b6fa13479</model:dispensationGUID>
+              <model:dispensationGUID>17f8df2c-ba1a-4f40-a011-74d3c62cee69</model:dispensationGUID>
             </smc:product>
             <smc:product onSubstanceName="true">
               <model:description>
@@ -139,7 +142,7 @@
                   <model:instructionforpatient>route case</model:instructionforpatient>
                 </model:administrationInstructions>
               </model:dispensation>
-              <model:dispensationGUID>9ca857eb-7ab3-43ac-8809-894a39d5250d</model:dispensationGUID>
+              <model:dispensationGUID>19dbfe1c-a838-46dc-8945-9a13ada910c9</model:dispensationGUID>
             </smc:product>
           </smc:dispensedForSamePrescription>
         </smc:event>
