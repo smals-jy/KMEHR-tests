@@ -3,8 +3,8 @@
   <smc:unsigned>
     <smc:header>
       <smc:version>1.0</smc:version>
-      <smc:messageCreateDate>2026-06-03T13:00:08</smc:messageCreateDate>
-      <smc:messageID>1b5be8bc-5bba-469f-9e3e-98abe9e4b587</smc:messageID>
+      <smc:messageCreateDate>2026-06-21T08:31:40</smc:messageCreateDate>
+      <smc:messageID>c1f11aae-df7b-4ec0-b31e-fea4abe88970</smc:messageID>
       <smc:sender>
         <model:refPharmacy>
           <model:pharmacyId xsi:type="id:NihiiIdType">
@@ -16,7 +16,7 @@
     <smc:eventFolder>
       <smc:events>
         <smc:event xsi:type="smc:PharmaceuticalCareEventType">
-          <smc:sessionDateTime>2026-06-03T13:00:08</smc:sessionDateTime>
+          <smc:sessionDateTime>2026-06-21T08:31:40</smc:sessionDateTime>
           <smc:pharmacyId>
             <id:nihiiPharmacyNumber>80000551</id:nihiiPharmacyNumber>
           </smc:pharmacyId>
@@ -31,6 +31,9 @@
           </model:max-Patient>
           <smc:dispensedForSamePrescription>
             <model:hcparty>
+              <model:id>
+                <id:riziv xsi:type="id:RizivIdType">17892144001</id:riziv>
+              </model:id>
               <model:type>persphysician</model:type>
               <model:name>Donald</model:name>
               <model:familyName>Duck</model:familyName>
@@ -64,7 +67,7 @@
                   <model:instructionforpatient>productCode</model:instructionforpatient>
                 </model:administrationInstructions>
               </model:dispensation>
-              <model:dispensationGUID>9da68a12-96e1-4eb6-b2de-efc7eb9b146b</model:dispensationGUID>
+              <model:dispensationGUID>97b4f2ad-052c-4955-9927-416de7bbb8a3</model:dispensationGUID>
             </smc:product>
             <smc:product onSubstanceName="true">
               <model:description>
@@ -81,7 +84,7 @@
                   <model:instructionforpatient>magistralPreparation - magistralText</model:instructionforpatient>
                 </model:administrationInstructions>
               </model:dispensation>
-              <model:dispensationGUID>9239c041-4f44-4c13-aa51-a60010a1ac12</model:dispensationGUID>
+              <model:dispensationGUID>0f272e63-959c-4db8-b246-4670d744038c</model:dispensationGUID>
             </smc:product>
             <smc:product onSubstanceName="true">
               <model:description>
@@ -101,7 +104,7 @@
                   <model:instructionforpatient>magistralPreparation - formularyReference</model:instructionforpatient>
                 </model:administrationInstructions>
               </model:dispensation>
-              <model:dispensationGUID>bbed8b8d-0d7a-41b3-9f1b-136e08671093</model:dispensationGUID>
+              <model:dispensationGUID>b34bdaef-a616-448c-b8aa-b1da5ed2dc7a</model:dispensationGUID>
             </smc:product>
             <smc:product onSubstanceName="true">
               <model:description>
@@ -149,7 +152,7 @@
                   <model:instructionforpatient>magistralPreparation - compound (all cases)</model:instructionforpatient>
                 </model:administrationInstructions>
               </model:dispensation>
-              <model:dispensationGUID>cb623063-346d-4e4b-b31d-344cfc875583</model:dispensationGUID>
+              <model:dispensationGUID>2726802c-13b7-42c7-afee-0038d9b15775</model:dispensationGUID>
             </smc:product>
             <smc:product onSubstanceName="true">
               <model:description>
@@ -164,7 +167,7 @@
                   <model:instructionforpatient>unregisteredProduct</model:instructionforpatient>
                 </model:administrationInstructions>
               </model:dispensation>
-              <model:dispensationGUID>dd1747d9-e3fe-40d4-b435-862bab4b1a21</model:dispensationGUID>
+              <model:dispensationGUID>0f910d98-d8d8-4d51-9d1c-39d09f89c201</model:dispensationGUID>
             </smc:product>
           </smc:dispensedForSamePrescription>
         </smc:event>
