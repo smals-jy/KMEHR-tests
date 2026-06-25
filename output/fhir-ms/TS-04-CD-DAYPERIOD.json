@@ -1,7 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"type": "collection",
-	"timestamp": "2026-06-25T12:47:47.960+00:00",
+	"timestamp": "2026-06-25T12:58:06.752+00:00",
 	"entry": [
 		{
 			"fullUrl": "urn:be:custom:Patient/XXXXXXXXXXX",
@@ -78,7 +78,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019efed2-7cf8-70e8-84d1-13cf3a03e597",
+			"fullUrl": "urn:uuid:019efedb-ee20-729c-a59a-68374b29179b",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -89,7 +89,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019efed2-7cf8-70e8-84d1-13cf3a03e597"
+						"value": "019efedb-ee20-729c-a59a-68374b29179b"
 					}
 				],
 				"extension": [
@@ -99,7 +99,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-06-25T12:47:47Z"
+						"valueDateTime": "2026-06-25T12:58:06Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -132,7 +132,7 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-25T12:47:47.960+00:00",
+				"dateAsserted": "2026-06-25T12:58:06.752+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -303,7 +303,6 @@
 								"when": [
 									"CM"
 								],
-								"offset": 60,
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
@@ -328,7 +327,6 @@
 								"when": [
 									"CD"
 								],
-								"offset": 60,
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
@@ -353,7 +351,6 @@
 								"when": [
 									"CV"
 								],
-								"offset": 60,
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
