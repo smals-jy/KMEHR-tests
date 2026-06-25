@@ -21,14 +21,13 @@
 					"frequency": 1,
 					"period": 1,
 					"periodUnit": "mo"
-				},
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-						"valueInteger": 15
-					}
-				]
-			}
+				}
+			},
+			"additionalInstruction": [
+				{
+					"text": "Day 15 of treatment cycle"
+				}
+			]
 		}
 	],
 	"extension": [

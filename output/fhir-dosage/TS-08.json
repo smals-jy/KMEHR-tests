@@ -20,14 +20,13 @@
 					"when": [
 						"ACM"
 					]
-				},
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-						"valueInteger": 1
-					}
-				]
-			}
+				}
+			},
+			"additionalInstruction": [
+				{
+					"text": "Day 1 of treatment cycle"
+				}
+			]
 		},
 		{
 			"doseAndRate": [
@@ -44,14 +43,13 @@
 					"when": [
 						"ACM"
 					]
-				},
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-						"valueInteger": 2
-					}
-				]
-			}
+				}
+			},
+			"additionalInstruction": [
+				{
+					"text": "Day 2 of treatment cycle"
+				}
+			]
 		}
 	],
 	"extension": [
