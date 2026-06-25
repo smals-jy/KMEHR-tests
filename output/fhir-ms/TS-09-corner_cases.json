@@ -1,7 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"type": "collection",
-	"timestamp": "2026-06-22T09:08:13.305+00:00",
+	"timestamp": "2026-06-25T12:47:48.021+00:00",
 	"entry": [
 		{
 			"fullUrl": "urn:be:custom:Patient/XXXXXXXXXXX",
@@ -176,7 +176,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019eee96-6179-728e-965b-d7ec11499a57",
+			"fullUrl": "urn:uuid:019efed2-7d34-72fe-aa91-bf06533b4025",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -187,7 +187,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019eee96-6179-728e-965b-d7ec11499a57"
+						"value": "019efed2-7d34-72fe-aa91-bf06533b4025"
 					}
 				],
 				"extension": [
@@ -230,7 +230,7 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-22T09:08:13.305+00:00",
+				"dateAsserted": "2026-06-25T12:47:48.020+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/11186375004"
 				},
@@ -272,7 +272,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019eee96-6179-728e-965b-daf77702ca3b",
+			"fullUrl": "urn:uuid:019efed2-7d34-72fe-aa91-c3f50b3d7b26",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -283,7 +283,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019eee96-6179-728e-965b-daf77702ca3b"
+						"value": "019efed2-7d34-72fe-aa91-c3f50b3d7b26"
 					}
 				],
 				"extension": [
@@ -326,7 +326,7 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-22T09:08:13.305+00:00",
+				"dateAsserted": "2026-06-25T12:47:48.020+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/30019619001"
 				},
@@ -358,7 +358,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019eee96-6179-728e-965b-deacf9f118d1",
+			"fullUrl": "urn:uuid:019efed2-7d34-72fe-aa91-c58e3297f034",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -369,7 +369,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019eee96-6179-728e-965b-deacf9f118d1"
+						"value": "019efed2-7d34-72fe-aa91-c58e3297f034"
 					}
 				],
 				"extension": [
@@ -412,7 +412,7 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-22T09:08:13.305+00:00",
+				"dateAsserted": "2026-06-25T12:47:48.020+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/45598314401"
 				},
@@ -442,14 +442,13 @@
 								"frequency": 1,
 								"period": 1,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 1
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 1 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -467,14 +466,13 @@
 								"frequency": 1,
 								"period": 1,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 2
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 2 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -492,14 +490,13 @@
 								"frequency": 1,
 								"period": 1,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 3
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 3 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -517,14 +514,13 @@
 								"frequency": 1,
 								"period": 1,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 4
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 4 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -542,14 +538,13 @@
 								"frequency": 1,
 								"period": 1,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 5
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 5 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -567,14 +562,13 @@
 								"frequency": 1,
 								"period": 1,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 6
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 6 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -592,14 +586,13 @@
 								"frequency": 1,
 								"period": 1,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 7
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 7 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -617,14 +610,13 @@
 								"frequency": 1,
 								"period": 1,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 8
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 8 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -642,14 +634,13 @@
 								"frequency": 1,
 								"period": 1,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 9
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 9 of treatment cycle"
+							}
+						]
 					}
 				],
 				"effectivePeriod": {
@@ -658,7 +649,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019eee96-6179-728e-965b-e0823595b2cb",
+			"fullUrl": "urn:uuid:019efed2-7d35-776b-82a3-c7d2441692b9",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -669,7 +660,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019eee96-6179-728e-965b-e0823595b2cb"
+						"value": "019efed2-7d35-776b-82a3-c7d2441692b9"
 					}
 				],
 				"extension": [
@@ -712,7 +703,7 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-22T09:08:13.305+00:00",
+				"dateAsserted": "2026-06-25T12:47:48.021+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/30019619001"
 				},
@@ -771,7 +762,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019eee96-6179-728e-965b-e68ff9d1938b",
+			"fullUrl": "urn:uuid:019efed2-7d35-776b-82a3-cad65c90b181",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -782,7 +773,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019eee96-6179-728e-965b-e68ff9d1938b"
+						"value": "019efed2-7d35-776b-82a3-cad65c90b181"
 					}
 				],
 				"extension": [
@@ -825,7 +816,7 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-22T09:08:13.305+00:00",
+				"dateAsserted": "2026-06-25T12:47:48.021+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/30019619001"
 				},
@@ -855,7 +846,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019eee96-6179-728e-965b-e9ef62b4d822",
+			"fullUrl": "urn:uuid:019efed2-7d35-776b-82a3-ceff934d5ad6",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -866,7 +857,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019eee96-6179-728e-965b-e9ef62b4d822"
+						"value": "019efed2-7d35-776b-82a3-ceff934d5ad6"
 					}
 				],
 				"extension": [
@@ -909,7 +900,7 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-22T09:08:13.305+00:00",
+				"dateAsserted": "2026-06-25T12:47:48.021+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/30019619001"
 				},

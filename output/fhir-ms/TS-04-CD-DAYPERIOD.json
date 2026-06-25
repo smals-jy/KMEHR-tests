@@ -1,7 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"type": "collection",
-	"timestamp": "2026-06-22T09:08:13.257+00:00",
+	"timestamp": "2026-06-25T12:47:47.960+00:00",
 	"entry": [
 		{
 			"fullUrl": "urn:be:custom:Patient/XXXXXXXXXXX",
@@ -78,7 +78,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019eee96-6149-7323-9be9-3df4ecb2e85a",
+			"fullUrl": "urn:uuid:019efed2-7cf8-70e8-84d1-13cf3a03e597",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -89,7 +89,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019eee96-6149-7323-9be9-3df4ecb2e85a"
+						"value": "019efed2-7cf8-70e8-84d1-13cf3a03e597"
 					}
 				],
 				"extension": [
@@ -99,7 +99,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-06-22T09:08:13Z"
+						"valueDateTime": "2026-06-25T12:47:47Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -132,7 +132,7 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/XXXXXXXXXXX"
 				},
-				"dateAsserted": "2026-06-22T09:08:13.257+00:00",
+				"dateAsserted": "2026-06-25T12:47:47.960+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -162,14 +162,13 @@
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 1
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 1 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -187,14 +186,13 @@
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 2
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 2 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -212,14 +210,13 @@
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 3
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 3 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -237,14 +234,13 @@
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 4
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 4 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -262,14 +258,13 @@
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 5
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 5 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -287,14 +282,13 @@
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 6
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 6 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -313,14 +307,13 @@
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 7
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 7 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -339,14 +332,13 @@
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 8
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 8 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -365,14 +357,13 @@
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 9
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 9 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -390,14 +381,13 @@
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 10
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 10 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -415,14 +405,13 @@
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 11
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 11 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -440,14 +429,13 @@
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 12
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 12 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -465,14 +453,13 @@
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 13
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 13 of treatment cycle"
+							}
+						]
 					},
 					{
 						"doseAndRate": [
@@ -490,14 +477,13 @@
 								"frequency": 1,
 								"period": 3,
 								"periodUnit": "mo"
-							},
-							"extension": [
-								{
-									"url": "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-									"valueInteger": 14
-								}
-							]
-						}
+							}
+						},
+						"additionalInstruction": [
+							{
+								"text": "Day 14 of treatment cycle"
+							}
+						]
 					}
 				],
 				"effectivePeriod": {
