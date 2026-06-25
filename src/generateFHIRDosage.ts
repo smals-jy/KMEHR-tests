@@ -93,9 +93,9 @@ export function generatePayload(config: MedicationEntry): MedicationStatement {
     dosage:
       regimen === undefined
         ? // Free-text
-          [fromKMEHRFreeTextPosologyToFHIRDosage(config)]
+        [fromKMEHRFreeTextPosologyToFHIRDosage(config)]
         : // codified posology
-          fromKEMHRRegimenToFHIRDosage(regimen, config),
+        fromKEMHRRegimenToFHIRDosage(regimen, config),
     // the medication use, useful to remember the context in final payload
     extension: [
       {
@@ -170,6 +170,12 @@ export function fromKEMHRRegimenToFHIRDosage(
       doseAndRate: fromKMEHRQuantityToFHIRQuantity(entry),
       // When to take medication
       timing: fromKMEHRTimingToFHIRTiming(config, entry),
+      // Additional instructions for the medication
+      additionalInstruction: (entry.dayIngestion?.dayNumber !== undefined) ? [
+        {
+          text: `Day ${entry.dayIngestion?.dayNumber} of treatment cycle`
+        }
+      ] : undefined,
       // The instructions for the patient
       patientInstruction: config.instructionForPatient,
       // Only when needed ?
@@ -445,15 +451,10 @@ function fromKMEHRTimingToFHIRTiming(
     event: events.length > 0 ? events : undefined,
   };
 
-  // Day number can't be mapped in FHIR like that, so an extension
-  if (entry?.dayIngestion?.dayNumber !== undefined) {
-    result.extension = [
-      {
-        url: "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle",
-        valueInteger: entry.dayIngestion.dayNumber,
-      },
-    ];
-  }
+  // Day number can't be mapped in FHIR like that
+  // Extension http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle can't be used here as FHIR allow something
+  // extensions only at specific places
+  // So it would be put in additional instructions fields, as no better places for that
 
   return result;
 }
