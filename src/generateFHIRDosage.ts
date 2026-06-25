@@ -513,7 +513,7 @@ function fromDayPeriodToOffet(code?: DayPeriodList): number | undefined {
     case "betweenlunchanddinner":
     case "betweendinnerandsleep":
       // 60 minutes seems to be the value FarmaFlux and others picked up (could be tweaked if needed)
-      return 60;
+      // return 60;
     default:
       return undefined;
   }
