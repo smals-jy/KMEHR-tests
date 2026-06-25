@@ -61,7 +61,7 @@ function getFormattedTime(date = new Date()) {
 
 // Generate a random ssin
 function generateSSIN() {
-  return "XXXXXXXXXXX";
+  return "12345678901";
 }
 
 export const defaultPrefixConfig: PrefixConfig = {
