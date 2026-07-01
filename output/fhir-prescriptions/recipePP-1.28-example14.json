@@ -6,7 +6,7 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2026-06-25T12:58:06.666+00:00",
+			"authoredOn": "2026-07-01T14:12:04.373+00:00",
 			"extension": [
 				{
 					"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/InstructionsForReimbursement",
@@ -24,14 +24,14 @@
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
+					"value": "00000000097"
 				},
 				"display": "Tasmanian Duck"
 			},
 			"requester": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
+					"value": "00000000097"
 				},
 				"display": "Donald Duck"
 			},
@@ -59,7 +59,7 @@
 			"identifier": [
 				{
 					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP0NYD44K4N"
+					"value": "BEP0MP3TD1WT"
 				}
 			],
 			"medicationCodeableConcept": {
@@ -75,5 +75,5 @@
 		}
 	],
 	"total": 1,
-	"timestamp": "2026-06-25T12:58:06.666+00:00"
+	"timestamp": "2026-07-01T14:12:04.373+00:00"
 }

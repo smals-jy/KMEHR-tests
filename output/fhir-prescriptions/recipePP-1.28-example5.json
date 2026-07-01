@@ -6,18 +6,18 @@
 			"resourceType": "MedicationRequest",
 			"status": "active",
 			"intent": "order",
-			"authoredOn": "2026-06-25T12:58:06.744+00:00",
+			"authoredOn": "2026-07-01T14:12:04.439+00:00",
 			"subject": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
+					"value": "00000000097"
 				},
 				"display": "Tasmanian Duck"
 			},
 			"requester": {
 				"identifier": {
 					"system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-					"value": "XXXXXXXXXXX"
+					"value": "00000000097"
 				},
 				"display": "Donald Duck"
 			},
@@ -60,7 +60,7 @@
 			"identifier": [
 				{
 					"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription",
-					"value": "BEP0G185RG0P"
+					"value": "BEP0KTY0463C"
 				}
 			],
 			"medicationCodeableConcept": {
@@ -75,5 +75,5 @@
 		}
 	],
 	"total": 1,
-	"timestamp": "2026-06-25T12:58:06.744+00:00"
+	"timestamp": "2026-07-01T14:12:04.439+00:00"
 }
