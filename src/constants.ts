@@ -61,7 +61,10 @@ function getFormattedTime(date = new Date()) {
 
 // Generate a random ssin
 function generateSSIN() {
-  return "12345678901";
+  // Fictitious NISS: "00-00-00" is not a valid birthdate, so this can never
+  // collide with a real person's number, while the checksum is still valid.
+  // Also used in other projects such as https://github.com/smals-belgium/shared-pseudo-helper-java/tree/master#pseudonymise-an-ssin 
+  return "00000000097";
 }
 
 export const defaultPrefixConfig: PrefixConfig = {
