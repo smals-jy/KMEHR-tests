@@ -1,0 +1,47 @@
+---
+description: Corner cases in PCDH
+title: 🌀 TS-05 - Corner cases
+---
+
+## Description
+
+See if software in test can handle edge cases and corner cases in PCDH medication data:
+
+```xml title="Example"
+...
+<smc:events>
+    ...
+    <smc:event xsi:type="smc:PharmaceuticalCareEventType">
+        <smc:deliveredMedicines>
+            <!-- Edge cases being tested -->
+        </smc:deliveredMedicines>
+    </smc:event>
+    ...
+</smc:events>
+...
+```
+
+## Test cases
+
+- Negative delivery amounts
+- Medications returned/dispensed without prescription
+- Extended medication names
+- Multiple drugs with different formats
+
+## Files
+
+- [XML file](https://github.com/smals-jy/KMEHR-tests/blob/main/output/pcdh/TS-05-corner-cases.xml)
+- [Configuration file](https://github.com/smals-jy/KMEHR-tests/blob/main/configurations/pcdh/TS-05-corner-cases.ts)
+
+## Expected results
+
+When looking to the patient delivered medication history:
+
+- Returned medications should be processed correctly with negative delivery amounts:
+  - ["Iso-Betadine Dermicum 10 % cut. opl. 50 x 10 ml UD"](https://samviewer.digile.be/nl/sam/ampps/1080233-01) is present as a returned medication
+  
+- Long medication names should be handled properly:
+  - "Efavirenz/Emtricitabine/Tenofovir Disoproxil Mylan 600 mg - 200 mg - 245 mg filmomh. tabl. 90 (3 x 30)" is displayed correctly
+  
+- Medications dispensed without prescription should be recorded:
+  - Delivery mode "dispensedWithoutPrescription" is correctly interpreted
