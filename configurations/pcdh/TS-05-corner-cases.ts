@@ -20,11 +20,9 @@ export default function (): PCDHConfiguration {
         deliveredAmount: 2,
         deliveredMode: "dispensedWithoutPrescription",
         drugs: [
-          // Returned medication (-1)
+          // Returned medications
           {
-            quantity: {
-              amount: -1
-            },
+            deliveredAmount: -2,
             drugType: "medicinalproduct",
             intendedcd: "1080233",
             intendedname: "Iso-Betadine Dermicum 10 % cut. opl. 50 x 10 ml UD",
@@ -32,9 +30,7 @@ export default function (): PCDHConfiguration {
           },
           // Long medication name returned
           {
-            quantity: {
-              amount: -1
-            },
+            deliveredAmount: -1,
             drugType: "medicinalproduct",
             intendedcd: "3639408",
             intendedname: "Efavirenz/Emtricitabine/Tenofovir Disoproxil Mylan 600 mg - 200 mg - 245 mg filmomh. tabl. 90 (3 x 30)",
