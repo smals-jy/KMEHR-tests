@@ -1,7 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"type": "collection",
-	"timestamp": "2026-07-14T13:10:18.916+00:00",
+	"timestamp": "2026-07-14T13:13:36.539+00:00",
 	"entry": [
 		{
 			"fullUrl": "urn:be:custom:Patient/00000000097",
@@ -78,7 +78,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019f60bf-ee24-72bb-8adb-c3e13e552341",
+			"fullUrl": "urn:uuid:019f60c2-f21b-7719-95c5-2c03bd779503",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -89,7 +89,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019f60bf-ee24-72bb-8adb-c3e13e552341"
+						"value": "019f60c2-f21b-7719-95c5-2c03bd779503"
 					}
 				],
 				"extension": [
@@ -99,7 +99,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-07-14T13:10:18Z"
+						"valueDateTime": "2026-07-14T13:13:36Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -151,7 +151,7 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-07-14T13:10:18.916+00:00",
+				"dateAsserted": "2026-07-14T13:13:36.539+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -195,7 +195,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019f60bf-ee24-72bb-8adb-c4120ec0f522",
+			"fullUrl": "urn:uuid:019f60c2-f21b-7719-95c5-320a4d56653b",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -206,7 +206,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019f60bf-ee24-72bb-8adb-c4120ec0f522"
+						"value": "019f60c2-f21b-7719-95c5-320a4d56653b"
 					}
 				],
 				"extension": [
@@ -216,7 +216,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-07-14T13:10:18Z"
+						"valueDateTime": "2026-07-14T13:13:36Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -249,7 +249,7 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-07-14T13:10:18.916+00:00",
+				"dateAsserted": "2026-07-14T13:13:36.539+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
