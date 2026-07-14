@@ -36,6 +36,7 @@ export default function (): MSConfiguration {
           intendedcd: "2732808",
           intendedname: "Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56",
           beginmoment: "2027-01-01",
+          periodicity: "D",
           lifecycle: "stopped",
           regimen: [
             {
