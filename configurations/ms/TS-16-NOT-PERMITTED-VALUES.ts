@@ -3,10 +3,9 @@ import type { MSConfiguration } from "@smals-jy/kmehr-tests";
 export default function (): MSConfiguration {
   return {
     transactions: [
-      // CD-ITEM-MS with adaptationflag - medication that goes forever
+      // A medication that goes forever
       {
         id: 2,
-        adaptationflag: true,
         drug: {
           drugType: "medicinalproduct",
           identifierType: "CD-DRUG-CNK",
