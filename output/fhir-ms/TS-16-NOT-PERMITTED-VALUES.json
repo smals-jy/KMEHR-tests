@@ -1,7 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"type": "collection",
-	"timestamp": "2026-07-14T12:41:49.490+00:00",
+	"timestamp": "2026-07-14T12:41:49.522+00:00",
 	"entry": [
 		{
 			"fullUrl": "urn:be:custom:Patient/00000000097",
@@ -78,7 +78,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019f60a5-d8b2-70a7-9121-63caa97aab48",
+			"fullUrl": "urn:uuid:019f60a5-d8d2-7003-a8ff-1e239cffeb8f",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -89,7 +89,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019f60a5-d8b2-70a7-9121-63caa97aab48"
+						"value": "019f60a5-d8d2-7003-a8ff-1e239cffeb8f"
 					}
 				],
 				"extension": [
@@ -128,119 +128,70 @@
 						}
 					}
 				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-07-14T12:41:49.490+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "001"
-				},
-				"dosage": [
+				"status": "stopped",
+				"statusReason": [
 					{
-						"text": "Without medicationuse",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:019f60a5-d8b2-70a7-9121-65cb718ab507",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019f60a5-d8b2-70a7-9121-65cb718ab507"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-07-14T12:41:49Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
 						"extension": [
 							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2027-01-01"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Treatment completed - medication stopped."
+									}
+								]
 							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
+						],
+						"text": "Definitive suspension from 2027-01-01 to forever"
 					}
 				],
-				"status": "unknown",
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-07-14T12:41:49.490+00:00",
+				"dateAsserted": "2026-07-14T12:41:49.522+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+							"code": "2732808",
+							"display": "Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56"
 						}
 					],
-					"text": "002"
+					"text": "Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56"
 				},
 				"dosage": [
 					{
-						"text": "With medicationuse",
+						"doseAndRate": [
+							{
+								"doseQuantity": {
+									"value": 1,
+									"code": "336624003",
+									"system": "http://snomed.info/sct"
+								}
+							}
+						],
 						"timing": {
 							"repeat": {
+								"when": [
+									"ACM"
+								],
 								"frequency": 1,
 								"period": 1,
 								"periodUnit": "d"
 							}
-						}
+						},
+						"patientInstruction": "Take one tablet before breakfast daily. CD-ITEM-MS with adaptation flag."
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2024-01-15"
+				}
 			}
 		}
 	]
