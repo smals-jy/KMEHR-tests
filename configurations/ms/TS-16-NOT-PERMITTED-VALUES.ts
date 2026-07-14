@@ -51,6 +51,31 @@ export default function (): MSConfiguration {
         suspensionReference: 2,
         suspensionReason: "Treatment completed - medication stopped.",
       },
+      // CD-ITEM-MS with adaptationflag - different medication
+      {
+        id: 4,
+        adaptationflag: true,
+        drug: {
+          drugType: "medicinalproduct",
+          identifierType: "CD-DRUG-CNK",
+          intendedcd: "1089145",
+          intendedname: "Paracetamol Accord 500 mg comp. 20",
+          beginmoment: "2024-02-10",
+          temporality: "chronic",
+          periodicity: "D",
+          regimen: [
+            {
+              quantity: 2,
+              unit: "00001",
+              timeOfDay: {
+                dayPeriod: "aftermeals",
+              },
+            },
+          ],
+          instructionForPatient:
+            "Take two tablets after meals. CD-ITEM-MS with adaptation flag.",
+        },
+      },
     ],
   };
 }
