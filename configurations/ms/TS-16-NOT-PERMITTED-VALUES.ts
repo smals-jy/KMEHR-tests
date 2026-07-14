@@ -6,6 +6,7 @@ export default function (): MSConfiguration {
       // CD-ITEM-MS with adaptationflag - medication that goes forever
       {
         id: 2,
+        adaptationflag: true,
         drug: {
           drugType: "medicinalproduct",
           identifierType: "CD-DRUG-CNK",
@@ -14,7 +15,6 @@ export default function (): MSConfiguration {
           beginmoment: "2024-01-15",
           temporality: "chronic",
           periodicity: "D",
-          adaptationflag: true,
           regimen: [
             {
               quantity: 1,
@@ -36,9 +36,17 @@ export default function (): MSConfiguration {
           identifierType: "CD-DRUG-CNK",
           intendedcd: "2732808",
           intendedname: "Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56",
-          beginmoment: "2024-05-10",
+          beginmoment: "2027-01-01",
           lifecycle: "stopped",
-          posologyFreeText: null,
+          regimen: [
+            {
+              quantity: 1,
+              unit: "00005",
+              timeOfDay: {
+                dayPeriod: "beforebreakfast",
+              },
+            },
+          ]
         },
         suspensionReference: 2,
         suspensionReason: "Treatment completed - medication stopped.",
