@@ -67,12 +67,12 @@ export default function (): MSConfiguration {
               quantity: 2,
               unit: "00001",
               timeOfDay: {
-                dayPeriod: "aftermeals",
+                dayPeriod: "beforebreakfast",
               },
             },
           ],
           instructionForPatient:
-            "Take two tablets after meals. CD-ITEM-MS with adaptation flag.",
+            "Take two tablets before breakfast. CD-ITEM-MS with adaptation flag.",
         },
       },
     ],
