@@ -6,7 +6,7 @@
     </standard>
     <id S="ID-KMEHR" SV="1.0">1990001916.2018041091404668030</id>
     <date>2026-07-13</date>
-    <time>12:41:49</time>
+    <time>13:10:18</time>
     <sender>
       <hcparty>
         <id S="ID-HCPARTY" SV="1.0">1990001916</id>
@@ -42,7 +42,7 @@
       <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/XXXXXXXXXXX/medication-scheme</id>
       <cd S="CD-TRANSACTION" SV="1.0">medicationscheme</cd>
       <date>2026-07-13</date>
-      <time>12:41:49</time>
+      <time>13:10:18</time>
       <author>
         <hcparty>
           <id S="ID-HCPARTY" SV="1.0">17892144001</id>
@@ -61,7 +61,7 @@
       <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/00000000097/medication-scheme/2/1</id>
       <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
       <date>2026-07-13</date>
-      <time>12:41:49</time>
+      <time>13:10:18</time>
       <author>
         <hcparty>
           <id S="ID-HCPARTY" SV="1.0">17892144001</id>
@@ -114,7 +114,7 @@
       <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/00000000097/medication-scheme/3/1</id>
       <cd S="CD-TRANSACTION" SV="1.4">treatmentsuspension</cd>
       <date>2026-07-13</date>
-      <time>12:41:49</time>
+      <time>13:10:18</time>
       <author>
         <hcparty>
           <id S="ID-HCPARTY" SV="1.0">17892144001</id>
@@ -162,6 +162,59 @@
           </quantity>
         </regimen>
         <lnk TYPE="isplannedfor" URL="//transaction[id[@S=&apos;ID-KMEHR&apos;]=&apos;2&apos;]"/>
+      </item>
+    </transaction>
+    <transaction>
+      <id S="ID-KMEHR" SV="1.0">4</id>
+      <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/00000000097/medication-scheme/4/1</id>
+      <cd S="CD-TRANSACTION" SV="1.4">medicationschemeelement</cd>
+      <date>2026-07-13</date>
+      <time>13:10:18</time>
+      <author>
+        <hcparty>
+          <id S="ID-HCPARTY" SV="1.0">17892144001</id>
+          <id S="INSS" SV="1.0">00000000097</id>
+          <cd S="CD-HCPARTY" SV="1.0">persphysician</cd>
+          <firstname>Donald</firstname>
+          <familyname>Duck</familyname>
+        </hcparty>
+      </author>
+      <iscomplete>true</iscomplete>
+      <isvalidated>true</isvalidated>
+      <item>
+        <id S="ID-KMEHR" SV="1.0">1</id>
+        <cd S="CD-ITEM" SV="1.4">medication</cd>
+        <content>
+          <medicinalproduct>
+            <intendedcd S="CD-DRUG-CNK" SV="1.0">1089145</intendedcd>
+            <intendedname>Paracetamol Accord 500 mg comp. 20</intendedname>
+          </medicinalproduct>
+        </content>
+        <beginmoment>
+          <date>2024-02-10</date>
+        </beginmoment>
+        <temporality>
+          <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+        </temporality>
+        <frequency>
+          <periodicity>
+            <cd S="CD-PERIODICITY" SV="1.0">D</cd>
+          </periodicity>
+        </frequency>
+        <regimen>
+          <daytime>
+            <dayperiod>
+              <cd S="CD-DAYPERIOD" SV="1.0">aftermeals</cd>
+            </dayperiod>
+          </daytime>
+          <quantity>
+            <decimal>2</decimal>
+            <unit>
+              <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00001</cd>
+            </unit>
+          </quantity>
+        </regimen>
+        <instructionforpatient L="nl">Take two tablets after meals. CD-ITEM-MS with adaptation flag.</instructionforpatient>
       </item>
     </transaction>
   </folder>

@@ -1,7 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"type": "collection",
-	"timestamp": "2026-07-14T12:41:49.522+00:00",
+	"timestamp": "2026-07-14T13:10:18.916+00:00",
 	"entry": [
 		{
 			"fullUrl": "urn:be:custom:Patient/00000000097",
@@ -78,7 +78,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019f60a5-d8d2-7003-a8ff-1e239cffeb8f",
+			"fullUrl": "urn:uuid:019f60bf-ee24-72bb-8adb-c3e13e552341",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -89,7 +89,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019f60a5-d8d2-7003-a8ff-1e239cffeb8f"
+						"value": "019f60bf-ee24-72bb-8adb-c3e13e552341"
 					}
 				],
 				"extension": [
@@ -99,7 +99,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-07-14T12:41:49Z"
+						"valueDateTime": "2026-07-14T13:10:18Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -151,7 +151,7 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-07-14T12:41:49.522+00:00",
+				"dateAsserted": "2026-07-14T13:10:18.916+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -191,6 +191,101 @@
 				],
 				"effectivePeriod": {
 					"start": "2024-01-15"
+				}
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:019f60bf-ee24-72bb-8adb-c4120ec0f522",
+			"resource": {
+				"resourceType": "MedicationStatement",
+				"meta": {
+					"profile": [
+						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
+					]
+				},
+				"identifier": [
+					{
+						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
+						"value": "019f60bf-ee24-72bb-8adb-c4120ec0f522"
+					}
+				],
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+						"valueString": "1"
+					},
+					{
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
+						"valueDateTime": "2026-07-14T13:10:18Z"
+					},
+					{
+						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
+						"extension": [
+							{
+								"url": "code",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
+											"code": "unknown"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
+						"valueCode": "recorded"
+					},
+					{
+						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
+						"valueReference": {
+							"reference": "urn:be:custom:PractitionerRole/17892144001"
+						}
+					}
+				],
+				"status": "unknown",
+				"subject": {
+					"reference": "urn:be:custom:Patient/00000000097"
+				},
+				"dateAsserted": "2026-07-14T13:10:18.916+00:00",
+				"informationSource": {
+					"reference": "urn:be:custom:PractitionerRole/17892144001"
+				},
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+							"code": "1089145",
+							"display": "Paracetamol Accord 500 mg comp. 20"
+						}
+					],
+					"text": "Paracetamol Accord 500 mg comp. 20"
+				},
+				"dosage": [
+					{
+						"doseAndRate": [
+							{
+								"doseQuantity": {
+									"value": 2,
+									"code": "5.mL",
+									"system": "http://unitsofmeasure.org"
+								}
+							}
+						],
+						"timing": {
+							"repeat": {
+								"frequency": 1,
+								"period": 1,
+								"periodUnit": "d"
+							}
+						},
+						"patientInstruction": "Take two tablets after meals. CD-ITEM-MS with adaptation flag."
+					}
+				],
+				"effectivePeriod": {
+					"start": "2024-02-10"
 				}
 			}
 		}
