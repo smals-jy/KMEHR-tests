@@ -24,7 +24,7 @@ export default function (): MSConfiguration {
             },
           ],
           instructionForPatient:
-            "Take one tablet before breakfast daily. CD-ITEM-MS with adaptation flag.",
+            "Take one tablet before breakfast daily. CD-LIFECYCLE with stopped",
         },
       },
       // CD-LIFECYCLE with stopped - suspension referencing medication id 2
@@ -54,7 +54,7 @@ export default function (): MSConfiguration {
       // CD-ITEM-MS with adaptationflag - different medication
       {
         id: 4,
-        adaptationflag: true,
+        adaptationFlag: true,
         drug: {
           drugType: "medicinalproduct",
           identifierType: "CD-DRUG-CNK",
