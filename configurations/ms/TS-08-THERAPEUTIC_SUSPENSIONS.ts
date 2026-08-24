@@ -52,9 +52,9 @@ type Scenario = {
 // Generate test scenario
 function generateTestScenario(): Scenario[] {
   // When all drugs starts ...
-  const DRUG_COMMON_START_DATE = "2022-07-01";
+  const DRUG_COMMON_START_DATE = "2026-08-20";
   // When all drugs with end stops
-  const DRUG_COMMON_END_DATE = "2022-07-24";
+  const DRUG_COMMON_END_DATE = "2026-09-30";
 
   // In IMEC, we have 4 test cases about TR suspensions
   // But what really matter are the periods
