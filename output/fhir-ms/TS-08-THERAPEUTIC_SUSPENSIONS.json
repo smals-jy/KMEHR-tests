@@ -1,7 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"type": "collection",
-	"timestamp": "2026-08-04T10:56:39.942+00:00",
+	"timestamp": "2026-08-24T09:42:09.742+00:00",
 	"entry": [
 		{
 			"fullUrl": "urn:be:custom:Patient/00000000097",
@@ -78,7 +78,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a953-f115fc518f11",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-b039b909bf04",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -89,7 +89,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a953-f115fc518f11"
+						"value": "01a03326-184d-7019-a164-b039b909bf04"
 					}
 				],
 				"extension": [
@@ -99,7 +99,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -135,8 +135,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-04",
-									"end": "2022-07-05"
+									"start": "2026-08-23",
+									"end": "2026-08-24"
 								},
 								"extension": [
 									{
@@ -146,15 +146,15 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-04 to 2022-07-05"
+						"text": "Temporary suspension from 2026-08-23 to 2026-08-24"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-07",
-									"end": "2022-07-08"
+									"start": "2026-08-26",
+									"end": "2026-08-27"
 								},
 								"extension": [
 									{
@@ -164,15 +164,15 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-07 to 2022-07-08"
+						"text": "Temporary suspension from 2026-08-26 to 2026-08-27"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-10",
-									"end": "2022-07-11"
+									"start": "2026-08-29",
+									"end": "2026-08-30"
 								},
 								"extension": [
 									{
@@ -182,13 +182,13 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-10 to 2022-07-11"
+						"text": "Temporary suspension from 2026-08-29 to 2026-08-30"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -214,12 +214,12 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01"
+					"start": "2026-08-20"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a953-f7940bc7d4ea",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-b6cdcab978b8",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -230,7 +230,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a953-f7940bc7d4ea"
+						"value": "01a03326-184d-7019-a164-b6cdcab978b8"
 					}
 				],
 				"extension": [
@@ -240,7 +240,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -276,8 +276,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-04",
-									"end": "2022-07-07"
+									"start": "2026-08-23",
+									"end": "2026-08-26"
 								},
 								"extension": [
 									{
@@ -287,15 +287,15 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-04 to 2022-07-07"
+						"text": "Temporary suspension from 2026-08-23 to 2026-08-26"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-08",
-									"end": "2022-07-11"
+									"start": "2026-08-27",
+									"end": "2026-08-30"
 								},
 								"extension": [
 									{
@@ -305,13 +305,13 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-08 to 2022-07-11"
+						"text": "Temporary suspension from 2026-08-27 to 2026-08-30"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -337,12 +337,12 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01"
+					"start": "2026-08-20"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a953-f848fca1bb7a",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-bae47e9c5ac9",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -353,7 +353,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a953-f848fca1bb7a"
+						"value": "01a03326-184d-7019-a164-bae47e9c5ac9"
 					}
 				],
 				"extension": [
@@ -363,7 +363,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -399,8 +399,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-04",
-									"end": "2022-07-07"
+									"start": "2026-08-23",
+									"end": "2026-08-26"
 								},
 								"extension": [
 									{
@@ -410,15 +410,15 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-04 to 2022-07-07"
+						"text": "Temporary suspension from 2026-08-23 to 2026-08-26"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-04",
-									"end": "2022-07-07"
+									"start": "2026-08-23",
+									"end": "2026-08-26"
 								},
 								"extension": [
 									{
@@ -428,13 +428,13 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-04 to 2022-07-07"
+						"text": "Temporary suspension from 2026-08-23 to 2026-08-26"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -460,12 +460,12 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01"
+					"start": "2026-08-20"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a953-fe281ac31d28",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-bf5973624d2e",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -476,7 +476,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a953-fe281ac31d28"
+						"value": "01a03326-184d-7019-a164-bf5973624d2e"
 					}
 				],
 				"extension": [
@@ -486,7 +486,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -522,8 +522,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-04",
-									"end": "2022-07-07"
+									"start": "2026-08-23",
+									"end": "2026-08-26"
 								},
 								"extension": [
 									{
@@ -533,15 +533,15 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-04 to 2022-07-07"
+						"text": "Temporary suspension from 2026-08-23 to 2026-08-26"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-05",
-									"end": "2022-07-08"
+									"start": "2026-08-24",
+									"end": "2026-08-27"
 								},
 								"extension": [
 									{
@@ -551,13 +551,13 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-05 to 2022-07-08"
+						"text": "Temporary suspension from 2026-08-24 to 2026-08-27"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -583,12 +583,12 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01"
+					"start": "2026-08-20"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-02c2a3245c4e",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-c193fb5321f0",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -599,7 +599,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-02c2a3245c4e"
+						"value": "01a03326-184d-7019-a164-c193fb5321f0"
 					}
 				],
 				"extension": [
@@ -609,7 +609,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -645,8 +645,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-04",
-									"end": "2022-07-07"
+									"start": "2026-08-23",
+									"end": "2026-08-26"
 								},
 								"extension": [
 									{
@@ -656,15 +656,15 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-04 to 2022-07-07"
+						"text": "Temporary suspension from 2026-08-23 to 2026-08-26"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-06",
-									"end": "2022-07-07"
+									"start": "2026-08-25",
+									"end": "2026-08-26"
 								},
 								"extension": [
 									{
@@ -674,13 +674,13 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-06 to 2022-07-07"
+						"text": "Temporary suspension from 2026-08-25 to 2026-08-26"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -706,12 +706,12 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01"
+					"start": "2026-08-20"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-04b8fab4d852",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-c5494f048b40",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -722,7 +722,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-04b8fab4d852"
+						"value": "01a03326-184d-7019-a164-c5494f048b40"
 					}
 				],
 				"extension": [
@@ -732,7 +732,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -768,8 +768,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-06",
-									"end": "2022-07-07"
+									"start": "2026-08-25",
+									"end": "2026-08-26"
 								},
 								"extension": [
 									{
@@ -779,15 +779,15 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-06 to 2022-07-07"
+						"text": "Temporary suspension from 2026-08-25 to 2026-08-26"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-04",
-									"end": "2022-07-07"
+									"start": "2026-08-23",
+									"end": "2026-08-26"
 								},
 								"extension": [
 									{
@@ -797,13 +797,13 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-04 to 2022-07-07"
+						"text": "Temporary suspension from 2026-08-23 to 2026-08-26"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -829,12 +829,12 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01"
+					"start": "2026-08-20"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-09a473e4d067",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-c8199bdf9251",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -845,7 +845,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-09a473e4d067"
+						"value": "01a03326-184d-7019-a164-c8199bdf9251"
 					}
 				],
 				"extension": [
@@ -855,7 +855,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -891,8 +891,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-02",
-									"end": "2022-07-03"
+									"start": "2026-08-21",
+									"end": "2026-08-22"
 								},
 								"extension": [
 									{
@@ -902,14 +902,14 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-02 to 2022-07-03"
+						"text": "Temporary suspension from 2026-08-21 to 2026-08-22"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-05"
+									"start": "2026-08-24"
 								},
 								"extension": [
 									{
@@ -919,13 +919,13 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-05 to forever"
+						"text": "Definitive suspension from 2026-08-24 to forever"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -951,12 +951,12 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01"
+					"start": "2026-08-20"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-0c7b13721488",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-cedd31ad2c4b",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -967,7 +967,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-0c7b13721488"
+						"value": "01a03326-184d-7019-a164-cedd31ad2c4b"
 					}
 				],
 				"extension": [
@@ -977,7 +977,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -1013,8 +1013,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-02",
-									"end": "2022-07-03"
+									"start": "2026-08-21",
+									"end": "2026-08-22"
 								},
 								"extension": [
 									{
@@ -1024,14 +1024,14 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-02 to 2022-07-03"
+						"text": "Temporary suspension from 2026-08-21 to 2026-08-22"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-04"
+									"start": "2026-08-23"
 								},
 								"extension": [
 									{
@@ -1041,13 +1041,13 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-04 to forever"
+						"text": "Definitive suspension from 2026-08-23 to forever"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1073,12 +1073,12 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01"
+					"start": "2026-08-20"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-1376d068b3f1",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-d09cbdc3889a",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1089,7 +1089,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-1376d068b3f1"
+						"value": "01a03326-184d-7019-a164-d09cbdc3889a"
 					}
 				],
 				"extension": [
@@ -1099,7 +1099,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -1135,8 +1135,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-02",
-									"end": "2022-07-03"
+									"start": "2026-08-21",
+									"end": "2026-08-22"
 								},
 								"extension": [
 									{
@@ -1146,14 +1146,14 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-02 to 2022-07-03"
+						"text": "Temporary suspension from 2026-08-21 to 2026-08-22"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-03"
+									"start": "2026-08-22"
 								},
 								"extension": [
 									{
@@ -1163,13 +1163,13 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-03 to forever"
+						"text": "Definitive suspension from 2026-08-22 to forever"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1195,12 +1195,12 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01"
+					"start": "2026-08-20"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-14c7bc745222",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-d65ff9e1425d",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1211,7 +1211,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-14c7bc745222"
+						"value": "01a03326-184d-7019-a164-d65ff9e1425d"
 					}
 				],
 				"extension": [
@@ -1221,7 +1221,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -1257,8 +1257,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-02",
-									"end": "2022-07-03"
+									"start": "2026-08-21",
+									"end": "2026-08-22"
 								},
 								"extension": [
 									{
@@ -1268,14 +1268,14 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-02 to 2022-07-03"
+						"text": "Temporary suspension from 2026-08-21 to 2026-08-22"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-02"
+									"start": "2026-08-21"
 								},
 								"extension": [
 									{
@@ -1285,13 +1285,13 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-02 to forever"
+						"text": "Definitive suspension from 2026-08-21 to forever"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1317,12 +1317,12 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01"
+					"start": "2026-08-20"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-1bd364a8e160",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-da18a9244837",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1333,7 +1333,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-1bd364a8e160"
+						"value": "01a03326-184d-7019-a164-da18a9244837"
 					}
 				],
 				"extension": [
@@ -1343,7 +1343,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -1379,8 +1379,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-02",
-									"end": "2022-07-03"
+									"start": "2026-08-21",
+									"end": "2026-08-22"
 								},
 								"extension": [
 									{
@@ -1390,14 +1390,14 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-02 to 2022-07-03"
+						"text": "Temporary suspension from 2026-08-21 to 2026-08-22"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-01"
+									"start": "2026-08-20"
 								},
 								"extension": [
 									{
@@ -1407,13 +1407,13 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-01 to forever"
+						"text": "Definitive suspension from 2026-08-20 to forever"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1439,12 +1439,12 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01"
+					"start": "2026-08-20"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-1f2da0681806",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-ddf096f48c54",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1455,7 +1455,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-1f2da0681806"
+						"value": "01a03326-184d-7019-a164-ddf096f48c54"
 					}
 				],
 				"extension": [
@@ -1465,7 +1465,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -1501,7 +1501,7 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-05"
+									"start": "2026-08-24"
 								},
 								"extension": [
 									{
@@ -1511,14 +1511,14 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-05 to forever"
+						"text": "Definitive suspension from 2026-08-24 to forever"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-02"
+									"start": "2026-08-21"
 								},
 								"extension": [
 									{
@@ -1528,13 +1528,13 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-02 to forever"
+						"text": "Definitive suspension from 2026-08-21 to forever"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1560,12 +1560,12 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01"
+					"start": "2026-08-20"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-234591729ca5",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-e3ab0062d274",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1576,7 +1576,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-234591729ca5"
+						"value": "01a03326-184d-7019-a164-e3ab0062d274"
 					}
 				],
 				"extension": [
@@ -1586,7 +1586,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -1622,7 +1622,7 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-03"
+									"start": "2026-08-22"
 								},
 								"extension": [
 									{
@@ -1632,14 +1632,14 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-03 to forever"
+						"text": "Definitive suspension from 2026-08-22 to forever"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-03"
+									"start": "2026-08-22"
 								},
 								"extension": [
 									{
@@ -1649,13 +1649,13 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-03 to forever"
+						"text": "Definitive suspension from 2026-08-22 to forever"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1681,12 +1681,12 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01"
+					"start": "2026-08-20"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-25ac725ce392",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-e4bba4109a59",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1697,7 +1697,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-25ac725ce392"
+						"value": "01a03326-184d-7019-a164-e4bba4109a59"
 					}
 				],
 				"extension": [
@@ -1707,7 +1707,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -1743,8 +1743,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-04",
-									"end": "2022-07-05"
+									"start": "2026-08-23",
+									"end": "2026-08-24"
 								},
 								"extension": [
 									{
@@ -1754,15 +1754,15 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-04 to 2022-07-05"
+						"text": "Temporary suspension from 2026-08-23 to 2026-08-24"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-07",
-									"end": "2022-07-08"
+									"start": "2026-08-26",
+									"end": "2026-08-27"
 								},
 								"extension": [
 									{
@@ -1772,15 +1772,15 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-07 to 2022-07-08"
+						"text": "Temporary suspension from 2026-08-26 to 2026-08-27"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-10",
-									"end": "2022-07-11"
+									"start": "2026-08-29",
+									"end": "2026-08-30"
 								},
 								"extension": [
 									{
@@ -1790,13 +1790,13 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-10 to 2022-07-11"
+						"text": "Temporary suspension from 2026-08-29 to 2026-08-30"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1822,13 +1822,13 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01",
-					"end": "2022-07-24"
+					"start": "2026-08-20",
+					"end": "2026-09-30"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-2a6cbaf9288b",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-eb2f39e50324",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1839,7 +1839,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-2a6cbaf9288b"
+						"value": "01a03326-184d-7019-a164-eb2f39e50324"
 					}
 				],
 				"extension": [
@@ -1849,7 +1849,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -1885,8 +1885,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-04",
-									"end": "2022-07-07"
+									"start": "2026-08-23",
+									"end": "2026-08-26"
 								},
 								"extension": [
 									{
@@ -1896,15 +1896,15 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-04 to 2022-07-07"
+						"text": "Temporary suspension from 2026-08-23 to 2026-08-26"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-08",
-									"end": "2022-07-11"
+									"start": "2026-08-27",
+									"end": "2026-08-30"
 								},
 								"extension": [
 									{
@@ -1914,13 +1914,13 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-08 to 2022-07-11"
+						"text": "Temporary suspension from 2026-08-27 to 2026-08-30"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1946,13 +1946,13 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01",
-					"end": "2022-07-24"
+					"start": "2026-08-20",
+					"end": "2026-09-30"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-2d85893c2fbd",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-eceb5fa60ad6",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1963,7 +1963,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-2d85893c2fbd"
+						"value": "01a03326-184d-7019-a164-eceb5fa60ad6"
 					}
 				],
 				"extension": [
@@ -1973,7 +1973,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -2009,8 +2009,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-04",
-									"end": "2022-07-07"
+									"start": "2026-08-23",
+									"end": "2026-08-26"
 								},
 								"extension": [
 									{
@@ -2020,15 +2020,15 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-04 to 2022-07-07"
+						"text": "Temporary suspension from 2026-08-23 to 2026-08-26"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-04",
-									"end": "2022-07-07"
+									"start": "2026-08-23",
+									"end": "2026-08-26"
 								},
 								"extension": [
 									{
@@ -2038,13 +2038,13 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-04 to 2022-07-07"
+						"text": "Temporary suspension from 2026-08-23 to 2026-08-26"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -2070,13 +2070,13 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01",
-					"end": "2022-07-24"
+					"start": "2026-08-20",
+					"end": "2026-09-30"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-3052b9716dcb",
+			"fullUrl": "urn:uuid:01a03326-184d-7019-a164-f078f525df68",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -2087,7 +2087,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-3052b9716dcb"
+						"value": "01a03326-184d-7019-a164-f078f525df68"
 					}
 				],
 				"extension": [
@@ -2097,7 +2097,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -2133,8 +2133,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-04",
-									"end": "2022-07-07"
+									"start": "2026-08-23",
+									"end": "2026-08-26"
 								},
 								"extension": [
 									{
@@ -2144,15 +2144,15 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-04 to 2022-07-07"
+						"text": "Temporary suspension from 2026-08-23 to 2026-08-26"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-05",
-									"end": "2022-07-08"
+									"start": "2026-08-24",
+									"end": "2026-08-27"
 								},
 								"extension": [
 									{
@@ -2162,13 +2162,13 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-05 to 2022-07-08"
+						"text": "Temporary suspension from 2026-08-24 to 2026-08-27"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.741+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -2194,13 +2194,13 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01",
-					"end": "2022-07-24"
+					"start": "2026-08-20",
+					"end": "2026-09-30"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-366ad93c3c2a",
+			"fullUrl": "urn:uuid:01a03326-184e-7739-aa00-eb4ec80438c9",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -2211,7 +2211,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-366ad93c3c2a"
+						"value": "01a03326-184e-7739-aa00-eb4ec80438c9"
 					}
 				],
 				"extension": [
@@ -2221,7 +2221,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -2257,8 +2257,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-04",
-									"end": "2022-07-07"
+									"start": "2026-08-23",
+									"end": "2026-08-26"
 								},
 								"extension": [
 									{
@@ -2268,15 +2268,15 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-04 to 2022-07-07"
+						"text": "Temporary suspension from 2026-08-23 to 2026-08-26"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-06",
-									"end": "2022-07-07"
+									"start": "2026-08-25",
+									"end": "2026-08-26"
 								},
 								"extension": [
 									{
@@ -2286,13 +2286,13 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-06 to 2022-07-07"
+						"text": "Temporary suspension from 2026-08-25 to 2026-08-26"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.742+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -2318,13 +2318,13 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01",
-					"end": "2022-07-24"
+					"start": "2026-08-20",
+					"end": "2026-09-30"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-39698df6234d",
+			"fullUrl": "urn:uuid:01a03326-184e-7739-aa00-ec8866203ca2",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -2335,7 +2335,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-39698df6234d"
+						"value": "01a03326-184e-7739-aa00-ec8866203ca2"
 					}
 				],
 				"extension": [
@@ -2345,7 +2345,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -2381,8 +2381,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-06",
-									"end": "2022-07-07"
+									"start": "2026-08-25",
+									"end": "2026-08-26"
 								},
 								"extension": [
 									{
@@ -2392,15 +2392,15 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-06 to 2022-07-07"
+						"text": "Temporary suspension from 2026-08-25 to 2026-08-26"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-04",
-									"end": "2022-07-07"
+									"start": "2026-08-23",
+									"end": "2026-08-26"
 								},
 								"extension": [
 									{
@@ -2410,13 +2410,13 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-04 to 2022-07-07"
+						"text": "Temporary suspension from 2026-08-23 to 2026-08-26"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.742+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -2442,13 +2442,13 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01",
-					"end": "2022-07-24"
+					"start": "2026-08-20",
+					"end": "2026-09-30"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-3f0e158715b8",
+			"fullUrl": "urn:uuid:01a03326-184e-7739-aa00-f0090934cda4",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -2459,7 +2459,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-3f0e158715b8"
+						"value": "01a03326-184e-7739-aa00-f0090934cda4"
 					}
 				],
 				"extension": [
@@ -2469,7 +2469,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -2505,8 +2505,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-02",
-									"end": "2022-07-03"
+									"start": "2026-08-21",
+									"end": "2026-08-22"
 								},
 								"extension": [
 									{
@@ -2516,14 +2516,14 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-02 to 2022-07-03"
+						"text": "Temporary suspension from 2026-08-21 to 2026-08-22"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-05"
+									"start": "2026-08-24"
 								},
 								"extension": [
 									{
@@ -2533,13 +2533,13 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-05 to forever"
+						"text": "Definitive suspension from 2026-08-24 to forever"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.742+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -2565,13 +2565,13 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01",
-					"end": "2022-07-24"
+					"start": "2026-08-20",
+					"end": "2026-09-30"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-403d855ea525",
+			"fullUrl": "urn:uuid:01a03326-184e-7739-aa00-f70ff79b874e",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -2582,7 +2582,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-403d855ea525"
+						"value": "01a03326-184e-7739-aa00-f70ff79b874e"
 					}
 				],
 				"extension": [
@@ -2592,7 +2592,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -2628,8 +2628,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-02",
-									"end": "2022-07-03"
+									"start": "2026-08-21",
+									"end": "2026-08-22"
 								},
 								"extension": [
 									{
@@ -2639,14 +2639,14 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-02 to 2022-07-03"
+						"text": "Temporary suspension from 2026-08-21 to 2026-08-22"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-04"
+									"start": "2026-08-23"
 								},
 								"extension": [
 									{
@@ -2656,13 +2656,13 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-04 to forever"
+						"text": "Definitive suspension from 2026-08-23 to forever"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.742+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -2688,13 +2688,13 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01",
-					"end": "2022-07-24"
+					"start": "2026-08-20",
+					"end": "2026-09-30"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-47b971f93c31",
+			"fullUrl": "urn:uuid:01a03326-184e-7739-aa00-fb743319619b",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -2705,7 +2705,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-47b971f93c31"
+						"value": "01a03326-184e-7739-aa00-fb743319619b"
 					}
 				],
 				"extension": [
@@ -2715,7 +2715,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -2751,8 +2751,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-02",
-									"end": "2022-07-03"
+									"start": "2026-08-21",
+									"end": "2026-08-22"
 								},
 								"extension": [
 									{
@@ -2762,14 +2762,14 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-02 to 2022-07-03"
+						"text": "Temporary suspension from 2026-08-21 to 2026-08-22"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-03"
+									"start": "2026-08-22"
 								},
 								"extension": [
 									{
@@ -2779,13 +2779,13 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-03 to forever"
+						"text": "Definitive suspension from 2026-08-22 to forever"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.742+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -2811,13 +2811,13 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01",
-					"end": "2022-07-24"
+					"start": "2026-08-20",
+					"end": "2026-09-30"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-496471e5f32a",
+			"fullUrl": "urn:uuid:01a03326-184e-7739-aa00-fd1134a2b2a1",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -2828,7 +2828,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-496471e5f32a"
+						"value": "01a03326-184e-7739-aa00-fd1134a2b2a1"
 					}
 				],
 				"extension": [
@@ -2838,7 +2838,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -2874,8 +2874,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-02",
-									"end": "2022-07-03"
+									"start": "2026-08-21",
+									"end": "2026-08-22"
 								},
 								"extension": [
 									{
@@ -2885,14 +2885,14 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-02 to 2022-07-03"
+						"text": "Temporary suspension from 2026-08-21 to 2026-08-22"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-02"
+									"start": "2026-08-21"
 								},
 								"extension": [
 									{
@@ -2902,13 +2902,13 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-02 to forever"
+						"text": "Definitive suspension from 2026-08-21 to forever"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.742+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -2934,13 +2934,13 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01",
-					"end": "2022-07-24"
+					"start": "2026-08-20",
+					"end": "2026-09-30"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-4fbc9b332618",
+			"fullUrl": "urn:uuid:01a03326-184e-7739-aa01-00c087798c7f",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -2951,7 +2951,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-4fbc9b332618"
+						"value": "01a03326-184e-7739-aa01-00c087798c7f"
 					}
 				],
 				"extension": [
@@ -2961,7 +2961,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -2997,8 +2997,8 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-02",
-									"end": "2022-07-03"
+									"start": "2026-08-21",
+									"end": "2026-08-22"
 								},
 								"extension": [
 									{
@@ -3008,14 +3008,14 @@
 								]
 							}
 						],
-						"text": "Temporary suspension from 2022-07-02 to 2022-07-03"
+						"text": "Temporary suspension from 2026-08-21 to 2026-08-22"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-01"
+									"start": "2026-08-20"
 								},
 								"extension": [
 									{
@@ -3025,13 +3025,13 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-01 to forever"
+						"text": "Definitive suspension from 2026-08-20 to forever"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.742+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -3057,13 +3057,13 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01",
-					"end": "2022-07-24"
+					"start": "2026-08-20",
+					"end": "2026-09-30"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-50bbcee2f994",
+			"fullUrl": "urn:uuid:01a03326-184e-7739-aa01-051f413db575",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -3074,7 +3074,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-50bbcee2f994"
+						"value": "01a03326-184e-7739-aa01-051f413db575"
 					}
 				],
 				"extension": [
@@ -3084,7 +3084,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -3120,7 +3120,7 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-05"
+									"start": "2026-08-24"
 								},
 								"extension": [
 									{
@@ -3130,14 +3130,14 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-05 to forever"
+						"text": "Definitive suspension from 2026-08-24 to forever"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-02"
+									"start": "2026-08-21"
 								},
 								"extension": [
 									{
@@ -3147,13 +3147,13 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-02 to forever"
+						"text": "Definitive suspension from 2026-08-21 to forever"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.742+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -3179,13 +3179,13 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01",
-					"end": "2022-07-24"
+					"start": "2026-08-20",
+					"end": "2026-09-30"
 				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:019fcc6b-1e06-700f-a954-57f825d02538",
+			"fullUrl": "urn:uuid:01a03326-184e-7739-aa01-0a8a181737c5",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -3196,7 +3196,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "019fcc6b-1e06-700f-a954-57f825d02538"
+						"value": "01a03326-184e-7739-aa01-0a8a181737c5"
 					}
 				],
 				"extension": [
@@ -3206,7 +3206,7 @@
 					},
 					{
 						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-04T10:56:39Z"
+						"valueDateTime": "2026-08-24T09:42:09Z"
 					},
 					{
 						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
@@ -3242,7 +3242,7 @@
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-03"
+									"start": "2026-08-22"
 								},
 								"extension": [
 									{
@@ -3252,14 +3252,14 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-03 to forever"
+						"text": "Definitive suspension from 2026-08-22 to forever"
 					},
 					{
 						"extension": [
 							{
 								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
 								"valuePeriod": {
-									"start": "2022-07-03"
+									"start": "2026-08-22"
 								},
 								"extension": [
 									{
@@ -3269,13 +3269,13 @@
 								]
 							}
 						],
-						"text": "Definitive suspension from 2022-07-03 to forever"
+						"text": "Definitive suspension from 2026-08-22 to forever"
 					}
 				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-04T10:56:39.942+00:00",
+				"dateAsserted": "2026-08-24T09:42:09.742+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -3301,8 +3301,8 @@
 					}
 				],
 				"effectivePeriod": {
-					"start": "2022-07-01",
-					"end": "2022-07-24"
+					"start": "2026-08-20",
+					"end": "2026-09-30"
 				}
 			}
 		}
