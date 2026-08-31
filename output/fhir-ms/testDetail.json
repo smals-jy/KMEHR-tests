@@ -1,7 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"type": "collection",
-	"timestamp": "2026-08-31T11:28:11.418+00:00",
+	"timestamp": "2026-08-31T11:28:11.333+00:00",
 	"entry": [
 		{
 			"fullUrl": "urn:be:custom:Patient/00000000097",
@@ -78,7 +78,7 @@
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae99-70f0-ae0f-12e653093335",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-25d5835539c9",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -89,7 +89,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae99-70f0-ae0f-12e653093335"
+						"value": "01a05793-ae44-7024-bfa7-25d5835539c9"
 					}
 				],
 				"extension": [
@@ -129,10 +129,66 @@
 					}
 				],
 				"status": "unknown",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-01",
+									"end": "2026-09-02"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-01 to 2026-09-02"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-04",
+									"end": "2026-09-05"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-04 to 2026-09-05"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-07",
+									"end": "2026-09-08"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-07 to 2026-09-08"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.417+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -143,11 +199,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00001"
+					"text": "Drug 001"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -157,11 +213,13 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae99-70f0-ae0f-14dd7bf44670",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-2b8d26f31a5d",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -172,7 +230,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae99-70f0-ae0f-14dd7bf44670"
+						"value": "01a05793-ae44-7024-bfa7-2b8d26f31a5d"
 					}
 				],
 				"extension": [
@@ -212,10 +270,48 @@
 					}
 				],
 				"status": "unknown",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-01",
+									"end": "2026-09-04"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-01 to 2026-09-04"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-05",
+									"end": "2026-09-08"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-05 to 2026-09-08"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.417+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -226,11 +322,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00002"
+					"text": "Drug 002"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -240,11 +336,13 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae99-70f0-ae0f-1be66d46eb82",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-2e04c721696f",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -255,7 +353,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae99-70f0-ae0f-1be66d46eb82"
+						"value": "01a05793-ae44-7024-bfa7-2e04c721696f"
 					}
 				],
 				"extension": [
@@ -295,10 +393,48 @@
 					}
 				],
 				"status": "unknown",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-01",
+									"end": "2026-09-04"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-01 to 2026-09-04"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-01",
+									"end": "2026-09-04"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-01 to 2026-09-04"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.417+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -309,11 +445,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00005"
+					"text": "Drug 003"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -323,11 +459,13 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae99-70f0-ae0f-1e932752ab7a",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-337b8307d298",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -338,7 +476,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae99-70f0-ae0f-1e932752ab7a"
+						"value": "01a05793-ae44-7024-bfa7-337b8307d298"
 					}
 				],
 				"extension": [
@@ -378,10 +516,48 @@
 					}
 				],
 				"status": "unknown",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-01",
+									"end": "2026-09-04"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-01 to 2026-09-04"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-02",
+									"end": "2026-09-05"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-02 to 2026-09-05"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.417+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -392,11 +568,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00008"
+					"text": "Drug 004"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -406,11 +582,13 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae99-70f0-ae0f-20ff75deee17",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-3446a6ccfcd9",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -421,7 +599,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae99-70f0-ae0f-20ff75deee17"
+						"value": "01a05793-ae44-7024-bfa7-3446a6ccfcd9"
 					}
 				],
 				"extension": [
@@ -461,10 +639,48 @@
 					}
 				],
 				"status": "unknown",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-01",
+									"end": "2026-09-04"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-01 to 2026-09-04"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-03",
+									"end": "2026-09-04"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-03 to 2026-09-04"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.417+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -475,11 +691,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00009"
+					"text": "Drug 005"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -489,11 +705,13 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae99-70f0-ae0f-241503bfbdbc",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-3a920c077ce7",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -504,7 +722,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae99-70f0-ae0f-241503bfbdbc"
+						"value": "01a05793-ae44-7024-bfa7-3a920c077ce7"
 					}
 				],
 				"extension": [
@@ -544,10 +762,48 @@
 					}
 				],
 				"status": "unknown",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-03",
+									"end": "2026-09-04"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-03 to 2026-09-04"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-01",
+									"end": "2026-09-04"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-01 to 2026-09-04"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.417+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -558,11 +814,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00010"
+					"text": "Drug 006"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -572,11 +828,13 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae99-70f0-ae0f-2bc9d349acb7",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-3f836324df88",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -587,7 +845,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae99-70f0-ae0f-2bc9d349acb7"
+						"value": "01a05793-ae44-7024-bfa7-3f836324df88"
 					}
 				],
 				"extension": [
@@ -626,11 +884,48 @@
 						}
 					}
 				],
-				"status": "unknown",
+				"status": "stopped",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-30",
+									"end": "2026-08-31"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-08-30 to 2026-08-31"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-02"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-09-02 to forever"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.417+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -641,11 +936,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00011"
+					"text": "Drug 007"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -655,11 +950,13 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae99-70f0-ae0f-2f5dae77caf2",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-42ab9c867ba6",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -670,7 +967,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae99-70f0-ae0f-2f5dae77caf2"
+						"value": "01a05793-ae44-7024-bfa7-42ab9c867ba6"
 					}
 				],
 				"extension": [
@@ -709,11 +1006,48 @@
 						}
 					}
 				],
-				"status": "unknown",
+				"status": "stopped",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-30",
+									"end": "2026-08-31"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-08-30 to 2026-08-31"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-01"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-09-01 to forever"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.417+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -724,11 +1058,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00012"
+					"text": "Drug 008"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -738,11 +1072,13 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae99-70f0-ae0f-31055ca86714",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-45fc02fbb38c",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -753,7 +1089,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae99-70f0-ae0f-31055ca86714"
+						"value": "01a05793-ae44-7024-bfa7-45fc02fbb38c"
 					}
 				],
 				"extension": [
@@ -792,11 +1128,48 @@
 						}
 					}
 				],
-				"status": "unknown",
+				"status": "stopped",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-30",
+									"end": "2026-08-31"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-08-30 to 2026-08-31"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-31"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-08-31 to forever"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.417+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -807,11 +1180,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00013"
+					"text": "Drug 009"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -821,11 +1194,13 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae99-70f0-ae0f-368d967fea87",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-4a446145b528",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -836,7 +1211,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae99-70f0-ae0f-368d967fea87"
+						"value": "01a05793-ae44-7024-bfa7-4a446145b528"
 					}
 				],
 				"extension": [
@@ -875,11 +1250,48 @@
 						}
 					}
 				],
-				"status": "unknown",
+				"status": "stopped",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-30",
+									"end": "2026-08-31"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-08-30 to 2026-08-31"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-30"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-08-30 to forever"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.417+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -890,11 +1302,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00033"
+					"text": "Drug 010"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -904,11 +1316,13 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae99-70f0-ae0f-3bc4e49d4f44",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-4c6f14e04695",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -919,7 +1333,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae99-70f0-ae0f-3bc4e49d4f44"
+						"value": "01a05793-ae44-7024-bfa7-4c6f14e04695"
 					}
 				],
 				"extension": [
@@ -958,11 +1372,48 @@
 						}
 					}
 				],
-				"status": "unknown",
+				"status": "stopped",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-30",
+									"end": "2026-08-31"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-08-30 to 2026-08-31"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-29"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-08-29 to forever"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.417+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -973,11 +1424,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00034"
+					"text": "Drug 011"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -987,11 +1438,13 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae99-70f0-ae0f-3f103e4b62b2",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-50449440194a",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1002,7 +1455,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae99-70f0-ae0f-3f103e4b62b2"
+						"value": "01a05793-ae44-7024-bfa7-50449440194a"
 					}
 				],
 				"extension": [
@@ -1041,11 +1494,47 @@
 						}
 					}
 				],
-				"status": "unknown",
+				"status": "stopped",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-02"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-09-02 to forever"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-30"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-08-30 to forever"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.417+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1056,11 +1545,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00035"
+					"text": "Drug 012"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -1070,11 +1559,13 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae99-70f0-ae0f-40a07f59ef8f",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-553e19ab2f82",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1085,7 +1576,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae99-70f0-ae0f-40a07f59ef8f"
+						"value": "01a05793-ae44-7024-bfa7-553e19ab2f82"
 					}
 				],
 				"extension": [
@@ -1124,11 +1615,47 @@
 						}
 					}
 				],
-				"status": "unknown",
+				"status": "stopped",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-31"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-08-31 to forever"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-31"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-08-31 to forever"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.417+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1139,11 +1666,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00045"
+					"text": "Drug 013"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -1153,11 +1680,13 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae99-70f0-ae0f-457b98fa846d",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-5aca94882fa3",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1168,7 +1697,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae99-70f0-ae0f-457b98fa846d"
+						"value": "01a05793-ae44-7024-bfa7-5aca94882fa3"
 					}
 				],
 				"extension": [
@@ -1208,10 +1737,66 @@
 					}
 				],
 				"status": "unknown",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-01",
+									"end": "2026-09-02"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-01 to 2026-09-02"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-04",
+									"end": "2026-09-05"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-04 to 2026-09-05"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-07",
+									"end": "2026-09-08"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-07 to 2026-09-08"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.417+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1222,11 +1807,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00046"
+					"text": "Drug 014"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -1236,11 +1821,14 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29",
+					"end": "2026-09-16"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae99-70f0-ae0f-4a54050f2f5c",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-5ebbd54569b9",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1251,7 +1839,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae99-70f0-ae0f-4a54050f2f5c"
+						"value": "01a05793-ae44-7024-bfa7-5ebbd54569b9"
 					}
 				],
 				"extension": [
@@ -1291,10 +1879,48 @@
 					}
 				],
 				"status": "unknown",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-01",
+									"end": "2026-09-04"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-01 to 2026-09-04"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-05",
+									"end": "2026-09-08"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-05 to 2026-09-08"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.417+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1305,11 +1931,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00049"
+					"text": "Drug 015"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -1319,11 +1945,14 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29",
+					"end": "2026-09-16"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-705550318237",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-633358b60f31",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1334,7 +1963,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-705550318237"
+						"value": "01a05793-ae44-7024-bfa7-633358b60f31"
 					}
 				],
 				"extension": [
@@ -1374,10 +2003,48 @@
 					}
 				],
 				"status": "unknown",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-01",
+									"end": "2026-09-04"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-01 to 2026-09-04"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-01",
+									"end": "2026-09-04"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-01 to 2026-09-04"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1388,11 +2055,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00051"
+					"text": "Drug 016"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -1402,11 +2069,14 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29",
+					"end": "2026-09-16"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-74d35f41b483",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-65378823a5cd",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1417,7 +2087,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-74d35f41b483"
+						"value": "01a05793-ae44-7024-bfa7-65378823a5cd"
 					}
 				],
 				"extension": [
@@ -1457,10 +2127,48 @@
 					}
 				],
 				"status": "unknown",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-01",
+									"end": "2026-09-04"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-01 to 2026-09-04"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-02",
+									"end": "2026-09-05"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-02 to 2026-09-05"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1471,11 +2179,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00052"
+					"text": "Drug 017"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -1485,11 +2193,14 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29",
+					"end": "2026-09-16"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-788cd1309932",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-693276acb96b",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1500,7 +2211,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-788cd1309932"
+						"value": "01a05793-ae44-7024-bfa7-693276acb96b"
 					}
 				],
 				"extension": [
@@ -1540,10 +2251,48 @@
 					}
 				],
 				"status": "unknown",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-01",
+									"end": "2026-09-04"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-01 to 2026-09-04"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-03",
+									"end": "2026-09-04"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-03 to 2026-09-04"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1554,11 +2303,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00053"
+					"text": "Drug 018"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -1568,11 +2317,14 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29",
+					"end": "2026-09-16"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-7c42f9bea2dc",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-6d6cf79ce2f9",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1583,7 +2335,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-7c42f9bea2dc"
+						"value": "01a05793-ae44-7024-bfa7-6d6cf79ce2f9"
 					}
 				],
 				"extension": [
@@ -1623,10 +2375,48 @@
 					}
 				],
 				"status": "unknown",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-03",
+									"end": "2026-09-04"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-03 to 2026-09-04"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-01",
+									"end": "2026-09-04"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-09-01 to 2026-09-04"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1637,11 +2427,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00054"
+					"text": "Drug 019"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -1651,11 +2441,14 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29",
+					"end": "2026-09-16"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-81f502f5bb78",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-73927ab15cf6",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1666,7 +2459,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-81f502f5bb78"
+						"value": "01a05793-ae44-7024-bfa7-73927ab15cf6"
 					}
 				],
 				"extension": [
@@ -1705,11 +2498,48 @@
 						}
 					}
 				],
-				"status": "unknown",
+				"status": "stopped",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-30",
+									"end": "2026-08-31"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-08-30 to 2026-08-31"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-02"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-09-02 to forever"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1720,11 +2550,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00055"
+					"text": "Drug 020"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -1734,11 +2564,14 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29",
+					"end": "2026-09-16"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-87201d38b08d",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-76467cdbeb55",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1749,7 +2582,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-87201d38b08d"
+						"value": "01a05793-ae44-7024-bfa7-76467cdbeb55"
 					}
 				],
 				"extension": [
@@ -1788,11 +2621,48 @@
 						}
 					}
 				],
-				"status": "unknown",
+				"status": "stopped",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-30",
+									"end": "2026-08-31"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-08-30 to 2026-08-31"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-01"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-09-01 to forever"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1803,11 +2673,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00056"
+					"text": "Drug 021"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -1817,11 +2687,14 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29",
+					"end": "2026-09-16"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-8bc2bf41ab0b",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-782c1ebb59e8",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1832,7 +2705,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-8bc2bf41ab0b"
+						"value": "01a05793-ae44-7024-bfa7-782c1ebb59e8"
 					}
 				],
 				"extension": [
@@ -1871,11 +2744,48 @@
 						}
 					}
 				],
-				"status": "unknown",
+				"status": "stopped",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-30",
+									"end": "2026-08-31"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-08-30 to 2026-08-31"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-31"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-08-31 to forever"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1886,11 +2796,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00060"
+					"text": "Drug 022"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -1900,11 +2810,14 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29",
+					"end": "2026-09-16"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-8c9be879654c",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-7d2d4f5926e1",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1915,7 +2828,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-8c9be879654c"
+						"value": "01a05793-ae44-7024-bfa7-7d2d4f5926e1"
 					}
 				],
 				"extension": [
@@ -1954,11 +2867,48 @@
 						}
 					}
 				],
-				"status": "unknown",
+				"status": "stopped",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-30",
+									"end": "2026-08-31"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-08-30 to 2026-08-31"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-30"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-08-30 to forever"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -1969,11 +2919,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00064"
+					"text": "Drug 023"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -1983,11 +2933,14 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29",
+					"end": "2026-09-16"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-91f67748e8a2",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-83f0dc10ac5b",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -1998,7 +2951,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-91f67748e8a2"
+						"value": "01a05793-ae44-7024-bfa7-83f0dc10ac5b"
 					}
 				],
 				"extension": [
@@ -2037,11 +2990,48 @@
 						}
 					}
 				],
-				"status": "unknown",
+				"status": "stopped",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-30",
+									"end": "2026-08-31"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Temporary suspension"
+									}
+								]
+							}
+						],
+						"text": "Temporary suspension from 2026-08-30 to 2026-08-31"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-29"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-08-29 to forever"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -2052,11 +3042,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00066"
+					"text": "Drug 024"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -2066,11 +3056,14 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29",
+					"end": "2026-09-16"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-97c2320ef18b",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-859e0c322969",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -2081,7 +3074,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-97c2320ef18b"
+						"value": "01a05793-ae44-7024-bfa7-859e0c322969"
 					}
 				],
 				"extension": [
@@ -2120,11 +3113,47 @@
 						}
 					}
 				],
-				"status": "unknown",
+				"status": "stopped",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-09-02"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-09-02 to forever"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-30"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-08-30 to forever"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -2135,11 +3164,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00067"
+					"text": "Drug 025"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -2149,11 +3178,14 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29",
+					"end": "2026-09-16"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-98789cb9edd6",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-897e934b4b60",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -2164,7 +3196,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-98789cb9edd6"
+						"value": "01a05793-ae44-7024-bfa7-897e934b4b60"
 					}
 				],
 				"extension": [
@@ -2203,11 +3235,47 @@
 						}
 					}
 				],
-				"status": "unknown",
+				"status": "stopped",
+				"statusReason": [
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-31"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-08-31 to forever"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/extension-MedicationSuspension",
+								"valuePeriod": {
+									"start": "2026-08-31"
+								},
+								"extension": [
+									{
+										"url": "http://ehealth.fgov.be/standards/fhir/MedicationSuspensionReason",
+										"valueString": "Definitive suspension"
+									}
+								]
+							}
+						],
+						"text": "Definitive suspension from 2026-08-31 to forever"
+					}
+				],
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.332+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
@@ -2218,11 +3286,11 @@
 							"code": "magistral"
 						}
 					],
-					"text": "00068"
+					"text": "Drug 026"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text posology",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -2232,11 +3300,14 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2026-08-29",
+					"end": "2026-09-16"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-9f2b7eee9738",
+			"fullUrl": "urn:uuid:01a05793-ae44-7024-bfa7-8c387a04f3e5",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -2247,7 +3318,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-9f2b7eee9738"
+						"value": "01a05793-ae44-7024-bfa7-8c387a04f3e5"
 					}
 				],
 				"extension": [
@@ -2290,24 +3361,34 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.333+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+							"code": "2732808",
+							"display": "Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56"
 						}
 					],
-					"text": "00070"
+					"text": "Pantomed 40 mg (PI Pharma) maagsapresist. tabl. 56"
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"doseAndRate": [
+							{
+								"doseQuantity": {
+									"value": 1
+								}
+							}
+						],
 						"timing": {
 							"repeat": {
+								"when": [
+									"MORN"
+								],
 								"frequency": 1,
 								"period": 1,
 								"periodUnit": "d"
@@ -2315,11 +3396,13 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2099-01-01"
+				}
 			}
 		},
 		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-a2e9b8ef87f8",
+			"fullUrl": "urn:uuid:01a05793-ae45-77b1-ab52-0e76482c55ba",
 			"resource": {
 				"resourceType": "MedicationStatement",
 				"meta": {
@@ -2330,7 +3413,7 @@
 				"identifier": [
 					{
 						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-a2e9b8ef87f8"
+						"value": "01a05793-ae45-77b1-ab52-0e76482c55ba"
 					}
 				],
 				"extension": [
@@ -2373,22 +3456,23 @@
 				"subject": {
 					"reference": "urn:be:custom:Patient/00000000097"
 				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
+				"dateAsserted": "2026-08-31T11:28:11.333+00:00",
 				"informationSource": {
 					"reference": "urn:be:custom:PractitionerRole/17892144001"
 				},
 				"medicationCodeableConcept": {
 					"coding": [
 						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
+							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+							"code": "2933901",
+							"display": "Dafalgan 500 mg compr. efferv."
 						}
 					],
-					"text": "00071"
+					"text": "Dafalgan 500 mg compr. efferv."
 				},
 				"dosage": [
 					{
-						"text": "...",
+						"text": "Free text",
 						"timing": {
 							"repeat": {
 								"frequency": 1,
@@ -2398,1750 +3482,9 @@
 						}
 					}
 				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-a7bf0da036ed",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-a7bf0da036ed"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "00072"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-a809a0528f2a",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-a809a0528f2a"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "00073"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-ae08da5b8684",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-ae08da5b8684"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "both_ears"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-b0c3f7a37030",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-b0c3f7a37030"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "both_eyes"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-b70c651412a3",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-b70c651412a3"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "both_nostrils"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-b88bd4f47864",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-b88bd4f47864"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "cutaneous_injection"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-bdeabcaca979",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-bdeabcaca979"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "derm"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-c0c0bdb536c1",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-c0c0bdb536c1"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "dermal_injection"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-c6551a77d542",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-c6551a77d542"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "ear_left"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-c803804352ac",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-c803804352ac"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "ear_right"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-cdc108251701",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-cdc108251701"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "eye_left"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-d1306c594da7",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-d1306c594da7"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "eye_right"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-d6ed8f65c96e",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-d6ed8f65c96e"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "hyperdermoclyse"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-da733e93509d",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-da733e93509d"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "icut"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-ddd11e79cf8b",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-ddd11e79cf8b"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "ider"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-e30a15880d40",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-e30a15880d40"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "larter"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-e61fcc84a65b",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-e61fcc84a65b"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "nose_left"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-e969f481b889",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-e969f481b889"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "nose_right"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-edd39582ef58",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-edd39582ef58"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "oft"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-f2eda6c39f42",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-f2eda6c39f42"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "transdermal"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
-			}
-		},
-		{
-			"fullUrl": "urn:uuid:01a05793-ae9a-7719-a304-f7fd6b88cc2b",
-			"resource": {
-				"resourceType": "MedicationStatement",
-				"meta": {
-					"profile": [
-						"https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline",
-						"value": "01a05793-ae9a-7719-a304-f7fd6b88cc2b"
-					}
-				],
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-						"valueString": "1"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-						"valueDateTime": "2026-08-31T11:28:11Z"
-					},
-					{
-						"url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence",
-						"extension": [
-							{
-								"url": "code",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
-											"code": "unknown"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-						"valueCode": "recorded"
-					},
-					{
-						"url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-						"valueReference": {
-							"reference": "urn:be:custom:PractitionerRole/17892144001"
-						}
-					}
-				],
-				"status": "unknown",
-				"subject": {
-					"reference": "urn:be:custom:Patient/00000000097"
-				},
-				"dateAsserted": "2026-08-31T11:28:11.418+00:00",
-				"informationSource": {
-					"reference": "urn:be:custom:PractitionerRole/17892144001"
-				},
-				"medicationCodeableConcept": {
-					"coding": [
-						{
-							"system": "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
-							"code": "magistral"
-						}
-					],
-					"text": "vitreal_injection"
-				},
-				"dosage": [
-					{
-						"text": "...",
-						"timing": {
-							"repeat": {
-								"frequency": 1,
-								"period": 1,
-								"periodUnit": "d"
-							}
-						}
-					}
-				],
-				"effectivePeriod": {}
+				"effectivePeriod": {
+					"start": "2099-01-01"
+				}
 			}
 		}
 	]
